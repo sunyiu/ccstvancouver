@@ -4,7 +4,7 @@ $(function(){
     })
 
     $('#chiBtn').click(function(e){
-        window.location.replace('./?lang=ch');
+        window.location.replace('./?lang=zh');
 
     })
 

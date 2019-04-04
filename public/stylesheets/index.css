@@ -1,0 +1,38 @@
+.container{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.container .mid-context{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container .mid-context .content{
+    padding: 0 50px;
+}
+
+.container .mid-context .content h2{
+    padding-bottom: 25px;
+    font-size: 2rem;
+}
+.container .mid-context .content h3{
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.langBtnContainer{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.langBtnContainer #langBtn{
+    display: block;
+    padding: 5px 15px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+}
