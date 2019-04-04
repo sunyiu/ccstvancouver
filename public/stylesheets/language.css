@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    color: #888;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.container {
+    display: table;
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.container .mid-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.context {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    text-align: center;
+}
+
+.context .welcome-msg,
+.context .lang-btns {}
+
+.left,
+.right {
+    display: block;
+    position: relative;
+    width: 50%;
+    padding-bottom: 35px;
+    /*match the height of the button */
+}
+
+.left {
+    border-right: 1px solid #ccc;
+    margin-right: -1px;
+}
+
+.left .welcome-msg {
+    padding: 0 45px 25px 25px;
+}
+
+.chinese {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.right .welcome-msg {
+    padding: 0 25px 25px 55px;
+}
+
+.welcome-msg {
+    padding-bottom: 25px;
+}
+
+.welcome-msg h1 {
+    padding-bottom: 15px;
+}
+
+
+.lang-btns {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.lang-btns button {
+    height: 35px;
+    width: 100px;
+    padding: 0;
+    font-size: 1.25em;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.header {
+    height: 100px;
+    display: table;
+    width: 100%;
+}
+
+.header div {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.25em;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -50px;
+    height: 100px;
+    width: 100px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: contain;
+    z-index: 100;
+}
+
+@media (max-width: 650px) {
+
+    html{
+        font-size: 14px;
+    }
+
+    .context .left {
+        text-align: left;
+    }
+
+    .context .right {
+        text-align: right;
+    }
+
+    .lang-btns {
+        margin-left: 0;
+    }
+
+    .left .lang-btns {
+        left: 25px;
+    }
+
+    .right .lang-btns {
+        left: auto;
+        right: 25px;
+    }
+
+    .lang-btns button{
+        width: 80px;
+    }
+
+}
+
+@media (max-width: 375px){
+    html{
+        font-size: 12px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+        margin-left: -40px;
+    }
+}

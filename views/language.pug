@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
+    meta(name='format-detection' content='telephone=no')
+    
+    title= title
+      
+    link(rel='shortcut icon' href='images/favicon.ico' type='image/x-icon')
+    link(rel='icon' href='images/favicon.ico' type='image/x-icon')
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/language.css')
+        
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto|Noto+Sans+SC')
+
+    script(src='javascripts/jquery.min.js')
+
+  body
+
+    div.container
+      div.mid-content
+        div.context
+          div.logo
+          div.left
+            div.welcome-msg
+              div.header
+                div Canadian Chinese School of Theology Vancouver
+
+              h1 HELLO
+              div This is your first visit, please select display language
+            div.lang-btns
+              button#engBtn
+                div ENG
+
+          div(class="right chinese")
+            div.welcome-msg
+              div.header
+                div 加拿大華人神學院温哥華
+              h1 你好
+              div 这是你的第一次到临，请选择显示语言
+
+            div.lang-btns
+              button#chiBtn
+                div 中文
+
+
+      script(src='javascripts/app/language.js')
