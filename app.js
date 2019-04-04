@@ -23,7 +23,24 @@ app.use(cookieParser());
 // i18n setup
 i18n.expressBind(app, {
   // setup some locales - other locales default to vi silently
-  locales: ['en', 'zh'],
+  //locales: ['en', 'zh'],
+
+  locales: {
+    "en": {
+      "Title": "Canadian Chinese School of Theology Vancouver",
+      "Greeting": "Welcome to Canadian Chinese School of Theology Vancouver",
+      "motto1": "Building Theological Education",
+      "motto2": "Passing on the legacy of pastoring and mission"
+    },
+    "zh": {
+      "Title": "加拿大華人神學院温哥華",
+      "Greeting": "歡迎來到加拿大華人神學院温哥華",
+      "motto1": "建構神學教育",
+      "motto2": "傳承牧養宣教",
+      "languageCSS": "languageCSS"
+    }
+  },
+  
   // set the default locale
   defaultLocale: 'en',
   // set the cookie name
