@@ -1,34 +1,43 @@
-.container{
-    display: table;
-    width: 100%;
-    height: 100%;
+.top-container {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.55)), /* bottom, image */
+    url(../images/students.png);
+    height: 500px;
+    background-position: right;
+    background-size: cover;
+    position: relative;
 }
 
-.container .mid-context{
-    display: table-cell;
-    vertical-align: middle;
+.top-container .content {
+    color: white;
+    padding: 25px;
+    padding-top: 150px;
 }
 
-.container .mid-context .content{
-    padding: 0 50px;
+.top-container .content .name {
+    padding-bottom: 15px;
 }
 
-.container .mid-context .content h2{
-    padding-bottom: 25px;
-    font-size: 2rem;
-}
-.container .mid-context .content h3{
-    padding-bottom: 10px;
+.top-container .content .motto {
+    padding-bottom: 5px;
     font-size: 1.5rem;
 }
 
-.langBtnContainer{
+.top-container .content .logo {
+    width: 50px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: contain;
+    height: 50px;
+    margin-top: 13px;
+    padding-left: 15px;
+}
+
+.langBtnContainer {
     position: absolute;
     top: 5px;
     right: 5px;
 }
 
-.langBtnContainer #langBtn{
+.langBtnContainer #langBtn {
     display: block;
     padding: 5px 15px;
     border: none;

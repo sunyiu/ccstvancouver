@@ -26,7 +26,7 @@ router.get('/', function (req, res, next) {
 
     res.render('index', {
       title: req.i18n.__("Title"),
-      locale: req.i18n.getLocale(),
+      locale: locale,
       otherLocale: otherLocale,
       otherLocaleRef: otherLocaleRef
     });

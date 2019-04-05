@@ -5,12 +5,11 @@ block style
 
 block content
 
-  div.container
-    div.mid-context
+  div.top-container
       div.content
-        h2 #{__('Greeting')}
-        h3 #{__('motto1')}
-        h3 #{__('motto2')}
+        div.name #{__('Title')}
+        div.motto #{__('motto1')}
+        div.motto #{__('motto2')}
 
   div.langBtnContainer
     a(id='langBtn' href=otherLocaleRef) #{otherLocale}
