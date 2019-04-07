@@ -3,34 +3,28 @@
   margin: 0;
 }
 
-html{
-  font-size: 16px;
+:focus {
+  outline: none;
+}
+:visited{
+  color: rgba(0,0,0,0.5);
+}
+
+html {
+  line-height: 1.15;
 }
 
 body {
   background-color: white;
   color: #888;
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 }
 
-body.zh{
+body.zh {
   font-family: 'Noto Sans SC', sans-serif;
 }
 
-
-
-.header-container{
-  height: 75px;
+a {
+  text-decoration: none;
 }
-
-.header-container .logo{
-  width: 50px;
-  background: url('../images/logo.png') no-repeat center;
-  background-size: contain;
-  height: 50px;
-  margin-top:13px;
-  padding-left: 15px;
-
-}
-
-

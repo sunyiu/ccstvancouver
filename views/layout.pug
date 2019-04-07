@@ -5,23 +5,43 @@ html
     meta(name='viewport' content='viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
     meta(name='format-detection' content='telephone=no')
     
-    title= title
+    title #{__('Title')}
       
     link(rel='shortcut icon' href='images/favicon.ico' type='image/x-icon')
     link(rel='icon' href='images/favicon.ico' type='image/x-icon')
-
-    link(rel='stylesheet', href='/stylesheets/style.css')
         
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto|Noto+Sans+SC')
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+      
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
 
     script(src='javascripts/jquery.min.js')
+
 
     block style
 
   body(class=locale)
 
-    div.header-container
-      div.content
-        div.logo
+    div.navbar
+      nav.container        
+        ul(class='navbar-tools')
+            li(class='nav-tool')
+              a(id='langBtn' href=otherLocaleRef) 
+                i(class="material-icons md-36") translate
+      
+        a(class='navbar-logo' href="/")
+
+        div(class='navbar-items-container')
+          div.title #{__('Title')}
+          ul(class='navbar-items links')
+            li(class='nav-link')
+              a(href='/#admissions') #{__('admissions')}
+            li(class='nav-link')
+              a(href='/#studentresources') #{__('student_resources')}
+            li(class='nav-link')
+              a(href='/#academics') #{__('academics')}
+
 
     block content
