@@ -1,32 +1,40 @@
-.top-container {
+.home{
+    padding-top: 0;
+}
+.home>.container>.top-image-container{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* bottom, image */
     url(../images/students.png);
     height: 500px;
     background-position: right;
     background-size: cover;
     position: relative;
-}
-
-.top-container .content {
+    border: none;
     color: white;
-    padding: 25px;
-    padding-top: 150px;
+    width: 100%;
+    display: table;
+}
+.home>.container>.top-image-container>.content{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2rem;
 }
 
-.top-container .content .name {
-    padding-bottom: 15px;
+.home>.container>.top-image-container>.content>.motto {
+    padding-bottom: 1rem;
+    font-size: 1.75rem;
 }
 
-.top-container .content .motto {
-    padding-bottom: 5px;
-    font-size: 1.5rem;
+.home ul.actions{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
 }
-
-.top-container .content .logo {
-    width: 50px;
-    background: url('../images/logo.png') no-repeat center;
-    background-size: contain;
-    height: 50px;
-    margin-top: 13px;
-    padding-left: 15px;
+.home ul.actions>li.action{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+.home ul.actions>li.action>i{
+    padding-right: 0.5rem;
 }

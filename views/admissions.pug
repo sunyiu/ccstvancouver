@@ -1,0 +1,15 @@
+extends layout
+
+block styles
+    link(rel='stylesheet', href='/stylesheets/side-nav.css')
+    link(rel='stylesheet', href='/stylesheets/admissions.css')
+
+block content
+
+    div.admissions.module
+        div.container
+            include side-nav
+            +side-nav('Admissions', ['apply', 'programs', 'fees', 'financial assistance', 'international student'])
+
+            div.context 
+                div something here

@@ -1,0 +1,8 @@
+
+mixin side-nav(title, items)
+    header.side-nav= title
+    nav.side-nav
+        //- div.title= title
+        ul.nav-links
+            each item in items
+                li.link= item

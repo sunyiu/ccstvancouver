@@ -1,16 +1,35 @@
 extends layout
 
-block style
+block styles
   link(rel='stylesheet', href='/stylesheets/index.css')
 
 block content
+  div.home.module
+    div.container
+      div.top-image-container
+        div.content
+          div.motto #{__('motto1')}
+          div.motto #{__('motto2')}
 
-  div.top-container
-      div.content
-        div.name #{__('Title')}
-        div.motto #{__('motto1')}
-        div.motto #{__('motto2')}
+          ul.actions
+            li.action 
+              i.material-icons arrow_right_alt
+              span #{__('findAProgram')}
+            li.action  
+              i.material-icons arrow_right_alt
+              span #{__('applyTo')}
+            li.action  
+              i.material-icons arrow_right_alt
+              span #{__('requestInfo')}
+            li.action  
+              i.material-icons arrow_right_alt
+              span #{__('knowMoreAboutUs')}
 
-    
+
+      div What's happening at Canadian Chinese School of Theology Vancouver
+
+
+
+
 
   script(src='javascripts/app/index.js')

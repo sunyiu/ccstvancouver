@@ -1,0 +1,32 @@
+.admissions .container>.context {
+    position: relative;
+    display: block;
+}
+
+
+
+
+@media (max-width: 575px) {
+    .admissions>.container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .admissions>.container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .admissions>.container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .admissions>.container {
+        max-width: 960px;
+    }
+}

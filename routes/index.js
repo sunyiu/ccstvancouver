@@ -18,8 +18,7 @@ router.get('/', function (req, res, next) {
       res = res.cookie('ccstvan_langpref', query);
     }
 
-    let locale = req.i18n.getLocale(),
-      otherLocaleRef = locale == 'en'
+    let otherLocaleRef = req.i18n.getLocale() == 'en'
         ? '/?lang=zh'
         : '/?lang=en';
 
@@ -29,9 +28,20 @@ router.get('/', function (req, res, next) {
   }
 });
 
+router.get('/side-nav', function(req, res, next){
+  res.render('side-nav');
+})
 
 router.get('/language', function (req, res, next) {
   res.render('language', { title: "Canadian Chinese School of Theology" });
 });
+
+router.get('/admissions', function (req, res, next) {
+  let otherLocaleRef = req.i18n.getLocale() == 'en'
+        ? '/admissions?lang=zh'
+        : '/admissions?lang=en';
+
+  res.render('admissions', { otherLocaleRef: otherLocaleRef });
+})
 
 module.exports = router;

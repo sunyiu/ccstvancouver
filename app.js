@@ -28,29 +28,37 @@ i18n.expressBind(app, {
   locales: {
     "en": {
       "Title": "Canadian Chinese School of Theology Vancouver",
-      "motto1": "Building Theological Education",
-      "motto2": "Passing on the legacy of pastoring and mission",
-
       "other_locale": "中文",
 
       "admissions": "admissions",
       "student_resources": "student",
-      "academics": "academics"
+      "academics": "academics",
+
+
+      "motto1": "Building Theological Education",
+      "motto2": "Passing on the legacy of pastoring and mission",
+      "findAProgram": "Find a program",
+      "applyTo": "Apply to Canadian Chinese School of Theology Vancouver",
+      "requestInfo": "Request Info",
+      "knowMoreAboutUs" : "Know more about us"
     },
     "zh": {
-      "Title": "加拿大華人神學院温哥華",
-      "motto1": "建構神學教育",
-      "motto2": "傳承牧養宣教",
-
+      "Title": "加拿大華人神學院温歌廿華",
       "other_locale": "ENG",
       "other_locale_ref": "./$s?lang=en",
 
       "admissions": "入讀本校",
       "student_resources": "學生資源",
-      "academics": "教務部"
-    }
+      "academics": "教務部",
+        
+      "motto1": "建構神學教育",
+      "motto2": "傳承牧養宣教",
+      "findAProgram": "Find a program",
+      "applyTo": "Apply to Canadian Chinese School of Theology Vancouver",
+      "requestInfo": "Request Info",
+      "knowMoreAboutUs" : "Know more about us"
+    },
   },
-  
   // set the default locale
   defaultLocale: 'en',
   // set the cookie name

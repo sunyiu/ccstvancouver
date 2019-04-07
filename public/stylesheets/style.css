@@ -28,3 +28,49 @@ body.zh {
 a {
   text-decoration: none;
 }
+
+li{
+  list-style: none;
+}
+
+.module{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+  flex-wrap: nowrap;
+}
+.module>.container{
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: flex-start;
+  align-content: stretch;
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .module>.container {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .module>.container {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .module>.container {
+      max-width: 960px;
+  }
+}
