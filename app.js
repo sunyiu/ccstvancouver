@@ -29,13 +29,25 @@ i18n.expressBind(app, {
     "en": {
       "Title": "Canadian Chinese School of Theology Vancouver",
       "motto1": "Building Theological Education",
-      "motto2": "Passing on the legacy of pastoring and mission"
+      "motto2": "Passing on the legacy of pastoring and mission",
+
+      "other_locale": "中文",
+
+      "admissions": "admissions",
+      "student_resources": "student",
+      "academics": "academics"
     },
     "zh": {
       "Title": "加拿大華人神學院温哥華",
       "motto1": "建構神學教育",
       "motto2": "傳承牧養宣教",
-      "languageCSS": "languageCSS"
+
+      "other_locale": "ENG",
+      "other_locale_ref": "./$s?lang=en",
+
+      "admissions": "入讀本校",
+      "student_resources": "學生資源",
+      "academics": "教務部"
     }
   },
   

@@ -19,15 +19,11 @@ router.get('/', function (req, res, next) {
     }
 
     let locale = req.i18n.getLocale(),
-      otherLocale = locale == 'en' ? '中文' : 'ENG',
       otherLocaleRef = locale == 'en'
         ? '/?lang=zh'
         : '/?lang=en';
 
     res.render('index', {
-      title: req.i18n.__("Title"),
-      locale: locale,
-      otherLocale: otherLocale,
       otherLocaleRef: otherLocaleRef
     });
   }

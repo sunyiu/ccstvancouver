@@ -1,0 +1,124 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0.5rem 1rem;
+    flex-wrap: nowrap;
+}
+
+.navbar>.container {
+    position: relative;
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+.navbar-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+}
+
+.navbar-logo {
+    display: block;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .9);
+    width: 60px;
+    background: url(../images/logo_61x70.png) no-repeat;
+    background-size: contain;
+}
+
+.navbar-logo img {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.navbar-items-container {
+    display: block;
+}
+
+.navbar-items-container .title{
+    font-size: 1.35rem;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.nav-link {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: .8rem;
+    color: rgba(0, 0, 0, .5);
+}
+.nav-link:first-child{
+    padding-left: 0;
+}
+
+.nav-link a {
+    color: rgba(0, 0, 0, .7);
+}
+
+@media (max-width: 575px) {
+    .navbar>.container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-logo{
+        margin-right: 0;    
+        height: 50px;    
+    }
+    .navbar-items-container .title{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar>.container {
+        max-width: 540px;
+    }
+
+    .navbar-items-container .title{
+        font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar>.container {
+        max-width: 720px;
+    }
+    .navbar-items-container .title{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar>.container {
+        max-width: 960px;
+    }
+}
