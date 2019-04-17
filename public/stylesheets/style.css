@@ -58,6 +58,17 @@ li{
   padding-bottom: 1.25rem;
 }
 
+
+.footer{
+  margin-top: 1rem;
+  padding-top: 2rem;
+  background-color: black;
+}
+.footer > div.image-container{
+  
+}
+
+
 @media (min-width: 576px) {
   .module>.container {
       max-width: 540px;
