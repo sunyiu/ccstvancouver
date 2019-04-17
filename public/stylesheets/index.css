@@ -60,6 +60,7 @@
     flex-basis: 100%;
     background: url('../images/building_plan.png') no-repeat;
     background-size: cover;
+    height: 150px;    
 }
 .home > .container.news > div.news-item > .context-container{
     flex-basis: 100%;
@@ -80,9 +81,6 @@
 }
 
 @media (min-width: 576px) {
-    .home > .container.news > div.news-item > .image-container{ 
-        height: 150px;
-    }
   }
   
   @media (min-width: 768px) {
