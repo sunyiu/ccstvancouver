@@ -26,14 +26,33 @@ nav.side-nav>ul.nav-links {
 
 nav.side-nav li {
     font-size: 0.75rem;
-    padding: 1rem 0;
     text-transform: uppercase;
 }
 
 @media (max-width: 575px) {
     nav.side-nav{
-        display: none;
+        
     }
+    nav.side-nav>ul.nav-links{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    nav.side-nav > ul.nav-links > li{
+        flex-basis: 33%;
+        height: 65px;
+        position: relative;
+    }
+    nav.side-nav > ul.nav-links > li > span{
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        left: 0;
+        right: 5px;
+        background-color: #0845a8;
+        padding-top: 0.25rem;
+        padding-left: 0.5rem;
+        color: white;
+    }    
 }
 
 @media (min-width: 576px) {}

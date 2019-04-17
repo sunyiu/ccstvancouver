@@ -5,4 +5,5 @@ mixin side-nav(title, items)
         //- div.title= title
         ul.nav-links
             each item in items
-                li.link= item
+                li.link
+                    span= item
