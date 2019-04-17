@@ -40,10 +40,25 @@ i18n.expressBind(app, {
       "findAProgram": "Find a program",
       "applyTo": "Apply to Canadian Chinese School of Theology Vancouver",
       "requestInfo": "Request Info",
-      "knowMoreAboutUs" : "Know more about us"
+      "knowMoreAboutUs" : "Know more about us",
+      "whatHappening": "What's happening at Canadian Chinese School of Theology Vancouver",
+      "buildingNewsTitle": "購買校舍",
+      "buildingNews1": "感謝神，我們憑信心在 3 月 19 日撤除條件，業主也在 3 月 21 日撤除賣買合約內的條件，物業正式成交日期是 2019 年 7 月 16 日。目前，我們已經籌得大約二百七十萬，包括奉獻、免息貸款、認獻等。多謝董事、同工們、同學們、教會和弟兄姊妹奉獻支持購買校舍。",
+      "buildingNews2": "這物業將於 2019 年 7 月 16 日正式成交，我們需要支付約三百二十五萬，這包括物業樓價、5% GST、物業轉換稅、律師費、物業估價費等，其餘二十五萬則用作裝修校舍、校舍搬遷、添置校舍設備、傢俬和發展圖書館等用途。",
+      "buildingNews3": "我們決定不向銀行申請貸款。如接近成交時間還未有足夠資金, 兩位校內同工已表示樂意借出他們的信用貸款額 (Line of Credit) $470,000，給神學院購買校舍之用。另外，一位在卡加利的姊妹也願意借出 $200,000 的信用貸款額。我們深信神必預備超乎人意的供應！",
+      "buildingNews4": "若在物業成交日之前，神感動教會、弟兄姊妹有足夠的奉獻和免息貸款，我們就不需要借用這些有利息的信用貸款額了。「加神溫哥華」的團隊學習專心倚靠神，深信衪是耶和華以勒。(創 22:14)",
+    
+      "progDMin": "DMin",
+      "progDMinDesc": "this is the description of DMin",
+      "progMDiv": "MDiv",
+      "progMts": "MTS",
+      "progDipcs": "DipCS",
+      "progNonDegree": "Non Degree",
+      "progAudit": "Audit"
+
     },
     "zh": {
-      "Title": "加拿大華人神學院温歌廿華",
+      "Title": "加拿大華人神學院温歌華",
       "other_locale": "ENG",
       "other_locale_ref": "./$s?lang=en",
 
@@ -56,7 +71,21 @@ i18n.expressBind(app, {
       "findAProgram": "Find a program",
       "applyTo": "Apply to Canadian Chinese School of Theology Vancouver",
       "requestInfo": "Request Info",
-      "knowMoreAboutUs" : "Know more about us"
+      "knowMoreAboutUs" : "Know more about us",
+      "buildingNewsTitle": "購買校舍",
+      "whatHappening": "What's happening at Canadian Chinese School of Theology Vancouver",
+      "buildingNews1": "感謝神，我們憑信心在 3 月 19 日撤除條件，業主也在 3 月 21 日撤除賣買合約內的條件，物業正式成交日期是 2019 年 7 月 16 日。目前，我們已經籌得大約二百七十萬，包括奉獻、免息貸款、認獻等。多謝董事、同工們、同學們、教會和弟兄姊妹奉獻支持購買校舍。",
+      "buildingNews2": "這物業將於 2019 年 7 月 16 日正式成交，我們需要支付約三百二十五萬，這包括物業樓價、5% GST、物業轉換稅、律師費、物業估價費等，其餘二十五萬則用作裝修校舍、校舍搬遷、添置校舍設備、傢俬和發展圖書館等用途。",
+      "buildingNews3": "我們決定不向銀行申請貸款。如接近成交時間還未有足夠資金, 兩位校內同工已表示樂意借出他們的信用貸款額 (Line of Credit) $470,000，給神學院購買校舍之用。另外，一位在卡加利的姊妹也願意借出 $200,000 的信用貸款額。我們深信神必預備超乎人意的供應！",
+      "buildingNews4": "若在物業成交日之前，神感動教會、弟兄姊妹有足夠的奉獻和免息貸款，我們就不需要借用這些有利息的信用貸款額了。「加神溫哥華」的團隊學習專心倚靠神，深信衪是耶和華以勒。(創 22:14)",
+
+      "progDMin": "教牧學博士",
+      "progDMinDesc": "是為培育及進深裝備教牧領袖而設計的專業博士學位，目的是讓他們所帶領的機構或會眾可領受嶄新的使命，更趨成熟。",
+      "progMDiv": "道學碩士",
+      "progMts": "神學研究碩士",
+      "progDipcs": "基督教研究文憑",
+      "progNonDegree": "非學位學習",
+      "progAudit": "旁聽學習"
     },
   },
   // set the default locale

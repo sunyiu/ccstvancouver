@@ -45,12 +45,13 @@ nav.side-nav li {
 
     nav.side-nav {
         display: block;
-        flex-basis: 0;
-        padding-right: 1.25rem;
-        border-right: 1px dotted #aaa;
+        flex-basis: 30%;
     }
     nav.side-nav>ul.nav-links {
         display: block;
+        height: 100%;
+        padding-right: 1.25rem;
+        border-right: 1px dotted #aaa;
     }
     nav.side-nav li {
         font-size: 0.85rem;
@@ -58,4 +59,8 @@ nav.side-nav li {
     }
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    nav.side-nav{
+        flex-basis: 20%;
+    }
+}
