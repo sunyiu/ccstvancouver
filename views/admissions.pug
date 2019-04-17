@@ -1,0 +1,39 @@
+extends layout
+
+block styles
+    link(rel='stylesheet', href='/stylesheets/side-nav.css')
+    link(rel='stylesheet', href='/stylesheets/admissions.css')
+
+block content
+
+    div.admissions.module
+        div.container
+            include side-nav
+            +side-nav('Admissions', ['apply', 'programs', 'fees', 'financial assistance', 'international student'])
+
+            div.context 
+                div.container.programs
+                    div.program
+                        div.title #{__('progDMin')}
+                        div.desc #{__('progDMinDesc')}
+                        div.detail-btn #{__('fulldetail')}
+                    div.program
+                        div.title #{__('progMDiv')}
+                        div.desc #{__('progDMinDesc')}
+                        div.detail-btn #{__('fulldetail')}
+                    div.program
+                        div.title #{__('progMts')}
+                        div.desc #{__('progDMinDesc')}                        
+                        div.detail-btn #{__('fulldetail')}
+                    div.program   
+                        div.title #{__('progDipcs')}
+                        div.desc #{__('progDMinDesc')}                        
+                        div.detail-btn #{__('fulldetail')}
+                    div.program
+                        div.title #{__('progNonDegree')}
+                        div.desc #{__('progDMinDesc')}                        
+                        div.detail-btn #{__('fulldetail')}
+                    div.program
+                        div.title #{__('progAudit')}
+                        div.desc #{__('progDMinDesc')}                        
+                        div.detail-btn #{__('fulldetail')}

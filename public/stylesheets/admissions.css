@@ -1,0 +1,66 @@
+.admissions .container > .context {
+    position: relative;
+    display: block;
+    flex-basis: 100%;
+}
+
+.admissions .container.programs{
+    display: block;
+}
+.admissions .container.programs .program{
+    position: relative;
+    background-color: #ccc;
+    color: #333;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    
+}
+.admissions .container.programs .program .title{
+    background-color: #870c0c;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+.admissions .container.programs .program .desc{
+    padding: 5px 1rem;
+}
+.admissions .container.programs .program .detail-btn{
+    padding: 5px 1rem;
+    background-color: #ffec42;
+    display: inline-block;
+    color: #333;
+    float: right;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .admissions .container > .context{
+        flex-basis: 70%;
+    }
+    .admissions .container.programs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .admissions .container.programs .program{
+        width: 200px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .admissions .container > .context{
+        flex-basis: 80%;
+    }
+}

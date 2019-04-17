@@ -1,16 +1,44 @@
 extends layout
 
-block style
+block styles
   link(rel='stylesheet', href='/stylesheets/index.css')
 
 block content
+  div.home.module
+    div.container
+      div.top-image-container
+        div.content
+          div.motto #{__('motto1')}
+          div.motto #{__('motto2')}
 
-  div.top-container
-      div.content
-        div.name #{__('Title')}
-        div.motto #{__('motto1')}
-        div.motto #{__('motto2')}
+          ul.actions
+            li.action 
+              i.material-icons arrow_right_alt
+              span #{__('findAProgram')}
+            li.action  
+              i.material-icons arrow_right_alt
+              span #{__('applyTo')}
+            li.action  
+              i.material-icons arrow_right_alt
+              span #{__('requestInfo')}
+            li.action  
+              i.material-icons arrow_right_alt
+              span #{__('knowMoreAboutUs')}
 
-    
+    div.container.news
+        div.title #{__('whatHappening')}
+        div.news-item.building
+          div.image-container
+          div.context-container
+            ul.context
+              li.title #{__('buildingNewsTitle')}
+              li #{__('buildingNews1')}
+              li #{__('buildingNews2')}
+              li #{__('buildingNews3')}
+              li #{__('buildingNews4')}
+
+
+
+
 
   script(src='javascripts/app/index.js')
