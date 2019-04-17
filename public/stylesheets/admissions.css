@@ -2,6 +2,7 @@
     position: relative;
     display: block;
     flex-basis: 100%;
+    padding-top: 1rem;
 }
 
 .admissions .container.programs{
@@ -46,6 +47,7 @@
 
 @media (min-width: 768px) {
     .admissions .container > .context{
+        padding-top: 0;
         flex-basis: 70%;
     }
     .admissions .container.programs{
