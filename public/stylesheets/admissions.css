@@ -5,28 +5,41 @@
     padding-top: 1rem;
 }
 
-.admissions .container.programs{
-    display: block;
+.admissions .context > .container.section.van-characteristics > .header{
+    background: url(../images/vancouver.png) no-repeat center;
+    background-size: cover;
 }
-.admissions .container.programs .program{
+
+.admissions .context > .container.section.programs > .header{
+    background: url(../images/book1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.admissions .container .context ul li{
+    padding-bottom: 1rem;
+}
+.admissions .container .context  ul li:last-child{
+    padding-bottom: 0;
+}
+
+.admissions .program{
     position: relative;
-    background-color: #ccc;
+    background-color: #eee;
     color: #333;
     width: 100%;
     overflow: auto;
     margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    
+    padding-bottom: 0.5rem; 
 }
-.admissions .container.programs .program .title{
+.admissions .program .header{
     background-color: #870c0c;
     padding: 0.5rem 1rem;
     color: white;
 }
-.admissions .container.programs .program .desc{
+.admissions .program .desc{
     padding: 5px 1rem;
 }
-.admissions .container.programs .program .detail-btn{
+.admissions .program .detail-btn{
     padding: 5px 1rem;
     background-color: #ffec42;
     display: inline-block;
@@ -50,12 +63,17 @@
         padding-top: 0;
         flex-basis: 70%;
     }
-    .admissions .container.programs{
+
+    .admissions .container.section{
+        padding-left: 2rem;
+    }
+
+    .admissions .programs .desc-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    .admissions .container.programs .program{
+    .admissions .programs .program{
         width: 200px;
     }
     

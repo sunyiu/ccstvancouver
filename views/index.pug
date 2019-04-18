@@ -25,13 +25,13 @@ block content
               i.material-icons arrow_right_alt
               span #{__('knowMoreAboutUs')}
 
-    div.container.news
-        div.title #{__('whatHappening')}
-        div.news-item.building
-          div.image-container
-          div.context-container
-            ul.context
-              li.title #{__('buildingNewsTitle')}
+    div.container
+      div.context
+        div.header #{__('whatHappening')}
+        div.container.section.can-adjust.building
+            div.header 
+              div.title #{__('buildingNewsTitle')}
+            ul.desc-container
               li #{__('buildingNews1')}
               li #{__('buildingNews2')}
               li #{__('buildingNews3')}
