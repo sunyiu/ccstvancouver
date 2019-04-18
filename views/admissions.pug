@@ -12,38 +12,4 @@ block content
             +side-nav('Admissions', ['apply', 'programs', 'fees', 'financial assistance', 'international student'])
 
             div.context 
-                div.container.section.van-characteristics
-                    div.header 
-                        div.title #{__('vanCharacterTitle')}
-                    ul.desc-container
-                        li.desc #{(__('vanCharacter1'))}
-                        li.desc #{(__('vanCharacter2'))}
-
-                div.container.section.programs
-                    div.header
-                        div.title Programs
-                    ul.desc-container
-                        li.program
-                            div.header #{__('progDMin')}
-                            div.desc #{__('progDMinDesc')}
-                            div.detail-btn #{__('fulldetail')}
-                        li.program
-                            div.header #{__('progMDiv')}
-                            div.desc #{__('progDMinDesc')}
-                            div.detail-btn #{__('fulldetail')}
-                        li.program
-                            div.header #{__('progMts')}
-                            div.desc #{__('progDMinDesc')}                        
-                            div.detail-btn #{__('fulldetail')}
-                        li.program   
-                            div.header #{__('progDipcs')}
-                            div.desc #{__('progDMinDesc')}                        
-                            div.detail-btn #{__('fulldetail')}
-                        li.program
-                            div.header #{__('progNonDegree')}
-                            div.desc #{__('progDMinDesc')}                        
-                            div.detail-btn #{__('fulldetail')}
-                        li.program
-                            div.header #{__('progAudit')}
-                            div.desc #{__('progDMinDesc')}                        
-                            div.detail-btn #{__('fulldetail')}
+                block admission-content

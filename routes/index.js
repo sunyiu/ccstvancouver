@@ -31,12 +31,12 @@ router.get('/', languageChecker, function (req, res, next) {
   });
 });
 
-router.get('/admissions', languageChecker, function (req, res, next) {
+router.get('/admissions-vancouver', languageChecker, function (req, res, next) {
   let otherLocaleRef = req.i18n.getLocale() == 'en'
     ? '/admissions?lang=zh'
     : '/admissions?lang=en';
 
-  res.render('admissions', { otherLocaleRef: otherLocaleRef });
+  res.render('admissions-vancouver', { otherLocaleRef: otherLocaleRef });
 })
 
 

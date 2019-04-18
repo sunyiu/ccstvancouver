@@ -27,7 +27,11 @@ h2{
 }
 
 a {
+  color: black;
   text-decoration: none;
+}
+a:visited{
+  color: black;
 }
 
 li{
@@ -85,6 +89,11 @@ li{
   padding: 1rem;
   font-weight: 300;
 }
+.container.section.no-box > .desc-container{
+  background-color: inherit;
+  padding: 0;
+  padding-top: 1rem;
+}
 .container.section > ul.desc-container > li{
   padding-bottom: 1.25rem;
 }
@@ -109,15 +118,15 @@ li{
       max-width: 540px;
   }
 
-  .container.section.can-adjust{
+  .container.section.side-by-side{
       display: flex;
       align-items: stretch;
   }
-  .container.section.can-adjust > .header{
+  .container.section.side-by-side > .header{
       flex-basis: 30%;
       height: auto;
   }
-  .container.section.can-adjust > .desc-container{
+  .container.section.side-by-side > .desc-container{
       flex-basis: 70%;
   }
 }
@@ -126,10 +135,10 @@ li{
   .module>.container {
       max-width: 720px;
   }
-  .container.section.can-adjust > .header{
+  .container.section.side-by-side > .header{
     flex-basis: 50%;
   } 
-  .container.section.can-adjust > .desc-container{
+  .container.section.side-by-side > .desc-container{
       flex-basis: 50%;
   }
 }
