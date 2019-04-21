@@ -33,8 +33,8 @@ router.get('/', languageChecker, function (req, res, next) {
 
 router.get('/admissions-vancouver', languageChecker, function (req, res, next) {
   let otherLocaleRef = req.i18n.getLocale() == 'en'
-    ? '/admissions?lang=zh'
-    : '/admissions?lang=en';
+    ? '/admissions-vancouver?lang=zh'
+    : '/admissions-vancouver?lang=en';
 
   res.render('admissions-vancouver', { otherLocaleRef: otherLocaleRef });
 })
