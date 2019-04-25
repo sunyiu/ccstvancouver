@@ -5,26 +5,61 @@
     padding-top: 1rem;
 }
 
-.admissions .context > .container.section.van-characteristics > .header{
+ul.desc-container .pt-title{
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+}
+
+
+
+
+.admissions .van-characteristics > .header{
     background: url(../images/vancouver.png) no-repeat center;
     background-size: cover;
 }
 
-.admissions .context > .container.section.programs > .header{
+.admissions .apply > .header{
+    background: url(../images/admission.png) no-repeat left;
+    background-size: cover;
+}
+.admissions .apply > .desc-container > .apply-detail > ul > li{
+    padding-bottom: 1rem;
+    margin-left: 1.25rem;
+    list-style-type: decimal;
+}
+.admissions .apply ul.apply-detail-2{
+    padding-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.admissions .apply ul.apply-detail-2 > li{
+    flex-basis: 32%;
+    background-color: white;
+    border: 1px solid  rgba(135,12,12,1);
+    margin-bottom: 1rem;
+    padding-bottom: none;
+}
+.admissions .apply ul.apply-detail-2 > li > div{
+    padding: 5px;   
+}
+.admissions .apply ul.apply-detail-2 > li > .title{
+    background-color: rgba(135,12,12,0.85);
+    color: white;
+    font-weight: 400;
+}
+.admissions .apply ul.apply-detail-2 > li > .desc{
+
+}
+
+.admissions .programs > .header{
     background: url(../images/book1.jpg) no-repeat center;
     background-size: cover;
 }
-
-.admissions .container .context ul li{
-    padding-bottom: 1rem;
-}
-.admissions .container .context  ul li:last-child{
-    padding-bottom: 0;
-}
-
 .admissions .program{
     position: relative;
-    background-color: #eee;
+    background-color: #ccc;
     color: #333;
     width: 100%;
     overflow: auto;
@@ -56,6 +91,14 @@
 }
 
 @media (min-width: 576px) {
+    .admissions .programs .desc-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .admissions .programs .program{
+        flex-basis: 49%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -66,21 +109,14 @@
 
     .admissions .container.section{
         padding-left: 2rem;
-    }
-
-    .admissions .programs .desc-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .admissions .programs .program{
-        width: 200px;
-    }
-    
+    }    
 }
 
 @media (min-width: 992px) {
     .admissions .container > .context{
         flex-basis: 80%;
+    }
+    .admissions .programs .program{
+        flex-basis: 32.5%;
     }
 }

@@ -1,0 +1,100 @@
+extends admissions
+
+block admission-content
+    div.container.section.van-characteristics
+        div.header 
+            div.title #{__('vanCharacterTitle')}
+        ul.desc-container
+            li.desc 
+                div.pt-title #{__('vanCharacter1Title')}
+                div #{__('vanCharacter1')}
+            li.desc 
+                div.pt-title #{__('vanCharacter2Title')}
+                div #{__('vanCharacter2')}
+            li.desc 
+                div.pt-title #{__('vanCharacter3Title')}
+                div #{__('vanCharacter3')}
+            li.desc 
+                div.pt-title #{__('vanCharacter4Title')}
+                div #{__('vanCharacter4')}
+            li.desc 
+                div.pt-title #{__('vanCharacter5Title')}
+                div #{__('vanCharacter5')}
+            li.desc 
+                div.pt-title #{__('vanCharacter6Title')}
+                div #{__('vanCharacter6')}
+
+    div.container.section.apply
+        div.header
+            div.title #{__('applyTitle')}
+        ul.desc-container
+            li.apply-detail
+                div.pt-title #{__('applySubTitle1')}
+                ul.desc
+                    li #{__('apply1_1')}
+                    li 
+                        div #{__('apply1_2')}
+                        ul.apply-detail-2
+                            li 
+                                div.title #{__('progDMin')}
+                                div.desc #{__('apply1_2a')}
+                            li 
+                                div.title #{__('progMDiv')}
+                                div.desc #{__('apply1_2b')}
+                            li 
+                                div.title #{__('progMts')}
+                                div.desc #{__('apply1_2c')}
+                            li 
+                                div.title #{__('progDipcs')}
+                                div.desc #{__('apply1_2d')}
+                            li 
+                                div.title #{__('progNonDegree')}
+                                div.desc #{__('apply1_2e')}
+                            li 
+                                div.title #{__('progAudit')}
+                                div.desc #{__('apply1_2f')}
+                    li  #{__('apply1_3')}
+                    li
+                        div #{__('apply1_4')}
+                        ul
+                            li #{__('apply1_4a')}
+                            li 
+                                div #{__('apply1_4b')}
+                                ul
+                                    li #{__('apply1_4b1')}
+                                    li #{__('apply1_4b2')}
+                                    li #{__('apply1_4b3')}
+                                    li #{__('apply1_4b4')}
+                            li #{__('apply1_4c')}
+                    li #{__('apply1_5')}
+                    li #{__('apply1_6')}
+
+
+    div.container.section.no-box.programs
+        div.header
+            div.title #{__('program')}
+        ul.desc-container
+            li.program
+                div.header #{__('progDMin')}
+                div.desc #{__('progDMinDesc')}
+                div.detail-btn #{__('fulldetail')}
+            li.program
+                div.header #{__('progMDiv')}
+                div.desc #{__('progDMinDesc')}
+                div.detail-btn #{__('fulldetail')}
+            li.program
+                div.header #{__('progMts')}
+                div.desc #{__('progDMinDesc')}                        
+                div.detail-btn #{__('fulldetail')}
+            li.program   
+                div.header #{__('progDipcs')}
+                div.desc #{__('progDMinDesc')}                        
+                div.detail-btn #{__('fulldetail')}
+            li.program
+                div.header #{__('progNonDegree')}
+                div.desc #{__('progDMinDesc')}                        
+                div.detail-btn #{__('fulldetail')}
+            li.program
+                div.header #{__('progAudit')}
+                div.desc #{__('progDMinDesc')}                        
+                div.detail-btn #{__('fulldetail')}
