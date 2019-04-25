@@ -62,7 +62,6 @@ li{
   padding-bottom: 1.25rem;
 }
 
-
 .container.section{
   padding-bottom: 2rem;
   display: block;
@@ -104,17 +103,25 @@ li{
 
 
 .footer{
-  margin-top: 1rem;
-  padding-top: 2rem;
   background-color: black;
+  color: white;
 }
-.footer > div.image-container{
-  
+.footer > .container{
+  padding: 1rem 0 0.5rem 0;
+  margin: auto;
+}
+.footer > .container > div.copyright-container{
+  background: url(../images/logo_bw.png) no-repeat top center;
+  background-size: 40px;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 50px;
 }
 
 
 @media (min-width: 576px) {
-  .module>.container {
+  .module>.container, 
+  .footer > .container {
       max-width: 540px;
   }
 
@@ -132,7 +139,8 @@ li{
 }
 
 @media (min-width: 768px) {
-  .module>.container {
+  .module>.container,
+  .footer > .container {
       max-width: 720px;
   }
   .container.section.side-by-side > .header{
@@ -144,7 +152,8 @@ li{
 }
 
 @media (min-width: 992px) {
-  .module>.container {
+  .module>.container,
+  .footer > .container {
       max-width: 960px;
   }
 }
