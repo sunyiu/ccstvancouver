@@ -9,7 +9,7 @@ block content
     div.admissions.module
         div.container
             include side-nav
-            +side-nav('Admissions', ['apply', 'programs', 'fees', 'financial assistance', 'international student'])
+            +side-nav('Admissions', [{name:'Vancouver', link:'/admissions-vancouver'}, {name:'apply', link:'/admissions-apply'}, {name:'programs', link:'/admissions-programs'}, {name:'fees', link:''}, {name:'financial assistance', link:''}, {name:'international student', link:''}])
 
             div.context 
                 block admission-content

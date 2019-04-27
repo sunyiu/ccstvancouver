@@ -42,7 +42,7 @@ nav.side-nav li {
         height: 65px;
         position: relative;
     }
-    nav.side-nav > ul.nav-links > li > span{
+    nav.side-nav > ul.nav-links > li > a{
         position: absolute;
         top: 0;
         bottom: 5px;

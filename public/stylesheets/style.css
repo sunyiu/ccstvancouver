@@ -100,7 +100,7 @@ li{
   padding-bottom: 0;
 }
 
-.container.section > ul.desc-container > li.wrap-boxes{
+.container.section > ul.desc-container .wrap-boxes{
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;

@@ -23,7 +23,7 @@ ul.desc-container .pt-title{
     background: url(../images/admission.png) no-repeat left;
     background-size: cover;
 }
-.admissions .apply li.wrap-boxes > div{
+.admissions .apply .wrap-boxes > div{
     flex-basis: 32%;
 }
 .admissions .apply li.numbering{
@@ -38,6 +38,12 @@ ul.desc-container .pt-title{
     position: relative;
     margin-left: 25px;
 }
+.admissions .apply .letters{
+    padding-top: 10px;
+}
+.admissions .apply .letters > div{
+    flex-basis: 49%;
+}
 
 
 
@@ -46,12 +52,18 @@ ul.desc-container .pt-title{
     background: url(../images/book1.jpg) no-repeat center;
     background-size: cover;
 }
+.admissions .container.section.programs > ul.desc-container > li.box-container{
+    padding-bottom: 45px;
+    position: relative;
+}
 .admissions .box-container .detail-btn{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
     padding: 5px 1rem;
     background-color: #ffec42;
     display: inline-block;
     color: #333;
-    float: right;
     border-radius: 5px;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
