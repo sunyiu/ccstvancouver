@@ -82,13 +82,13 @@ li{
   border-radius: 0 1rem 1rem 0;
   text-transform: uppercase;
 }
-.container.section > .desc-container{
+.container.section > ul.desc-container{
   background-color: #ccc;
   color: #333;
   padding: 1rem;
   font-weight: 300;
 }
-.container.section.no-box > .desc-container{
+.container.section.no-box > ul.desc-container{
   background-color: inherit;
   padding: 0;
   padding-top: 1rem;
@@ -99,6 +99,34 @@ li{
 .container.section > ul.desc-container > li:last-child{
   padding-bottom: 0;
 }
+
+.container.section > ul.desc-container .wrap-boxes{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-container{
+  background-color: white;
+  border: 1px solid rgb(135,12,12);
+  border-top: none;
+  margin-bottom: 0.5rem;
+}
+.box-container > div.title{
+  background-color: rgba(135,12,12,1);
+  color: white;
+  font-weight: 400;
+  padding: 0.5rem;
+}
+.box-container > div.context{
+  padding: 0.5rem;  
+}
+
+
+
+
+
+
 
 
 

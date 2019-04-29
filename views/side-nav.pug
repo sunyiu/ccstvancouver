@@ -6,4 +6,4 @@ mixin side-nav(title, items)
         ul.nav-links
             each item in items
                 li.link
-                    span= item
+                    a(href=item.link)= item.name

@@ -39,6 +39,22 @@ router.get('/admissions-vancouver', languageChecker, function (req, res, next) {
   res.render('admissions-vancouver', { otherLocaleRef: otherLocaleRef });
 })
 
+router.get('/admissions-apply', languageChecker, function (req, res, next) {
+  let otherLocaleRef = req.i18n.getLocale() == 'en'
+    ? '/admissions-apply?lang=zh'
+    : '/admissions-apply?lang=en';
+
+  res.render('admissions-apply', { otherLocaleRef: otherLocaleRef });
+})
+
+router.get('/admissions-programs', languageChecker, function (req, res, next) {
+  let otherLocaleRef = req.i18n.getLocale() == 'en'
+    ? '/admissions-programs?lang=zh'
+    : '/admissions-programs?lang=en';
+
+  res.render('admissions-programs', { otherLocaleRef: otherLocaleRef });
+})
+
 
 
 router.get('/language', function (req, res, next) {
