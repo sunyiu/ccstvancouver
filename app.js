@@ -49,6 +49,13 @@ i18n.expressBind(app, {
       "buildingNews3": "我們決定不向銀行申請貸款。如接近成交時間還未有足夠資金, 兩位校內同工已表示樂意借出他們的信用貸款額 (Line of Credit) $470,000，給神學院購買校舍之用。另外，一位在卡加利的姊妹也願意借出 $200,000 的信用貸款額。我們深信神必預備超乎人意的供應！",
       "buildingNews4": "若在物業成交日之前，神感動教會、弟兄姊妹有足夠的奉獻和免息貸款，我們就不需要借用這些有利息的信用貸款額了。「加神溫哥華」的團隊學習專心倚靠神，深信衪是耶和華以勒。(創 22:14)",
     
+      "ccstvancouver": "CCST<br/>Vancouver",
+      "apply": "apply",
+      "programs": "programs",
+      "fees": "fees",
+      "financialAssistance": "Finanical<br/>Assistance",
+      "internationalStudent": "international<br/>student",
+
       "vanCharacterTitle": "加神溫哥華特色",
       "vanCharacter1Title": "學術與靈性兼備",
       "vanCharacter1": "「加神溫哥華」的神學訓練強調靈命進深、學術研究和事奉技巧三方面。因應華人教會的需要, 我們盡心盡力培育靈命成熟的牧者和宣教士, 訓練豐富聖經和神學知識的學者, 和培訓事奉技巧純熟的工人, 回應主的大使命和牧養主的羊。",
@@ -135,6 +142,13 @@ i18n.expressBind(app, {
       "buildingNews2": "這物業將於 2019 年 7 月 16 日正式成交，我們需要支付約三百二十五萬，這包括物業樓價、5% GST、物業轉換稅、律師費、物業估價費等，其餘二十五萬則用作裝修校舍、校舍搬遷、添置校舍設備、傢俬和發展圖書館等用途。",
       "buildingNews3": "我們決定不向銀行申請貸款。如接近成交時間還未有足夠資金, 兩位校內同工已表示樂意借出他們的信用貸款額 (Line of Credit) $470,000，給神學院購買校舍之用。另外，一位在卡加利的姊妹也願意借出 $200,000 的信用貸款額。我們深信神必預備超乎人意的供應！",
       "buildingNews4": "若在物業成交日之前，神感動教會、弟兄姊妹有足夠的奉獻和免息貸款，我們就不需要借用這些有利息的信用貸款額了。「加神溫哥華」的團隊學習專心倚靠神，深信衪是耶和華以勒。(創 22:14)",
+
+      "ccstvancouver": "加神溫哥華",
+      "apply": "申請入學",
+      "programs": "課程",
+      "fees": "學費",
+      "financialAssistance": "經濟援助",
+      "internationalStudent": "國際學生",
       
       "vanCharacterTitle": "加神溫哥華特色",
       "vanCharacter1Title": "學術與靈性兼備",

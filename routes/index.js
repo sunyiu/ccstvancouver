@@ -36,7 +36,7 @@ router.get('/admissions-vancouver', languageChecker, function (req, res, next) {
     ? '/admissions-vancouver?lang=zh'
     : '/admissions-vancouver?lang=en';
 
-  res.render('admissions-vancouver', { otherLocaleRef: otherLocaleRef });
+  res.render('admissions-vancouver', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 0 });
 })
 
 router.get('/admissions-apply', languageChecker, function (req, res, next) {
@@ -44,7 +44,7 @@ router.get('/admissions-apply', languageChecker, function (req, res, next) {
     ? '/admissions-apply?lang=zh'
     : '/admissions-apply?lang=en';
 
-  res.render('admissions-apply', { otherLocaleRef: otherLocaleRef });
+  res.render('admissions-apply', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 1  });
 })
 
 router.get('/admissions-programs', languageChecker, function (req, res, next) {
@@ -52,7 +52,7 @@ router.get('/admissions-programs', languageChecker, function (req, res, next) {
     ? '/admissions-programs?lang=zh'
     : '/admissions-programs?lang=en';
 
-  res.render('admissions-programs', { otherLocaleRef: otherLocaleRef });
+  res.render('admissions-programs', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 2  });
 })
 
 
