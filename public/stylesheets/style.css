@@ -108,7 +108,7 @@ li{
 
 .box-container{
   background-color: white;
-  border: 1px solid rgb(135,12,12);
+  border: 2px solid rgb(135,12,12);
   border-top: none;
   margin-bottom: 0.5rem;
 }

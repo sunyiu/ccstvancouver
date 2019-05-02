@@ -22,6 +22,7 @@ nav.side-nav>.title {
 nav.side-nav>ul.nav-links {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 nav.side-nav li {
@@ -36,7 +37,6 @@ nav.side-nav li {
     nav.side-nav>ul.nav-links{
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: flex-end;
     }
     nav.side-nav > ul.nav-links > li{
         flex-basis: 33%;
@@ -73,7 +73,7 @@ nav.side-nav li {
 
     nav.side-nav {
         display: block;
-        flex-basis: 30%;
+        flex-basis: 25%;
     }
     nav.side-nav>ul.nav-links {
         display: block;

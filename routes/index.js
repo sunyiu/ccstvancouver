@@ -55,7 +55,13 @@ router.get('/admissions-programs', languageChecker, function (req, res, next) {
   res.render('admissions-programs', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 2  });
 })
 
+router.get('/admissions-fees', languageChecker, function (req, res, next) {
+  let otherLocaleRef = req.i18n.getLocale() == 'en'
+    ? '/admissions-fees?lang=zh'
+    : '/admissions-fees?lang=en';
 
+  res.render('admissions-fees', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 3  });
+})
 
 router.get('/language', function (req, res, next) {
   res.render('language', { title: "Canadian Chinese School of Theology" });
