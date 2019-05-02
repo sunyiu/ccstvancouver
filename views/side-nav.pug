@@ -1,9 +1,9 @@
 
 mixin side-nav(title, items)
-    header.side-nav= title
+    header.side-nav= __(title)
     nav.side-nav
         //- div.title= title
         ul.nav-links
-            each item in items
-                li.link
-                    a(href=item.link)= item.name
+            each item, index in items
+                li(class= (index==sideNavHLIndex) ? 'selected link' : 'link')
+                    a(href=item.link)!= __(item.name)

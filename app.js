@@ -49,6 +49,13 @@ i18n.expressBind(app, {
       "buildingNews3": "我們決定不向銀行申請貸款。如接近成交時間還未有足夠資金, 兩位校內同工已表示樂意借出他們的信用貸款額 (Line of Credit) $470,000，給神學院購買校舍之用。另外，一位在卡加利的姊妹也願意借出 $200,000 的信用貸款額。我們深信神必預備超乎人意的供應！",
       "buildingNews4": "若在物業成交日之前，神感動教會、弟兄姊妹有足夠的奉獻和免息貸款，我們就不需要借用這些有利息的信用貸款額了。「加神溫哥華」的團隊學習專心倚靠神，深信衪是耶和華以勒。(創 22:14)",
     
+      "ccstvancouver": "CCST<br/>Vancouver",
+      "apply": "apply",
+      "programs": "programs",
+      "fees": "fees",
+      "financialAssistance": "Finanical<br/>Assistance",
+      "internationalStudent": "international<br/>student",
+
       "vanCharacterTitle": "加神溫哥華特色",
       "vanCharacter1Title": "學術與靈性兼備",
       "vanCharacter1": "「加神溫哥華」的神學訓練強調靈命進深、學術研究和事奉技巧三方面。因應華人教會的需要, 我們盡心盡力培育靈命成熟的牧者和宣教士, 訓練豐富聖經和神學知識的學者, 和培訓事奉技巧純熟的工人, 回應主的大使命和牧養主的羊。",
@@ -96,8 +103,8 @@ i18n.expressBind(app, {
       "apply3_3b":"我在該神學院就讀的成績，可否轉到貴院校呢？我們需要更多有關你所就讀神學院的資料, 例如是否 ATA 認證。也更需要你曾經讀過課堂的成績單及課程大綱(syllabus);日後你成為我們學生後, 申請將學分轉移必須填寫有關表格及付費; 而我們的教務長將審核你的申請。課程的總學分最多不能有多於三份一的非本院學分。",      
       "apply3_4a":"「加神溫哥華」一個學分多少錢？學院有助學金嗎? ",
       "apply3_4b":"本院收費為$892 一科, 申請費$50(不設退還), 有助學金提供給有經濟需要的同學, 但必須先繳交學費, 申請成功後, 我們會以支票形式頒發助學金。",      
-      "applySubTitle4":"申請表及相關文件請與註冊處聯絡",
-            
+      "applySubTitle4":"* 申請表及相關文件請與註冊處聯絡",
+                  
       "program": "Program",
       "progDMin": "DMin",
       "progDMinDesc": "本課程是為培育及進深裝備教牧領袖而設計的專業博士學位，目的是讓他們所帶領的機構或會眾可領受嶄新的使命，更趨成熟。",
@@ -110,7 +117,59 @@ i18n.expressBind(app, {
       "progNonDegree": "Non Degree",
       "progNonDegreeDesc": "申請人如未能確定所要修讀的課程, 可以先選讀「非學位課程」, 用這種學習方式去探索神學進修的方向。",
       "progAudit": "Audit",
-      "progAuditDesc": "本院大部份的課堂均設有有限的旁聽席, 申請者填報旁聽生申請表及繳交$20 申請費, 經審核後便可以成為本院旁聽生。"      
+      "progAuditDesc": "本院大部份的課堂均設有有限的旁聽席, 申請者填報旁聽生申請表及繳交$20 申請費, 經審核後便可以成為本院旁聽生。",
+      "fulldetail": "full details",
+
+      "applicationFeeTitle": "Application Fees",
+      "applicationFeesAndDeposits": "Application Fees and Deposits",
+      "applicationFee1": "Application Fee",
+      "applicationFee2": "DMin Application Fee",
+      "applicationFee3": "Application Fee for Auditors",
+      "applicationFee4": "Tuition Deposit (non-refundable",
+      "applicationFee5": "Tuition Deposit for DMin (non-refundable)",
+
+      "TuitionAndBasicFees": "Tuition and Basic Fees",
+      "tuitionAndBasicFee1": "Tuition (per 3 credit hour course for graduate program)",
+      "tuitionAndBasicFee2": "Student Activity Fee per course",
+      "tuitionAndBasicFee3": "Resource Fee Per course",
+      "tuitionAndBasicFee4": "Administration Fee per course (non-refundable)",
+      "tuitionAndBasicFee5": "Total Tuition and Fees (per 3 credit hour graduate course)",
+
+      "doctorOfMinistryTuitionFees": "Doctor of Ministry Tuition Fees",
+      "dMinFee1": "Registration Fee per school year",
+      "dMinFee2": "Tuition per course",
+      
+      "generalFeeSchedule": "General Fee Schedule",
+      "generalFee1": "Audit (per course)",
+      "generalFee2": "Audit (per academic year)",
+      "generalFee3": "Letter of Permission",
+      "generalFee4": "Official Statement / Letter",
+      "generalFee5": "Official Transcript",
+      "generalFee6": "Official Transcript - additional requests (ordered at the same time)",
+      "generalFee7": "Official Transcript - rush service",
+      "generalFee8": "Transfer Credit Evaluation",
+      "generalFee9": "DMin Transfer Credit Request Fee (per course)",
+
+      "dropOffTitle": "關於退科及選科(2018 五月開始生效,詳情請參考學生手冊)",
+      "dropOff1":"註冊及交費: 所有修讀學分的科目必須在上課前兩星期註冊及交費。",
+      "dropOff2":"退科及全款退還: 所有退科手續必須在課堂已上兩節後立刻辦理, 以確保可全款退還。例如:恆常課程需在第二堂下課後辦理退科手續; 一星期密集課程需在第二天上課前辦理退科手續。",
+      "dropOff3":"退科最後日期: 所有學科最後退科日期為課堂第五節後, 同學必須辦理有關手續以確保成績單上顯示 withdrawal 而不是 fail。例如:恆常課程需在第五堂下課後辦理退科手續; 一星期密集課程需在第三天上課前辦理退科手續。",
+      "dropOff4":"如因突發事故需要退科,請以書面或電郵通知註冊部同工。",
+      "dropOff5":"退款參考表格",
+      "dropOffDate":"退科最後日期",
+      "dropOffDate1":"課堂第二節完結前退課 (約為課堂的 17%)",
+      "dropOffDate2": "課堂第二節至第五節之間 (約為課堂的 40%)",
+      "dropOffDate3": "課堂第五節以後",
+      "withdrawalAndRefund": "退科與退款",
+      "transcript": "成績記錄",
+      "na": "N/A",
+      "gradeW": "W (withdraw)",
+      "gradeF": "F 不合格",
+      "feeNote": "* 以上為 2018-2019 年度收費, 如有更新, 以註冊處最新價目為準。"
+
+
+
+
 
     },
     "zh": {
@@ -135,6 +194,13 @@ i18n.expressBind(app, {
       "buildingNews2": "這物業將於 2019 年 7 月 16 日正式成交，我們需要支付約三百二十五萬，這包括物業樓價、5% GST、物業轉換稅、律師費、物業估價費等，其餘二十五萬則用作裝修校舍、校舍搬遷、添置校舍設備、傢俬和發展圖書館等用途。",
       "buildingNews3": "我們決定不向銀行申請貸款。如接近成交時間還未有足夠資金, 兩位校內同工已表示樂意借出他們的信用貸款額 (Line of Credit) $470,000，給神學院購買校舍之用。另外，一位在卡加利的姊妹也願意借出 $200,000 的信用貸款額。我們深信神必預備超乎人意的供應！",
       "buildingNews4": "若在物業成交日之前，神感動教會、弟兄姊妹有足夠的奉獻和免息貸款，我們就不需要借用這些有利息的信用貸款額了。「加神溫哥華」的團隊學習專心倚靠神，深信衪是耶和華以勒。(創 22:14)",
+
+      "ccstvancouver": "加神溫哥華",
+      "apply": "申請入學",
+      "programs": "課程",
+      "fees": "學費",
+      "financialAssistance": "經濟援助",
+      "internationalStudent": "國際學生",
       
       "vanCharacterTitle": "加神溫哥華特色",
       "vanCharacter1Title": "學術與靈性兼備",
@@ -183,7 +249,7 @@ i18n.expressBind(app, {
       "apply3_3b":"我在該神學院就讀的成績，可否轉到貴院校呢？我們需要更多有關你所就讀神學院的資料, 例如是否 ATA 認證。也更需要你曾經讀過課堂的成績單及課程大綱(syllabus);日後你成為我們學生後, 申請將學分轉移必須填寫有關表格及付費; 而我們的教務長將審核你的申請。課程的總學分最多不能有多於三份一的非本院學分。",      
       "apply3_4a":"「加神溫哥華」一個學分多少錢？學院有助學金嗎? ",
       "apply3_4b":"本院收費為$892 一科, 申請費$50(不設退還), 有助學金提供給有經濟需要的同學, 但必須先繳交學費, 申請成功後, 我們會以支票形式頒發助學金。",      
-      "applySubTitle4":"申請表及相關文件請與註冊處聯絡",
+      "applySubTitle4":"* 申請表及相關文件請與註冊處聯絡",
       
       "program": "課程",
       "progDMin": "教牧學博士",
@@ -197,7 +263,55 @@ i18n.expressBind(app, {
       "progNonDegree": "非學位學習",
       "progNonDegreeDesc": "申請人如未能確定所要修讀的課程, 可以先選讀「非學位課程」, 用這種學習方式去探索神學進修的方向。",
       "progAudit": "旁聽學習",
-      "progAuditDesc": "本院大部份的課堂均設有有限的旁聽席, 申請者填報旁聽生申請表及繳交$20 申請費, 經審核後便可以成為本院旁聽生。"
+      "progAuditDesc": "本院大部份的課堂均設有有限的旁聽席, 申請者填報旁聽生申請表及繳交$20 申請費, 經審核後便可以成為本院旁聽生。",
+      "fulldetail": "全部細節",    
+
+      "applicationFeeTitle": "學費及有關費用",
+      "applicationFeesAndDeposits": "申請費用〈不設退還〉及學費按金",
+      "applicationFee1": "申請費",
+      "applicationFee2": "教牧學博士申請費",
+      "applicationFee3": "旁聽生申請費",
+      "applicationFee4": "學費按金 (不獲退還)",
+      "applicationFee5": "教牧學博士學費按金 (不獲退還)",
+
+      "TuitionAndBasicFees": "學費及基本費用",
+      "tuitionAndBasicFee1": "碩士課程每學科",
+      "tuitionAndBasicFee2": "每學科學生活動費",
+      "tuitionAndBasicFee3": "每學科資源費",
+      "tuitionAndBasicFee4": "每學科行政費 (不獲退還)",
+      "tuitionAndBasicFee5": "每碩士學科學費及基本費用總計",
+
+      "doctorOfMinistryTuitionFees": "教牧學博士學費",
+      "dMinFee1": "每學年隊列學習註册費",
+      "dMinFee2": "每科學費",
+      
+      "generalFeeSchedule": "一般費用",
+      "generalFee1": "每學科旁聽學費",
+      "generalFee2": "每年旁聽生留位費",
+      "generalFee3": "申請批准信費",
+      "generalFee4": "申請證明文件費",
+      "generalFee5": "申請學業成績表正本",
+      "generalFee6": "申請第二份成績表正本費",
+      "generalFee7": "申請學業成績表正本–特快服務費",
+      "generalFee8": "申請學分承認或豁免評估費",
+      "generalFee9": "教牧學博士申請學分承認評估費 (每門課)",
+
+      "dropOffTitle": "關於退科及選科(2018 五月開始生效,詳情請參考學生手冊)",
+      "dropOff1":"註冊及交費: 所有修讀學分的科目必須在上課前兩星期註冊及交費。",
+      "dropOff2":"退科及全款退還: 所有退科手續必須在課堂已上兩節後立刻辦理, 以確保可全款退還。例如:恆常課程需在第二堂下課後辦理退科手續; 一星期密集課程需在第二天上課前辦理退科手續。",
+      "dropOff3":"退科最後日期: 所有學科最後退科日期為課堂第五節後, 同學必須辦理有關手續以確保成績單上顯示 withdrawal 而不是 fail。例如:恆常課程需在第五堂下課後辦理退科手續; 一星期密集課程需在第三天上課前辦理退科手續。",
+      "dropOff4":"如因突發事故需要退科,請以書面或電郵通知註冊部同工。",
+      "dropOff5":"退款參考表格",
+      "dropOffDate":"退科最後日期",
+      "dropOffDate1":"課堂第二節完結前退課 (約為課堂的 17%)",
+      "dropOffDate2": "課堂第二節至第五節之間 (約為課堂的 40%)",
+      "dropOffDate3": "課堂第五節以後",
+      "withdrawalAndRefund": "退科與退款",
+      "transcript": "成績記錄",
+      "na": "N/A",
+      "gradeW": "W (withdraw)",
+      "gradeF": "F 不合格",
+      "feeNote": "* 以上為 2018-2019 年度收費, 如有更新, 以註冊處最新價目為準。"    
     },
   },
   // set the default locale
