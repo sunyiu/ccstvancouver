@@ -275,6 +275,5 @@
 	"gradeW": "W (withdraw)",
 	"gradeF": "F 不合格",
 	"feeNote": "* 以上為 2018-2019 年度收費, 如有更新, 以註冊處最新價目為準。",
-	"dMin3a_pt": "dMin3a_pt",
-	"dMin3c_pt": "dMin3c_pt"
+	"dMin3a_pt": "dMin3a_pt"
 }
