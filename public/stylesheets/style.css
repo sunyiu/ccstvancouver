@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: black;
   color: #888;
   font-family: 'Roboto', 'Noto Sans SC', sans-serif;
   font-size: 1rem;
@@ -40,6 +40,7 @@ li{
 
 .module{
   position: relative;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
