@@ -5,23 +5,36 @@
     padding-top: 1rem;
 }
 
-ul.desc-container .pt-title{
+.container.section > ul.desc-container > li.pt-title{
     font-weight: 400;
     font-size: 1.25rem;
-    padding-bottom: 5px;
 }
 
 li.indent-1{
     position: relative;
     margin-left: 25px;
 }
+li.indent-2{
+    margin-left: 50px;
+}
 
 .admissions li.numbering{
-    display: flex;
-    flex-wrap: nowrap;
+    position: relative;
 }
-.admissions li.numbering *:first-child {
+.admissions li.numbering > *:first-child {
+    float: left;
     min-width: 25px;
+    width: 25px;
+    max-width: 25px;
+}
+.admissions li.numbering > *:last-child{
+    margin-left: 25px;
+}
+
+.admissions .cost-table {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
 }
 
 .admissions .note{
@@ -84,6 +97,26 @@ li.indent-1{
     font-size: 0.85rem;
 }
 
+.program-detail > div.title {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+.program-detail > div.title span{
+    background-color: #ccc;
+    color: white;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.program-detail ul.numbering{
+    margin-top: -15px;
+}
+.program-detail ul.numbering li{
+    list-style-type: lower-roman;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
 
 
 .admissions .fees > .header{
@@ -96,11 +129,6 @@ li.indent-1{
 }
 .admissions .fees .border-top{
     border-top: 1px solid #333;
-}
-.admissions .fees li.cost-table {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 25px;
 }
 .admissions .fees th.percentage{
     width: 80px;

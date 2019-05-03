@@ -73,7 +73,7 @@ nav.side-nav li {
 
     nav.side-nav {
         display: block;
-        flex-basis: 25%;
+        flex-basis: 20%;
     }
     nav.side-nav>ul.nav-links {
         display: block;

@@ -9,11 +9,11 @@ block admission-content
             li.box-container
                 div.title #{__('progDMin')}
                 div.context #{__('progDMinDesc')}
-                div.detail-btn #{__('fulldetail')}
+                a(class='detail-btn', href='#prog-dmin') #{__('fulldetail')}
             li.box-container
                 div.title #{__('progMDiv')}
                 div.context #{__('progMDivDesc')}
-                div.detail-btn #{__('fulldetail')}
+                a(class='detail-btn', href='#prog-mdiv') #{__('fulldetail')}
             li.box-container
                 div.title #{__('progMts')}
                 div.context #{__('progMtsDesc')}                        
@@ -30,3 +30,79 @@ block admission-content
                 div.title #{__('progAudit')}
                 div.context #{__('progAuditDesc')}                        
                 div.detail-btn #{__('fulldetail')}
+    
+    div(id='prog-dmin', class='container section program-detail')
+        div.title 
+            span #{__('progDMin')}
+        ul.desc-container
+            li.pt-title #{__('dMin1')}
+            li.indent-1 #{__('dMin1_1')}
+            li.pt-title #{__('dMin2')}
+            li.indent-1.numbering 
+                div 1. 
+                div #{__('dMin2a')}
+            li.indent-1.numbering
+                div 2.
+                div #{__('dMin2b')}
+            li.indent-1.numbering 
+                div 3. 
+                div #{__('dMin2c')}
+            li.indent-1.numbering
+                div 4.
+                div #{__('dMin2d')}
+            li.indent-1.numbering 
+                div 5. 
+                div #{__('dMin2e')}
+            li.indent-1.numbering
+                div 6.
+                div #{__('dMin2f')}
+            li.pt-title #{__('dMin3')}
+            li.indent-1.numbering
+                div 1.
+                div.cost-table 
+                    span #{__('dMin3a')}
+                    span #{__('dMin3a_pt')}
+            li.indent-2
+                ul.numbering 
+                    li #{__('dMin3a_1')}
+                    li #{__('dMin3a_2')}
+                    li #{__('dMin3a_3')}
+                    li #{__('dMin3a_4')}
+                    li #{__('dMin3a_5')}
+            li.indent-1.numbering
+                div 2.
+                div.cost-table 
+                    span #{__('dMin3b')}
+                    span #{__('dMin3a_pt')}
+            li.indent-2
+                ul.numbering
+                    li #{__('dMin3b_1')}
+                    li #{__('dMin3b_2')}
+                    li #{__('dMin3b_3')}
+            li.indent-1.numbering
+                div 3.
+                div.cost-table 
+                    span #{__('dMin3c')}
+                    span #{__('dMin3c_pt')}
+            li.indent-2
+                ul.numbering
+                    li #{__('dMin3c_1')}
+                    li #{__('dMin3c_2')}
+                    li #{__('dMin3c_3')}
+                    li #{__('dMin3c_4')}
+                    li #{__('dMin3c_5')}
+                    li #{__('dMin3c_6')}
+                    li #{__('dMin3c_7')}
+                    li #{__('dMin3c_8')}
+                    li #{__('dMin3c_9')}
+                    li #{__('dMin3c_10')}
+                    li #{__('dMin3c_11')}
+                    li #{__('dMin3c_12')}   
+
+    div(id='prog-mdiv', class='container section program-detail')    
+        div.title 
+            span #{__('progMDiv')}
+        ul.desc-container
+            li.pt-title #{__('mDiv1')}
+            li.indent-1 #{__('mDiv1_1')}
+            li.pt-title #{__('mDiv2')}
