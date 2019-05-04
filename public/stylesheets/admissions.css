@@ -42,6 +42,16 @@ li.indent-2{
     font-weight: 400;
 }
 
+.admissions ul.numbering{
+    margin-top: -15px;
+}
+.admissions ul.numbering li{
+    list-style-type: lower-roman;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+
 
 
 .admissions .van-characteristics > .header{
@@ -108,14 +118,6 @@ li.indent-2{
     padding-right: 15px;
 }
 
-.program-detail ul.numbering{
-    margin-top: -15px;
-}
-.program-detail ul.numbering li{
-    list-style-type: lower-roman;
-    margin-left: 20px;
-    padding-bottom: 5px;
-}
 
 
 
@@ -147,6 +149,19 @@ li.indent-2{
     border-bottom: 1px solid #888;
 }
 
+.admissions .finanical > .header{
+    background: url(../images/piggy.png) no-repeat center;
+    background-size: cover;
+}
+
+.admissions .international > .header{
+    background: url(../images/airplane.png) no-repeat center;
+    background-size: cover;
+}
+.admissions .international ul.desc-container{
+    padding-bottom: 2rem;
+}
+
 
 
 @media (max-width: 575px) {
@@ -159,7 +174,7 @@ li.indent-2{
         justify-content: space-between;
     }
     .admissions .programs .box-container{
-        flex-basis: 49%;
+        flex-basis: 48%;
     }
 }
 
