@@ -63,6 +63,22 @@ router.get('/admissions-fees', languageChecker, function (req, res, next) {
   res.render('admissions-fees', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 3  });
 })
 
+router.get('/admissions-finanical', languageChecker, function (req, res, next) {
+  let otherLocaleRef = req.i18n.getLocale() == 'en'
+    ? '/admissions-finanical?lang=zh'
+    : '/admissions-finanical?lang=en';
+
+  res.render('admissions-finanical', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 4  });
+})
+
+router.get('/admissions-international', languageChecker, function (req, res, next) {
+  let otherLocaleRef = req.i18n.getLocale() == 'en'
+    ? '/admissions-international?lang=zh'
+    : '/admissions-international?lang=en';
+
+  res.render('admissions-international', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 5  });
+})
+
 router.get('/language', function (req, res, next) {
   res.render('language', { title: "Canadian Chinese School of Theology" });
 });

@@ -319,9 +319,24 @@ i18n.expressBind(app, {
       "na": "N/A",
       "gradeW": "W (withdraw)",
       "gradeF": "F 不合格",
-      "feeNote": "* 以上為 2018-2019 年度收費, 如有更新, 以註冊處最新價目為準。"
+      "feeNote": "* 以上為 2018-2019 年度收費, 如有更新, 以註冊處最新價目為準。",
 
-
+      "finanicalAssistance1": "助學金",
+      "finanicalAssistance1_detail": "本院設有「加神溫哥華」助學金, 專為在經濟上有需要的同學而設。歡迎有需要同學每學期填報申請。學生最多可以獲得學費的半數資助。申請者必須符合以下資格",
+      "finanicalAssistance1_1": "為本院全時間學生(每學期修讀三科或以上)",
+      "finanicalAssistance1_2": "與助學金審批委員會會面",
+      "finanicalAssistance2": "獎學金",
+      "finanicalAssistance2_detail": "本院設有獎學金, 為成績優異的全時間同學而設, 頒發給每學年平均積分點最高的三位學生。",
+      "finanicalAssistance3": "魏吳惠貞女士紀念助學/奬學金",
+      "finanicalAssistance3_detail": "魏吳惠貞女士紀念助學/獎學金專為學術成績優異，或在經濟上有困難的全時間學生(每學期修讀最少三學科)而設。這個助學/獎學金由魏吳惠貞女士的家人於 2016 年設立，為懷念魏吳惠貞女士永遠留在家人心中的愛。每學年頒發一次。申請者必須符合以下資格",
+      "finanicalAssistance3_1": "學生有經濟上的困難或成績優異",
+      "finanicalAssistance3_2": "學生必須擁有基督徒品格",
+      "finanicalAssistance3_3": "學生的總平均分需有 3.0 或以上",
+      "finanicalAssistance3_4": "每年不超過 3 位",
+      "finanicalAssistance4": "配偶優惠",
+      "finanicalAssistance4_detail": "與配偶一同在神學院進修的全時間學生, 可以為全時間或部份時間修讀學分的配偶申請優惠。配偶登記修讀該學期課堂, 必須即時通知註冊處, 符合資格者將獲得半價優惠。",   
+      
+      "internationStudent1": "本院暫時未能取錄國際學生。"
 
 
 
@@ -619,7 +634,24 @@ i18n.expressBind(app, {
       "na": "N/A",
       "gradeW": "W (withdraw)",
       "gradeF": "F 不合格",
-      "feeNote": "* 以上為 2018-2019 年度收費, 如有更新, 以註冊處最新價目為準。"    
+      "feeNote": "* 以上為 2018-2019 年度收費, 如有更新, 以註冊處最新價目為準。",
+      
+      "finanicalAssistance1": "助學金",
+      "finanicalAssistance1_detail": "本院設有「加神溫哥華」助學金, 專為在經濟上有需要的同學而設。歡迎有需要同學每學期填報申請。學生最多可以獲得學費的半數資助。申請者必須符合以下資格",
+      "finanicalAssistance1_1": "為本院全時間學生(每學期修讀三科或以上)",
+      "finanicalAssistance1_2": "與助學金審批委員會會面",
+      "finanicalAssistance2": "獎學金",
+      "finanicalAssistance2_detail": "本院設有獎學金, 為成績優異的全時間同學而設, 頒發給每學年平均積分點最高的三位學生。",
+      "finanicalAssistance3": "魏吳惠貞女士紀念助學/奬學金",
+      "finanicalAssistance3_detail": "魏吳惠貞女士紀念助學/獎學金專為學術成績優異，或在經濟上有困難的全時間學生(每學期修讀最少三學科)而設。這個助學/獎學金由魏吳惠貞女士的家人於 2016 年設立，為懷念魏吳惠貞女士永遠留在家人心中的愛。每學年頒發一次。申請者必須符合以下資格",
+      "finanicalAssistance3_1": "學生有經濟上的困難或成績優異",
+      "finanicalAssistance3_2": "學生必須擁有基督徒品格",
+      "finanicalAssistance3_3": "學生的總平均分需有 3.0 或以上",
+      "finanicalAssistance3_4": "每年不超過 3 位",
+      "finanicalAssistance4": "配偶優惠",
+      "finanicalAssistance4_detail": "與配偶一同在神學院進修的全時間學生, 可以為全時間或部份時間修讀學分的配偶申請優惠。配偶登記修讀該學期課堂, 必須即時通知註冊處, 符合資格者將獲得半價優惠。",   
+      
+      "internationStudent1": "本院暫時未能取錄國際學生。"
     },
   },
   // set the default locale
