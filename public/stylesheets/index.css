@@ -2,6 +2,9 @@
     padding-top: 0;
     display: block;
 }
+.home a{
+    color: white;
+}
 .home>.container>.top-image-container{
     background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), /* bottom, image */
     url(../images/students.png);

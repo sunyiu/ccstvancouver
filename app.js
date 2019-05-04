@@ -353,8 +353,8 @@ i18n.expressBind(app, {
         
       "motto1": "建構神學教育",
       "motto2": "傳承牧養宣教",
-      "findAProgram": "Find a program",
-      "applyTo": "Apply to Canadian Chinese School of Theology Vancouver",
+      "findAProgram": "尋找課程",
+      "applyTo": "申請入學加拿大華人神學院温歌華",
       "requestInfo": "Request Info",
       "knowMoreAboutUs" : "Know more about us",
       "buildingNewsTitle": "購買校舍",
