@@ -72,7 +72,6 @@ li.indent-2{
 
 .admissions .apply li.wrap-boxes {
     position: relative;
-    margin-left: 25px;
 }
 .admissions .apply .letters{
     padding-top: 10px;
@@ -91,6 +90,9 @@ li.indent-2{
 .admissions .container.section.programs > ul.desc-container > li.box-container{
     padding-bottom: 45px;
     position: relative;
+}
+.admissions .programs .box-container > div.title{
+    font-size: 1.25rem;
 }
 .admissions .box-container .detail-btn{
     position: absolute;
