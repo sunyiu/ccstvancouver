@@ -31,6 +31,7 @@ router.get('/', languageChecker, function (req, res, next) {
   });
 });
 
+/* GET admissions pages. */
 router.get('/admissions-vancouver', languageChecker, function (req, res, next) {
   let otherLocaleRef = req.i18n.getLocale() == 'en'
     ? '/admissions-vancouver?lang=zh'
@@ -79,6 +80,17 @@ router.get('/admissions-international', languageChecker, function (req, res, nex
   res.render('admissions-international', { otherLocaleRef: otherLocaleRef, sideNavHLIndex: 5  });
 })
 
+/* Get student resources page */
+router.get('/student-resources', languageChecker, function (req, res, next) {
+  let otherLocaleRef = req.i18n.getLocale() == 'en'
+    ? '/student-resources?lang=zh'
+    : '/student-resources?lang=en';
+
+  res.render('student-resources', { otherLocaleRef: otherLocaleRef });
+})
+
+
+/* Get language page */
 router.get('/language', function (req, res, next) {
   res.render('language', { title: "Canadian Chinese School of Theology" });
 });
