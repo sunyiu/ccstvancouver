@@ -1,0 +1,46 @@
+.student-resources .library > .header{
+    background: url(../images/library.png) no-repeat center;
+    background-size: cover;
+}
+
+.student-resources .weekly-meeting > .header{
+    background: url(../images/meetings.png) no-repeat center;
+    background-size: cover;  
+}
+
+.student-resources .student-camp > .header{
+    background: url(../images/trees.png) no-repeat center;
+    background-size: cover;  
+}
+
+.student-resources .student-union > .header{
+    background: url(../images/colorpencils.png) no-repeat center;
+    background-size: cover;  
+}
+
+.student-resources .singspiration > .header{
+    background: url(../images/singspiration.png) no-repeat center;
+    background-size: cover;  
+}
+
+.student-resources .retreat > .header{
+    background: url(../images/pray.png) no-repeat center;
+    background-size: cover;  
+}
+
+@media (min-width: 768px) {
+    .student-resources .container > .context{
+        padding-top: 0;
+        flex-basis: 70%;
+    }  
+
+    .student-resources .container.section{
+        padding-left: 2rem;
+    }  
+}
+
+@media (min-width: 992px) {
+    .student-resources .container > .context{
+        flex-basis: 80%;
+    }
+}

@@ -1,0 +1,55 @@
+extends layout
+
+block styles
+    link(rel='stylesheet', href='/stylesheets/side-nav.css')
+    link(rel='stylesheet', href='/stylesheets/student-resources.css')
+
+block content
+
+    div.student-resources.module
+        div.container
+            include side-nav
+            +side-nav('studentResources', [
+                {name:'library', link:'#library'}, 
+                {name:'weeklyMeeting', link:'#weekly-meeting'}, 
+                {name:'studentUnion', link:'#student-union'}, 
+                {name:'studentCamp', link:'#student-camp'}, 
+                {name:'retreat', link:'#retreat'}, 
+                {name:'singspiration', link:'#singspiration'}])
+
+            div.context
+                div(class='container section library', id='library')
+                    div.header
+                        div.title #{__('library')}
+                    ul.desc-container
+                        li #{__('libraryDesc')}
+
+                div(class='container section weekly-meeting', id='weekly-meeting')
+                    div.header
+                        div.title #{__('weeklyMeeting')}
+                    ul.desc-container
+                        li #{__('weeklyMeetingDesc')}
+
+                div(class='container section student-union', id='student-union') 
+                    div.header
+                        div.title #{__('studentUnion')}
+                    ul.desc-container
+                        li #{__('studentUnionDesc')}
+
+                div(class='container section student-camp', id='student-camp') 
+                    div.header
+                        div.title #{__('studentCamp')}
+                    ul.desc-container
+                        li #{__('studentCampDesc')}
+
+                div(class='container section retreat', id='retreat') 
+                    div.header
+                        div.title #{__('retreat')}
+                    ul.desc-container
+                        li #{__('retreatDesc')}  
+
+                div(class='container section singspiration', id='singspiration') 
+                    div.header
+                        div.title #{__('singspiration')}
+                    ul.desc-container
+                        li #{__('singspirationDesc')} 
