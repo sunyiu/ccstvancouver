@@ -1,4 +1,5 @@
-.container.section.instructor1 .header{
+.container.section.instructor1 .header,
+.container.section.special_instructor .header{
     background: url('../images/books.png') no-repeat;
     background-size: cover;
 }

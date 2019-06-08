@@ -90,7 +90,7 @@ li{
   text-transform: uppercase;
 }
 .container.section > ul.desc-container{
-  background-color: #ccc;
+  /* background-color: #ccc; */
   color: #333;
   padding: 1rem;
   font-weight: 300;

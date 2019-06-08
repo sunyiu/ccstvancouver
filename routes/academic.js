@@ -42,5 +42,15 @@ router.get('/instructors', languageChecker, function (req, res, next) {
     });
   });
   
+  router.get('/instructors2', languageChecker, function (req, res, next) {
+    let otherLocaleRef = req.i18n.getLocale() == 'en'
+      ? '/?lang=zh'
+      : '/?lang=en';
+  
+    res.render('academic/instructors2', {
+      otherLocaleRef: otherLocaleRef
+    });
+  });
+  
 
 module.exports = router;
