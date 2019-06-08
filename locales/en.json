@@ -1,12 +1,11 @@
 {
-	"Title": "加拿大華人神學院温歌華",
+	"Title": "Canadian Chinese School of Theology Vancouver",
 	"other_locale": "ENG",
 	"other_locale_ref": "./$s?lang=en",
-	"copyright": "© 2019 加拿大華人神學院温歌華 – 版權所有。",
+	"copyright": "Copyright © 2019 Canadian Chinese School of Theology Vancouver。",
 	"admissions": "入讀本校",
 	"studentResources": "學生資源",
 	"academics": "教務部",
-
 	"motto1": "建構神學教育",
 	"motto2": "傳承牧養宣教",
 	"findAProgram": "尋找課程",
@@ -20,7 +19,6 @@
 	"buildingNews3": "我們決定不向銀行申請貸款。如接近成交時間還未有足夠資金, 兩位校內同工已表示樂意借出他們的信用貸款額 (Line of Credit) $470,000，給神學院購買校舍之用。另外，一位在卡加利的姊妹也願意借出 $200,000 的信用貸款額。我們深信神必預備超乎人意的供應！",
 	"buildingNews4": "若在物業成交日之前，神感動教會、弟兄姊妹有足夠的奉獻和免息貸款，我們就不需要借用這些有利息的信用貸款額了。「加神溫哥華」的團隊學習專心倚靠神，深信衪是耶和華以勒。(創 22:14)",
 	"ccstvancouver": "加神溫哥華",
-
 	"apply": "申請入學",
 	"programs": "課程",
 	"fees": "學費",
@@ -110,7 +108,8 @@
 	"dMin3b_1": "事工研究提案",
 	"dMin3b_2": "事工研究項目",
 	"dMin3b_3": "事工研究論文",
-	"dMin3c": "選修科目 (4 x 3 學分):12 學分（只選 4 課）",
+	"dMin3c": "選修科目",
+	"dMin3c_pt": "(4 x 3 學分):12 學分（只選 4 課）",
 	"dMin3c_1": "機構組織發展與計劃",
 	"dMin3c_2": "變動與衝突管理",
 	"dMin3c_3": "導引、裝備與建立團隊",
@@ -311,7 +310,6 @@
 	"serviceOpportunity": "事奉機會",
 	"serviceOpportunity1": "教會及機構招聘",
 	"serviceOpportunity2": "短宣機會",
-
 	"instructor": "教學同工",
 	"emeritusProfessor": " 榮譽教授",
 	"drJohnHsu": " 許道良牧師博士",
@@ -358,7 +356,8 @@
 	"drSamuelHo3": "DTS. Columbia Evangelical Seminary, USA",
 	"drSamuelHo4": "PhD. Graduate Theological Union, USA",
 	"drSamuelHo5": "S.T.M. Yale University Divinity School, USA",
-	"drArchieHui": "Ph.D. University of Aberdeen, UK",
+	"drArchieHui": "許宏度博士",
+	"drArchieHui1": "Ph.D. University of Aberdeen, UK",
 	"drSimonLee": "李耀全牧師博士",
 	"drSimonLee1": "D.Min. Western Seminary, USA",
 	"drFrancisTam": "譚文鈞牧師博士",
@@ -707,5 +706,8 @@
 	"course_schedule_table_professor_5": "Dr. Paul Wang 王建熙博士",
 	"course_schedule_table_professor_6": ",Dr. Francis Tam 譚文鈞博士",
 	"course_schedule_table_professor_7": "Dr. Edwin Lee 李錦綸博士",
-	"academic": "academic"
+	"academic": "academic",
+	"name": "name",
+	"title1": "title1",
+	"education1": "education1"
 }
