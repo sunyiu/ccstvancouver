@@ -1,0 +1,41 @@
+.container.section.instructor1 .header{
+    background: url('../images/books.png') no-repeat;
+    background-size: cover;
+}
+
+.container.section.instructor2 .header{
+    background: url('../images/instructor.png') no-repeat;
+    background-size: cover;
+}
+
+.container.section.instructor3 .header{
+    background: url('../images/instructor2.png') no-repeat;
+    background-size: cover;
+}
+
+.container.section.instructor4 .header{
+    background: url('../images/instructor3.png') no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    .academic .container > .context{
+        padding-top: 0;
+        flex-basis: 75%;
+    }
+
+    .academic .container.section{
+        padding-left: 2rem;
+    }    
+}
+
+@media (min-width: 992px) {
+
+}

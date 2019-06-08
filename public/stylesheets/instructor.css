@@ -1,0 +1,45 @@
+    .instructor {
+        align-items: center;
+
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 15px;
+        padding-bottom: inherit !important;
+    }
+
+    .instructor .image{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #f4b342;
+        background-image: url(../images/baseline-person-24px.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: center;
+        color: #aaa;
+        display: inline-block;
+        position: absolute;
+    }
+
+    .instructor .details{
+        padding-left: 105px;
+    }
+
+    .instructor .details .name{
+        font-size: 1.25em;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    
+
+    .instructor .details .educations{
+        font-size: 0.85em;
+    }
+
+    li.instructor{
+        margin-bottom: 15px;
+    }
+    li.instructor:last-child{
+        margin-bottom: 0;
+    }

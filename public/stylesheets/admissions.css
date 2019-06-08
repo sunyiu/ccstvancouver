@@ -176,7 +176,7 @@ li.indent-2{
 @media (min-width: 768px) {
     .admissions .container > .context{
         padding-top: 0;
-        flex-basis: 70%;
+        flex-basis: 75%;
     }
 
     .admissions .container.section{
@@ -185,9 +185,7 @@ li.indent-2{
 }
 
 @media (min-width: 992px) {
-    .admissions .container > .context{
-        flex-basis: 80%;
-    }
+
     .admissions .programs .box-container{
         flex-basis: 32.5%;
     }

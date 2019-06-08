@@ -1,0 +1,12 @@
+
+mixin instructor(name, titles, educations, image_url)
+    li.instructor
+        div.image
+        div.details
+            div.name= __(name)
+            ul.titles
+                each title in titles
+                    li.instructor-title= __(title)
+            ul.educations
+                each education in educations
+                    li.instructor-education= __(education)

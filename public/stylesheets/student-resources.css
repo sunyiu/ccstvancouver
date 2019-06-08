@@ -31,7 +31,7 @@
 @media (min-width: 768px) {
     .student-resources .container > .context{
         padding-top: 0;
-        flex-basis: 70%;
+        flex-basis: 75%;
     }  
 
     .student-resources .container.section{
@@ -40,7 +40,4 @@
 }
 
 @media (min-width: 992px) {
-    .student-resources .container > .context{
-        flex-basis: 80%;
-    }
 }
