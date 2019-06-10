@@ -52,5 +52,14 @@ router.get('/instructors', languageChecker, function (req, res, next) {
     });
   });
   
+  router.get('/courses', languageChecker, function (req, res, next) {
+    let otherLocaleRef = req.i18n.getLocale() == 'en'
+      ? '/academic/courses?lang=zh'
+      : '/academic/courses?lang=en';
+  
+    res.render('academic/courses', {
+      otherLocaleRef: otherLocaleRef
+    });
+  });
 
 module.exports = router;
