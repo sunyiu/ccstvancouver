@@ -709,5 +709,9 @@
 	"academic": "academic",
 	"name": "name",
 	"title1": "title1",
-	"education1": "education1"
+	"education1": "education1",
+	"title": "title",
+	"mailing_address": "mailing_address",
+	"vancouver_office": "vancouver_office",
+	"office_address": "office_address"
 }

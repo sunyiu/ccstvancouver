@@ -32,21 +32,27 @@
 }
 
 
-.container.section.programs li.course{
+.container.section.program li.course{
     padding-bottom: 25px;
+    position: relative;
 }
-.container.section.programs li.course > .header{
+.container.section.program li.course > .header{
     display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    padding: 0.5em;
 }
-.container.section.programs li.course > .header > .code{
-
+.container.section.program li.course > .desc{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
 }
-.container.section.programs li.course > .header > .name{
-    padding-left: 25px;
+.container.section.program li.course > .header > .code{
 }
-.container.section.programs li.course > .header > .point{
-    position: absolute;
-    right: 0;
+.container.section.program li.course > .header > .name{
+    flex-basis: 70%;
+}
+.container.section.program li.course > .header > .point{
 }
 
 @media (max-width: 575px) {

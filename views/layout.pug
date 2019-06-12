@@ -5,7 +5,7 @@ html
     meta(name='viewport' content='viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
     meta(name='format-detection' content='telephone=no')
     
-    title #{__('Title')}
+    title #{__('title')}
       
     link(rel='shortcut icon' href='images/favicon.ico' type='image/x-icon')
     link(rel='icon' href='images/favicon.ico' type='image/x-icon')
@@ -33,7 +33,7 @@ html
             a(class='navbar-logo' href="/")
 
             div(class='navbar-items-container')
-                div.title #{__('Title')}
+                div.title #{__('title')}
                 ul(class='navbar-items links')
                     li(class='nav-link')
                         a(href='/admissions-vancouver') #{__('admissions')}
@@ -46,5 +46,19 @@ html
 
     div.footer
         div.container
+            div.title #{__('title')}
+            div.details 
+                div #{__('address')} 
+                div #{__('mailing_address')}
+            div.details
+                div #{__('vancouver_office')}
+                div #{__('office_address')}
+            div.details
+                div #{__('telephone')}
+                div 778-251-5678
+            div.details
+                div #{__('email')}
+                div info@ccstvan.ca
+
             
             div.copyright-container #{__('copyright')}
