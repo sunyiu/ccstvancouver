@@ -28,6 +28,13 @@ li.indent-2{
     display: flex;
     justify-content: space-between;
     margin-right: 25px;
+    padding: 5px;
+}
+
+.admissions #prog-dmin .cost-table,
+.admissions #prog-mdiv .cost-table,
+.admissions #prog-mts .cost-table{
+    background-color: #ccc;
 }
 
 .admissions .note{
@@ -107,8 +114,9 @@ li.indent-2{
     font-size: 1.5rem;
 }
 .program-detail > div.title span{
-    background-color: #ccc;
-    color: white;
+    /* background-color: #ccc;
+    color: white; */
+    color: rgba(135,12,12,1);
     padding: 5px;
     padding-right: 15px;
 }
@@ -176,7 +184,7 @@ li.indent-2{
 @media (min-width: 768px) {
     .admissions .container > .context{
         padding-top: 0;
-        flex-basis: 70%;
+        flex-basis: 75%;
     }
 
     .admissions .container.section{
@@ -185,9 +193,7 @@ li.indent-2{
 }
 
 @media (min-width: 992px) {
-    .admissions .container > .context{
-        flex-basis: 80%;
-    }
+
     .admissions .programs .box-container{
         flex-basis: 32.5%;
     }

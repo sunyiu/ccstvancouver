@@ -90,7 +90,7 @@ li{
   text-transform: uppercase;
 }
 .container.section > ul.desc-container{
-  background-color: #ccc;
+  /* background-color: #ccc; */
   color: #333;
   padding: 1rem;
   font-weight: 300;
@@ -142,7 +142,7 @@ li{
   color: white;
 }
 .footer > .container{
-  padding: 1rem 0 0.5rem 0;
+  padding: 2rem 0 0.5rem 0;
   margin: auto;
 }
 .footer > .container > div.copyright-container{
@@ -152,6 +152,22 @@ li{
   text-align: center;
   padding-top: 50px;
 }
+
+.footer > .container > div.title{
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+.footer > .container > div.details div{
+  padding-bottom: 0.5em;
+}
+.footer > .container > div.details div:first-child{
+  display: inline-block;
+  position: absolute;
+}
+.footer > .container > div.details div:last-child{
+  padding-left: 150px;
+}
+
 
 
 @media (min-width: 576px) {

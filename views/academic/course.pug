@@ -1,0 +1,9 @@
+
+mixin course(code, name, descs, point)
+    li.course
+        div.header
+            div.code= __(code)
+            div.name= __(name)
+            div.point= __(point)
+        each desc in descs
+            div.desc= __(desc)

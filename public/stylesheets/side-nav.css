@@ -73,7 +73,7 @@ nav.side-nav li {
 
     nav.side-nav {
         display: block;
-        flex-basis: 20%;
+        flex-basis: 25%;
     }
     nav.side-nav>ul.nav-links {
         display: block;
@@ -95,6 +95,6 @@ nav.side-nav li {
 
 @media (min-width: 992px) {
     nav.side-nav{
-        flex-basis: 20%;
+        flex-basis: 25%;
     }
 }

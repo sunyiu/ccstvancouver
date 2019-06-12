@@ -5,7 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var academicRouter = require('./routes/academic');
+//var usersRouter = require('./routes/users');
 
 var i18n = require('i18n-2');
 
@@ -42,7 +43,8 @@ app.use(function(req, res, next) {
 });
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/academic', academicRouter);
+//app.use('/users', usersRouter);
 
 
 
