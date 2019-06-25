@@ -1,11 +1,14 @@
-extends admissions
+extends index
+
+block append styles
+    link(rel='stylesheet', href='/stylesheets/admissions/fees.css')
+
 
 block admission-content
-    div.container.section.fees
+    div.container.section
         div.header
-            div.title #{__('applicationFeeTitle')}
+            div.title #{__('applicationFeesAndDeposits')}
         ul.desc-container
-            li.pt-title #{__('applicationFeesAndDeposits')}
             li.indent-1.cost-table 
                 span #{__('applicationFee1')}
                 span $50
@@ -22,7 +25,10 @@ block admission-content
                 span #{__('applicationFee5')}
                 span $500
 
-            li.pt-title #{__('TuitionAndBasicFees')}
+    div.container.section
+        div.header
+            div.title #{__('TuitionAndBasicFees')}
+        ul.desc-container
             li.indent-1.cost-table 
                 span #{__('tuitionAndBasicFee1')}
                 span $840
@@ -39,7 +45,10 @@ block admission-content
                 span #{__('tuitionAndBasicFee5')}
                 span $892
 
-            li.pt-title #{__('doctorOfMinistryTuitionFees')}
+    div.container.section
+        div.header
+            div.title #{__('doctorOfMinistryTuitionFees')}
+        ul.desc-container
             li.indent-1.cost-table 
                 span #{__('dMinFee1')}
                 span $50
@@ -47,7 +56,10 @@ block admission-content
                 span #{__('dMinFee2')}
                 span $1,200
 
-            li.pt-title #{__('generalFeeSchedule')}
+    div.container.section
+        div.header
+            div.title #{__('generalFeeSchedule')}
+        ul.desc-container
             li.indent-1.cost-table 
                 span #{__('generalFee1')}
                 span $400
@@ -76,7 +88,10 @@ block admission-content
                 span #{__('generalFee9')}
                 span $100                           
 
-            li.pt-title #{__('dropOffTitle')}
+    div.container.section
+        div.header
+            div.title #{__('dropOffTitle')}
+        ul.desc-container
             li.numbering.indent-1
                 div 1.
                 div #{__('dropOff1')}

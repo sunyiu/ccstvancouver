@@ -1,6 +1,10 @@
 extends index
 include instructor
 
+block append styles
+    link(rel='stylesheet', href='/stylesheets/academic/instructor.css')
+    link(rel='stylesheet', href='/stylesheets/academic/instructors.css')
+
 block academic-content
     div.container.section.instructor1
         div.header 

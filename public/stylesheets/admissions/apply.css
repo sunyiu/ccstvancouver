@@ -1,0 +1,21 @@
+
+.admissions .header{
+    background: url(../../images/admission.png) no-repeat left;
+    background-size: cover;
+}
+.admissions .wrap-boxes > div{
+    flex-basis: 32%;
+}
+
+
+.admissions li.wrap-boxes {
+    position: relative;
+}
+.admissions .letters{
+    padding-top: 10px;
+}
+.admissions .letters > div{
+    flex-basis: 48%;
+}
+
+

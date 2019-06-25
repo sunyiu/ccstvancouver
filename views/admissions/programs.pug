@@ -1,4 +1,8 @@
-extends admissions
+extends index
+
+block append styles
+    link(rel='stylesheet', href='/stylesheets/admissions/programs.css')
+
 
 block admission-content 
 
@@ -32,8 +36,8 @@ block admission-content
                 a(class='detail-btn', href='#prog-audit') #{__('fulldetail')}
 
     div(id='prog-dmin', class='container section program-detail')
-        div.title 
-            span #{__('progDMin')}
+        div.header
+            div.title #{__('progDMin')}
         ul.desc-container
             li.pt-title #{__('dMin1')}
             li.indent-1 #{__('dMin1_1')}
@@ -99,9 +103,9 @@ block admission-content
                     li #{__('dMin3c_11')}
                     li #{__('dMin3c_12')}   
 
-    div(id='prog-mdiv', class='container section program-detail')    
-        div.title 
-            span #{__('progMDiv')}
+    div(id='prog-mdiv', class='container section program-detail')  
+        div.header  
+            div.title #{__('progMDiv')}
         ul.desc-container
             li.pt-title #{__('mDiv1')}
             li.indent-1 #{__('mDiv1_1')}
@@ -205,9 +209,9 @@ block admission-content
                     li #{__('mDiv4f_1')}
                     li #{__('mDiv4f_2')}                    
 
-    div(id='prog-mts', class='container section program-detail')    
-        div.title 
-            span #{__('progMts')}
+    div(id='prog-mts', class='container section program-detail')
+        div.header    
+            div.title #{__('progMts')}
         ul.desc-container
             li.pt-title #{__('mts1')}
             li.indent-1 #{__('mts1a')}
@@ -264,9 +268,9 @@ block admission-content
                     li #{__('mts3d_1')}
                     li #{__('mts3d_2')}
 
-    div(id='prog-dipcs', class='container section program-detail')    
-        div.title 
-            span #{__('progDipcs')}
+    div(id='prog-dipcs', class='container section program-detail')
+        div.header    
+            div.title #{__('progDipcs')}
         ul.desc-container
             li.pt-title #{__('dipCS1')}
             li.indent-1 #{__('dipCS1a')}
@@ -287,16 +291,16 @@ block admission-content
             li.pt-title #{__('dipCS3')}
             li.indent-1 #{__('dipCS3a')}
 
-    div(id='prog-nondegree', class='container section program-detail')    
-        div.title 
-            span #{__('progNonDegree')}
+    div(id='prog-nondegree', class='container section program-detail')
+        div.header    
+            div.title #{__('progNonDegree')}
         ul.desc-container
             li #{__('nonDegree1')}
 
 
-    div(id='prog-audit', class='container section program-detail')    
-        div.title 
-            span #{__('progAudit')}
+    div(id='prog-audit', class='container section program-detail')
+        div.header    
+            div.title #{__('progAudit')}
         ul.desc-container
             li #{__('audit1')}
 

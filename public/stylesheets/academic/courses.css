@@ -1,0 +1,23 @@
+
+.container.section.program li.course{
+    padding-bottom: 25px;
+    position: relative;
+}
+.container.section.program li.course > .header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    padding: 0.5em;
+}
+.container.section.program li.course > .desc{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+}
+.container.section.program li.course > .header > .code{
+}
+.container.section.program li.course > .header > .name{
+    flex-basis: 70%;
+}
+.container.section.program li.course > .header > .point{
+}

@@ -1,11 +1,13 @@
-extends admissions
+extends index
+
+block append styles
+    link(rel='stylesheet', href='/stylesheets/admissions/apply.css')
 
 block admission-content
-    div.container.section.apply
+    div.container.section
         div.header
-            div.title #{__('applyTitle')}
+            div.title #{__('applySubTitle1')}
         ul.desc-container
-            li.pt-title #{__('applySubTitle1')}
             li.numbering.indent-1 
                 div 1.
                 div #{__('apply1_1')}
@@ -62,11 +64,14 @@ block admission-content
             li.numbering.indent-1  
                 div 5.
                 div #{__('apply1_5')}
-            li.numbering.indent-1  
+            li.numbering.indent-1
                 div 6. 
                 div #{__('apply1_6')}
 
-            li.pt-title #{__('applySubTitle2')}
+    div.container.section
+        div.header
+            div.title #{__('applySubTitle2')}
+        ul.desc-container
             li.numbering.indent-1
                 div 1.
                 div #{__('apply2_1')}
@@ -74,7 +79,10 @@ block admission-content
                 div 2.
                 div #{__('apply2_2')}
 
-            li.pt-title #{__('applySubTitle3')}
+    div.container.section
+        div.header
+            div.title #{__('applySubTitle3')}
+        ul.desc-container
             li.numbering.indent-1 
                 div 1.
                 div 

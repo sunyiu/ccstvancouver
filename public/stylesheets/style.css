@@ -69,9 +69,18 @@ li{
   padding-top: 1rem;
 }
 
+
+/*container section*/
 .container.section{
   padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px dotted gray;
   display: block;
+}
+.container.section:last-child{
+  margin-bottom: 0;
+  border-bottom: none;
+  border-bottom: none;
 }
 
 .container.section > .header{
@@ -92,7 +101,8 @@ li{
 .container.section > ul.desc-container{
   /* background-color: #ccc; */
   color: #333;
-  padding: 1rem;
+  /* padding: 1rem; */
+  padding-top: 1rem;
   font-weight: 300;
 }
 .container.section.no-box > ul.desc-container{

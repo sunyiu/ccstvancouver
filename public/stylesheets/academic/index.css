@@ -1,0 +1,22 @@
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    .academic .container > .context{
+        padding-top: 0;
+        flex-basis: 75%;
+    }
+
+    .academic .container.section{
+        margin-left: 2rem;
+    }    
+}
+
+@media (min-width: 992px) {
+
+}

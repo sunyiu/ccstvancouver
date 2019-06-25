@@ -1,3 +1,9 @@
+/*override style.css*/
+.container.section > ul.desc-container{
+    padding: 1rem;
+}
+
+
 .home{
     padding-top: 0;
     display: block;
