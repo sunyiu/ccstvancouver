@@ -4,21 +4,33 @@ block append styles
     link(rel='stylesheet', href='/stylesheets/admissions/vancouver.css')
 
 block admission-content
-    div.container.section.van-characteristics
-        div.header 
-            div.title #{__('vanCharacterTitle')}
-        ul.desc-container
-            li.pt-title #{__('vanCharacter1Title')}
-            li.indent-1 #{__('vanCharacter1')}
-            li.pt-title #{__('vanCharacter2Title')}
-            li.indent-1 #{__('vanCharacter2')}
-            li.pt-title #{__('vanCharacter3Title')}
-            li.indent-1 #{__('vanCharacter3')}
-            li.pt-title #{__('vanCharacter4Title')}
-            li.indent-1 #{__('vanCharacter4')}
-            li.pt-title #{__('vanCharacter5Title')}
-            li.indent-1 #{__('vanCharacter5')}
-            li.pt-title #{__('vanCharacter6Title')}
-            li.indent-1 #{__('vanCharacter6')}
+    section
+        h1 
+            span #{__('vanCharacterTitle')}
+        
+        article.title-paragraph
+            h1 #{__('vanCharacter1Title')}
+            div #{__('vanCharacter1')}
+        
+        article.title-paragraph
+            h1 #{__('vanCharacter2Title')}
+            div #{__('vanCharacter2')}
+        
+        article.title-paragraph
+            h1 #{__('vanCharacter3Title')}
+            div #{__('vanCharacter3')}
+        
+        article.title-paragraph
+            h1 #{__('vanCharacter4Title')}
+            div #{__('vanCharacter4')}
+        
+        article.title-paragraph
+            h1 #{__('vanCharacter5Title')}
+            div #{__('vanCharacter5')}
+        
+        article.title-paragraph
+            h1 #{__('vanCharacter6Title')}
+            div #{__('vanCharacter6')}
+
 
     

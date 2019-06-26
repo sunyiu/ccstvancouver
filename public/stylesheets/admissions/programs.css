@@ -1,56 +1,45 @@
- #prog-dmin .cost-table,
- #prog-mdiv .cost-table,
- #prog-mts .cost-table{
-    background-color: #ccc;
-}
+ #prog-dmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
+     background-color: #ccc;
+ }
 
-.admissions .cost-table {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 25px;
-    padding: 5px;
-}
+ .cost-table {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 1rem;
+ }
 
-.admissions #prog-dmin .cost-table,
-.admissions #prog-mdiv .cost-table,
-.admissions #prog-mts .cost-table{
-    background-color: #ccc;
-}
+ #prog-dmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
+     background-color: #ccc;
+ }
 
- .programs > .header{
-    background: url(../../images/book1.jpg) no-repeat center;
-    background-size: cover;
-}
- .container.section.programs > ul.desc-container > li.box-container{
-    padding-bottom: 45px;
-    position: relative;
-}
- .programs .box-container > div.title{
-    font-size: 1.25rem;
-}
- .box-container .detail-btn{
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    padding: 3px 0.75rem;
-    background-color: #ffec42;
-    display: inline-block;
-    color: #333;
-    border-radius: 5px;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-}
+section > h1 {
+     background: url(../../images/book1.jpg) no-repeat center;
+     background-size: cover;
+ }
 
-.program-detail > div.title {
-    padding-top: 1.5rem;
-    font-size: 1.5rem;
-}
-.program-detail > div.title span{
-    /* background-color: #ccc;
-    color: white; */
-    color: rgba(135,12,12,1);
-    padding: 5px;
-    padding-right: 15px;
-}
+li.box-container {
+     padding-bottom: 45px;
+     position: relative;
+ }
+
+ .box-container .detail-btn {
+     position: absolute;
+     bottom: 5px;
+     right: 5px;
+     padding: 3px 0.75rem;
+     background-color: #ffec42;
+     display: inline-block;
+     color: #333;
+     border-radius: 5px;
+     margin-right: 0.5rem;
+     margin-bottom: 0.5rem;
+     text-transform: uppercase;
+     font-size: 0.85rem;
+ }
+
+
+ @media (min-width: 576px) {
+     .wrap-boxes .box-container {
+         flex-basis: 48%;
+     }
+ }

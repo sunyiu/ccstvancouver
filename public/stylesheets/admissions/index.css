@@ -1,4 +1,4 @@
-li.indent-1{
+/*li.indent-1{
     position: relative;
     margin-left: 25px;
 }
@@ -28,20 +28,13 @@ li.note{
     font-size: 1rem;
     font-weight: 400;
 }
-
+*/
 
 @media (max-width: 575px) {
 }
 
 @media (min-width: 576px) {
-    .programs .desc-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .programs .box-container{
-        flex-basis: 48%;
-    }
+
 }
 
 @media (min-width: 768px) {
@@ -50,7 +43,7 @@ li.note{
         flex-basis: 75%;
     }
 
-    .container.section{
+    section{
         margin-left: 2rem;
     }    
 }

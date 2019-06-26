@@ -1,35 +1,28 @@
-/* override style.css */
-.container.section.instructor1 > ul.desc-container,
-.container.section.instructor2 > ul.desc-container,
-.container.section.instructor3 > ul.desc-container,
-.container.section.instructor4 > ul.desc-container,
-.container.section.special_instructor > ul.desc-container{
-    background-color: #ccc;
-}
-.container.section > ul.desc-container {
-    padding: 1rem;
+section {
+    background-color: #eee;
+    border:none;
+    padding-bottom: 1px;
 }
 
-
-.container.container.section .header{
+section h1{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.container.section.instructor1 .header,
-.container.section.special_instructor .header{
-    background-image: url('../images/books.png');
+section.instructor1 h1,
+section.special_instructor h1{
+    background-image: url('../../images/books.png');
 }
 
-.container.section.instructor2 .header{
-    background-image: url('../images/instructor.png');
+section.instructor2 h1{
+    background-image: url('../../images/instructor.png');
 }
 
-.container.section.instructor3 .header{
-    background-image: url('../images/instructor2.png');
+section.instructor3 .h1{
+    background-image: url('../../images/instructor2.png');
 }
 
-.container.section.instructor4 .header{
-    background-image: url('../images/instructor3.png');
+section.instructor4 .h1{
+    background-image: url('../../images/instructor3.png');
 }
