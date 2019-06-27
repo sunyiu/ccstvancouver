@@ -39,7 +39,6 @@ block admission-content
     section(id='prog-dmin')
         h1
             span #{__('progDMin')}        
-        
         div.title-paragraph
             h1 #{__('dMin1')}
             div #{__('dMin1_1')}
@@ -102,190 +101,198 @@ block admission-content
 
         div.title-paragraph
             h1 #{__('mDiv2')}
-            div
-                div.cost-table
-                    span #{__('mDiv2_year')}
-                    span #{__('mDiv2_pt')}
-
+            div.cost-table
+                span #{__('mDiv2_year')}
+                span #{__('mDiv2_pt')}            
+            div.title-paragraph
                 div #{__('mDiv2a')}
-                ul
+                ul.numbering
                     li #{__('mDiv2a_1')}
-                    li #{__('mDiv2a_2')}
-
+                    li #{__('mDiv2a_2')}            
+            div.title-paragraph
                 div #{__('mDiv2b')}
-                ul
+                ul.numbering
                     li #{__('mDiv2b_1')}
                     li #{__('mDiv2b_2')}
-
+            div.title-paragraph
                 div #{__('mDiv2c')}
-                ul
+                ul.numbering
                     li #{__('mDiv2c_1')}
                     li #{__('mDiv2c_2')}                    
-                
+            div.title-paragraph
                 div #{__('mDiv2d')}
-                ul
+                ul.numbering
                     li #{__('mDiv2d_1')}
                     li #{__('mDiv2d_2')}                    
                     li #{__('mDiv2d_3')}
-                    li #{__('mDiv2d_4a')}                    
-                    li(style='list-style-type: none') #{__('mDiv_or')}
-                    li(style='list-style-type: none') #{__('mDiv2d_4b')} 
-            
+                    li 
+                        div #{__('mDiv2d_4a')}
+                        div #{__('mDiv_or')}
+                        div #{__('mDiv2d_4b')}                   
+            div.title-paragraph    
                 div #{__('mDiv2e')}                                       
-                ul
+                ul.numbering
                     li #{__('mDiv2e_1')}
-                    li #{__('mDiv2e_2')}                    
-             
-                div.cost-table
-                    span #{__('mDiv3_year')}
-                    span #{__('mDiv3_pt')}
-                
+                    li #{__('mDiv2e_2')}                       
+            
+            div.cost-table
+                span #{__('mDiv3_year')}
+                span #{__('mDiv3_pt')}
+            div.title-paragraph   
                 div #{__('mDiv3a')}
                 ul.numbering
                     li #{__('mDiv3a_1')}
-                    li #{__('mDiv3a_2')}                 
+                    li #{__('mDiv3a_2')}
+            div.title-paragraph                        
                 div #{__('mDiv3b')}
                 ul.numbering
                     li #{__('mDiv3b_1')}
                     li #{__('mDiv3b_2')}
+            div.title-paragraph        
                 div #{__('mDiv3c')}
                 ul.numbering
                     li #{__('mDiv3c_1')}
-                    li #{__('mDiv3c_2')}   
+                    li #{__('mDiv3c_2')}
+            div.title-paragraph           
                 div #{__('mDiv3d')}
                 ul.numbering
                     li #{__('mDiv3d_1')}
                     li #{__('mDiv3d_2')}                    
                     li #{__('mDiv3d_3')}
-                    li #{__('mDiv3d_4a')}                    
-                    li(style='list-style-type: none') #{__('mDiv_or')}
-                    li(style='list-style-type: none') #{__('mDiv3d_4b')} 
+                    li 
+                        div #{__('mDiv3d_4a')}
+                        div #{__('mDiv_or')}
+                        div #{__('mDiv3d_4b')} 
+            div.title-paragraph
                 div #{__('mDiv3e')}                                       
                 ul.numbering
                     li #{__('mDiv3e_1')}
                     li #{__('mDiv3e_2')}                                        
 
-                div.cost-table
-                    span #{__('mDiv4_year')}
-                    span #{__('mDiv4_pt')}
+            div.cost-table
+                span #{__('mDiv4_year')}
+                span #{__('mDiv4_pt')}
+            div.title-paragraph
                 div #{__('mDiv4a')}
-                ul
+                ul.numbering
                     li #{__('mDiv4a_1')}
+            div.title-paragraph        
                 div #{__('mDiv4b')}
-                ul
+                ul.numbering
                     li #{__('mDiv4b_1')}
                     li #{__('mDiv4b_2')}
+            div.title-paragraph        
                 div #{__('mDiv4c')}
-                ul
+                ul.numbering
                     li #{__('mDiv4c_1')}
+            div.title-paragraph
                 div #{__('mDiv4d')}
-                ul
+                ul.numbering
                     li #{__('mDiv4d_1')}
-                    li #{__('mDiv4d_2')}                    
+                    li #{__('mDiv4d_2')}
+            div.title-paragraph
                 div #{__('mDiv4e')}
-                ul
+                ul.numbering
                     li #{__('mDiv4e_1')}
-                    li #{__('mDiv4e_2')}                    
+                    li #{__('mDiv4e_2')}
+            div.title-paragraph
                 div #{__('mDiv4f')}
-
-                ul
+                ul.numbering
                     li #{__('mDiv4f_1')}
                     li #{__('mDiv4f_2')}                    
 
-    div(id='prog-mts', class='container section program-detail')
-        div.header    
-            div.title #{__('progMts')}
-        ul.desc-container
-            li.pt-title #{__('mts1')}
-            li #{__('mts1a')}
-            li.pt-title #{__('mts2')}
-            li 
-                div.cost-table
-                    span #{__('mts2_year')}
-                    span #{__('mts2_pt')}
-            li #{__('mts2a')}
-            li.indent-2
+    section(id='prog-mts')
+        h1    
+            span #{__('progMts')}
+        div.title-paragraph
+            h1 #{__('mts1')}
+            div #{__('mts1a')}
+        div.title-paragraph
+            h1 #{__('mts2')} 
+            div.cost-table
+                span #{__('mts2_year')}
+                span #{__('mts2_pt')}
+            div.title-paragraph
+                div #{__('mts2a')}
                 ul.numbering
                     li #{__('mts2a_1')}
                     li #{__('mts2a_2')}
-            li #{__('mts2b')}
-            li.indent-2
+            div.title-paragraph
+                div #{__('mts2b')}
                 ul.numbering
                     li #{__('mts2b_1')}
                     li #{__('mts2b_2')}
-            li #{__('mts2c')}
-            li.indent-2
+            div.title-paragraph
+                div #{__('mts2c')}
                 ul.numbering
                     li #{__('mts2c_1')}
                     li #{__('mts2c_2')}
-            li #{__('mts2d')}
-            li.indent-2
+            div.title-paragraph
+                div #{__('mts2d')}
                 ul.numbering
                     li #{__('mts2d_1')}
                     li #{__('mts2d_2')}
                     li #{__('mts2d_3')}
-                    li #{__('mts2d_4')}
-            li 
-                div.cost-table
-                    span #{__('mts3_year')}
-                    span #{__('mts3_pt')}
-            li #{__('mts3a')}
-            li.indent-2
+                    li #{__('mts2d_4')} 
+            div.cost-table
+                span #{__('mts3_year')}
+                span #{__('mts3_pt')}
+            div.title-paragraph
+                div #{__('mts3a')}
                 ul.numbering
                     li #{__('mts3a_1')}
                     li #{__('mts3a_2')}
-            li #{__('mts3b')}
-            li.indent-2
+            div.title-paragraph
+                div #{__('mts3b')}
                 ul.numbering
                     li #{__('mts3b_1')}
                     li #{__('mts3b_2')}
-                    li #{__('mts3b_3')}                        
-            li #{__('mts3c')}
-            li.indent-2
+                    li #{__('mts3b_3')}
+            div.title-paragraph
+                div #{__('mts3c')}
                 ul.numbering
                     li #{__('mts3c_1')}
                     li #{__('mts3c_2')}
-            li #{__('mts3d')}
-            li.indent-2
+            div.title-paragraph
+                div #{__('mts3d')}
                 ul.numbering
                     li #{__('mts3d_1')}
                     li #{__('mts3d_2')}
 
-    div(id='prog-dipcs', class='container section program-detail')
-        div.header    
-            div.title #{__('progDipcs')}
-        ul.desc-container
-            li.pt-title #{__('dipCS1')}
-            li #{__('dipCS1a')}
-            li.pt-title #{__('dipCS2')}
-            li 
-                div.cost-table
-                    span #{__('dipCS2a')}
-                    span #{__('dipCS2a_pt')}
-                div.cost-table
-                    span #{__('dipCS2b')}
-                    span #{__('dipCS2b_pt')}
-                div.cost-table
-                    span #{__('dipCS2c')}
-                    span #{__('dipCS2c_pt')}
-                div.cost-table
-                    span #{__('dipCS2d')}
-                    span #{__('dipCS2d_pt')}
-            li.pt-title #{__('dipCS3')}
-            li #{__('dipCS3a')}
+    section(id='prog-dipcs')
+        h1    
+            span #{__('progDipcs')}
+        div.title-paragraph
+            h1 #{__('dipCS1')}
+            div #{__('dipCS1a')}
+        div.title-paragraph
+            h1 #{__('dipCS2')} 
+            div.cost-table
+                span #{__('dipCS2a')}
+                span #{__('dipCS2a_pt')}
+            div.cost-table
+                span #{__('dipCS2b')}
+                span #{__('dipCS2b_pt')}
+            div.cost-table
+                span #{__('dipCS2c')}
+                span #{__('dipCS2c_pt')}
+            div.cost-table
+                span #{__('dipCS2d')}
+                span #{__('dipCS2d_pt')}
+        div.title-paragraph
+            h1 #{__('dipCS3')}
+            div #{__('dipCS3a')}
 
-    div(id='prog-nondegree', class='container section program-detail')
-        div.header    
-            div.title #{__('progNonDegree')}
-        ul.desc-container
-            li #{__('nonDegree1')}
+    section(id='prog-nondegree')
+        h1    
+            span #{__('progNonDegree')}
+        div #{__('nonDegree1')}
 
 
-    div(id='prog-audit', class='container section program-detail')
-        div.header    
-            div.title #{__('progAudit')}
-        ul.desc-container
-            li #{__('audit1')}
+    section(id='prog-audit')
+        h1    
+            span #{__('progAudit')}
+        div #{__('audit1')}
 
 
 

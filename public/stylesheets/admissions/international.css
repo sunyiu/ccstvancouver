@@ -1,0 +1,9 @@
+section.international > h1{
+    background: url(../../images/airplane.png) no-repeat center;
+    background-size: cover;
+}
+
+section.international > div{
+    font-size: 1.25rem;
+    font-weight: bold;
+}

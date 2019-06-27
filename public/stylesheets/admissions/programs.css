@@ -1,6 +1,7 @@
  #prog-dmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
      background-color: #ccc;
- }
+     padding: 3px;
+ } 
 
  .cost-table {
      display: flex;

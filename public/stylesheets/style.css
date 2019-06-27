@@ -152,12 +152,17 @@ article h1{
 */
 
 /*title + paragraph*/
-.title-paragraph > h1{
-  padding-bottom: 1rem;
+.title-paragraph > h1:first-child{
   font-size: 1.2rem;
 }
-.title-paragraph > *:not(h1){
+.title-paragraph > *:first-child{
+  padding-bottom: 1rem;
+}
+.title-paragraph > *:not(:first-child){
   margin-left: 25px;
+}
+.title-paragraph{
+  margin-bottom: 1.25rem;
 }
 
 .wrap-boxes {
@@ -200,7 +205,7 @@ ul.numbering{
 }
 ul.numbering > li{
   counter-increment: ul-counter;
-  margin: 0 0 1rem 25px;
+  margin: 0 0 1.25rem 25px;
   position: relative;
 }
 ul.numbering > li::before{
@@ -228,18 +233,24 @@ ul.numbering-abc li::before{
 
 
 .question-answer > div::before{
-  width: 25px;
-  left: -25px;
+  width: 30px;
+  left: -30px;
   position: absolute;
 }
-.question-answer > div:first-child::before{
+body.en .question-answer > div:first-child::before{
   content: 'Q:';
 }
-.question-answer > div:last-child::before{
+body.en .question-answer > div:last-child::before{
   content: 'A:';
 }
+body.zh .question-answer > div:first-child::before{
+  content: '問:';
+}
+body.zh .question-answer > div:last-child::before{
+  content: '答:';
+}
 .question-answer > div{
-  margin: 0 0 0.5rem 25px;
+  margin: 0 0 0.5rem 30px;
   position: relative;
 }
 

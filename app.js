@@ -37,11 +37,36 @@ i18n.expressBind(app, {
 app.use(express.static(path.join(__dirname, 'public')));
 
 // set up the middleware
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   req.i18n.setLocaleFromCookie();
   req.i18n.setLocaleFromQuery();
   next();
 });
+
+/* Get language page */
+app.get('/language', function (req, res, next) {
+  res.render('language', { title: "Canadian Chinese School of Theology" });
+});
+
+// check language
+app.get('*', (req, res, next) => {
+  var query = req.query.lang,
+    cookie = req.cookies.ccstvan_langpref == 'undefined' ? undefined : req.cookies.ccstvan_langpref,
+    lang = query || cookie;
+
+  //console.log('test 0 ' +  req.i18n.__('Title') );
+
+  if (!lang) {
+    res.redirect('/language');
+  } else {
+    if (query && query != cookie) {
+      //set cookie lang
+      res = res.cookie('ccstvan_langpref', query);
+    }
+    next();
+  }
+});
+
 
 app.use('/', indexRouter);
 app.use('/academic', academicRouter);
@@ -49,14 +74,13 @@ app.use('/admissions', admissionsRouter);
 //app.use('/users', usersRouter);
 
 
-
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

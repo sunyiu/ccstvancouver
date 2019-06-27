@@ -5,102 +5,95 @@ block append styles
     link(rel='stylesheet', href='/stylesheets/academic/courses.css')
 
 block academic-content
-    div.container.section.program
-        div.header 
-            div.title #{__('course1')}
-        ul.desc-container
-            li.program-container
-                +course('course1_1_code', 'course1_1_name',['course1_1_desc'],'')
-                +course('course1_2_code', 'course1_2_name',['course1_2_desc'],'')
-                +course('course1_3_code', 'course1_3_name',['course1_3_desc'],'')
-                +course('course1_4_code', 'course1_4_name',['course1_4_desc'],'')
-                +course('course1_5_code', 'course1_5_name',['course1_5_desc'],'')
-                +course('course1_6_code', 'course1_6_name',['course1_6_desc'],'')
-                +course('course1_7_code', 'course1_7_name',['course1_7_desc'],'')
-                +course('course1_8_code', 'course1_8_name',['course1_8_desc'],'')
-                +course('course1_9_code', 'course1_9_name',['course1_9_desc'],'')
-                +course('course1_10_code', 'course1_10_name',['course1_10_desc'],'')
-                +course('course1_11_code', 'course1_11_name',['course1_11_desc'],'')
-                +course('course1_12_code', 'course1_12_name',['course1_12_desc'],'')
-                +course('course1_13_code', 'course1_13_name',['course1_13_desc'],'')
-                +course('course1_14_code', 'course1_14_name',['course1_14_desc'],'')
-                +course('course1_15_code', 'course1_15_name',['course1_15_desc'],'')
-                +course('course1_16_code', 'course1_16_name',['course1_16_desc'],'')
-                +course('course1_17_code', 'course1_17_name',['course1_17_desc'],'')
-                +course('course1_18_code', 'course1_18_name',['course1_18_desc'],'')
-                +course('course1_19_code', 'course1_19_name',['course1_19_desc'],'')
-                +course('course1_20_code', 'course1_20_name',['course1_20_desc'],'')
-                +course('course1_21_code', 'course1_21_name',['course1_21_desc'],'')
-                +course('course1_22_code', 'course1_22_name',['course1_22_desc'],'')
+    section
+        h1 
+            span #{__('course1')}
+        +course('course1_1_code', 'course1_1_name',['course1_1_desc'],'')
+        +course('course1_2_code', 'course1_2_name',['course1_2_desc'],'')
+        +course('course1_3_code', 'course1_3_name',['course1_3_desc'],'')
+        +course('course1_4_code', 'course1_4_name',['course1_4_desc'],'')
+        +course('course1_5_code', 'course1_5_name',['course1_5_desc'],'')
+        +course('course1_6_code', 'course1_6_name',['course1_6_desc'],'')
+        +course('course1_7_code', 'course1_7_name',['course1_7_desc'],'')
+        +course('course1_8_code', 'course1_8_name',['course1_8_desc'],'')
+        +course('course1_9_code', 'course1_9_name',['course1_9_desc'],'')
+        +course('course1_10_code', 'course1_10_name',['course1_10_desc'],'')
+        +course('course1_11_code', 'course1_11_name',['course1_11_desc'],'')
+        +course('course1_12_code', 'course1_12_name',['course1_12_desc'],'')
+        +course('course1_13_code', 'course1_13_name',['course1_13_desc'],'')
+        +course('course1_14_code', 'course1_14_name',['course1_14_desc'],'')
+        +course('course1_15_code', 'course1_15_name',['course1_15_desc'],'')
+        +course('course1_16_code', 'course1_16_name',['course1_16_desc'],'')
+        +course('course1_17_code', 'course1_17_name',['course1_17_desc'],'')
+        +course('course1_18_code', 'course1_18_name',['course1_18_desc'],'')
+        +course('course1_19_code', 'course1_19_name',['course1_19_desc'],'')
+        +course('course1_20_code', 'course1_20_name',['course1_20_desc'],'')
+        +course('course1_21_code', 'course1_21_name',['course1_21_desc'],'')
+        +course('course1_22_code', 'course1_22_name',['course1_22_desc'],'')
 
-    div.container.section.program
-        div.header 
-            div.title #{__('course2')}
-        ul.desc-container
-            li.subject #{__('course2a')}
-            li.program-container
-                +course('course2a_1_code', 'course2a_1_name',['course2a_1_desc'],'course2a_1_pt')
-                +course('course2a_2_code', 'course2a_2_name',['course2a_2_desc'],'course2a_2_pt')
-                +course('course2a_3_code', 'course2a_3_name',['course2a_3_desc'],'course2a_3_pt')
-                +course('course2a_4_code', 'course2a_4_name',['course2a_4_desc'],'course2a_4_pt')
-                +course('course2a_5_code', 'course2a_5_name',['course2a_5_desc1','course2a_5_desc2'],'course2a_5_pt')
-                +course('course2a_6_code', 'course2a_6_name', ['course2a_6_desc1', 'course2a_6_desc2'],'course2a_6_pt')
-                +course('course2a_7_code', 'course2a_7_name',['course2a_7_desc1','course2a_7_desc2'],'course2a_7_pt')
-                +course('course2a_8_code', 'course2a_8_name',['course2a_8_desc1','course2a_8_desc2'],'course2a_8_pt')
-                +course('course2a_9_code', 'course2a_9_name',['course2a_9_desc'],'course2a_9_pt')
-                +course('course2a_10_code', 'course2a_10_name',['course2a_10_desc1','course2a_10_desc2'],'course2a_10_pt')
-                +course('course2a_11_code', 'course2a_11_name',['course2a_11_desc1','course2a_11_desc2'],'course2a_11_pt')
-                +course('course2a_12_code', 'course2a_12_name',['course2a_12_desc'],'course2a_12_pt')
-                +course('course2a_13_code', 'course2a_13_name',['course2a_13_desc1','course2a_13_desc2'],'course2a_13_pt')
-                +course('course2a_14_code', 'course2a_14_name',['course2a_14_desc1','course2a_14_desc2'],'course2a_14_pt')
-                +course('course2a_15_code', 'course2a_15_name',['course2a_15_desc', ''],'course2a_15_pt')
+    section
+        h1 
+            span #{__('course2')}
+        div #{__('course2a')}
+        +course('course2a_1_code', 'course2a_1_name',['course2a_1_desc'],'course2a_1_pt')
+        +course('course2a_2_code', 'course2a_2_name',['course2a_2_desc'],'course2a_2_pt')
+        +course('course2a_3_code', 'course2a_3_name',['course2a_3_desc'],'course2a_3_pt')
+        +course('course2a_4_code', 'course2a_4_name',['course2a_4_desc'],'course2a_4_pt')
+        +course('course2a_5_code', 'course2a_5_name',['course2a_5_desc1','course2a_5_desc2'],'course2a_5_pt')
+        +course('course2a_6_code', 'course2a_6_name', ['course2a_6_desc1', 'course2a_6_desc2'],'course2a_6_pt')
+        +course('course2a_7_code', 'course2a_7_name',['course2a_7_desc1','course2a_7_desc2'],'course2a_7_pt')
+        +course('course2a_8_code', 'course2a_8_name',['course2a_8_desc1','course2a_8_desc2'],'course2a_8_pt')
+        +course('course2a_9_code', 'course2a_9_name',['course2a_9_desc'],'course2a_9_pt')
+        +course('course2a_10_code', 'course2a_10_name',['course2a_10_desc1','course2a_10_desc2'],'course2a_10_pt')
+        +course('course2a_11_code', 'course2a_11_name',['course2a_11_desc1','course2a_11_desc2'],'course2a_11_pt')
+        +course('course2a_12_code', 'course2a_12_name',['course2a_12_desc'],'course2a_12_pt')
+        +course('course2a_13_code', 'course2a_13_name',['course2a_13_desc1','course2a_13_desc2'],'course2a_13_pt')
+        +course('course2a_14_code', 'course2a_14_name',['course2a_14_desc1','course2a_14_desc2'],'course2a_14_pt')
+        +course('course2a_15_code', 'course2a_15_name',['course2a_15_desc', ''],'course2a_15_pt')
 
-            li.subject #{__('course2b')}
-            li.program-container
-                +course('course2b_1_code', 'course2b_1_name',['course2b_1_desc'],'course2b_1_pt')
-                +course('course2b_2_code', 'course2b_2_name',['course2b_2_desc1', 'course2b_2_desc2'],'course2b_2_pt')
-                +course('course2b_3_code', 'course2b_3_name',['course2b_3_desc1', 'course2b_3_desc2'],'course2b_3_pt')
-                +course('course2b_4_code', 'course2b_4_name',['course2b_4_desc1', 'course2b_4_desc2'],'course2b_4_pt')
-                +course('course2b_5_code', 'course2b_5_name',['course2b_5_desc'],'course2b_5_pt')
-                +course('course2b_6_code', 'course2b_6_name', ['course2b_6_desc1', 'course2b_6_desc2'],'course2b_6_pt')
+        div #{__('course2b')}
+        +course('course2b_1_code', 'course2b_1_name',['course2b_1_desc'],'course2b_1_pt')
+        +course('course2b_2_code', 'course2b_2_name',['course2b_2_desc1', 'course2b_2_desc2'],'course2b_2_pt')
+        +course('course2b_3_code', 'course2b_3_name',['course2b_3_desc1', 'course2b_3_desc2'],'course2b_3_pt')
+        +course('course2b_4_code', 'course2b_4_name',['course2b_4_desc1', 'course2b_4_desc2'],'course2b_4_pt')
+        +course('course2b_5_code', 'course2b_5_name',['course2b_5_desc'],'course2b_5_pt')
+        +course('course2b_6_code', 'course2b_6_name', ['course2b_6_desc1', 'course2b_6_desc2'],'course2b_6_pt')
 
-            li.subject #{__('course2c')}
-            li.program-container
-                +course('course2c_1_code', 'course2c_1_name',['course2c_1_desc'],'course2c_1_pt')
-                +course('course2c_2_code', 'course2c_2_name',['course2c_2_desc'],'course2c_2_pt')
-                +course('course2c_3_code', 'course2c_3_name',['course2c_3_desc'],'course2c_3_pt')
-                +course('course2c_4_code', 'course2c_4_name',['course2c_4_desc1', 'course2c_4_desc2'],'course2c_4_pt')
-                +course('course2c_5_code', 'course2c_5_name',['course2c_5_desc'],'course2c_5_pt')
-                +course('course2c_6_code', 'course2c_6_name', ['course2c_6_desc'],'course2c_6_pt') 
-                +course('course2c_7_code', 'course2c_7_name',['course2c_7_desc1', 'course2c_7_desc2'],'course2c_7_pt')
-                +course('course2c_8_code', 'course2c_8_name', ['course2c_8_desc'],'course2c_8_pt')                
+        div #{__('course2c')}
+        +course('course2c_1_code', 'course2c_1_name',['course2c_1_desc'],'course2c_1_pt')
+        +course('course2c_2_code', 'course2c_2_name',['course2c_2_desc'],'course2c_2_pt')
+        +course('course2c_3_code', 'course2c_3_name',['course2c_3_desc'],'course2c_3_pt')
+        +course('course2c_4_code', 'course2c_4_name',['course2c_4_desc1', 'course2c_4_desc2'],'course2c_4_pt')
+        +course('course2c_5_code', 'course2c_5_name',['course2c_5_desc'],'course2c_5_pt')
+        +course('course2c_6_code', 'course2c_6_name', ['course2c_6_desc'],'course2c_6_pt') 
+        +course('course2c_7_code', 'course2c_7_name',['course2c_7_desc1', 'course2c_7_desc2'],'course2c_7_pt')
+        +course('course2c_8_code', 'course2c_8_name', ['course2c_8_desc'],'course2c_8_pt')                
 
-            li.subject #{__('course2d')}
-            li.program-container
-                +course('course2d_1_code', 'course2d_1_name',['course2d_1_desc'],'course2d_1_pt')
-                +course('course2d_2_code', 'course2d_2_name',['course2d_2_desc'],'course2d_2_pt')
-                +course('course2d_3_code', 'course2d_3_name',['course2d_3_desc'],'course2d_3_pt')
-                +course('course2d_4_code', 'course2d_4_name',['course2d_4_desc'],'course2d_4_pt')
-                +course('course2d_5_code', 'course2d_5_name',['course2d_5_desc'],'course2d_5_pt')
-                +course('course2d_6_code', 'course2d_6_name', ['course2d_6_desc'],'course2d_6_pt') 
-                +course('course2d_7_code', 'course2d_7_name',['course2d_7_desc'],'course2d_7_pt')
-                +course('course2d_8_code', 'course2d_8_name', ['course2d_8_desc'],'course2d_8_pt')                     
-                +course('course2d_9_code', 'course2d_9_name',['course2d_9_desc'],'course2d_9_pt')
-                +course('course2d_10_code', 'course2d_10_name',['course2d_10_desc1', 'course2d_10_desc2'],'course2d_10_pt')
-                +course('course2d_11_code', 'course2d_11_name', ['course2d_11_desc'],'course2d_11_pt') 
-                +course('course2d_12_code', 'course2d_12_name',['course2d_12_desc'],'course2d_12_pt')
-                +course('course2d_13_code', 'course2d_13_name', ['course2d_13_desc'],'course2d_13_pt')  
+        div #{__('course2d')}
+        +course('course2d_1_code', 'course2d_1_name',['course2d_1_desc'],'course2d_1_pt')
+        +course('course2d_2_code', 'course2d_2_name',['course2d_2_desc'],'course2d_2_pt')
+        +course('course2d_3_code', 'course2d_3_name',['course2d_3_desc'],'course2d_3_pt')
+        +course('course2d_4_code', 'course2d_4_name',['course2d_4_desc'],'course2d_4_pt')
+        +course('course2d_5_code', 'course2d_5_name',['course2d_5_desc'],'course2d_5_pt')
+        +course('course2d_6_code', 'course2d_6_name', ['course2d_6_desc'],'course2d_6_pt') 
+        +course('course2d_7_code', 'course2d_7_name',['course2d_7_desc'],'course2d_7_pt')
+        +course('course2d_8_code', 'course2d_8_name', ['course2d_8_desc'],'course2d_8_pt')                     
+        +course('course2d_9_code', 'course2d_9_name',['course2d_9_desc'],'course2d_9_pt')
+        +course('course2d_10_code', 'course2d_10_name',['course2d_10_desc1', 'course2d_10_desc2'],'course2d_10_pt')
+        +course('course2d_11_code', 'course2d_11_name', ['course2d_11_desc'],'course2d_11_pt') 
+        +course('course2d_12_code', 'course2d_12_name',['course2d_12_desc'],'course2d_12_pt')
+        +course('course2d_13_code', 'course2d_13_name', ['course2d_13_desc'],'course2d_13_pt')  
 
-            li.subject #{__('course2e')}
-            li.program-container
-                +course('course2e_1_code', 'course2e_1_name',['course2e_1_desc'],'course2e_1_pt')
-                +course('course2e_2_code', 'course2e_2_name',['course2e_2_desc'],'course2e_2_pt')
-                +course('course2e_3_code', 'course2e_3_name',['course2e_3_desc'],'course2e_3_pt')
-                +course('course2e_4_code', 'course2e_4_name',['course2e_4_desc'],'course2e_4_pt')
-                +course('course2e_5_code', 'course2e_5_name',['course2e_5_desc'],'course2e_5_pt')
-                +course('course2e_6_code', 'course2e_6_name', ['course2e_6_desc'],'course2e_6_pt') 
-                +course('course2e_7_code', 'course2e_7_name',['course2e_7_desc1', 'course2e_7_desc2'],'course2e_7_pt')
+        div #{__('course2e')}
+        +course('course2e_1_code', 'course2e_1_name',['course2e_1_desc'],'course2e_1_pt')
+        +course('course2e_2_code', 'course2e_2_name',['course2e_2_desc'],'course2e_2_pt')
+        +course('course2e_3_code', 'course2e_3_name',['course2e_3_desc'],'course2e_3_pt')
+        +course('course2e_4_code', 'course2e_4_name',['course2e_4_desc'],'course2e_4_pt')
+        +course('course2e_5_code', 'course2e_5_name',['course2e_5_desc'],'course2e_5_pt')
+        +course('course2e_6_code', 'course2e_6_name', ['course2e_6_desc'],'course2e_6_pt') 
+        +course('course2e_7_code', 'course2e_7_name',['course2e_7_desc1', 'course2e_7_desc2'],'course2e_7_pt')
 
-            li.subject #{__('course3')}
-            li.program-container
-                +course('course3_1_code', 'course3_1_name',['course3_1_desc'],'course3_1_pt')
+    section
+        h1 
+            span #{__('course3')}
+        +course('course3_1_code', 'course3_1_name',['course3_1_desc'],'course3_1_pt')

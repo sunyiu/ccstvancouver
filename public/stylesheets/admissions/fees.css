@@ -1,14 +1,17 @@
 
-.header{
-    background: url(../images/fee.png) no-repeat center;
+section > h1{
+    background: url(../../images/fee.png) no-repeat center;
     background-size: cover;
 }
-ul.desc-container li span.right{
-    float: right;
-    margin-right: 25px;
+
+.cost-table {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
+
 .border-top{
-    border-top: 1px solid gray;
+    border-top: 1px solid #ccc;
     padding-top: 1rem;
 }
 th.percentage{
@@ -26,4 +29,9 @@ td{
 table{
     border-left: 1px solid #888;
     border-bottom: 1px solid #888;
+}
+
+.note{
+    font-weight: bold !important;
+    padding-top: 1.5rem;
 }

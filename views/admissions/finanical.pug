@@ -1,38 +1,37 @@
 extends index
 
+block append styles
+    link(rel='stylesheet', href='/stylesheets/admissions/finanical.css')
+
 block admission-content
-    div.container.section
-        div.header 
-            div.title #{__('finanicalAssistance1')}
-        ul.desc-container
-            li #{__('finanicalAssistance1_detail')}
-            li
+    section
+        h1 
+            span #{__('fees')}
+        
+        article.title-paragraph
+            h1 #{__('finanicalAssistance1')}
+            div.title-paragraph
+                div #{__('finanicalAssistance1_detail')} 
                 ul.numbering
                     li #{__('finanicalAssistance1_1')}
                     li  #{__('finanicalAssistance1_2')}
 
-    div.container.section.finanical
-        div.header 
-            div.title #{__('finanicalAssistance1')}
-        ul.desc-container                      
-            li #{__('finanicalAssistance1_detail')}
+        article.title-paragraph
+            h1 #{__('finanicalAssistance2')}                    
+            div #{__('finanicalAssistance2_detail')}
 
-    div.container.section.finanical
-        div.header 
-            div.title #{__('finanicalAssistance3')}
-        ul.desc-container 
-            li #{__('finanicalAssistance3_detail')}
-            li.indent-1
+        article.title-paragraph
+            h1 #{__('finanicalAssistance3')}
+            div.title-paragraph
+                div #{__('finanicalAssistance3_detail')}
                 ul.numbering
                     li #{__('finanicalAssistance3_1')}
                     li  #{__('finanicalAssistance3_2')}
                     li #{__('finanicalAssistance3_3')}
                     li  #{__('finanicalAssistance3_4')} 
 
-    div.container.section.finanical
-        div.header 
-            div.title #{__('finanicalAssistance4')}
-        ul.desc-container                     
-            li #{__('finanicalAssistance4_detail')}                                                                
+        article.title-paragraph
+            h1  #{__('finanicalAssistance4')}                     
+            div #{__('finanicalAssistance4_detail')}                                                                
 
     

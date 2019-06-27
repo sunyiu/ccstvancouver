@@ -1,11 +1,13 @@
 extends index
 
+block append styles
+    link(rel='stylesheet', href='/stylesheets/admissions/international.css')
+
 block admission-content
-    div.container.section.international
-        div.header 
-            div.title!= __('internationalStudent')
-        ul.desc-container
-            li.pt-title #{__('internationStudent1')} 
+    section.international
+        h1
+            span #{__('internationalStudent')}
+        div #{__('internationStudent1')} 
 
 
     

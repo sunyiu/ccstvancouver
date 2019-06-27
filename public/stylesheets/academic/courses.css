@@ -1,23 +1,25 @@
 
-.container.section.program li.course{
-    padding-bottom: 25px;
+.course{
     position: relative;
 }
-.container.section.program li.course > .header{
+.course > .header{
     display: flex;
     justify-content: space-between;
     background-color: #ccc;
     padding: 0.5em;
 }
-.container.section.program li.course > .desc{
+.course > .desc{
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-top: 0.25em;
 }
-.container.section.program li.course > .header > .code{
+.course > .header > .code{
+    width: 100px;
 }
-.container.section.program li.course > .header > .name{
-    flex-basis: 70%;
+.course > .header > .name{
+    flex-basis: 100%;
 }
-.container.section.program li.course > .header > .point{
+.course > .header > .point{
+    width: 100px;
+    text-align: right;
 }

@@ -1,6 +1,8 @@
 {
 	"Title": "Canadian Chinese School of Theology Vancouver",
-	"other_locale": "中文",
+	"locale": "en",
+	"other_locale": "zh",
+	"other_locale_display": "中文",
 	"address": "郵寄地址",
 	"mailing_address": "P.O. Box 365, 186 – 8120 No. 2 Road, Richmond, BC V7C 5J8",
 	"vancouver_office": "辦公室及資源中心",
@@ -712,5 +714,6 @@
 	"course_schedule_table_professor_5": "Dr. Paul Wang 王建熙博士",
 	"course_schedule_table_professor_6": ",Dr. Francis Tam 譚文鈞博士",
 	"course_schedule_table_professor_7": "Dr. Edwin Lee 李錦綸博士",
-	"": ""
+	"": "",
+	"title": "title"
 }
