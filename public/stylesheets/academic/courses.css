@@ -1,0 +1,36 @@
+
+.course{
+    position: relative;
+}
+.course > .header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    padding: 0.5em;
+}
+.course > .desc{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+}
+.course > .header > .code{
+    width: 100px;
+}
+.course > .header > .name{
+    flex-basis: 100%;
+}
+.course > .header > .point{
+    width: 100px;
+    text-align: right;
+}
+
+.course-group{
+    font-size: 1.5rem;
+    margin: 1rem 15px 0 15px !important;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+}
+.course-group + .course{
+    margin-top: 0;
+}

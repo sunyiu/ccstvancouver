@@ -3,7 +3,47 @@ mixin side-nav(title, items)
     header.side-nav= __(title)
     nav.side-nav
         //- div.title= title
-        ul.nav-links
+        ul.nav-links.sticky
             each item, index in items
                 li(class= (index==sideNavHLIndex) ? '_selected link' : 'link')
                     a(href=item.link)!= __(item.name)
+
+    script.
+        $(function(){
+            var navLinks = $('.nav-links'),
+                top = navLinks.offset().top,
+                height = navLinks.outerHeight(),
+                animation = null;  
+            
+            $(window).scroll(function(){
+                if (animation){
+                    animation.finish();
+                }
+                navLinks.parent().css("padding-top", 0);
+                navLinks.removeClass('fixed')
+                navLinks.offset({top: top});
+
+                clearTimeout($.data(this, 'scrollTimer'));
+                $.data(this, 'scrollTimer', setTimeout(function() {
+                    var scroll = $(window).scrollTop();
+
+                    if (scroll >= top) {
+                        navLinks.parent().css("padding-top", height);                       
+                        navLinks.addClass('fixed');
+
+                        animation = navLinks.animate({
+                            top: scroll - top
+                        }, 1500, function() {
+                            // Animation complete.
+                        });
+                        //- navLinks.offset({top: scroll});
+                    }
+                    else {
+                        //- navLinks.parent().css("padding-top", 0);
+                        //- navLinks.removeClass('fixed')
+                        //- navLinks.offset({top: top});
+                    }
+                }, 250));
+  
+            });
+        })

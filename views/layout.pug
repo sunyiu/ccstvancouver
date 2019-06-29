@@ -22,12 +22,12 @@ html
     
     block scripts
 
-  body(class=locale)
+  body(class= __('locale'))
     div.navbar.module
         nav.container        
             ul(class='navbar-tools')
                 li(class='nav-tool')
-                    a(id='langBtn' href=otherLocaleRef) 
+                    a(id='langBtn' onclick="window.location.href = window.location.href.substring(0, window.location.href.lastIndexOf('?')) + '?lang=" + __('other_locale') + "'") 
                         i(class="material-icons md-36") translate
 
             a(class='navbar-logo' href="/")
@@ -36,7 +36,7 @@ html
                 div.title #{__('title')}
                 ul(class='navbar-items links')
                     li(class='nav-link')
-                        a(href='/admissions-vancouver') #{__('admissions')}
+                        a(href='/admissions/vancouver') #{__('admissions')}
                     li(class='nav-link')
                         a(href='/student-resources') #{__('studentResources')}
                     li(class='nav-link')
@@ -51,7 +51,7 @@ html
                 div #{__('address')} 
                 div #{__('mailing_address')}
             div.details
-                div #{__('vancouver_office')}
+                div!= __('vancouver_office')
                 div #{__('office_address')}
             div.details
                 div #{__('telephone')}

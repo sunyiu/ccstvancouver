@@ -1,0 +1,60 @@
+ #prog-dmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
+     background-color: #ccc;
+     padding: 3px;
+ }
+
+ .cost-table {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 1rem;
+ }
+
+ #prog-dmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
+     background-color: #ccc;
+ }
+
+ section>h1 {
+     background: url(../../images/book1.jpg) no-repeat center;
+     background-size: cover;
+ }
+
+ li.box-container {
+     padding-bottom: 45px;
+     position: relative;
+ }
+
+ .box-container .detail-btn {
+     position: absolute;
+     bottom: 5px;
+     right: 5px;
+     padding: 3px 0.75rem;
+     background-color: #ffec42;
+     display: inline-block;
+     color: #333;
+     border-radius: 5px;
+     margin-right: 0.5rem;
+     margin-bottom: 0.5rem;
+     text-transform: uppercase;
+     font-size: 0.85rem;
+ }
+
+ @media (min-width: 576px) {
+     .wrap-boxes .box-container {
+         flex-basis: 48%;
+     }
+ }
+
+ .sticky {
+     height: 50px;
+     background: #555;
+     color: #f1f1f1;
+     width: 100%;
+     display: none;
+ }
+
+ .fixed {
+    display: block;
+    position: fixed;
+    top:0; 
+    z-index: 99;
+}

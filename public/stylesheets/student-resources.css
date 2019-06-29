@@ -1,29 +1,29 @@
-.student-resources .library > .header{
+.student-resources .library > h1{
     background: url(../images/library.png) no-repeat center;
     background-size: cover;
 }
 
-.student-resources .weekly-meeting > .header{
+.student-resources .weekly-meeting > h1{
     background: url(../images/meetings.png) no-repeat center;
     background-size: cover;  
 }
 
-.student-resources .student-camp > .header{
+.student-resources .student-camp > h1{
     background: url(../images/trees.png) no-repeat center;
     background-size: cover;  
 }
 
-.student-resources .student-union > .header{
+.student-resources .student-union > h1{
     background: url(../images/colorpencils.png) no-repeat center;
     background-size: cover;  
 }
 
-.student-resources .singspiration > .header{
+.student-resources .singspiration > h1{
     background: url(../images/singspiration.png) no-repeat center;
     background-size: cover;  
 }
 
-.student-resources .retreat > .header{
+.student-resources .retreat > h1{
     background: url(../images/pray.png) no-repeat center;
     background-size: cover;  
 }
@@ -34,8 +34,8 @@
         flex-basis: 75%;
     }  
 
-    .student-resources .container.section{
-        padding-left: 2rem;
+    .student-resources section{
+        margin-left: 2rem;
     }  
 }
 

@@ -11,6 +11,7 @@ nav.side-nav {
     border: none;
     padding-right: 0;
     color: black;
+    position: relative;
 }
 
 nav.side-nav>.title {
@@ -23,6 +24,8 @@ nav.side-nav>ul.nav-links {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    background-color: white;
+    padding: 10px 0;
 }
 
 nav.side-nav li {
@@ -37,6 +40,8 @@ nav.side-nav li {
     nav.side-nav>ul.nav-links{
         flex-wrap: wrap;
         justify-content: flex-start;
+        padding: 0;
+        padding-top: 10px;
     }
     nav.side-nav > ul.nav-links > li{
         flex-basis: 33%;
@@ -73,13 +78,14 @@ nav.side-nav li {
 
     nav.side-nav {
         display: block;
-        flex-basis: 25%;
+        flex-basis: 24%;
+        border-right: 1px dotted #aaa;
     }
     nav.side-nav>ul.nav-links {
         display: block;
-        height: 100%;
-        padding-right: 1.25rem;
-        border-right: 1px dotted #aaa;
+        padding: 0;
+        /* height: 100%; */
+        background-color: white;
     }
     nav.side-nav li {
         font-size: 0.85rem;
@@ -97,4 +103,19 @@ nav.side-nav li {
     nav.side-nav{
         flex-basis: 25%;
     }
+}
+
+
+
+
+.sticky {
+    position: relative;
+    width: 100%;
+}
+/* apply fixed style when scrolling down */
+.nav-links.fixed {
+   display: block;
+   position: absolute;
+   top:0; 
+   z-index: 99;
 }

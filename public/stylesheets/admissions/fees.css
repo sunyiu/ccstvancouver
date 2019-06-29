@@ -1,0 +1,37 @@
+
+section > h1{
+    background: url(../../images/fee.png) no-repeat center;
+    background-size: cover;
+}
+
+.cost-table {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.border-top{
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+th.percentage{
+    width: 80px;
+}
+th.grade{
+    width: 100px;
+}
+th,
+td{
+    border-top: 1px solid #888;
+    border-right: 1px solid #888;
+    padding: 5px;
+}
+table{
+    border-left: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+
+.note{
+    font-weight: bold !important;
+    padding-top: 1.5rem;
+}

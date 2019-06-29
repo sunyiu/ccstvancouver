@@ -1,0 +1,117 @@
+extends index
+
+block append styles
+    link(rel='stylesheet', href='/stylesheets/admissions/fees.css')
+
+
+block admission-content
+    section
+        h1
+            span #{__('applicationFeeTitle')}
+        div.title-paragraph
+            h1 #{__('applicationFeesAndDeposits')}
+            div.cost-table 
+                span #{__('applicationFee1')}
+                span $50
+            div.cost-table 
+                span #{__('applicationFee2')}
+                span $100
+            div.cost-table 
+                span #{__('applicationFee3')}
+                span $20
+            div.cost-table 
+                span #{__('applicationFee4')}
+                span $300
+            div.cost-table 
+                span #{__('applicationFee5')}
+                span $500
+
+        div.title-paragraph
+            h1 #{__('TuitionAndBasicFees')}
+            div.cost-table 
+                span #{__('tuitionAndBasicFee1')}
+                span $840
+            div.cost-table 
+                span #{__('tuitionAndBasicFee2')}
+                span $12
+            div.cost-table 
+                span #{__('tuitionAndBasicFee3')}
+                span $10
+            div.cost-table 
+                span #{__('tuitionAndBasicFee4')}
+                span $30
+            div.cost-table.border-top
+                span #{__('tuitionAndBasicFee5')}
+                span $892
+
+        div.title-paragraph
+            h1 #{__('doctorOfMinistryTuitionFees')}
+            div.cost-table 
+                span #{__('dMinFee1')}
+                span $50
+            div.cost-table 
+                span #{__('dMinFee2')}
+                span $1,200
+
+        div.title-paragraph
+            h1 #{__('generalFeeSchedule')}
+            div.cost-table 
+                span #{__('generalFee1')}
+                span $400
+            div.cost-table 
+                span #{__('generalFee2')}
+                span $20
+            div.cost-table 
+                span #{__('generalFee3')}
+                span $25
+            div.cost-table
+                span #{__('generalFee4')}
+                span $10
+            div.cost-table 
+                span #{__('generalFee5')}
+                span $10
+            div.cost-table 
+                span #{__('generalFee6')}
+                span $8
+            div.cost-table 
+                span #{__('generalFee7')}
+                span $20
+            div.cost-table 
+                span #{__('generalFee8')} 
+                span $50    
+            div.cost-table 
+                span #{__('generalFee9')}
+                span $100                           
+
+    section
+        h1
+            span #{__('dropOffTitle')} 
+        ul.numbering
+            li #{__('dropOff1')}
+            li #{__('dropOff2')}
+            li #{__('dropOff3')}
+            li #{__('dropOff4')}
+            li #{__('dropOff5')}
+        div
+            table(cellspacing='0')
+                thead
+                    tr
+                        th.date #{__('dropOffDate')}
+                        th.percentage #{__('withdrawalAndRefund')}
+                        th.grade #{__('transcript')}
+                    tbody
+                tr
+                    td #{__('dropOffDate1')}
+                    td 100%
+                    td #{__('na')}
+                tr
+                    td #{__('dropOffDate2')}
+                    td 50%
+                    td #{__('gradeW')}
+                tr
+                    td #{__('dropOffDate3')}
+                    td 0%
+                    td #{__('gradeF')}                                        
+
+            div.note #{__('feeNote')}
+

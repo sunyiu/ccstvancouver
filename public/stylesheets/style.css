@@ -7,7 +7,7 @@
   outline: none;
 }
 :visited{
-  color: rgba(0,0,0,0.5);
+  color: #333;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 
 body {
   background-color: black;
-  color: #888;
+  color:#333;
   font-family: 'Roboto', 'Noto Sans SC', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -34,9 +34,16 @@ a:visited{
   color: black;
 }
 
-li{
+li {
   list-style: none;
 }
+
+
+.padding-bottom-half-rem{
+  padding-bottom: 0.5rem;
+}
+
+
 
 .module{
   position: relative;
@@ -69,16 +76,24 @@ li{
   padding-top: 1rem;
 }
 
-.container.section{
-  padding-bottom: 2rem;
+
+
+section{
+  margin-bottom: 2rem;
+  border-bottom: 1px dotted gray;
   display: block;
 }
+section:last-child{
+  margin-bottom: 0;
+  border-bottom: none;
+  border-bottom: none;
+}
 
-.container.section > .header{
+section > h1{
   height: 150px;
   background-color: #870c0c;
 }
-.container.section > .header > .title{
+section > h1 > span{
   display: inline-block;
   background-color: rgba(135,12,12,0.85);
   color: white;
@@ -89,30 +104,84 @@ li{
   border-radius: 0 1rem 1rem 0;
   text-transform: uppercase;
 }
-.container.section > ul.desc-container{
-  /* background-color: #ccc; */
+/* section > div{
   color: #333;
-  padding: 1rem;
+  padding: 1rem 2rem 0 2rem;
   font-weight: 300;
 }
-.container.section.no-box > ul.desc-container{
+section.no-box > div{
   background-color: inherit;
   padding: 0;
   padding-top: 1rem;
 }
-.container.section > ul.desc-container > li{
-  padding-bottom: 1.25rem;
-}
-.container.section > ul.desc-container > li:last-child{
-  padding-bottom: 0;
+section > div .wrap-boxes{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+section > *:not(*:first-child){
+  font-weight: 300;
+  margin: 1rem 15px 2rem 15px;   
 }
 
-.container.section > ul.desc-container .wrap-boxes{
-  display:flex;
+
+
+/* article{
+  font-weight: 300;
+  padding: 1rem 25px 1.5rem 0;
+  margin-left: 25px;
+}
+article h1{
+  padding-bottom: 1.25rem;
+} */
+
+/*numbering
+.numbering{
+  position: relative;
+  display: flex;
+}
+.numbering > *:first-child {
+  min-width: 25px;
+  width: 25px;
+  max-width: 25px;
+}
+.numbering > *:not(*:first-child){
+  width: 100%;
+}
+*/
+
+/*title + paragraph*/
+.title-paragraph > h1:first-child{
+  font-size: 1.2rem;
+}
+.title-paragraph > *:first-child{
+  padding-bottom: 1rem;
+}
+.title-paragraph > *:not(:first-child){
+  margin-left: 25px;
+}
+.title-paragraph{
+  margin-bottom: 1.25rem;
+}
+
+.wrap-boxes {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+/* section > ul.desc-container > li{
+  padding-bottom: 1.25rem;
+}
+section > ul.desc-container > li:last-child{
+  padding-bottom: 0;
+} */
+
+
+
+
+/*box container*/
 .box-container{
   background-color: white;
   border: 2px solid rgb(135,12,12);
@@ -130,10 +199,60 @@ li{
 }
 
 
+ul.numbering{
+  list-style: none;
+  counter-reset: ul-counter;
+}
+ul.numbering > li{
+  counter-increment: ul-counter;
+  margin: 0 0 1.25rem 25px;
+  position: relative;
+}
+ul.numbering > li::before{
+  content: counter(ul-counter) ". ";
+  position: absolute;
+  width: 25px;
+  left: -25px;
+}
+
+ul.numbering-abc{
+  list-style: none;
+  counter-reset: ul-counter-abc;
+}
+ul.numbering-abc li{
+  counter-increment: ul-counter-abc;
+  margin: 0 0 0.5rem 25px;
+  position: relative;
+}
+ul.numbering-abc li::before{
+  content: counter(ul-counter-abc, lower-alpha) ". ";
+  position: absolute;
+  width: 25px;
+  left: -25px;
+}
 
 
-
-
+.question-answer > div::before{
+  width: 30px;
+  left: -30px;
+  position: absolute;
+}
+body.en .question-answer > div:first-child::before{
+  content: 'Q:';
+}
+body.en .question-answer > div:last-child::before{
+  content: 'A:';
+}
+body.zh .question-answer > div:first-child::before{
+  content: '問:';
+}
+body.zh .question-answer > div:last-child::before{
+  content: '答:';
+}
+.question-answer > div{
+  margin: 0 0 0.5rem 30px;
+  position: relative;
+}
 
 
 
@@ -157,15 +276,18 @@ li{
   font-size: 2em;
   padding-bottom: 1em;
 }
-.footer > .container > div.details div{
+.footer > .container > div.details{
   padding-bottom: 0.5em;
+  display: flex;
+  align-items: center;
 }
 .footer > .container > div.details div:first-child{
-  display: inline-block;
-  position: absolute;
+  width: 200px;
+  text-align: right;
 }
 .footer > .container > div.details div:last-child{
-  padding-left: 150px;
+  padding-left: 50px;
+  flex-basis: 100%;
 }
 
 

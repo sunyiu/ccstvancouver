@@ -1,0 +1,17 @@
+section h1 {
+    background: url(../../images/admission.png) no-repeat left;
+    background-size: cover;
+}
+
+
+.wrap-boxes>div {
+    flex-basis: 32%;
+}
+
+.wrap-boxes.letters>div{
+    flex-basis: 48%;
+}
+
+.note{
+    font-weight: bold !important;
+}
