@@ -1,7 +1,7 @@
  #prog-dmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
      background-color: #ccc;
      padding: 3px;
- } 
+ }
 
  .cost-table {
      display: flex;
@@ -13,12 +13,12 @@
      background-color: #ccc;
  }
 
-section > h1 {
+ section>h1 {
      background: url(../../images/book1.jpg) no-repeat center;
      background-size: cover;
  }
 
-li.box-container {
+ li.box-container {
      padding-bottom: 45px;
      position: relative;
  }
@@ -38,9 +38,23 @@ li.box-container {
      font-size: 0.85rem;
  }
 
-
  @media (min-width: 576px) {
      .wrap-boxes .box-container {
          flex-basis: 48%;
      }
  }
+
+ .sticky {
+     height: 50px;
+     background: #555;
+     color: #f1f1f1;
+     width: 100%;
+     display: none;
+ }
+
+ .fixed {
+    display: block;
+    position: fixed;
+    top:0; 
+    z-index: 99;
+}

@@ -276,15 +276,18 @@ body.zh .question-answer > div:last-child::before{
   font-size: 2em;
   padding-bottom: 1em;
 }
-.footer > .container > div.details div{
+.footer > .container > div.details{
   padding-bottom: 0.5em;
+  display: flex;
+  align-items: center;
 }
 .footer > .container > div.details div:first-child{
-  display: inline-block;
-  position: absolute;
+  width: 200px;
+  text-align: right;
 }
 .footer > .container > div.details div:last-child{
-  padding-left: 150px;
+  padding-left: 50px;
+  flex-basis: 100%;
 }
 
 

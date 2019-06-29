@@ -4,7 +4,9 @@ block append styles
     link(rel='stylesheet', href='/stylesheets/admissions/programs.css')
 
 
-block admission-content 
+block admission-content
+
+    div.sticky
 
     section
         h1
@@ -294,7 +296,16 @@ block admission-content
             span #{__('progAudit')}
         div #{__('audit1')}
 
+    script.
+        var stickyOffset = $('#prog-dmin div').offset().top - 50;   //50 is the height of sticky (defined in css)
 
+        $(window).scroll(function(){
+            var sticky = $('.sticky'),
+                scroll = $(window).scrollTop();
+
+            if (scroll >= stickyOffset) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
+        });
 
 
 
