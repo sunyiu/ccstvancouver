@@ -3,11 +3,9 @@ header.side-nav{
     color: black;
     text-transform: uppercase;
     padding-bottom: 0.75rem;
-    flex-basis: 100%;
 }
 
 nav.side-nav {
-    flex-basis: 100%;
     border: none;
     padding-right: 0;
     color: black;
@@ -34,26 +32,23 @@ nav.side-nav li {
 }
 
 @media (max-width: 575px) {
-    nav.side-nav{
-        
-    }
     nav.side-nav>ul.nav-links{
         flex-wrap: wrap;
-        justify-content: flex-start;
         padding: 0;
         padding-top: 10px;
     }
     nav.side-nav > ul.nav-links > li{
-        flex-basis: 33%;
+        flex-basis: 32%;
         height: 65px;
+        margin-bottom: 5px;
         position: relative;
     }
     nav.side-nav > ul.nav-links > li > a{
         position: absolute;
         top: 0;
-        bottom: 5px;
+        bottom: 0;
         left: 0;
-        right: 5px;
+        right: 0;
         background-color: #0845a8;
         padding-top: 0.25rem;
         padding-left: 0.5rem;
@@ -62,12 +57,28 @@ nav.side-nav li {
     } 
     nav.side-nav > ul.nav-links > li.selected > a{
         background-color: rgba(135,12,12,1);
-    }   
+    }  
+    
+    nav.side-nav.fixed{
+        padding-bottom: 150px;
+    }
+    nav.side-nav.fixed .nav-links{
+        top: 10px;
+        left: 1rem;
+        right: 1rem;
+    }
 }
 
 @media (min-width: 576px) {
     nav.side-nav li.selected {
         border-bottom: 2px solid rgba(135,12,12,1);
+    }
+
+    nav.side-nav.fixed{
+        padding-bottom: 44px;
+    }
+    nav.side-nav.fixed .nav-links{
+        width: 540px;
     }
 }
 
@@ -78,8 +89,8 @@ nav.side-nav li {
 
     nav.side-nav {
         display: block;
-        flex-basis: 24%;
-        border-right: 1px dotted #aaa;
+        width: 175px;
+        position: absolute;
     }
     nav.side-nav>ul.nav-links {
         display: block;
@@ -97,25 +108,22 @@ nav.side-nav li {
     nav.side-nav li.selected a {
         border-bottom: 2px solid rgba(135,12,12,1);
     }
-}
 
-@media (min-width: 992px) {
-    nav.side-nav{
-        flex-basis: 25%;
+    nav.side-nav.fixed{
+        padding-bottom: 0;
+    }
+    nav.side-nav.fixed .nav-links{
+        width: 175px;
     }
 }
 
-
-
-
-.sticky {
-    position: relative;
-    width: 100%;
+@media (min-width: 992px) {
 }
-/* apply fixed style when scrolling down */
-.nav-links.fixed {
-   display: block;
-   position: absolute;
+
+
+
+nav.side-nav.fixed .nav-links {
+   position: fixed;
    top:0; 
    z-index: 99;
 }

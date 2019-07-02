@@ -10,19 +10,19 @@ section h1{
     background-repeat: no-repeat;
 }
 
-section.instructor1 h1,
-section.special_instructor h1{
+section.emeritus h1,
+section.instructor h1{
     background-image: url('../../images/books.png');
 }
 
-section.instructor2 h1{
+section.professor h1{
     background-image: url('../../images/instructor.png');
 }
 
-section.instructor3 .h1{
+section.associate h1{
     background-image: url('../../images/instructor2.png');
 }
 
-section.instructor4 .h1{
+section.assistant h1{
     background-image: url('../../images/instructor3.png');
 }

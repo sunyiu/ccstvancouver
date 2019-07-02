@@ -1,9 +1,15 @@
-section.international > h1{
+section.international>h1 {
     background: url(../../images/airplane.png) no-repeat center;
     background-size: cover;
 }
 
-section.international > div{
+section.international>div {
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .module>.container>.context {
+        min-height: 340px;
+    }
 }

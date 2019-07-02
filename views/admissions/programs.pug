@@ -6,12 +6,13 @@ block append styles
 
 block admission-content
 
-    div.sticky
-
+    //- div.section-nav
+    //-     a(href='#top') #{__('program')}
+    //-     a(href='#prog-dmin') #{__('progDMin')}
+     
     section
         h1
-            span #{__('program')}
-        
+            span #{__('program')}        
         ul.wrap-boxes
             li.box-container
                 div.title #{__('progDMin')}
@@ -38,7 +39,7 @@ block admission-content
                 div.context #{__('progAuditDesc')}
                 a(class='detail-btn', href='#prog-audit') #{__('fulldetail')}
 
-    section(id='prog-dmin')
+    section(id='prog-dmin' name='prog-dmin')
         h1
             span #{__('progDMin')}        
         div.title-paragraph
@@ -297,10 +298,10 @@ block admission-content
         div #{__('audit1')}
 
     script.
-        var stickyOffset = $('#prog-dmin div').offset().top - 50;   //50 is the height of sticky (defined in css)
+        var stickyOffset = $('section#prog-dmin').offset().top;   //50 is the height of sticky (defined in css)
 
         $(window).scroll(function(){
-            var sticky = $('.sticky'),
+            var sticky = $('.section-nav'),
                 scroll = $(window).scrollTop();
 
             if (scroll >= stickyOffset) sticky.addClass('fixed');
