@@ -6,12 +6,12 @@ block append styles
     link(rel='stylesheet', href='/stylesheets/academic/instructors.css')
 
 block academic-content
-    section
+    section.emeritus
         h1 
             span #{__('emeritusProfessor')}
         +instructor('drJohnHsu', [], ['drJohnHsu1', 'drJohnHsu2', 'drJohnHsu3'], '')
 
-    section
+    section.professor
         h1 
             span #{__('professor')}
         +instructor(
@@ -20,7 +20,7 @@ block academic-content
             ['drJasonYeung2', 'drJasonYeung3', 'drJasonYeung4','drJasonYeung5','drJasonYeung6','drJasonYeung7'], 
             '')       
 
-    section
+    section.associate
         h1 
             span #{__('associateProfessors')}
         +instructor(
@@ -34,7 +34,7 @@ block academic-content
             ['drEdwinLee2', 'drEdwinLee3', 'drEdwinLee4','drEdwinLee5','drEdwinLee6'], 
             '')
 
-    section
+    section.assistant
         h1 
             span #{__('assistantProfessors')}
         +instructor(
