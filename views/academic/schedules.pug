@@ -1,0 +1,69 @@
+extends index
+include instructor
+
+block append styles
+    link(rel='stylesheet', href='/stylesheets/academic/schedules.css')
+
+block academic-content
+    section
+        h1 
+            span #{__('course_schedule_desc1')}
+        ul.numbering
+            li #{__('course_schedule_desc1_1')}
+            li 
+                div
+                    div #{__('course_schedule_desc1_2')}
+                    ul.numbering-abc
+                        li #{__('course_schedule_desc1_2a')}
+                        li #{__('course_schedule_desc1_2b')}
+                        li #{__('course_schedule_desc1_2c')}
+        div #{__('course_schedule_desc2')}
+
+        div.title-paragraph
+            h1 #{__('course_schedule_table')}
+            div
+                table
+                    thead
+                        tr
+                            th.date #{__('course_schedule_table_date')}
+                            th #{__('course_schedule_table_course')}
+                            th #{__('course_schedule_table_location')}
+                            th.professor #{__('course_schedule_table_professor')}
+                    tbody
+                        tr
+                            td #{__('course_schedule_table_date_1')}
+                            td #{__('course_schedule_table_course_1')}
+                            td #{__('course_schedule_table_location_1')}
+                            td #{__('course_schedule_table_professor_1')}
+                        tr
+                            td #{__('course_schedule_table_date_2')}
+                            td #{__('course_schedule_table_course_2')}
+                            td #{__('course_schedule_table_location_2')}
+                            td #{__('course_schedule_table_professor_2')}
+                        tr
+                            td #{__('course_schedule_table_date_3')}
+                            td #{__('course_schedule_table_course_3')}
+                            td #{__('course_schedule_table_location_3')}
+                            td #{__('course_schedule_table_professor_3')}
+                        tr
+                            td 
+                                div #{__('course_schedule_table_date_4_1')}
+                                div #{__('course_schedule_table_date_4_2')}
+                            td #{__('course_schedule_table_course_4')}
+                            td #{__('course_schedule_table_location_4')}
+                            td #{__('course_schedule_table_professor_4')}
+                        tr
+                            td #{__('course_schedule_table_date_5')}
+                            td #{__('course_schedule_table_course_5')}
+                            td #{__('course_schedule_table_location_5')}
+                            td #{__('course_schedule_table_professor_5')}
+                        tr
+                            td #{__('course_schedule_table_date_6')}
+                            td #{__('course_schedule_table_course_6')}
+                            td #{__('course_schedule_table_location_6')}
+                            td #{__('course_schedule_table_professor_6')}
+                        tr
+                            td #{__('course_schedule_table_date_7')}
+                            td #{__('course_schedule_table_course_7')}
+                            td #{__('course_schedule_table_location_7')}
+                            td #{__('course_schedule_table_professor_7')}

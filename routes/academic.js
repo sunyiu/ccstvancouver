@@ -13,4 +13,8 @@ router.get('/courses', function (req, res, next) {
   res.render('academic/courses');
 });
 
+router.get('/schedules', function (req, res, next) {
+  res.render('academic/schedules');
+});
+
 module.exports = router;
