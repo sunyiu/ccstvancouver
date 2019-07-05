@@ -8,17 +8,17 @@ mixin side-nav(title, items)
                 li(class= (index==sideNavHLIndex) ? '_selected link' : 'link')
                     a(href=item.link)!= __(item.name)
 
-    script.
-        $(function(){
-            var navLinks = $('nav.side-nav'),
-                offsetTop = navLinks.offset().top;  
+    //- script.
+    //-     $(function(){
+    //-         var navLinks = $('nav.side-nav'),
+    //-             offsetTop = navLinks.offset().top;  
             
-            $(window).scroll(function(){
-                var scroll = $(window).scrollTop();
-                if (scroll >= offsetTop){
-                    navLinks.addClass('fixed');
-                }else{
-                    navLinks.removeClass('fixed');
-                } 
-            });
-        })
+    //-         $(window).scroll(function(){
+    //-             var scroll = $(window).scrollTop();
+    //-             if (scroll >= offsetTop){
+    //-                 navLinks.addClass('fixed');
+    //-             }else{
+    //-                 navLinks.removeClass('fixed');
+    //-             } 
+    //-         });
+    //-     })

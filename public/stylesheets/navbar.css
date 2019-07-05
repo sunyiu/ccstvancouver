@@ -9,6 +9,10 @@
     list-style: none;
 }
 
+.navbar-tools #langBtn{
+    cursor: pointer;
+}
+
 .navbar-logo {
     display: block;
     margin-right: 1rem;
@@ -18,8 +22,10 @@
     font-weight: 700;
     color: rgba(0, 0, 0, .9);
     width: 55px;
-    background: url(../images/logo_clean.png) no-repeat;
+    height: 55px;
+    background: url('/images/logo.png') no-repeat;
     background-size: contain;
+    margin: auto;
 }
 
 .navbar-logo img {
@@ -33,6 +39,8 @@
 
 .navbar-items-container .title{
     font-size: 1.35rem;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .navbar-items {
@@ -42,7 +50,7 @@
     margin-bottom: 0;
     list-style: none;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .nav-link {
@@ -51,7 +59,7 @@
     font-weight: 700;
     letter-spacing: .05rem;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: .8rem;
     color: rgba(0, 0, 0, .5);
 }
@@ -68,18 +76,19 @@
         flex-direction: column;
         align-items: center;
     }
-    .navbar-logo{
-        margin-right: 0;    
-        height: 50px;    
-    }
-    .navbar-items-container .title{
-        display: none;
-    }
 }
 
 @media (min-width: 576px) {
+    .navbar-logo{
+        float: left;
+    }
     .navbar-items-container .title{
         font-size: 1.15rem;
+        text-align: left;
+        padding-left: 65px;
+    }
+    .navbar-items {
+        justify-content: flex-start;
     }
 }
 
