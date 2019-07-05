@@ -30,10 +30,10 @@ html
                     a(id='langBtn' onclick="window.location.href = window.location.href.substring(0, window.location.href.lastIndexOf('?')) + '?lang=" + __('other_locale') + "'") 
                         i(class="material-icons md-36") translate
 
-            a(class='navbar-logo' href="/")
-
             div(class='navbar-items-container')
-                div.title #{__('title')}
+                div
+                    a(class='navbar-logo' href="/")
+                    div.title #{__('title')}
                 ul(class='navbar-items links')
                     li(class='nav-link')
                         a(href='/admissions/vancouver') #{__('admissions')}
