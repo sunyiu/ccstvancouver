@@ -264,7 +264,7 @@ body.zh .question-answer>div:last-child::before {
 }
 
 .footer>.container {
-  padding: 2rem 0 0.5rem 0;
+  padding: 2rem 1rem 0.5rem 1rem;
   margin: auto;
 }
 
@@ -273,12 +273,14 @@ body.zh .question-answer>div:last-child::before {
   background-size: 40px;
   font-size: 0.8rem;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 65px;
+  background-position: center 15px;
 }
 
 .footer>.container>div.title {
   font-size: 2em;
   padding-bottom: 1em;
+  text-align: center;
 }
 
 .footer>.container>div.details {
@@ -311,6 +313,9 @@ body.zh .question-answer>div:last-child::before {
   }
   .container.section.side-by-side>.desc-container {
     flex-basis: 70%;
+  }
+  .footer>.container>div.title {
+    text-align: left;
   }
 }
 
