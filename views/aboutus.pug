@@ -1,0 +1,91 @@
+extends layout
+
+block styles
+    link(rel='stylesheet', href='/stylesheets/side-nav.css')
+    link(rel='stylesheet', href='/stylesheets/about-us.css')
+
+block content
+
+    div.module
+        div.container
+            include side-nav
+            +side-nav('about_us', [
+                {name:'staff_team', link:'#staff'}, 
+                {name:'ccst_van_board', link:'#board'}, 
+                {name:'accreditation', link:'#accreditation'}])
+
+            div.context
+                section(id='staff')
+                    h1
+                        span #{__('staff_team')}
+                    div.staffs_container
+                        div.staffs
+                            div.staff_container 
+                                div #{__('principal')}
+                                div #{__('principal_name')}
+                            div.staff_container 
+                                div #{__('academic_dean')}
+                                div #{__('academic_dean_name')}
+                            div.staff_container 
+                                div #{__('assistant_academic_dean')}
+                                div #{__('assistant_academic_dean_name')}
+                            div.staff_container 
+                                div #{__('dean_students')}
+                                div #{__('dean_students_name')}
+                            div.staff_container 
+                                div #{__('administration_assistant_library')}
+                                div #{__('administration_assistant_library_name')}
+                            div.staff_container 
+                                div #{__('director_ccst_van_choir')}
+                                div #{__('director_ccst_van_choir_name')}
+                        div.staffs
+                            div.staff_container 
+                                div #{__('emeritusProfessor')}
+                                div #{__('drJohnHsu')}
+                            div.staff_container 
+                                div #{__('associate_professor_theology')}
+                                div #{__('associate_professor_theology_name')}
+                            div.staff_container 
+                                div #{__('director_administration')}
+                                div #{__('director_administration_name')}
+                            div.staff_container 
+                                div #{__('administration_assistant_finanical')}
+                                div #{__('administration_assistant_finanical_name')}
+                            div.staff_container 
+                                div #{__('counsellor_spiritual')}
+                                div #{__('counsellor_spiritual_name')}                                                                                                                                                                                                                        
+
+                section(id='board')
+                    h1
+                        span #{__('ccst_van_board')}
+                    div #{__('ccst_van_board_desc')}
+                    div.staff_container 
+                        div #{__('chairperson')}
+                        div #{__('chairperson_name')}                    
+                    div.staff_container 
+                        div #{__('vice_chair')}
+                        div #{__('vice_chair_name')}                    
+                    div.staff_container 
+                        div #{__('treasure')}
+                        div #{__('treasure_name')}                    
+                    div.staff_container 
+                        div #{__('secretary')}
+                        div #{__('secretary_name')}                    
+                    div.staff_container 
+                        div #{__('committee')}
+                        div #{__('committee_name_1')}, #{__('committee_name_2')}, #{__('committee_name_3')}, #{__('committee_name_4')}, #{__('committee_name_5')}, #{__('committee_name_6')}, #{__('committee_name_7')}, #{__('committee_name_8')}                     
+
+                section(id='accreditation') 
+                    h1
+                        span #{__('accreditation')}
+                    ul.numbering
+                        li 
+                            div #{__('accreditation_1')} (#{__('accreditation_1_link')})
+                            div #{__('accreditation_1_desc')}
+                        li 
+                            div #{__('accreditation_2')}
+                            div #{__('accreditation_2_desc')}
+                        li 
+                            div #{__('accreditation_3')} (#{__('accreditation_3_link')})
+                            div #{__('accreditation_3_desc')}
+
