@@ -70,12 +70,17 @@ nav.side-nav li {
 }
 
 @media (min-width: 576px) {
+    
     nav.side-nav li.selected {
         border-bottom: 2px solid rgba(135,12,12,1);
     }
 
     nav.side-nav.fixed{
         padding-bottom: 44px;
+    }
+
+    nav.side-nav > ul.nav-links{
+        justify-content: space-around;
     }
     nav.side-nav.fixed .nav-links{
         width: 540px;
