@@ -69,11 +69,11 @@ block academic-content
                             td #{__('course_schedule_table_professor_7')}
 
         div.title-paragraph
-            h1 
+            h1.schedule_header 
                 div #{__('course_schedule_table_2')}
                 div #{__('course_schedule_table_2_date')}
                 div #{__('course_schedule_table_2_update_date')}
-            div
+            div.schedule_container
                 div
                     div #{__('course_schedule_table_2_course_date')}
                     div #{(__('course_schedule_table_2_1_date'))}
@@ -86,7 +86,7 @@ block academic-content
                         |&nbsp;#{__('course_schedule_table_2_1_name')}
                         |&nbsp;(#{__('course_schedule_table_2_1_teacher')})
             
-            div
+            div.schedule_container
                 div
                     div #{__('course_schedule_table_2_course_date')}
                     div #{(__('course_schedule_table_2_2_date'))}
@@ -99,13 +99,15 @@ block academic-content
                         |&nbsp;#{__('course_schedule_table_2_2_name')}
                         |&nbsp;(#{__('course_schedule_table_2_2_teacher')})
 
-            div
+            div.schedule_container
                 div
                     div #{__('course_schedule_table_2_course_date')}
                     div #{(__('course_schedule_table_2_3_date'))}
                 div
                     div #{__('course_schedule_table_2_course_time')}
-                    div #{__('course_schedule_table_2_3_time')}
+                    div 
+                        div #{__('course_schedule_table_2_3_time1')}
+                        div #{__('course_schedule_table_2_3_time2')}
                 div 
                     div #{__('course_schedule_table_2_course_code')}
                     div #{__('course_schedule_table_2_3_code')}
@@ -117,7 +119,7 @@ block academic-content
                         |#{__('course_schedule_table_2_course_note')}
                     div #{__('course_schedule_table_2_3_note')}
 
-            div
+            div.schedule_container
                 div
                     div #{__('course_schedule_table_2_course_date')}
                     div #{(__('course_schedule_table_2_4_date'))}
@@ -130,20 +132,22 @@ block academic-content
                         |&nbsp;#{__('course_schedule_table_2_4_name')}
                         |&nbsp;(#{__('course_schedule_table_2_4_teacher')})
 
-            div
+            div.schedule_container
                 div
                     div #{__('course_schedule_table_2_course_date')}
                     div #{(__('course_schedule_table_2_5_date'))}
                 div
                     div #{__('course_schedule_table_2_course_time')}
-                    div #{__('course_schedule_table_2_5_time')}
+                    div 
+                        div #{__('course_schedule_table_2_5_time1')}
+                        div #{__('course_schedule_table_2_5_time2')}
                 div 
                     div #{__('course_schedule_table_2_course_code')}
                     div #{__('course_schedule_table_2_5_code')}
                         |&nbsp;#{__('course_schedule_table_2_5_name')}
                         |&nbsp;(#{__('course_schedule_table_2_5_teacher')})           
 
-            div
+            div.schedule_container
                 div
                     div #{__('course_schedule_table_2_course_date')}
                     div #{(__('course_schedule_table_2_6_date'))}
@@ -160,3 +164,74 @@ block academic-content
                         |&nbsp;/&nbsp;
                         |#{__('course_schedule_table_2_course_note')}
                     div #{__('course_schedule_table_2_6_note')}  
+
+        div.title-paragraph
+            h1.schedule_header 
+                div #{__('course_schedule_table_3')}
+                div #{__('course_schedule_table_3_date')}
+                div #{__('course_schedule_table_3_update_date')}
+            div.schedule_container
+                div
+                    div #{__('course_schedule_table_2_course_date')}
+                    div #{(__('course_schedule_table_3_1_date'))}
+                div
+                    div #{__('course_schedule_table_2_course_time')}
+                    div #{__('course_schedule_table_3_1_time')}
+                div 
+                    div #{__('course_schedule_table_2_course_code')}
+                    div #{__('course_schedule_table_3_1_code')}
+                        |&nbsp;#{__('course_schedule_table_3_1_name')}
+                        |&nbsp;(#{__('course_schedule_table_3_1_teacher')})
+                div 
+                    div #{__('course_schedule_table_2_course_note')}
+                    div #{__('course_schedule_table_3_1_note')}
+            
+            div.schedule_container
+                div
+                    div #{__('course_schedule_table_2_course_date')}
+                    div #{(__('course_schedule_table_3_2_date'))}
+                div
+                    div #{__('course_schedule_table_2_course_time')}
+                    div 
+                        div #{__('course_schedule_table_3_2_time1')}
+                        div #{__('course_schedule_table_3_2_time2')}
+                div 
+                    div #{__('course_schedule_table_2_course_code')}
+                    div #{__('course_schedule_table_3_2_code')}
+                        |&nbsp;#{__('course_schedule_table_3_2_name')}
+                        |&nbsp;(#{__('course_schedule_table_3_2_teacher')})
+                div 
+                    div #{__('course_schedule_table_2_course_note')}
+                    div #{__('course_schedule_table_3_2_note')}
+
+            div.schedule_container
+                div
+                    div #{__('course_schedule_table_2_course_date')}
+                    div #{(__('course_schedule_table_2_3_date'))}
+                div
+                    div #{__('course_schedule_table_2_course_time')}
+                    div #{__('course_schedule_table_3_3_time')}
+                div 
+                    div #{__('course_schedule_table_2_course_code')}
+                    div #{__('course_schedule_table_3_3_code')}
+                        |&nbsp;#{__('course_schedule_table_3_3_name')}
+                        |&nbsp;(#{__('course_schedule_table_3_3_teacher')})
+                div 
+                    div #{__('course_schedule_table_2_course_note')}
+                    div #{__('course_schedule_table_3_3_note')}
+
+            div.schedule_container
+                div
+                    div #{__('course_schedule_table_2_course_date')}
+                    div #{(__('course_schedule_table_3_4_date'))}
+                div
+                    div #{__('course_schedule_table_2_course_time')}
+                    div #{__('course_schedule_table_3_4_time')}
+                div 
+                    div #{__('course_schedule_table_2_course_code')}
+                    div #{__('course_schedule_table_3_4_code')}
+                        |&nbsp;#{__('course_schedule_table_3_4_name')}
+                        |&nbsp;(#{__('course_schedule_table_3_4_teacher')})
+                div 
+                    div #{__('course_schedule_table_2_course_note')}
+                    div #{__('course_schedule_table_3_4_note')}

@@ -23,3 +23,24 @@ th.professor{
 .en th.professor{
     width: 120px;
 }
+
+h1.schedule_header div:not(:first-child){
+    font-size: 1rem;
+    font-weight: normal;
+}
+h1.schedule_header div:last-child{
+    font-size: 0.85rem;
+}
+
+div.schedule_container{
+    margin-bottom: 25px;
+}
+div.schedule_container > div{
+    display: flex;
+}
+div.schedule_container > div > div:first-child{
+    flex-basis: 100px;
+    min-width: 100px;
+    margin-right: 25px;
+    text-align: right;
+}
