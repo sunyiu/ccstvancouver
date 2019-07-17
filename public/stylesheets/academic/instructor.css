@@ -8,8 +8,8 @@
     }
 
     .instructor .image{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         background-color: #f4b342;
         background-image: url(../../images/baseline-person-24px.svg);
@@ -20,8 +20,15 @@
         display: inline-block;
         position: absolute;
     }
+    .sm .instructor .image{
+        width: 80px;
+        height: 80px;
+    }
 
     .instructor .details{
+        padding-left: 125px;
+    }
+    .sm .instructor .details{
         padding-left: 105px;
     }
 
