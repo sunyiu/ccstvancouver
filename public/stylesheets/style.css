@@ -283,6 +283,7 @@ body.zh .question-answer>div:last-child::before {
   font-size: 2em;
   padding-bottom: 1em;
   text-align: center;
+  line-height: 1.25;
 }
 
 .footer>.container>div.details {

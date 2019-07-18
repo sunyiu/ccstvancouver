@@ -29,7 +29,6 @@ nav.side-nav>ul.nav-links {
 nav.side-nav li {
     font-size: 0.75rem;
     text-transform: uppercase;
-    text-align: center;
 }
 
 @media (max-width: 575px) {
@@ -71,6 +70,10 @@ nav.side-nav li {
 }
 
 @media (min-width: 576px) {
+
+    nav.side-nav li {
+        text-align: center;
+    }
     
     nav.side-nav li.selected {
         border-bottom: 2px solid rgba(135,12,12,1);
@@ -89,6 +92,11 @@ nav.side-nav li {
 }
 
 @media (min-width: 768px) {
+
+    nav.side-nav li {
+        text-align: left;
+    }
+    
     header.side-nav{
         padding-bottom: 1.5rem;
     }
