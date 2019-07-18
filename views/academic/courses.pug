@@ -5,8 +5,8 @@ block append styles
     link(rel='stylesheet', href='/stylesheets/academic/courses.css')
 
 block academic-content
-    section
-        h1 
+    section.dmin
+        h1
             span #{__('course1')}
         +course('course1_1_code', 'course1_1_name',['course1_1_desc'],'')
         +course('course1_2_code', 'course1_2_name',['course1_2_desc'],'')
@@ -31,7 +31,7 @@ block academic-content
         +course('course1_21_code', 'course1_21_name',['course1_21_desc'],'')
         +course('course1_22_code', 'course1_22_name',['course1_22_desc'],'')
 
-    section
+    section.mts
         h1 
             span #{__('course2')}
         div.course-group #{__('course2a')}

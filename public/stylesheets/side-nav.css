@@ -29,6 +29,7 @@ nav.side-nav>ul.nav-links {
 nav.side-nav li {
     font-size: 0.75rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 @media (max-width: 575px) {

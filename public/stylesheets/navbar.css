@@ -1,5 +1,6 @@
 .navbar .container{
     border-bottom: 1px solid rgba(0,0,0,0.5);
+    padding-bottom: 0.25rem;
 }
 
 .navbar-tools {
@@ -51,6 +52,7 @@
     list-style: none;
     width: 100%;
     justify-content: space-around;
+    align-items: flex-end;
 }
 
 .nav-link {
@@ -62,6 +64,7 @@
     font-size: 0.75rem;
     line-height: .8rem;
     color: rgba(0, 0, 0, .5);
+        width: 25%;
 }
 .nav-link:first-child{
     padding-left: 0;

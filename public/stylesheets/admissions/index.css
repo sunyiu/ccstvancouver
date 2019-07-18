@@ -3,10 +3,17 @@
 }
 
 @media (min-width: 576px) {
-
+    .en nav.side-nav li{
+        width: 80px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
+    .en nav.side-nav li{
+        width: auto;
+        text-align: left;
+    }
     /* .module > .container > .context{
         padding-top: 0;
         flex-basis: 75%;
