@@ -1,3 +1,21 @@
+section h1{
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #709dc7;
+}
+
+section.dmin h1{
+    background-image: url('../../images/dmin.png');
+}
+
+section.mts h1{
+    background-image: url('../../images/mts.png');
+}
+section h1 span{
+    margin-right: 200px;
+}
+
+
 
 .course{
     position: relative;

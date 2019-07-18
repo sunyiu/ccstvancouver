@@ -11,7 +11,7 @@ section h1{
 }
 
 section.emeritus h1,
-section.instructor h1{
+section.instructors2 h1{
     background-image: url('../../images/books.png');
 }
 
@@ -25,4 +25,8 @@ section.associate h1{
 
 section.assistant h1{
     background-image: url('../../images/instructor3.png');
+}
+
+section.instructors2 > div > div{
+    margin-bottom: 2rem;
 }

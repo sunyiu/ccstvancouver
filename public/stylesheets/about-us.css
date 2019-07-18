@@ -20,16 +20,40 @@ section#staff h1{
     color: white;
 }
 
+.member_container{
+    display: flex;
+    margin-bottom: 5px;
+}
+.member_container > div{
+    padding: 5px;
+}
+.member_container > div:first-child{
+    flex-basis: 25%;
+    margin-right: 1rem;
+    background-color: gray;
+    color: white;
+}
+.member_container > div:last-child{
+}
+
+
+.link_container{
+    display: flex;
+    align-items: center;
+    color: #999;
+    padding: 5px 0;
+}
+.link_container i{
+    padding-right: 5px;
+}
+.link_container a{
+    display: block;
+    overflow-wrap: break-word;
+    overflow: auto;
+    color: #999;
+    font-size: 0.85rem;
+}
+
 @media (min-width: 576px) {
-    .staff_container {
-        display: flex;
-    }
-    .staff_container>div:first-child{
-        text-align: right;
-        background-color: inherit;
-        padding: 0;
-        padding-right: 1rem;
-        flex-basis: 40%;
-        color: #333;
-    }
+
 }
