@@ -344,7 +344,7 @@
 	"drIvanLeung4": "M.Div. Regent College, Canada",
 	"drIvanLeung5": "D.Min. Western Seminary, USA",
 	"drEdwinLee": "Rev. Dr. Edwin Lee, Ph.D.",
-	"drEdwinLee1": "Associate Professor of Theology",
+	"drEdwinLee1": "Professor of Theology",
 	"drEdwinLee2": "B.A.Sc. University of British Columbia, Canada",
 	"drEdwinLee3": "M.A.Sc. University of British Columbia, Canada",
 	"drEdwinLee4": "M.Div. Regent College, Canada",
@@ -759,7 +759,7 @@
 	"about_us": "About Us",
 	"staff_team": "Staff Team",
 	"principal": "Principal",
-	"principal_nane": "Rev. Dr. Ivan Leung",
+	"principal_name": "Rev. Dr. Ivan Leung",
 	"academic_dean": "Academic Dean",
 	"academic_dean_name": "Rev. Dr. Jason Yeung",
 	"assistant_academic_dean": "Assistant Academic Dean",
@@ -777,6 +777,7 @@
 	"counsellor_spiritual": "Counsellor of Spiritual Direction",
 	"counsellor_spiritual_name": "Mrs. Alison Yeung",
 	"director_ccst_van_choir": "Director of CCST Vancouver Choir",
+	"drzionwu_2": "Adjunct Faculty",
 	"director_ccst_van_choir_name": "Rev. Dr. Zion Wu",
 	"ccst_van_board": "CCST Vancouver Board",
 	"ccst_van_board_desc": "The Board is responsible for the management, aD.Min.istration and control of the affairs, business, revenue and property of the college.  It consists of local pastors, church leaders and representatives from As  sociation of Canadian Chinese Theological Education.",
@@ -879,6 +880,5 @@
 	"course_schedule_table_3_4_teacher": "Dr. Zion Wu",
 	"course_schedule_table_3_4_date": "09/07, 14, 21 & 28",
 	"course_schedule_table_3_4_time": "Sat 9:00pm - 5:00pm",
-	"course_schedule_table_3_4_note": "Vancouver Chinese Alliance (3330 Knight Street Vancouver)",
-	"principal_name": "principal_name"
+	"course_schedule_table_3_4_note": "Vancouver Chinese Alliance (3330 Knight Street Vancouver)"
 }

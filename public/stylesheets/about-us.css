@@ -11,13 +11,42 @@ section#staff h1{
 }
 
 .staff_container {
-    padding-bottom: 0.75rem;
+    /* padding-bottom: 1.25rem; */
+    display: flex;
+    justify-content: flex-start;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 1.25rem;
 }
-
-.staff_container>div:first-child {
+.staff_container div.profile{
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    border-radius: 33px;
+    margin-right: 10px;
+    background-color: #92bbfc;
+    background-image: url(../../images/baseline-person-24px.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.staff_container > div:last-child{
+    width: 100%;
+}
+.staff_container div.titles{
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.staff_container  div.titles > div {
     background-color: gray;
-    padding: 5px;
+    padding: 0 5px;
+    margin-bottom: 5px;
     color: white;
+    font-size: 0.85rem;
+}
+.staff_container div.titles>div:first-child{
+    border-radius: 0 5px 0 0;
 }
 
 .member_container{
