@@ -1,6 +1,9 @@
 section#staff h1{
     background-image: url('../../images/staffs.png');
 }
+section#board h1{
+    background-image: url('../../images/directors.png');
+}
 
 .staffs_container {
     display: flex;
