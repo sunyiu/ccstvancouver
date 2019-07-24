@@ -7,25 +7,43 @@ block content
   div.home.module
     div.container
       div.top-image-container
-        div.logo
-        div.content
-          div.mottos
-            div #{__('motto1')}
-            div #{__('motto2')}
+          div.table-cell
+            div.school_logo
+            div.motto_container
+              div.motto #{__('motto1')}
+              div.motto #{__('motto2')}
+              ul.actions
+                li.action 
+                  a(href='/admissions/programs')
+                    div 
+                      i.material-icons arrow_right_alt 
+                      span #{__('findAProgram')}
+                li.action  
+                  a(href='/admissions/apply')
+                    div 
+                      i.material-icons arrow_right_alt
+                      span #{__('applyTo')}
+                
+              
+              //- div.logo
+              //- div.content
+              //-   div.mottos
+              //-     div #{__('motto1')}
+              //-     div #{__('motto2')}
 
-            ul.actions
-              li.action 
-                i.material-icons arrow_right_alt
-                a(href='/admissions/programs') #{__('findAProgram')}
-              li.action  
-                i.material-icons arrow_right_alt
-                a(href='/admissions/apply') #{__('applyTo')}
-              //- li.action  
-              //-   i.material-icons arrow_right_alt
-              //-   span #{__('requestInfo')}
-              //- li.action  
-              //-   i.material-icons arrow_right_alt
-              //-   span #{__('knowMoreAboutUs')}
+              //-     ul.actions
+              //-       li.action 
+              //-         i.material-icons arrow_right_alt
+              //-         a(href='/admissions/programs') #{__('findAProgram')}
+              //-       li.action  
+              //-         i.material-icons arrow_right_alt
+              //-         a(href='/admissions/apply') #{__('applyTo')}
+              //-       //- li.action  
+              //-       //-   i.material-icons arrow_right_alt
+              //-       //-   span #{__('requestInfo')}
+              //-       //- li.action  
+              //-       //-   i.material-icons arrow_right_alt
+              //-       //-   span #{__('knowMoreAboutUs')}
 
     div.container
       div.context

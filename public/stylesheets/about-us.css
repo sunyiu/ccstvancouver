@@ -4,13 +4,23 @@ section#staff h1{
 section#board h1{
     background-image: url('../../images/directors.png');
 }
+section#contactus h1{
+    background-image: url('../../images/contactus.png');
+    background-position: right;
+}
+section#accreditation h1{
+    background-image: url('../../images/certificate.png');    
+}
 
 .staffs_container {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
-.staffs_container > div{
+.staffs_container > div.staffs{
     flex-basis: 45%;
+}
+
+.staffs_container > div.staffs:last-child{
+    display: none;
 }
 
 .staff_container {
@@ -47,6 +57,9 @@ section#board h1{
     margin-bottom: 5px;
     color: white;
     font-size: 0.85rem;
+}
+.staff_container  div.name{
+    font-weight: bold;
 }
 .staff_container div.titles>div:first-child{
     border-radius: 0 5px 0 0;
@@ -86,6 +99,36 @@ section#board h1{
     font-size: 0.85rem;
 }
 
-@media (min-width: 576px) {
 
+#contactus .details{
+    padding-bottom: 15px;
+}
+#contactus .details div:first-child{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+
+
+@media (min-width: 576px) {
+    .staffs_container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .staffs_container > div.staffs:last-child{
+        display: block;
+    }
+    .staffs_container > div.staffs > div.staff_container.sm{
+        display: none;
+    }
+
+    #contactus .details{
+        display: flex;
+        align-items: center;
+    }
+    #contactus .details div:first-child{
+        min-width: 150px;
+        text-align: right;
+        margin-right: 25px;
+    }
 }

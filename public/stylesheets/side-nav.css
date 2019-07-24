@@ -73,6 +73,13 @@ nav.side-nav li {
 
     nav.side-nav li {
         text-align: center;
+        border-left: 1px dotted;
+        display: block;
+        padding: 0 3px;
+        flex-basis: 100%;
+    }
+    nav.side-nav li:first-child{
+        border-left: none;
     }
     
     nav.side-nav li.selected {
@@ -84,7 +91,8 @@ nav.side-nav li {
     }
 
     nav.side-nav > ul.nav-links{
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: stretch;
     }
     nav.side-nav.fixed .nav-links{
         width: 540px;
@@ -95,6 +103,7 @@ nav.side-nav li {
 
     nav.side-nav li {
         text-align: left;
+        border-left: none;
     }
     
     header.side-nav{

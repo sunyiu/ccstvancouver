@@ -21,7 +21,11 @@ block content
                 section(class='library', id='library')
                     h1
                         span #{__('library')}
-                    div #{__('libraryDesc')}
+                    div 
+                        div #{__('libraryDesc')}
+                        div.link_container
+                            i.material-icons link
+                            a(href=__('libraryLink')) #{__('libraryLink')} 
 
                 section(class='weekly-meeting', id='weekly-meeting')
                     h1

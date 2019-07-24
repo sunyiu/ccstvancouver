@@ -306,6 +306,7 @@
 	"internationStudent1": "CCST Vancouver only admits applicants with Canadian Citizenship or Canadian Permanent Resident status.",
 	"library": "Library",
 	"libraryDesc": "Our library collection has more than 8000 books including more than 3000 Chinese Christian books.  We also have the Accordance Bible Software and Christian journals available for students to study.  Anyone may use library materials on the library permises, but borrowing of materials is restricted to students who have registered in the current school term, faculty and staff with valid I.D. cards. Students may also use our library system, available 24 hours a day, to search, hold, and renew books.  A librarian is available to assist students during operating hours.",
+	"libraryLink": "https://wo.almega.com.hk/woc/?client=ccst",
 	"weeklyMeeting": "Student Chapel",
 	"weeklyMeetingDesc": "CCST Vancouver is committed to fostering spiritual growth and guarding our unity as the body of Christ. One of the ways we seek to facilitate this is through our communal worship in chapel. The purpose of the chapel time is to promote the holistic development of students, staff and faculty through corporate worship, to give students the opportunity for planning and leading worship, to expose students to leaders who are competent models for ministry, to build community, to praise God together, and to raise awareness to the issues of living as a Christian in our world.",
 	"studentUnion": "Student Council",
@@ -880,5 +881,6 @@
 	"course_schedule_table_3_4_teacher": "Dr. Zion Wu",
 	"course_schedule_table_3_4_date": "09/07, 14, 21 & 28",
 	"course_schedule_table_3_4_time": "Sat 9:00pm - 5:00pm",
-	"course_schedule_table_3_4_note": "Vancouver Chinese Alliance (3330 Knight Street Vancouver)"
+	"course_schedule_table_3_4_note": "Vancouver Chinese Alliance (3330 Knight Street Vancouver)",
+	"contactus": "Contact Us"
 }

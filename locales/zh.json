@@ -303,6 +303,7 @@
 	"internationStudent1": "本院暫時未能取錄國際學生。",
 	"library": "圖書館",
 	"libraryDesc": "「加神溫哥華」圖書館現有中英文書籍近八千冊，包括英文書約四千多冊，中文書約三千多冊。同時提供電子工具書Accordance Bible Software及中英期刊一百多份供讀者閱覽。本院使用的圖書館系統，讓同學能夠透過網絡辦理搜尋書籍及預約服務等。館內設有學生自助借書服務，讓學生可以自行查閱所需書籍及辦理借書手續等。同學亦能夠透過網絡，遙距辦理搜尋書籍及預約服務。圖書館開放時間有專責同工當值, 亦歡迎同學在其中溫習、備課、做功課和影印等。",
+	"libraryLink": "https://wo.almega.com.hk/woc/?client=ccst",
 	"weeklyMeeting": "周會",
 	"weeklyMeetingDesc": "「加神溫哥華」著重對學生的靈命塑造, 竭力推動整個群體的靈裡合一。每逢星期四的周會有恆常的靈命培育, 讓整體同學一同學習敬拜、聆聽信息、彼此團契和互相代求。周會亦會邀請不同的老師、機構同工和本地的牧者等到來分享, 培育同學們的牧養心腸、擴濶屬靈視野, 並認識本地和海外不同的事工。同學們更加可以參與周會的事奉, 擔當帶領敬拜、籌組午膳安排和彼此關顧等工作。",
 	"studentUnion": "學生會",
@@ -880,5 +881,6 @@
 	"accreditation_3": "卑詩省高等教育學院",
 	"accreditation_3_desc": "「加神溫哥華」已於2018年五月三十一日, 經卑詩省政府議會三讀通過CCST Vancouver私人法案 (Private Bill) ，成為卑詩省高等教育學院 。",
 	"accreditation_3_link": "http://www.bclaws.ca/civix/document/id/complete/psl/18033",
+	"contactus": "聯繫我們",
 	"": ""
 }

@@ -12,10 +12,12 @@
     color: white;
 }
 .home>.container>.top-image-container{
-    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), /* bottom, image */
-    url(../images/ccstvanstudents.png);
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ), url(../images/ccstvanstudents.png);
     height: 500px;
-    background-position: right;
+    background-position: center;
     background-size: cover;
     position: relative;
     border: none;
@@ -23,47 +25,58 @@
     width: 100%;
     display: table;
 }
-
-.home>.container>.top-image-container>.logo{
-    background-image: url('/images/logo_lg.png');
+.home > .container > .top-image-container > .table-cell{
     display: table-cell;
     vertical-align: middle;
+    padding: 25px;
+}
+.home > .container > .top-image-container > .motto_container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(0,0,0,0.45);
+    padding: 25px;
+}
+.home > .container > .top-image-container .school_logo{
+    background-image: url('/images/logo_lg.png');
     background-repeat: no-repeat;
     width: 110px;
     height: 110px;
-    background-size: 100px;
-    background-position: 10px center;
+    background-size: contain; 
+    position: relative;
+    left: 50%;
+    margin-left: -55px;
+    padding-bottom: 25px;
 }
-
-.home>.container>.top-image-container>.content{
-    display: table-cell;
-    vertical-align: middle;
-    padding: 1rem;
+.home > .container > .top-image-container .motto{
+    font-size: 2rem;
+    padding-bottom: 0.75rem;
+    line-height: 1.5;
+    text-align: center;
 }
-.home>.container>.top-image-container>.content>.mottos{
+body.en .home > .container > .top-image-container .motto{
+    font-size: 1.5rem;
+}
+.home > .container > .top-image-container ul.actions{
+    padding-top: 25px;
+}
+.home > .container > .top-image-container ul.actions li.action{
+    padding-bottom: 10px;
+}
+.home > .container > .top-image-container ul.actions li.action a{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 1rem;
-    border-radius: 15px;
+    background-color: #107ab3;
+    padding: 5px;
 }
-.home>.container>.top-image-container>.content>.mottos>div {
-    padding-bottom: 1rem;
-    font-size: 1.15rem;
-}
-
-.home ul.actions{
-    display: inline-block;
-    padding-top: 0.5rem;
-}
-.home ul.actions>li.action{
+.home > .container > .top-image-container ul.actions li.action a > div{
     display: flex;
     align-items: center;
-    padding-bottom: 0.5rem;
-    font-weight: 300;
 }
-.home ul.actions>li.action>i{
-    padding-right: 0.5rem;
+.home > .container > .top-image-container ul.actions li.action a > span{
+    padding: 5px;
 }
+
+
 
 
 .home .container .context{
@@ -92,31 +105,41 @@
 
 
 @media (min-width: 576px) {
-    .home>.container>.top-image-container>.logo{
-        width: 200px;
-        height: 200px;
-        background-size: 150px;
-        background-position: 50px center;
+    .home > .container > .top-image-container .school_logo{
+        position: absolute;
+        left: 50px;
+        margin-left: 0;
     }
-
-    .home>.container>.top-image-container>.content>.mottos>div {
-        font-size: 1.5rem;
+    .home > .container > .top-image-container .motto_container{
+        margin-left: 150px;
+    }
+    .home > .container > .top-image-container .motto_container .motto{
+        text-align: left;
     }
 }
   
 @media (min-width: 768px) {
-    .home>.container>.top-image-container>.content>.mottos>div {
-        font-size: 2rem;
-        padding-bottom: 1.25rem;
+    .home > .container > .top-image-container .school_logo{
+        width: 150px;
+        height: 150px;
     }
-    .home>.container>.top-image-container>.content{
-        padding: 2rem;
+    .home > .container > .top-image-container .motto_container{
+        margin-left: 200px;
     }
-    .home>.container>.top-image-container>.content>.mottos{
-        padding: 2rem;
+    .home > .container > .top-image-container ul.actions li.action a{
+        font-size: 1.25rem;
     }
 }
 
 @media (min-width: 992px) {
-
+    .home > .container > .top-image-container .school_logo{
+        width: 200px;
+        height: 200px;
+    }
+    .home > .container > .top-image-container .motto_container{
+        margin-left: 250px;
+    }
+    .home > .container > .top-image-container ul.actions li.action a{
+        font-size: 1.25rem;
+    }
 }

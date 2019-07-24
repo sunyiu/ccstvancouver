@@ -11,6 +11,12 @@ section.dmin h1{
 section.mts h1{
     background-image: url('../../images/mts.png');
 }
+section.other h1{
+    background-image: url('../../images/courseOthers.png');
+}
+section.practicum h1{
+    background-image: url('../../images/coursePracticum.png');
+}
 section h1 span{
     margin-right: 200px;
 }
