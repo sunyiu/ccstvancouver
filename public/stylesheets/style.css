@@ -301,6 +301,9 @@ body.zh .question-answer>div:last-child::before {
   padding-left: 50px;
   flex-basis: 100%;
 }
+.footer a{
+  color: white;
+}
 
 @media (min-width: 576px) {
   .module>.container, .footer>.container {
@@ -309,6 +312,7 @@ body.zh .question-answer>div:last-child::before {
   .container.section.side-by-side {
     display: flex;
     align-items: stretch;
+    padding-bottom: 50px;
   }
   .container.section.side-by-side>.header {
     flex-basis: 30%;
