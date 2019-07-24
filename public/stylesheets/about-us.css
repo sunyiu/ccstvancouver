@@ -1,23 +1,68 @@
 section#staff h1{
     background-image: url('../../images/staffs.png');
 }
+section#board h1{
+    background-image: url('../../images/directors.png');
+}
+section#contactus h1{
+    background-image: url('../../images/contactus.png');
+    background-position: right;
+}
+section#accreditation h1{
+    background-image: url('../../images/certificate.png');    
+}
 
 .staffs_container {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
-.staffs_container > div{
+.staffs_container > div.staffs{
     flex-basis: 45%;
 }
 
-.staff_container {
-    padding-bottom: 0.75rem;
+.staffs_container > div.staffs:last-child{
+    display: none;
 }
 
-.staff_container>div:first-child {
+.staff_container {
+    /* padding-bottom: 1.25rem; */
+    display: flex;
+    justify-content: flex-start;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 1.25rem;
+}
+.staff_container div.profile{
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    border-radius: 33px;
+    margin-right: 10px;
+    background-color: #92bbfc;
+    background-image: url(../../images/baseline-person-24px.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.staff_container > div:last-child{
+    width: 100%;
+}
+.staff_container div.titles{
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.staff_container  div.titles > div {
     background-color: gray;
-    padding: 5px;
+    padding: 0 5px;
+    margin-bottom: 5px;
     color: white;
+    font-size: 0.85rem;
+}
+.staff_container  div.name{
+    font-weight: bold;
+}
+.staff_container div.titles>div:first-child{
+    border-radius: 0 5px 0 0;
 }
 
 .member_container{
@@ -54,6 +99,36 @@ section#staff h1{
     font-size: 0.85rem;
 }
 
-@media (min-width: 576px) {
 
+#contactus .details{
+    padding-bottom: 15px;
+}
+#contactus .details div:first-child{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+
+
+@media (min-width: 576px) {
+    .staffs_container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .staffs_container > div.staffs:last-child{
+        display: block;
+    }
+    .staffs_container > div.staffs > div.staff_container.sm{
+        display: none;
+    }
+
+    #contactus .details{
+        display: flex;
+        align-items: center;
+    }
+    #contactus .details div:first-child{
+        min-width: 150px;
+        text-align: right;
+        margin-right: 25px;
+    }
 }

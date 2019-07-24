@@ -12,48 +12,128 @@ block content
             +side-nav('about_us', [
                 {name:'staff_team', link:'#staff'}, 
                 {name:'ccst_van_board', link:'#board'}, 
-                {name:'accreditation', link:'#accreditation'}])
+                {name:'accreditation', link:'#accreditation'},
+                {name:'contactus', link:'#contactus'}])
 
             div.context
                 section(id='staff')
                     h1
                         span #{__('staff_team')}
-                    div.staffs_container
+                    div.staffs_container                      
+                        div.staffs
+                            div.staff_container.sm
+                                div.profile
+                                div
+                                    div.titles  
+                                        div #{__('emeritusProfessor')}
+                                    div.name #{__('drJohnHsu')}
+
+                            div.staff_container
+                                div.profile(style='background-size: cover; background-image: url("../../images/ivanleung.png")') 
+                                div
+                                    div.titles 
+                                        div #{__('principal')}
+                                        div #{__('drIvanLeung1')}
+                                    div.name #{__('principal_name')}
+
+                            div.staff_container
+                                div.profile(style='background-size: cover; background-image: url("../../images/jasonyeung.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('academic_dean')}
+                                        div #{__('drJasonYeung1')}
+                                    div.name #{__('academic_dean_name')}
+                           
+                            div.staff_container.sm 
+                                div.profile(style='background-size: cover; background-image: url("../../images/edwinlee.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('associate_professor_theology')}
+                                        div #{__('drEdwinLee1')}
+                                    div.name #{__('associate_professor_theology_name')}
+
+                            div.staff_container 
+                                div.profile(style='background-size: cover; background-image: url("../../images/reubenlee.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('assistant_academic_dean')}
+                                        div #{__('drReubenLee1')}
+                                    div.name #{__('assistant_academic_dean_name')}
+                            
+                            div.staff_container 
+                                div.profile(style='background-size: cover; background-image: url("../../images/samchan.png")') 
+                                div
+                                    div.titles  
+                                        div #{__('dean_students')}
+                                    div.name #{__('dean_students_name')}
+                            
+                            div.staff_container.sm 
+                                div.profile(style='background-size: cover; background-image: url("../../images/kristang.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('director_administration')}
+                                    div.name #{__('director_administration_name')}
+                            
+                            div.staff_container.sm 
+                                div.profile(style='background-size: cover; background-image: url("../../images/kevin.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('administration_assistant_finanical')}
+                                    div.name #{__('administration_assistant_finanical_name')}
+                            
+                            div.staff_container 
+                                div.profile(style='background-size: cover; background-image: url("../../images/grace.png")') 
+                                div
+                                    div.titles  
+                                        div #{__('administration_assistant_library')}
+                                    div.name #{__('administration_assistant_library_name')}
+                            div.staff_container 
+                                div.profile(style='background-size: cover; background-image: url("../../images/zionwu.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('director_ccst_van_choir')}
+                                        div #{__('drzionwu_2')}
+                                    div.name #{__('director_ccst_van_choir_name')}
+
+                            div.staff_container.sm 
+                                div.profile(style='background-size: cover; background-image: url("../../images/alisonyeung.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('counsellor_spiritual')}
+                                    div.name #{__('counsellor_spiritual_name')} 
+
                         div.staffs
                             div.staff_container 
-                                div #{__('principal')}
-                                div #{__('principal_name')}
+                                div.profile
+                                div
+                                    div.titles  
+                                        div #{__('emeritusProfessor')}
+                                    div.name #{__('drJohnHsu')}
                             div.staff_container 
-                                div #{__('academic_dean')}
-                                div #{__('academic_dean_name')}
+                                div.profile(style='background-size: cover; background-image: url("../../images/edwinlee.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('associate_professor_theology')}
+                                        div #{__('drEdwinLee1')}
+                                    div.name #{__('associate_professor_theology_name')}
                             div.staff_container 
-                                div #{__('assistant_academic_dean')}
-                                div #{__('assistant_academic_dean_name')}
+                                div.profile(style='background-size: cover; background-image: url("../../images/kristang.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('director_administration')}
+                                    div.name #{__('director_administration_name')}
                             div.staff_container 
-                                div #{__('dean_students')}
-                                div #{__('dean_students_name')}
+                                div.profile(style='background-size: cover; background-image: url("../../images/kevin.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('administration_assistant_finanical')}
+                                    div.name #{__('administration_assistant_finanical_name')}
                             div.staff_container 
-                                div #{__('administration_assistant_library')}
-                                div #{__('administration_assistant_library_name')}
-                            div.staff_container 
-                                div #{__('director_ccst_van_choir')}
-                                div #{__('director_ccst_van_choir_name')}
-                        div.staffs
-                            div.staff_container 
-                                div #{__('emeritusProfessor')}
-                                div #{__('drJohnHsu')}
-                            div.staff_container 
-                                div #{__('associate_professor_theology')}
-                                div #{__('associate_professor_theology_name')}
-                            div.staff_container 
-                                div #{__('director_administration')}
-                                div #{__('director_administration_name')}
-                            div.staff_container 
-                                div #{__('administration_assistant_finanical')}
-                                div #{__('administration_assistant_finanical_name')}
-                            div.staff_container 
-                                div #{__('counsellor_spiritual')}
-                                div #{__('counsellor_spiritual_name')}                                                                                                                                                                                                                        
+                                div.profile(style='background-size: cover; background-image: url("../../images/alisonyeung.png")') 
+                                div 
+                                    div.titles 
+                                        div #{__('counsellor_spiritual')}
+                                    div.name #{__('counsellor_spiritual_name')}                                                                                                                                                                                                                        
 
                 section(id='board')
                     h1
@@ -91,7 +171,7 @@ block content
                         li 
                             div #{__('accreditation_1')} 
                             div.link_container
-                                i.material-icons bookmark
+                                i.material-icons link
                                 a(href=__('accreditation_1_link')) #{__('accreditation_1_link')}
                             div #{__('accreditation_1_desc')}
                         li 
@@ -100,7 +180,25 @@ block content
                         li 
                             div #{__('accreditation_3')}
                             div.link_container
-                                i.material-icons bookmark
+                                i.material-icons link
                                 a(href=__('accreditation_3_link')) #{__('accreditation_3_link')} 
                             div #{__('accreditation_3_desc')}
+
+
+                section(id='contactus')
+                    h1
+                        span #{__('contactus')}
+                    div.container
+                        div.details 
+                            div #{__('address')} 
+                            div #{__('mailing_address')}
+                        div.details
+                            div!= __('vancouver_office')
+                            div #{__('office_address')}
+                        div.details
+                            div #{__('telephone')}
+                            div 778-251-5678
+                        div.details
+                            div #{__('email')}
+                            div info@ccstvan.ca
 

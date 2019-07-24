@@ -28,6 +28,24 @@
     background-size: cover;  
 }
 
+.link_container{
+    display: flex;
+    align-items: center;
+    color: #999;
+    padding: 5px 0;
+}
+.link_container i{
+    padding-right: 5px;
+}
+.link_container a{
+    display: block;
+    overflow-wrap: break-word;
+    overflow: auto;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+
 @media (min-width: 768px) {
     .student-resources .container > .context{
         padding-top: 0;
