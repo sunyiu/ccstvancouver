@@ -13,9 +13,11 @@ section.mts h1{
 }
 section.other h1{
     background-image: url('../../images/courseOthers.png');
+    background-size: cover;
 }
 section.practicum h1{
     background-image: url('../../images/coursePracticum.png');
+    background-size: cover;
 }
 section h1 span{
     margin-right: 200px;
