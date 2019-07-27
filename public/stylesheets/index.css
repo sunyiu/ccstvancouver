@@ -104,6 +104,10 @@ section > h1{
     border-radius: 0 5px 5px 0;
     display: inline-block;
 }
+.home .container.container.section > .header  .date{
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
 .home .container.section ul.desc-container{
     padding: 1rem;
     background-color: white;
