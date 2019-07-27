@@ -103,6 +103,7 @@ section > h1{
     padding: 5px;
     border-radius: 0 5px 5px 0;
     display: inline-block;
+    padding-right: 15px;
 }
 .home .container.container.section > .header  .date{
     font-size: 1rem;
