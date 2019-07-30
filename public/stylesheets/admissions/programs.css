@@ -17,6 +17,30 @@
      background: url(../../images/book1.jpg) no-repeat center;
      background-size: cover;
  }
+ section#prog-dmin > h1{
+    background: url(../../images/dmin.png) no-repeat right;
+    background-color: #709dc7;
+ }
+ section#prog-mdiv > h1{
+    background: url(../../images/mdiv.png) no-repeat right;
+    background-color: #709dc7;
+ }
+ section#prog-mts > h1{
+    background: url(../../images/mts.png) no-repeat right;
+    background-color: #709dc7;
+ }
+ section#prog-dipcs > h1{
+    background: url(../../images/book2.png) no-repeat right;  
+    background-size: cover;  
+ }
+ section#prog-nondegree > h1{
+    background: url(../../images/book3.png) no-repeat right;  
+    background-size: cover;  
+ }
+ section#prog-audit > h1{
+    background: url(../../images/book4.png) no-repeat right;  
+    background-size: cover;  
+ }
 
  li.box-container {
      padding-bottom: 45px;
