@@ -788,7 +788,7 @@
 	"administration_assistant_library_edu": "B. Th.",
 	"administration_assistant_finanical": "Administrative Assistant (Finance)",
 	"administration_assistant_finanical_name": "Mr. Kevin Cheung",
-	"administration_assistant_finanical_edu": "B. Com.",
+	"administration_assistant_financial_edu": "B. Com.",
 	"counsellor_spiritual": "Counsellor of Spiritual Direction",
 	"counsellor_spiritual_name": "Mrs. Alison Yeung (Voluntary)",
 	"counsellor_spiritual_edu": "M.R.E",
@@ -898,6 +898,5 @@
 	"course_schedule_table_3_4_date": "09/07, 14, 21 & 28",
 	"course_schedule_table_3_4_time": "Sat 9:00pm - 5:00pm",
 	"course_schedule_table_3_4_note": "Vancouver Chinese Alliance (3330 Knight Street Vancouver)",
-	"contactus": "Contact Us",
-	"administration_assistant_financial_edu": "administration_assistant_financial_edu"
+	"contactus": "Contact Us"
 }

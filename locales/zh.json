@@ -861,7 +861,7 @@
 	"administration_assistant_library_edu": "B. Th.",
 	"administration_assistant_finanical": "財務助理",
 	"administration_assistant_finanical_name": "張肇衡弟兄 (半職)",
-	"administration_assistant_finanical_edu": "B. Com.",
+	"administration_assistant_financial_edu": "B. Com.",
 	"counsellor_spiritual": "牧靈導師",
 	"counsellor_spiritual_name": "楊朱麗娟師母 (義務)",
 	"counsellor_spiritual_edu": "M.R.E.",
@@ -898,6 +898,5 @@
 	"accreditation_3_desc": "「加神溫哥華」已於2018年五月三十一日, 經卑詩省政府議會三讀通過CCST Vancouver私人法案 (Private Bill) ，成為卑詩省高等教育學院 。",
 	"accreditation_3_link": "http://www.bclaws.ca/civix/document/id/complete/psl/18033",
 	"contactus": "聯繫我們",
-	"": "",
-	"administration_assistant_financial_edu": "administration_assistant_financial_edu"
+	"": ""
 }
