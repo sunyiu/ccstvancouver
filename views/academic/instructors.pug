@@ -2,28 +2,23 @@ extends index
 include instructor
 
 block append styles
-    link(rel='stylesheet', href='/stylesheets/academic/instructor.css')
-    link(rel='stylesheet', href='/stylesheets/academic/instructors.css')
+    link(rel='stylesheet' href='/stylesheets/academic/instructor.css')
+    link(rel='stylesheet' href='/stylesheets/academic/instructors.css')
 
 block academic-content
-    section.emeritus
-        h1 
-            span #{__('emeritusProfessor')}
-        +instructor('drJohnHsu', [], ['drJohnHsu1', 'drJohnHsu2', 'drJohnHsu3'], '')
-
     section.professor
         h1 
             span #{__('professor')}
+        +instructor(
+            'drEdwinLee', 
+            ['drEdwinLee1'], 
+            ['drEdwinLee2', 'drEdwinLee3', 'drEdwinLee4','drEdwinLee5','drEdwinLee6'], 
+            'edwinlee')    
         +instructor(
             'drJasonYeung', 
             ['drJasonYeung1'], 
             ['drJasonYeung2', 'drJasonYeung3', 'drJasonYeung4','drJasonYeung5','drJasonYeung6','drJasonYeung7'], 
             'jasonyeung')       
-        +instructor(
-            'drEdwinLee', 
-            ['drEdwinLee1'], 
-            ['drEdwinLee2', 'drEdwinLee3', 'drEdwinLee4','drEdwinLee5','drEdwinLee6'], 
-            'edwinlee')
 
     section.associate
         h1 
@@ -42,3 +37,8 @@ block academic-content
             ['drReubenLee1'], 
             ['drReubenLee2', 'drReubenLee3', 'drReubenLee4'], 
             'reubenlee')
+
+    section.emeritus
+        h1 
+            span #{__('emeritusProfessor')}
+        +instructor('drJohnHsu', [], ['drJohnHsu1', 'drJohnHsu2', 'drJohnHsu3'], '')
