@@ -21,16 +21,23 @@ block content
                 section(class='library', id='library')
                     h1
                         span #{__('library')}
-                    div 
-                        div #{__('libraryDesc')}
-                        div.link_container
-                            i.material-icons link
-                            a(href=__('libraryLink')) #{__('libraryLink')} 
+                    div.text-image-container
+                        div.images-container
+                            div.image
+                        div.text-container
+                            div #{__('libraryDesc')}
+                            div.link_container
+                                i.material-icons link
+                                a(href=__('libraryLink')) #{__('libraryLink')} 
 
                 section(class='weekly-meeting', id='weekly-meeting')
                     h1
                         span #{__('weeklyMeeting')}
-                    div #{__('weeklyMeetingDesc')}
+                    div.text-image-container
+                        div.images-container
+                            div.image(style='background-image:url(images/resources/chapel2.png)')
+                            div.image(style='background-image:url(images/resources/chapel3.png)')
+                        div.text-container #{__('weeklyMeetingDesc')}
 
                 section(class='student-union', id='student-union') 
                     h1
@@ -40,14 +47,26 @@ block content
                 section(class='student-camp', id='student-camp') 
                     h1
                         span #{__('studentCamp')}
-                    div #{__('studentCampDesc')}
+                    div.text-image-container
+                        div.images-container
+                            div.image(style='background-image:url(images/resources/retreat2.png)')
+                            div.image(style='background-image:url(images/resources/retreat3.png)')
+                        div.text-container #{__('studentCampDesc')}
 
                 section(class='retreat', id='retreat') 
                     h1
                         span #{__('retreat')}
-                    div #{__('retreatDesc')}  
+                    div.text-image-container
+                        div.images-container
+                            div.image(style='background-image:url(images/resources/prayerretreat1.png)')
+                            div.image(style='background-image:url(images/resources/prayerretreat2.png)')
+                        div.text-container #{__('retreatDesc')}  
 
                 section(class='singspiration', id='singspiration') 
                     h1
                         span #{__('singspiration')}
-                    div #{__('singspirationDesc')} 
+                    div.text-image-container
+                        div.images-container
+                            div.image(style='background-image:url(images/resources/choir2.png)')
+                            div.image(style='background-image:url(images/resources/choir3.png)')
+                        div.text-container #{__('singspirationDesc')} 

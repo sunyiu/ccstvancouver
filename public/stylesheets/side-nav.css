@@ -112,7 +112,7 @@ nav.side-nav li {
 
     nav.side-nav {
         display: block;
-        width: 175px;
+        width: 150px;
         position: absolute;
     }
     nav.side-nav>ul.nav-links {

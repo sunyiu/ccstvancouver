@@ -1,15 +1,19 @@
+.student-resources section > h1 {
+    height: 250px;
+}
+
 .student-resources .library > h1{
-    background: url(../images/library.png) no-repeat center;
+    background: url(../images/resources/library1.png) no-repeat center;
     background-size: cover;
 }
 
 .student-resources .weekly-meeting > h1{
-    background: url(../images/meetings.png) no-repeat center;
+    background: url(../images/resources/chapel1.png) no-repeat center;
     background-size: cover;  
 }
 
 .student-resources .student-camp > h1{
-    background: url(../images/trees.png) no-repeat center;
+    background: url(../images/resources/retreat1.png) no-repeat center;
     background-size: cover;  
 }
 
@@ -19,7 +23,7 @@
 }
 
 .student-resources .singspiration > h1{
-    background: url(../images/singspiration.png) no-repeat center;
+    background: url(../images/resources/choir1.png) no-repeat center;
     background-size: cover;  
 }
 
@@ -45,6 +49,70 @@
     font-size: 0.85rem;
 }
 
+.student-resources .text-image-container{
+    margin: 10px 0;
+}
+.student-resources .text-image-container > div.images-container{
+    display: flex;
+    margin-bottom: 5px;
+}
+.student-resources section:not(.library) .text-image-container > div.images-container > div.image:first-child{
+    margin-right: 5px;
+}
+.student-resources section:not(.library) .text-image-container > div.images-container > div.image:last-child{
+    margin-left: 5px;
+}
+.student-resources .images-container{
+    margin: 0;
+}
+.student-resources .images-container > div{
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.student-resources .images-container > div.image{
+    width: 50%;
+    min-height: 250px;
+}
+.student-resources .library .images-container > div.image{
+    width: 100%;
+    height: 250px;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url(../images/resources/library2_wide.png)
+}
+
+@media (min-width: 576px) {
+    .student-resources .text-image-container{
+        display: flex;
+        flex-direction: row-reverse
+    }
+    .student-resources .text-image-container > div.images-container{
+        flex-direction: column;
+    }
+    .student-resources .text-image-container > div.text-container{
+        margin-right: 10px;
+    }
+    .student-resources .images-container > div.image{
+        min-width: 250px;
+        width: 100%;
+    }
+    .student-resources .text-image-container > div.images-container > div.image:first-child{
+        margin-right: 0 !important;
+        margin-bottom: 5px;
+    }
+    .student-resources .text-image-container > div.images-container > div.image:last-child{
+        margin-left: 0 !important;
+        margin-top: 5px;
+    }
+
+    .student-resources .library .images-container > div.image{
+        height: 500px;
+        background-image: url(../images/resources/library2.png)
+    }
+}
 
 @media (min-width: 768px) {
     .student-resources .container > .context{
@@ -58,4 +126,7 @@
 }
 
 @media (min-width: 992px) {
+    .student-resources .images-container > div.image{
+        min-width: 350px;
+    }
 }
