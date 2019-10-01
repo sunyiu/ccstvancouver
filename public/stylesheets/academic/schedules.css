@@ -2,6 +2,33 @@ section > h1{
     background-image: url('../../images/ccstvanclass.png');
 }
 
+.title-paragraph{
+    border-bottom: 1px gray dotted;
+}
+.title-paragraph > h1{
+    text-align: center;
+}
+.schedule_list_container{
+    border-bottom: 1px gray dotted;
+}
+.title-paragraph:last-child{
+    border-bottom: none;
+}
+.links-container{
+    text-align: left;
+    padding-bottom: 20px;
+    margin-left: 50px;
+}
+.links-container li{
+    list-style: circle;
+}
+.links-container a{
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 3px;
+}
+
 th,
 td{
     border-top: 1px solid #888;
@@ -18,10 +45,10 @@ th.date{
     width: 85px;
 }
 th.professor{
-    width: 80px;
+    width: 125px;
 }
 .en th.professor{
-    width: 120px;
+    width: 125px;
 }
 
 h1.schedule_header div:not(:first-child){
