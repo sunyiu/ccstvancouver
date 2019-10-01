@@ -18,9 +18,13 @@ html {
 body {
   background-color: black;
   color: #333;
-  font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
+}
+
+body.zh{
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 h2 {
@@ -344,9 +348,9 @@ body.zh .question-answer>div:last-child::before {
   }
   .module>.container>.context {
     padding-top: 0;
-    margin-left: 175px;
+    margin-left: 165px;
     border-left: 1px dotted gray;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
   }
 }
 
