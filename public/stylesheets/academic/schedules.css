@@ -8,11 +8,16 @@ section > h1{
 .title-paragraph > h1{
     text-align: center;
 }
-
-.links-container{
-    text-align: center;
-    padding-bottom: 20px;
+.schedule_list_container{
     border-bottom: 1px gray dotted;
+}
+.links-container{
+    text-align: left;
+    padding-bottom: 20px;
+    margin-left: 50px;
+}
+.links-container li{
+    list-style: circle;
 }
 .links-container a{
     display: block;

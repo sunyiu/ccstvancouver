@@ -18,12 +18,15 @@ block academic-content
                         li #{__('course_schedule_desc1_2b')}
                         li #{__('course_schedule_desc1_2c')}
                         li #{__('course_schedule_desc1_2d')}
-        div 
+        div.schedule_list_container 
             div #{__('course_schedule_desc2')}
-            div.links-container 
-                a(href='#t1') #{__('course_schedule_table_4')}
-                a(href='#t2') #{__('course_schedule_table_5')}
-                a(href='#t3') #{__('course_schedule_2020_table')}
+            ul.links-container 
+                li 
+                    a(href='#t1') #{__('course_schedule_table_4')}
+                li 
+                    a(href='#t2') #{__('course_schedule_table_5')}
+                li 
+                    a(href='#t3') #{__('course_schedule_2020_table')}
 
         div.title-paragraph#t1
             h1.schedule_header 
