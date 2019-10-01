@@ -119,10 +119,6 @@
         padding-top: 0;
         flex-basis: 75%;
     }  
-
-    .student-resources section{
-        margin-left: 2rem;
-    }  
 }
 
 @media (min-width: 992px) {

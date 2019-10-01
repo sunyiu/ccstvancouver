@@ -352,6 +352,10 @@ body.zh .question-answer>div:last-child::before {
     border-left: 1px dotted gray;
     /* padding-left: 2rem; */
   }
+  
+  section {
+    margin-left: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
