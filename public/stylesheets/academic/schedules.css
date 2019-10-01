@@ -11,6 +11,9 @@ section > h1{
 .schedule_list_container{
     border-bottom: 1px gray dotted;
 }
+.title-paragraph:last-child{
+    border-bottom: none;
+}
 .links-container{
     text-align: left;
     padding-bottom: 20px;
