@@ -20,6 +20,7 @@ html
     block styles
 
     script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/app/contact.js')
     
     block scripts
 
@@ -50,19 +51,28 @@ html
     div.footer
         div.container
             div.title #{__('title')}
-            div.details 
-                div #{__('address')} 
-                div #{__('mailing_address')}
-            div.details
-                div!= __('vancouver_office')
-                div #{__('office_address')}
-            div.details
-                div #{__('telephone')}
-                div 778-251-5678
-            div.details
-                div #{__('email')}
-                div 
-                    a(href='mailto:info@ccst.ca' target='_top') info@ccst.ca
+            div.detailContainer
+                div.details 
+                    div #{__('address')} 
+                    div #{__('mailing_address')}
+                div.details
+                    div!= __('vancouver_office')
+                    div #{__('office_address')}
+                div.details
+                    div #{__('telephone')}
+                    div 778-251-5678
+                div.details
+                    div #{__('email')}
+                    div 
+                        a(href='mailto:info@ccst.ca' target='_top') info@ccst.ca
+            div.contactFormContainer
+                div.details
+                    div #{__('contactForm')}
+                    div.inputs
+                        input(type='text' id='sendFeedbackName' name="name" placeholder=__('contact_name'))
+                        input(type='text' id='sendFeedbackEmail' name='email' placeholder=__('contact_email'))
+                        textarea(id='sendFeedbackText' placeholder="Enter your message")
+                        input(type='button' id='sendFeedbackBtn' name='sendBtn' value=__('contact_send'))
 
             
             div.copyright-container #{__('copyright')}

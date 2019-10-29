@@ -290,21 +290,41 @@ body.zh .question-answer>div:last-child::before {
   line-height: 1.25;
 }
 
-.footer>.container>div.details {
+.footer>.container div.details {
   padding-bottom: 0.5em;
   display: flex;
   align-items: center;
 }
 
-.footer>.container>div.details div:first-child {
+.footer>.container div.details div:first-child {
   width: 200px;
   text-align: right;
 }
 
-.footer>.container>div.details div:last-child {
+.footer>.container div.details>*:last-child {
   padding-left: 50px;
   flex-basis: 100%;
 }
+
+.footer > .container > div.contactFormContainer{
+  margin-top: 25px;
+}
+.footer > .container div.details > div.inputs{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer>.container div.details> div.inputs *{
+  display: block;
+  margin-bottom: 15px;
+  padding: 2px;
+  flex-basis: 100%;
+}
+.footer > .container div.details > div.inputs > textarea{
+  height: 150px;
+  resize: none;
+}
+
+
 .footer a{
   color: white;
 }

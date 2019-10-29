@@ -788,7 +788,7 @@
 	"course_schedule_table_5_3_date": "03/02 - 03/06, 03/13, 03/20, 03/27",
 	"course_schedule_table_5_3_time_1": "星期⼀至三 12:30pm - 6:00pm",
 	"course_schedule_table_5_3_time_2": "星期四 2:00pm - 6:30pm",
-	"course_schedule_table_5_3_time_3": "星期五 (03/06) 9:00am - 12:00pm", 
+	"course_schedule_table_5_3_time_3": "星期五 (03/06) 9:00am - 12:00pm",
 	"course_schedule_table_5_3_time_4": "星期五 (03/13, 03/20, 03/27) 8:30am - 12:30pm",
 	"course_schedule_table_5_4_code": "CHIN30",
 	"course_schedule_table_5_4_name": "華人講道學進深班",
@@ -943,5 +943,9 @@
 	"accreditation_3_desc": "「加神溫哥華」已於2018年五月三十一日, 經卑詩省政府議會三讀通過CCST Vancouver私人法案 (Private Bill) ，成為卑詩省高等教育學院 。",
 	"accreditation_3_link": "http://www.bclaws.ca/civix/document/id/complete/psl/18033",
 	"contactus": "聯繫我們",
-	"": ""
+	"": "",
+	"contactForm": "contactForm",
+	"contact_name": "contact_name",
+	"contact_email": "contact_email",
+	"contact_send": "contact_send"
 }

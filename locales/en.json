@@ -946,5 +946,9 @@
 	"accreditation_3_desc": "Through the CCST Vancouver Act with the BC government, CCST Vancouver is authorized to grant religious degrees.",
 	"accreditation_3_link": "http://www.bclaws.ca/civix/document/id/complete/psl/18033",
 	"": "",
-	"contactus": "Contact Us"
+	"contactus": "Contact Us",
+	"contactForm": "contactForm",
+	"contact_name": "contact_name",
+	"contact_email": "contact_email",
+	"contact_send": "contact_send"
 }
