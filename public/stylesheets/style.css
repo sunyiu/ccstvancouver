@@ -323,7 +323,12 @@ body.zh .question-answer>div:last-child::before {
   height: 150px;
   resize: none;
 }
-
+.footer > .container div.details > div.inputs > .error-msg{
+  display: none;
+}
+.footer > .container div.details > div.inputs > .error-msg.show{
+  display: block;
+}
 
 .footer a{
   color: white;

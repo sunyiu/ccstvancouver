@@ -70,8 +70,11 @@ html
                     div #{__('contactForm')}
                     div.inputs
                         input(type='text' id='sendFeedbackName' name="name" placeholder=__('contact_name'))
+                        div.error_msg #{__('contact_name_error')}
                         input(type='text' id='sendFeedbackEmail' name='email' placeholder=__('contact_email'))
+                        div.error_msg #{__('contact_email_error')}
                         textarea(id='sendFeedbackText' placeholder="Enter your message")
+                        div.error_msg #{__('contact_msg_error')}
                         input(type='button' id='sendFeedbackBtn' name='sendBtn' value=__('contact_send'))
 
             
