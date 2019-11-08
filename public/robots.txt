@@ -1,0 +1,6 @@
+# Group 1
+User-agent: *
+Disallow: /admin/
+
+
+Sitemap: http://www.ccstvan.ca/sitemap.xml
