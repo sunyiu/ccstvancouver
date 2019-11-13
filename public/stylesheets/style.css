@@ -360,6 +360,9 @@ body.zh .question-answer>div:last-child::before {
   padding: 5px;
 }
 
+div.color_border{
+  margin-top: 10px;
+}
 div.color_border > div{
   height: 3px;
 }
