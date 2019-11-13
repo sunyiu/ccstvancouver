@@ -944,8 +944,13 @@
 	"accreditation_3_link": "http://www.bclaws.ca/civix/document/id/complete/psl/18033",
 	"contactus": "聯繫我們",
 	"": "",
-	"contactForm": "contactForm",
-	"contact_name": "contact_name",
-	"contact_email": "contact_email",
-	"contact_send": "contact_send"
+	"contact_name": "姓名*",
+	"contact_email": "電郵*",
+	"contact_send": "發送",
+	"contact_msg": "輸入您的訊息*",
+	"contact_name_error": "請輸入你的姓名",
+	"contact_email_error": "請輸入正確電郵",
+	"contact_msg_error": "請輸入訊息",
+	"leave_message": "給我們留言",
+	"msg_send": "謝謝你的留言"
 }

@@ -293,45 +293,85 @@ body.zh .question-answer>div:last-child::before {
 .footer>.container div.details {
   padding-bottom: 0.5em;
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .footer>.container div.details div:first-child {
   width: 200px;
   text-align: right;
+  /* background-color: rgb(8, 29, 121); */
+  padding: 5px 15px;
 }
 
 .footer>.container div.details>*:last-child {
-  padding-left: 50px;
+  /* margin-left: 50px; */
   flex-basis: 100%;
+  padding: 5px 15px;
+  /* background-color: rgba(135, 12, 12, 0.85); */
 }
 
 .footer > .container > div.contactFormContainer{
   margin-top: 25px;
 }
-.footer > .container div.details > div.inputs{
+.footer > .container div.inputs{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 15px;
+  border-top: 1px solid white;
+  padding: 15px;
 }
-.footer>.container div.details> div.inputs *{
+.footer > .container div.inputs > h2{
+  color: white;
+  padding-bottom: 10px;
+}
+.footer>.container div.inputs input,
+.footer>.container div.inputs textarea{
   display: block;
   margin-bottom: 15px;
-  padding: 2px;
+  padding: 5px;
   flex-basis: 100%;
+  background-color: rgb(253, 253, 189);
+  border: none;
 }
-.footer > .container div.details > div.inputs > textarea{
+.footer > .container div.inputs > textarea{
   height: 150px;
   resize: none;
 }
-.footer > .container div.details > div.inputs > .error-msg{
-  display: none;
+.footer > .container div.inputs > #sendFeedbackBtn{
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 15px;
 }
-.footer > .container div.details > div.inputs > .error-msg.show{
+.footer > .container div.inputs > .error_msg{
+  margin-top: -15px;
+  margin-bottom: 15px;
+  display: none;
+  font-size: 0.85em;
+}
+.footer > .container div.inputs > .error_msg.show{
   display: block;
 }
 
-.footer a{
+.footer a.email{
   color: white;
+  /* padding-bottom: 10px; */
+  display: block;
+  padding: 5px;
+}
+
+div.color_border > div{
+  height: 3px;
+}
+div.color_border > div.blue{
+  background-color: rgb(20, 20, 100);
+}
+div.color_border > div.yellow{
+  background-color: rgb(241, 241, 173);
+  height: 2px;
+}
+div.color_border > div.red{
+  background-color: rgb(99, 27, 27);
 }
 
 @media (min-width: 576px) {
@@ -380,6 +420,16 @@ body.zh .question-answer>div:last-child::before {
   
   section {
     margin-left: 2rem;
+  }
+
+  div.footer div.informations{
+    display: flex;
+  }
+  .footer > .container div.inputs{
+    border-top: none;
+    margin-top: 0;
+    border-left: 1px solid white;
+    padding-left: 25px;
   }
 }
 

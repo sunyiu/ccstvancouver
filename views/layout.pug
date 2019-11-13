@@ -51,31 +51,35 @@ html
     div.footer
         div.container
             div.title #{__('title')}
-            div.detailContainer
-                div.details 
-                    div #{__('address')} 
-                    div #{__('mailing_address')}
-                div.details
-                    div!= __('vancouver_office')
-                    div #{__('office_address')}
-                div.details
-                    div #{__('telephone')}
-                    div 778-251-5678
-                div.details
-                    div #{__('email')}
-                    div 
-                        a(href='mailto:info@ccstvan.ca' target='_top') info@ccst.ca
-            div.contactFormContainer
-                div.details
-                    div #{__('contactForm')}
-                    div.inputs
-                        input(type='text' id='sendFeedbackName' name="name" placeholder=__('contact_name'))
-                        div.error_msg #{__('contact_name_error')}
-                        input(type='text' id='sendFeedbackEmail' name='email' placeholder=__('contact_email'))
-                        div.error_msg #{__('contact_email_error')}
-                        textarea(id='sendFeedbackText' placeholder="Enter your message")
-                        div.error_msg #{__('contact_msg_error')}
-                        input(type='button' id='sendFeedbackBtn' name='sendBtn' value=__('contact_send'))
+            div.informations
+                div.detailContainer
+                    div.details 
+                        div #{__('address')} 
+                        div #{__('mailing_address')}
+                    div.details
+                        div!= __('vancouver_office')
+                        div #{__('office_address')}
+                    div.details
+                        div #{__('telephone')}
+                        div 778-251-5678
+                    div.details
+                        div #{__('email')}
+                        div                         
+                            a(class='email' href='mailto:info@ccstvan.ca' target='_top') info@ccst.ca
 
-            
+                div.inputs
+                    h2 #{__('leave_message')}
+                    input(type='text' id='sendFeedbackName' name="name" placeholder=__('contact_name'))
+                    div#name.error_msg #{__('contact_name_error')}
+                    input(type='text' id='sendFeedbackEmail' name='email' placeholder=__('contact_email'))
+                    div#email.error_msg #{__('contact_email_error')}
+                    textarea(id='sendFeedbackText' placeholder=__('contact_msg'))
+                    div#message.error_msg #{__('contact_msg_error')}
+                    input(type='button' id='sendFeedbackBtn' name='sendBtn' value=__('contact_send'))
+                    div#messageSend.error_msg #{__('msg_send')}
+
+            div.color_border
+                div.blue
+                div.yellow
+                div.red
             div.copyright-container #{__('copyright')}

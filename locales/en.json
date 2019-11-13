@@ -947,8 +947,13 @@
 	"accreditation_3_link": "http://www.bclaws.ca/civix/document/id/complete/psl/18033",
 	"": "",
 	"contactus": "Contact Us",
-	"contactForm": "contactForm",
-	"contact_name": "contact_name",
-	"contact_email": "contact_email",
-	"contact_send": "contact_send"
+	"contact_name": "Name*",
+	"contact_email": "Email*",
+	"contact_send": "submit",
+	"contact_msg": "Enter your message*",
+	"contact_name_error": "Name cannot be empty",
+	"contact_email_error": "Email is not valid",
+	"contact_msg_error": "Message cannot be empty",
+	"leave_message": "Leave us a message",
+	"msg_send": "Thx for your message"
 }
