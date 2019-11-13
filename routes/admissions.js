@@ -21,9 +21,9 @@ router.get('/programs', function (req, res, next) {
   res.render('admissions/programs');
 });
 
-
 router.get('/vancouver', function (req, res, next) {
   res.render('admissions/vancouver');
 });
+
 
 module.exports = router;
