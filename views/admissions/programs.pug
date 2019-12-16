@@ -30,6 +30,10 @@ block admission-content
                 div.title #{__('progDipcs')}
                 div.context #{__('progDipcsDesc')}
                 a(class='detail-btn', href='#prog-dipcs') #{__('fulldetail')}
+            li.box-container   
+                div.title #{__('general_theology_course')}
+                div.context #{__('general_theology_course_desc')}
+                a(class='detail-btn', href='#general_theology') #{__('fulldetail')}
             li.box-container
                 div.title #{__('progNonDegree')}
                 div.context #{__('progNonDegreeDesc')}
@@ -285,6 +289,53 @@ block admission-content
         div.title-paragraph
             h1 #{__('dipCS3')}
             div #{__('dipCS3a')}
+
+    section(id='general_theology')
+        h1
+            span #{__('general_theology_course')}
+        div.title-paragraph
+            h1 #{__('general_theology_course_desc_title')}
+            div #{__('general_theology_course_desc')}
+        div.title-paragraph
+            h1 #{__('general_theology_course_qualification_title')}
+            ul.numbering            
+                li 
+                    div #{(__('general_theology_course_qualification_1'))}
+                    ul.point.padding-left
+                        li #{(__('general_theology_course_qualification_1a'))}
+                        li #{(__('general_theology_course_qualification_1b'))}
+                li #{(__('general_theology_course_qualification_2'))}
+                li #{(__('general_theology_course_qualification_3'))}
+        div.title-paragraph
+            h1 #{__('general_theology_course_course_title')}
+            ul.point
+                li #{__('general_theology_course_course_pt1')}
+                li #{__('general_theology_course_course_pt2')}
+            ul.numbering
+                li #{__('general_theology_course_course_1')}
+                li #{__('general_theology_course_course_2')}
+                li #{__('general_theology_course_course_3')}
+        div.title-paragraph
+            h1 #{__('general_theology_course_fee_title')}
+            div.cost-table
+                span #{__('general_theology_course_fee_1')}
+                span #{__('general_theology_course_fee_1_cost')}
+            div.cost-table
+                span #{__('general_theology_course_fee_2')}
+                span #{__('general_theology_course_fee_2_cost')}
+            div.cost-table
+                span #{__('general_theology_course_fee_3')}
+                span #{__('general_theology_course_fee_free')}
+            div.cost-table
+                span #{__('general_theology_course_fee_4')}
+                span #{__('general_theology_course_fee_free')}
+        div.title-paragraph
+            h1 #{__('general_theology_course_apply_title')}
+            div #{__('general_theology_course_apply_1')}   
+            div #{__('general_theology_course_apply_2')}  
+            div 
+                span #{__('general_theology_course_apply_3')}
+                a(href="mailto:wailinlau@ccstvan.ca") #{__('general_theology_course_apply_mail')}
 
     section(id='prog-nondegree')
         h1    

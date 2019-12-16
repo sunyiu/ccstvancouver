@@ -25,12 +25,16 @@ section#accreditation h1{
 
 .staff_container {
     /* padding-bottom: 1.25rem; */
-    display: flex;
-    justify-content: flex-start;
     background-color: #eee;
     border-radius: 5px;
-    padding: 15px;
     margin-bottom: 1.25rem;
+    border-radius: 5px;
+}
+.staff_container div.header{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
 }
 .staff_container div.profile{
     width: 65px;
@@ -44,13 +48,11 @@ section#accreditation h1{
     background-size: 80%;
     background-position: center;
 }
-.staff_container > div:last-child{
-    width: 100%;
+
+.staff_container div.detail{
+    padding: 0 15px;
 }
-.staff_container div.titles{
-    margin-top: -15px;
-    margin-right: -15px;
-}
+
 .staff_container  div.titles > div {
     background-color: gray;
     padding: 0 5px;
@@ -60,9 +62,6 @@ section#accreditation h1{
 }
 .staff_container  div.name{
     font-weight: bold;
-}
-.staff_container div.titles>div:first-child{
-    border-radius: 0 5px 0 0;
 }
 
 .member_container{

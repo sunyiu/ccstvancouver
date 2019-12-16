@@ -404,12 +404,10 @@ div.color_border > div.red{
   }
   .container.section.side-by-side {
     display: flex;
-    align-items: stretch;
+    align-items: flex-start;
     padding-bottom: 50px;
   }
   .container.section.side-by-side>.header {
-    flex-basis: 50%;
-    height: auto;
   }
   .container.section.side-by-side>.desc-container {
     flex-basis: 50%;

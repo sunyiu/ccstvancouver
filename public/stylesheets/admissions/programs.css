@@ -62,6 +62,17 @@
      font-size: 0.85rem;
  }
 
+
+section#general_theology ul.point{
+    padding-bottom: 15px;
+}
+section#general_theology ul.point.padding-left{
+    padding-left: 20px;
+}
+section#general_theology ul.point li{
+    list-style: disc;
+}
+
  @media (min-width: 576px) {
      .wrap-boxes .box-container {
          flex-basis: 48%;
