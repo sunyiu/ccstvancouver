@@ -86,38 +86,53 @@ section > h1{
     height: 200px;
 }
 .home .container.section.building{
+    position: relative;
     font-weight: 300;
     margin: 0;
     margin-bottom: 2rem;
-    background: url(../images/grouppray.png) no-repeat center;
+    background: url(../images/JanSeminarPoster-bg.png) no-repeat center;
     background-size: cover;
     padding-bottom: 1rem;
 }
+.home .container.section.building > .special{
+    position: absolute;
+    padding-left: 10px;
+}
 .home .container.section.building > .header{
     padding-top: 1.25rem;
-}
-.home .container.section.building > .header > .title{
-    font-size: 1.25rem;
     background-color: rgba(0,0,0,0.5);
-    color: white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 0 5px 5px 0;
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 25px;
+    margin-top: 4rem;
+    color: white;
+    margin-right: 15px;
 }
-.home .container.container.section > .header  .date{
-    font-size: 1rem;
-    padding-bottom: 15px;
+.home .container.section.building > .header > .title{
+    padding-top: 15px;
+    font-size: 2rem;
+    font-weight: bold;
 }
+.home .container.section.building > .header > .click{
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+}
+
 .home .container.section ul.desc-container{
     padding: 1rem;
-    background-color: white;
+    background-color: rgba(255,255,255, 0.75);
     margin: 1.5rem;
     margin-bottom: 100px;
-    margin-left: 150px;
 }
 .home .container.section ul.desc-container > li{
     margin-bottom: 15px;
+    color: black;
+}
+.home .container.section ul.desc-container > li > a{
+    cursor: pointer;
+    color: black;
 }
 
 
@@ -149,8 +164,10 @@ section > h1{
     }
     .home .container.section ul.desc-container{
         margin: 2.5rem;
-        margin-bottom: 2.5rem;
-        margin-left: 2.5rem;
+        margin-top: 4rem;
+    }
+    .home .container section{
+        margin-left: 0;
     }
 }
 
