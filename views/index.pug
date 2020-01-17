@@ -56,12 +56,23 @@ block content
         
         div.container.section.side-by-side.building
             div.special #{__('chinese_only')}
+              //- div.announce 
+              //-   div #{__('news1_announce1')}
+              //-   div #{__('news1_announce2')}
+              //-   div #{__('news1_announce3')}
+              //-   div #{__('news1_announce4')}
+              
             div.header 
-              div #{__('news1_date')}
-              div #{__('news1_time')}
-              div #{__('news1_speaker')}
-              div #{__('news1_location')}
+              div.announce
+                div #{__('news1_announce1')}
+                div 
+                  | #{__('news1_announce2_1')}
+                  div.date #{__('news1_announce2_2')} 
+                div #{__('news1_announce3')}
+                div #{__('news1_announce4')}
+                div #{__('news1_announce5')}
               div.title #{__('news1_title')}
+              div #{__('news1_speaker')}
               div.click
                 i.material-icons arrow_right_alt
                 a(href='pdf/JanSeminarPoster.pdf' target='_blank') #{__('click_here_for_poster')}
