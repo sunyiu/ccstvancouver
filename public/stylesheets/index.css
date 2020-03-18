@@ -92,19 +92,22 @@ section > h1{
     background: url(../../images/news.png) no-repeat right;
     background-size: cover;
     height: 200px;
+
+    display: none;
 }
 .home .container.section.building{
     position: relative;
     font-weight: 300;
     margin: 0;
     margin-bottom: 2rem;
-    background: url(../images/JanSeminarPoster-bg.png) no-repeat center;
+    background: url(../images/onlineclassannouncement.png) no-repeat center;
     background-size: cover;
     padding-bottom: 1rem;
 }
 .home .container.section.building > .special{
     position: absolute;
     padding-left: 10px;
+    color: white;
 }
 .home .container.section.building > .header{
     padding-top: 1.25rem;
@@ -116,6 +119,7 @@ section > h1{
     margin-top: 4rem;
     color: white;
     margin-right: 15px;
+    padding-bottom: 0;
 }
 .home .container.section.building > .header > .announce{
     background-color: darkred;
@@ -140,6 +144,10 @@ section > h1{
     display: flex;
     padding-top: 15px;
     align-items: center;
+}
+.home .container.section.building .desc-container{
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 .home .container.section ul.desc-container{
