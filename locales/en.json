@@ -14,32 +14,26 @@
 	"studentResources": "Student Resources",
 	"academics": "Academics",
 	"motto1_title": "異象宣言",
-	"motto1":"按聖經的真理，提供適切的神學裝備，培育時代的工人，傳承牧養和宣教，完成基督的使命。",
+	"motto1": "按聖經的真理，提供適切的神學裝備，培育時代的工人，傳承牧養和宣教，完成基督的使命。",
 	"motto2_title": "使命宣言",
-	"motto2":"培育主僕，裝備信徒。",
+	"motto2": "培育主僕，裝備信徒。",
 	"motto3_title": "院訓",
-	"motto3":"你在許多見證人面前聽見我所教訓的，也要交託那忠心能教導別人的人。(提後 2:2)",
+	"motto3": "你在許多見證人面前聽見我所教訓的，也要交託那忠心能教導別人的人。(提後 2:2)",
 	"findAProgram": "Find a program",
 	"applyTo": "Apply to CCST Vancouver",
 	"requestInfo": "Request Info",
 	"knowMoreAboutUs": "Know more about us",
 	"whatHappening": "Upcoming Event",
-	"news1_title": "從人類到超人類主義",
-	"news1_date": "二零二零年一月十七日(星期五)",
-	"news1_time": "7:30 pm - 9:30 pm",
-	"news1_location": "溫哥華華人宣道會(3330 Knight street)",
-	"news1_speaker": "李錦綸博士",
-	"news1_1": "李錦綸博士分別取得維真學院道學碩士與神學碩士,及渥太華大學神學系哲學博士。現為加拿大華人神學院神學副教授,美國創欣神學院蘇文隆神學教席教授,專注奧古斯丁和系統神學研究,亦為國際教父學學會 IAPS) 會員。著作包括: Augustine, Manichaeism, and the Good ;《奧古斯丁論善惡與命定》、《永活上帝生命主》、《道成肉身救源》及《世紀中國文化莖》,《中華血脈道本淵》亦已於2019年4月出版。",
-	"news1_2": "講座簡介",
-	"news1_3": "超人類主義反映全球步入極端世俗文化。人工智能與基因科技的誤用,成為人類自我滅絕的試探。只有上帝形象是確立人類價值的基石。",
-	"news1_4": "粤語免費講座,普通話耳機傳譯。",
-	"news1_announce1": "「加神溫哥華」因風雪和路面情況, 原定於一月十七日(星期五)的公開講座「從人類到超人類主義」",
-	"news1_announce2_1": "將延期至",
-	"news1_announce2_2": "二月二十九日",
-	"news1_announce3": "地點: 温哥華華人宣道會",
-	"news1_announce4": "時間: 7:30pm – 9:30pm",
-	"news1_announce5": "特此通告。不便之處, 敬請見諒!",
-	"news1_5": "查詢請致電778-251-5678 或 電郵",
+
+	"news_chineseonly": "* This announcement is only available in Chinese",
+	"news1_title": "重要通知",
+	"news1_title1": "三月十六日",
+	
+	"news1_1": "即日(三月十六日)起, 本校所有課堂將改以網上形式進行, 直至另行通知。",
+	"news1_2": "本校辦公室及圖書館仍提供有限度服務, 開放時間為早上十時至下午三時，直至另行通知。",
+	"news1_3": "特此通告。不便之處, 敬請見諒!",
+	"news1_4": "查詢請致電778-251-5678 或 電郵",
+	
 	"ccstvancouver": "Canadian Chinese School of Theology Vancouver",
 	"ccstvancouver_short": "CCST Vancouver",
 	"apply": "Application Process",
@@ -919,10 +913,8 @@
 	"contact_msg_error": "Message cannot be empty",
 	"leave_message": "Leave us a message",
 	"msg_send": "Thx for your message",
-
 	"click_here_for_poster": "click here for poster",
-	"chinese_only":"* This program description is only available in Chinese",
-
+	"chinese_only": "* This program description is only available in Chinese",
 	"general_theology_course": "普及神學證書課程",
 	"general_theology_course_desc_title": "課程簡介",
 	"general_theology_course_desc": "普及神學證書課程是以密集的形式，針對在不同事工領域及事奉崗位上的實際應用，專為有心志在華人教會事奉的信徒提供基本的神學訓練。",
@@ -977,8 +969,7 @@
 	"course_schedule_general_theology_table_date_3_2": "04/18 (六 09:00-12:00)",
 	"course_schedule_general_theology_table_date_3_3": "04/18 (六) 08:00-12:00",
 	"course_schedule_general_theology_table_location_3": "TBA",
-
-	"course_schedule_dip_cs" :"2020 Dip. C.S Course Schedule",
+	"course_schedule_dip_cs": "2020 Dip. C.S Course Schedule",
 	"course_schedule_dip_cs_desc": "此課程通過在聖經科丶神學科和實踐神學科的專門學習,加強信徒在靈命和事奉上的裝備。完成文憑課程後,若有志繼續攻讀本校碩士課程,文憑課程的科目可轉用於碩士課程內 (M.T.S./M.Div.)。",
 	"course_schedule_dip_cs_1": "THE025系統神學 (三學分)",
 	"course_schedule_dip_cs_1_desc": "本課堂學習有關教會的設立、特色及未來景況。救贖諭:人的墮落及基督的救贖;教會:它的組成、特色及命運,包括它在聖經中的形象、使命及事工;它在末後日子啟示的位置;聖敻論:研討聖靈的位格及事工, 近代敻恩運動;末事論:未後的事,主再來及世界終局。",
@@ -994,7 +985,7 @@
 	"course_schedule_dip_cs_2_time": "上午 9:00 - 12:00 下午 1:00 - 4:00",
 	"course_schedule_dip_cs_2_location": "加拿大華人神學院溫哥華 (8971 Beckwith Road, Richmond)",
 	"course_schedule_dip_cs_2_teacher": "陳耀鵬博士",
-	"course_schedule_dip_cs_2_teacher_desc": "陳牧師曾在美國及加拿大三個城市牧會近三十年, 期間亦擔任不同福音機構董事,自 2007 在建道神學院任教至榮休,所教科目及研究範包括講道學、教會行政、教會領導及教會衝突等。陳牧師於三一福音神學院獲文學士、於戴保羅大學獲工商管理碩士、於緬理吐巴大學獲教育副士,並於三福音神學院獲教牧學博士。自 2019 年起, 陳牧師成為基督教頌恩堂裝備牧師,及慕迪港頌恩堂暫署顧問牧師。"
-
-
+	"course_schedule_dip_cs_2_teacher_desc": "陳牧師曾在美國及加拿大三個城市牧會近三十年, 期間亦擔任不同福音機構董事,自 2007 在建道神學院任教至榮休,所教科目及研究範包括講道學、教會行政、教會領導及教會衝突等。陳牧師於三一福音神學院獲文學士、於戴保羅大學獲工商管理碩士、於緬理吐巴大學獲教育副士,並於三福音神學院獲教牧學博士。自 2019 年起, 陳牧師成為基督教頌恩堂裝備牧師,及慕迪港頌恩堂暫署顧問牧師。",
+	"news1_desc1": "news1_desc1",
+	"news1_desc2": "news1_desc2"
 }

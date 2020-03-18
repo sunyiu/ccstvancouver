@@ -55,7 +55,7 @@ block content
             span #{__('whatHappening')}
         
         div.container.section.side-by-side.building
-            div.special #{__('chinese_only')}
+            div.special #{__('news_chineseonly')}
               //- div.announce 
               //-   div #{__('news1_announce1')}
               //-   div #{__('news1_announce2')}
@@ -64,26 +64,14 @@ block content
               
             div.header 
               div.announce
-                div #{__('news1_announce1')}
-                div 
-                  | #{__('news1_announce2_1')}
-                  div.date #{__('news1_announce2_2')} 
-                div #{__('news1_announce3')}
-                div #{__('news1_announce4')}
-                div #{__('news1_announce5')}
-              div.title #{__('news1_title')}
-              div #{__('news1_speaker')}
-              div.click
-                i.material-icons arrow_right_alt
-                a(href='pdf/JanSeminarPoster.pdf' target='_blank') #{__('click_here_for_poster')}
-
+                div #{__('news1_title')}
+                div.date #{__('news1_title1')} 
+               
             ul.desc-container
               li #{__('news1_1')}
-              li 
-                div #{__('news1_2')}
-                div #{__('news1_3')}
-              li #{__('news1_4')} 
-              li #{__('news1_5')}
+              li #{__('news1_2')}
+              li #{__('news1_3')} 
+              li #{__('news1_4')}
                 a(class='email' href='mailto:info@ccstvan.ca' target='_top') &nbsp;info@ccstvan.ca
 
 
