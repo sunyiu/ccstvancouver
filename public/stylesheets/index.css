@@ -163,6 +163,7 @@ section > h1{
 .home .container.section ul.desc-container > li > a{
     cursor: pointer;
     color: black;
+    text-decoration: underline;
 }
 
 
