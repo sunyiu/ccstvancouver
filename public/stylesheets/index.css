@@ -160,12 +160,18 @@ section > h1{
     margin-bottom: 15px;
     color: black;
 }
-.home .container.section ul.desc-container > li > a{
+.home .container.section ul.desc-container ul.pointform > li > a{
     cursor: pointer;
     color: black;
     text-decoration: underline;
 }
 
+.home .container.section ul.desc-container ul.pointform{
+    padding-left: 25px;
+}
+.home .container.section ul.desc-container ul.pointform > li{
+    list-style: decimal;
+} 
 
 
 @media (min-width: 576px) {
