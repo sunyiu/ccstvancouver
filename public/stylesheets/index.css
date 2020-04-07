@@ -95,21 +95,23 @@ section > h1{
 
     display: none;
 }
-.home .container.section.building{
+.home .container.section{
     position: relative;
     font-weight: 300;
     margin: 0;
     margin-bottom: 2rem;
-    background: url(../images/onlineclassannouncement.png) no-repeat center;
-    background-size: cover;
     padding-bottom: 1rem;
 }
-.home .container.section.building > .special{
+.home .container.section.building{
+    background: url(../images/onlineclassannouncement.png) no-repeat center;
+    background-size: cover;
+}
+.home .container.section > .special{
     position: absolute;
     padding-left: 10px;
     color: white;
 }
-.home .container.section.building > .header{
+.home .container.section > .header{
     padding-top: 1.25rem;
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
@@ -121,7 +123,8 @@ section > h1{
     margin-right: 15px;
     padding-bottom: 0;
 }
-.home .container.section.building > .header > .announce{
+
+.home .container.section > .header > .announce{
     background-color: darkred;
     font-size: 1.35rem;
     font-weight: bold;
@@ -129,23 +132,34 @@ section > h1{
     padding: 10px;
     border-radius: 0 5px 5px 0;
 }
-.home .container.section.building > .header > .announce div.date{
+.home .container.section.principle > .header{
+    display: block;
+    margin-right: 0;
+    border-radius: 0;
+}
+.home .container.section.principle > .header > .announce{
+    padding-top: 125px;
+    background: url(../images/news.png) no-repeat center;
+    background-size: cover;
+    height: 50px; 
+}
+.home .container.section > .header > .announce div.date{
     font-size: 1.5em;
 }
-.home .container.section.building > .header > .announce > div{
+.home .container.section > .header > .announce > div{
     padding-bottom: 10px;
 }
-.home .container.section.building > .header > .title{
+.home .container.section > .header > .title{
     padding-top: 15px;
     font-size: 2rem;
     font-weight: bold;
 }
-.home .container.section.building > .header > .click{
+.home .container.section > .header > .click{
     display: flex;
     padding-top: 15px;
     align-items: center;
 }
-.home .container.section.building .desc-container{
+.home .container.section .desc-container{
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.85);
 }
@@ -156,6 +170,10 @@ section > h1{
     margin: 1.5rem;
     margin-bottom: 100px;
 }
+.home .container.section.principle ul.desc-container{
+    background-color: #eee;
+}
+
 .home .container.section ul.desc-container > li{
     margin-bottom: 15px;
     color: black;
@@ -206,8 +224,14 @@ section > h1{
     .home .container section{
         margin-left: 0;
     }
-    .home .container.section.building > .header{
+    .home .container.section > .header{
         max-width: 350px;
+    }
+    .home .container.section.principle > .header{
+        max-width: none;
+    }
+    .home .container.section.principle ul.desc-container{
+        margin: 0;
     }
 }
 
