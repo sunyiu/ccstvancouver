@@ -1,3 +1,7 @@
+section.international {
+    min-height:  500px;
+}
+
 section.international>h1 {
     background: url(../../images/airplane.png) no-repeat center;
     background-size: cover;

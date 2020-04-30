@@ -79,7 +79,15 @@ section#general_theology ul.point li{
      }
  }
 
+ section>h1>span{
+    max-width: 325px;
+}
 
+ @media (min-width: 992px) {
+     section>h1>span{
+         max-width: none;
+     }
+ }
 
  .section-nav {
     position: relative;
