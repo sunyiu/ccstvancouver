@@ -2,54 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>http://ccstvan.ca/?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
    <url>
       <loc>http://ccstvan.ca/admissions/vancouver?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/admissions/apply?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/admissions/programs?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/admissions/fees?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/admissions/finanical?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/admissions/international?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/student-resources?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/academic/instructors?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/academic/instructors2?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/academic/courses?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/academic/schedules?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>
     <url>
       <loc>http://ccstvan.ca/aboutus?lang=en</loc>
-      <lastmod>2019-11-01</lastmod>
+      <lastmod>2020-05-25</lastmod>
    </url>   
+
+   <url>
+      <loc>http://ccstvan.ca/?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+   <url>
+      <loc>http://ccstvan.ca/admissions/vancouver?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/admissions/apply?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/admissions/programs?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/admissions/fees?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/admissions/finanical?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/admissions/international?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/student-resources?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/academic/instructors?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/academic/instructors2?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/academic/courses?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/academic/schedules?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
+    <url>
+      <loc>http://ccstvan.ca/aboutus?lang=zh</loc>
+      <lastmod>2020-05-25</lastmod>
+   </url>
 </urlset>
