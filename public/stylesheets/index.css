@@ -55,7 +55,7 @@
     line-height: 1.5;
     text-align: center;
     background-color: rgba(0,0,0,0.75);
-    padding: 5px;
+    padding: 10px;
 }
 .home > .container > .top-image-container .motto.title{
     font-size: 1.5rem;
@@ -160,7 +160,7 @@ section > h1{
     align-items: center;
 }
 .home .container.section .desc-container{
-    font-weight: bold;
+    font-weight: 500;
     background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -178,7 +178,7 @@ section > h1{
     margin-bottom: 15px;
     color: black;
 }
-.home .container.section ul.desc-container ul.pointform > li > a{
+.home .container.section ul.desc-container .email{
     cursor: pointer;
     color: black;
     text-decoration: underline;
@@ -190,6 +190,11 @@ section > h1{
 .home .container.section ul.desc-container ul.pointform > li{
     list-style: decimal;
 } 
+
+
+li div > span.tab1, li div.tab1{
+    margin-left: 25px;
+}
 
 
 @media (min-width: 576px) {
