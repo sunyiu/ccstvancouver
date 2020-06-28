@@ -55,6 +55,40 @@ block content
       section
         h1 
             span #{__('whatHappening')}
+
+
+        div.container.section.side-by-side.building(style='background-image:url(../images/classroom.png)')
+            div.special #{__('news_chineseonly')}             
+            div.header 
+              div.announce
+                div.date 
+                  div #{__('news3_title')}
+                div
+                  div #{__('news3_date1')} 
+                  div #{__('news3_date2')} 
+                  div #{__('news3_date3')}
+
+            ul.desc-container
+              li(style='font-size:2rem;font-weight:bold;') #{__('news3_1')}
+              li(style='font-size:1.25rem;') #{__('news3_2')}
+              li 
+                ul
+                  li(style='list-style: disc; margin-left: 25px;') #{__('news3_3')}
+                  li(style='list-style: disc; margin-left: 25px;') #{__('news3_4')}
+              li #{__('news3_5')}
+              li #{__('news3_6')}
+              li #{__('news3_9')}
+              li 
+                a(style='color:black',target='_blank',href='mailto:info@ccstvan.ca') #{__('news3_10')}
+              li #{__('news3_7')}
+              li 
+                span #{__('news3_8a')}
+                span 
+                  a(style='color: black',target='_blank',href='https://forms.gle/CzTpEcz1vepcYZUG6') #{__('news3_8b')}
+
+              li(style='font-size:1.25rem') #{__('news3_11')}
+
+
             
         div.container.section.principle
             div.special #{__('news_chineseonly')}              
@@ -129,15 +163,13 @@ block content
                 div #{__('news2_18')}
                 div #{__('news2_19')}
 
-
         div.container.section.side-by-side.building
             div.special #{__('news_chineseonly')}
               //- div.announce 
               //-   div #{__('news1_announce1')}
               //-   div #{__('news1_announce2')}
               //-   div #{__('news1_announce3')}
-              //-   div #{__('news1_announce4')}
-              
+              //-   div #{__('news1_announce4')}              
             div.header 
               div.announce
                 div #{__('news1_title')}
