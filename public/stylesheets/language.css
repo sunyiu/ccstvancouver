@@ -87,6 +87,9 @@ h1{
     left: 50%;
     margin-left: -50px;
 }
+.lang-btns.chinese{
+    margin-left: -95px;
+}
 
 .lang-btns button {
     height: 35px;
