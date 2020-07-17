@@ -12,6 +12,7 @@
 
 .navbar-tools #langBtn{
     cursor: pointer;
+    font-size: 0.85rem;
 }
 
 .navbar-logo {

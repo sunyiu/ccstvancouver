@@ -25,7 +25,7 @@ app.use(cookieParser());
 // i18n setup
 i18n.expressBind(app, {
   // setup some locales - other locales default to vi silently
-  locales: ['en', 'zh'],
+  locales: ['en', 'zh_hans', 'zh_hant'],
   directory: __dirname + '/locales',
   extension: '.json',
   // set the default locale

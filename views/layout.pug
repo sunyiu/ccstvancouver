@@ -30,8 +30,10 @@ html
         nav.container        
             ul(class='navbar-tools')
                 li(class='nav-tool')
-                    a(id='langBtn' onclick="window.location.href = window.location.href.substring(0, window.location.href.lastIndexOf('?')) + '?lang=" + __('other_locale') + "'") 
-                        i(class="material-icons md-36") translate
+                    a(id='langBtn' onclick="window.location.href = window.location.href.substring(0, window.location.href.lastIndexOf('?')) + '?lang=" + __('other1_locale') + "'") #{__('other1_display')}
+                        //- i(class="material-icons md-36") translate
+                    a(style='padding-left: 15px;' id='langBtn' onclick="window.location.href = window.location.href.substring(0, window.location.href.lastIndexOf('?')) + '?lang=" + __('other2_locale') + "'") #{__('other2_display')}
+                        //- i(class="material-icons md-36") translate
 
             div(class='navbar-items-container')
                 div
