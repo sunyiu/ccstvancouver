@@ -410,7 +410,7 @@ div.color_border > div.red{
   .container.section.side-by-side>.header {
   }
   .container.section.side-by-side>.desc-container {
-    flex-basis: 50%;
+    flex-basis: 75%;
   }
   .module>.container>.context {
     padding-top: 0;

@@ -126,7 +126,7 @@ section > h1{
 
 .home .container.section > .header > .announce{
     background-color: darkred;
-    font-size: 1.35rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: -10px -25px 0 -10px;
     padding: 10px;
@@ -166,7 +166,7 @@ section > h1{
 
 .home .container.section ul.desc-container{
     padding: 1rem;
-    background-color: rgba(255,255,255, 0.75);
+    background-color: rgba(255,255,255, 0.9);
     margin: 1.5rem;
     margin-bottom: 100px;
 }
@@ -230,10 +230,12 @@ li div > span.tab1, li div.tab1{
         margin-left: 0;
     }
     .home .container.section > .header{
-        max-width: 350px;
+        /* max-width: 350px; */
+        width: 150px;
     }
     .home .container.section.principle > .header{
         max-width: none;
+        width: inherit;
     }
     .home .container.section.principle ul.desc-container{
         margin: 0;

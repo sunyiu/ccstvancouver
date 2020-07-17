@@ -51,6 +51,8 @@ section#accreditation h1{
 
 .staff_container div.detail{
     padding: 0 15px;
+    display: flex;
+    align-items: baseline;
 }
 
 .staff_container  div.titles > div {
@@ -62,6 +64,12 @@ section#accreditation h1{
 }
 .staff_container  div.name{
     font-weight: bold;
+    padding-right: 15px;
+    white-space: nowrap;
+}
+.staffs_container div.edu{
+    font-size: 0.75rem;
+    white-space: nowrap;    
 }
 
 .member_container{
