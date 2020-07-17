@@ -2,8 +2,10 @@
 	"title": "Canadian Chinese School of Theology Vancouver",
 	"meta_description": "Canadian Chinese School of Theology Vancouver, Education, Theology, Vancouver, Doctor of Ministry, Master of Divinity, Master of Theological Studies, Diploma in Christian Studies, Extended Theological Certificate Program",
 	"locale": "en",
-	"other_locale": "zh",
-	"other_locale_display": "中文",
+	"other1_locale": "zh_hant",
+	"other1_display": "中文(繁)",
+	"other2_locale": "zh_hans",
+	"other2_display": "中文(簡)",
 	"address": "Mailing Address",
 	"mailing_address": "P.O. Box 365, 186 – 8120 No. 2 Road, Richmond, BC V7C 5J8",
 	"vancouver_office": "Office <br/>Resources Center",
@@ -35,7 +37,6 @@
 	"news3_2": "楊慶球博士主講",
 	"news3_3": "神學是神秘的還是實用的?",
 	"news3_4": "神學課程如何可以幫助我事奉更得力?",
-
 	"news4_title": "如何帶領小組",
 	"news4_date1": "八月八日至十五日",
 	"news4_date2": "9am - 12noon",
@@ -66,9 +67,7 @@
 	"news4_14b": "info@ccstvan.ca",
 	"news4_15": "網上即時報名結連: ",
 	"news4_15b": "https://forms.gle/vFsmunFDWqbBKXu7A",
-	"news4_15c" : "(7月31日截止登記)",
-	
-
+	"news4_15c": "(7月31日截止登記)",
 	"news2_title": "院長的話",
 	"news2_1": "親愛的「加神温哥華」同路人：",
 	"news2_2": "願主出人意外的平安充滿你們，主復活的大能在疫境中保護你們。",
@@ -98,7 +97,6 @@
 	"news2_17": "梁海華",
 	"news2_18": "「加神溫哥華」院長",
 	"news2_19": "二零二零年六月一日",
-
 	"news1_title": "重要通知",
 	"news1_title1": "六月十二日",
 	"news1_head": "以下是本校就本省疫情變化的更新溝通, 請各位同學注意:",
