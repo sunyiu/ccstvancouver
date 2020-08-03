@@ -1,0 +1,12 @@
+.question {
+    margin-bottom: 2rem;
+}
+.question > label {
+    display: block;
+    margin-bottom: 5px;
+}
+.question > div:last-child{
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #333;
+}
