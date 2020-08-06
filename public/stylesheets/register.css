@@ -1,0 +1,23 @@
+.question {
+    margin-bottom: 2rem;
+}
+.question > label {
+    display: block;
+    margin-bottom: 5px;
+}
+.question > div:last-child{
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.question.required > label:first-child::after{
+    content: "*";
+    padding-left: 5px;
+    color: red;
+}
+
+.error{
+    color: red;
+    font-size: 0.85rem;
+}

@@ -235,14 +235,22 @@ block content
                         span #{__('accreditation')}
                     ul.numbering
                         li 
-                            div #{__('accreditation_2')}
+                            div 
+                                strong #{__('accreditation_2')}
                             div #{__('accreditation_2_desc')}
                         li 
-                            div #{__('accreditation_3')}
+                            div 
+                                strong #{__('accreditation_3')}
                             div.link_container
                                 i.material-icons link
                                 a(href=__('accreditation_3_link')) #{__('accreditation_3_link')} 
                             div #{__('accreditation_3_desc')}
+                        li
+                            div 
+                                strong #{__('dli')}
+                            div(style='display: flex;')
+                                div(style='padding-right:15px') #{__('dli_desc')}
+                                img(src='images/dli.png', style='min-width:240px, min-height:230px, max-width:240px; max-height:230px')
 
 
                 section(id='contactus')

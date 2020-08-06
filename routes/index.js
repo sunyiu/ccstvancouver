@@ -15,12 +15,9 @@ router.get('/student-resources', function (req, res, next) {
   res.render('student-resources');
 })
 
-
-
 router.get('/aboutus', function (req, res, next) {
   res.render('aboutus');
 })
-
 
 router.post('/feedback', function (req, res, next) {
   let from = req.body.from,

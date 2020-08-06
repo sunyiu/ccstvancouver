@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var admissionsRouter = require('./routes/admissions');
 var academicRouter = require('./routes/academic');
+var registerRouter = require('./routes/register');
 //var usersRouter = require('./routes/users');
 
 var i18n = require('i18n-2');
@@ -71,6 +72,7 @@ app.get('*', (req, res, next) => {
 app.use('/', indexRouter);
 app.use('/academic', academicRouter);
 app.use('/admissions', admissionsRouter);
+//app.use('/register', registerRouter);
 //app.use('/users', usersRouter);
 
 
