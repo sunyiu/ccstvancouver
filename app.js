@@ -72,7 +72,7 @@ app.get('*', (req, res, next) => {
 app.use('/', indexRouter);
 app.use('/academic', academicRouter);
 app.use('/admissions', admissionsRouter);
-app.use('/register', registerRouter);
+//app.use('/register', registerRouter);
 //app.use('/users', usersRouter);
 
 

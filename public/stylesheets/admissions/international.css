@@ -12,6 +12,11 @@ section.international>div {
     font-weight: bold;
 }
 
+ul.international_student li{
+    padding-bottom: 15px;
+    list-style: lower-roman;
+}
+
 @media (min-width: 768px) {
     .module>.container>.context {
         min-height: 340px;
