@@ -1,0 +1,90 @@
+body{
+    margin: 25px;
+}
+
+input[type='text'],
+input[type='date'],
+select{
+    width: 350px;
+}
+
+.navbar{
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.navbar-logo{
+    display: block;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .9);
+    width: 55px;
+    height: 55px;
+    background: url(/images/logo.png) no-repeat;
+    background-size: contain;
+}
+
+.section-desc{
+    padding-bottom: 15px;
+}
+.section-desc > div{
+    padding-bottom: 10px;
+}
+
+.question {
+    margin-bottom: 1rem;
+}
+.question > label {
+    display: block;
+}
+.question > * {
+    margin-bottom: 10px;
+}
+.question > div.helper{
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.question.required > label:first-child::after{
+    content: "*";
+    padding-left: 5px;
+    color: red;
+}
+
+.error{
+    color: red;
+    font-size: 0.85rem;
+    /* padding-top: 5px; */
+    margin-top: -5px;
+}
+
+.submit-container{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    height: 150px;
+}
+textarea.short{
+    width: 350px;
+    height: 100px;
+}
+
+
+#portraitPreview.show{
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
