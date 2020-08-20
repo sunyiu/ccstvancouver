@@ -92,8 +92,8 @@ router.post('/', function (req, res, next) {
     '<div><strong>Emergency Contact Email</strong></div><div>'+ req.body.emergencyContactEmail +'</div>'; 
 
     const msg = {
-      to: 'sunyiu@outlook.com',
-      from: 'register@ccstvan.ca',
+      to: 'application@ccstvan.ca',
+      from: 'application@ccstvan.ca',
       subject: 'Someone has submitted a registration form',
       contentType: 'text/html',
       html: html,
