@@ -49,7 +49,9 @@ $(function () {
     return this.optional(element) || value == value.match(/^[a-zA-Z\s]*$/);
   });
 
-  $("#registerForm").validate({
+  var submitBtn$ = $('#submitBtn');
+  var form$ = $("#registerForm");
+  form$.validate({
     rules: {
       program: {
         required: true
@@ -188,7 +190,23 @@ $(function () {
       //   error.appendTo(element.parent().next());
     },
     submitHandler: function (form) {
-      form.submit();
+      // form.submit();      
+      submitBtn$.attr('disabled','disabled');
+      $.ajax({
+        url: '/register',
+        type:'POST',
+        data: form$.serialize()
+      }).done(response => {
+        console.log(response)
+        if (response.isSuccess){
+          alert ('Thanks for your application.');
+          location.href = '/';
+        }else{
+          alert("We are having some problems, please try again later.");
+          submitBtn$.removeAttr('disabled');
+        }
+      })
     }
   });
+
 })

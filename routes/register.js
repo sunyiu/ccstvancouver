@@ -112,20 +112,11 @@ router.post('/', function (req, res, next) {
 
 
     sgMail.send(msg).then((result) => {
-      res.writeHead(302, {
-        'Location': '/register/done'
-      });
-      res.end();
+      res.send({'isSuccess': true});
     }).catch((err) => {
-      res.writeHead(302, {
-        'Location': '/register/error'
-      });
-      res.end();
+      res.send({'isSuccess': false});
     })
 });
 
-router.get('/done', function(req, res, next){
-  res.render('register/done');
-})
 
 module.exports = router;

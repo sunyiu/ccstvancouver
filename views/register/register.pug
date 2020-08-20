@@ -191,8 +191,12 @@ html
                         option(value='landed immigrant') Landed Immigrant 移民
                         option(value='student visa') Student Visa 學生簽證
                         option(value='others') Others (please specify) 其他 (請註明)
-                    div
-                        input(type='text' id='immigrationStatusOther' name='immigrationStatusOther')
+                div.question
+                    label(for='immigrationStatusOther')
+                        span Other Immigration Status
+                        br
+                        span 其他移民狀況
+                    input(type='text' id='immigrationStatusOther' name='immigrationStatusOther')
                 div.question
                     label(for='socialInsuranceNum') 
                         span Social Insurance Number (if applicable) 
@@ -423,7 +427,7 @@ html
                     input(type='text' id='emergencyContactEmail' name='emergencyContactEmail')  
 
             div.submit-container
-                button(type='submit') Submit 提交
+                button(type='submit' id="submitBtn") Submit 提交
 
         script(src='/javascripts/app/register/register.js')
 
