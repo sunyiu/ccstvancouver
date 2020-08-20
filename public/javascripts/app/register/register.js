@@ -50,7 +50,11 @@ $(function () {
   });
 
   var submitBtn$ = $('#submitBtn');
+  var submitWait$ = $('#submitWait');
   var form$ = $("#registerForm");
+
+  submitWait$.hide();
+
   form$.validate({
     rules: {
       program: {
@@ -192,16 +196,22 @@ $(function () {
     submitHandler: function (form) {
       // form.submit();      
       submitBtn$.attr('disabled','disabled');
+      submitBtn$.html('Submitting 提交中')
+      submitWait$.show();
+      
       $.ajax({
         url: '/register',
         type:'POST',
         data: form$.serialize()
       }).done(response => {
         console.log(response)
+        submitWait$.hide();
         if (response.isSuccess){
-          alert ('Thanks for your application.');
+          submitBtn$.html('submitted 提交完成')
+          alert ('Application has been submitted successfully. Thanks for your application.');
           location.href = '/';
         }else{
+          submitBtn$.html('submit 提交')
           alert("We are having some problems, please try again later.");
           submitBtn$.removeAttr('disabled');
         }
