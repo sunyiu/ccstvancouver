@@ -1,0 +1,434 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
+    meta(name='format-detection' content='telephone=no')
+    meta(name='description' content=__('meta_description'))
+    meta(name='googlebot' content='index, follow')
+    
+    title 加拿大華人神學院温哥華
+      
+    link(rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon')
+    link(rel='icon' href='/images/favicon.ico' type='image/x-icon')
+        
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans+SC:300, 400')
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+    link(rel='stylesheet', href='/stylesheets/register/register.css')
+
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/jquery.validate.min.js')
+    
+    body
+        div.navbar
+            a(class='navbar-logo' href='/')
+            h2 加神溫哥華入學報名表
+
+        form(id='registerForm', method='post')
+            div In the event of discrepancies between the English and Chinese versions, the English version shall prevail. 
+            div 如中、英文兩個版本有任何抵觸或不相符之處，應以英文版本為準。
+            
+            section
+                h3 課程 Programs
+                div.question.required
+                    label(for='program') 
+                        span Please select a program 
+                        br
+                        span 請選擇一個課程
+                    div
+                        input(type='radio' id='MDiv' name='program' value='Master of Divinity Program')
+                        label(for='MDiv') 道學碩士課程 Master of Divinity Program
+                    div
+                        input(type='radio' id='MTS' name='program' value='Master of Theological Studies Program')
+                        label(for='MTS') 神學研究碩士課程 Master of Theological Studies Program
+                    div
+                        input(type='radio' id='DMiv' name='program' value='Doctor of Ministry Program')
+                        label(for='DMiv') 教牧學博士課程 Doctor of Ministry Program
+
+            section
+                h3 A. Personal Information 個人資料
+                div.question.required
+                    label 
+                        span Please upload a portrait of you 
+                        br
+                        span 請上傳一張半身正面肖像
+                    input(type='file' name='portrait' id='portrait' style='padding-bottom:0;')
+                    input(type='hidden' name='portraitName' id='portraitName')
+                    input(type='hidden' name='portraitEncoded' id='portraitEncoded')
+                    input(type='hidden' name='portraitType' id='portraitType')
+                    div(id='portraitPreview')
+                    div.error(id='portraitError')
+                        
+                div.question.required
+                    label(for='engLastName') 
+                        span English Name (Last) 
+                        br
+                        span 英文姓氏
+                    input(type='text' id='engLastName' name='engLastName')
+                div.question.required
+                    label(for='engFirstName') 
+                        span English Name (First) 
+                        br
+                        span 英文名字
+                    input(type='text' id='engFirstName' name='engFirstName')
+                div.question
+                    label(for='engMiddleName') 
+                        span English Name (Middle, if applicable) 
+                        br
+                        span 英文中間名 (如適用)
+                    input(type='text' id='engMiddleName' name='engMiddleName')
+                div.question.required
+                    label(for='preferredName') Preferred Name
+                    input(type='text' id='preferredName' name='preferredName')                
+                div.question.required
+                    label(for='chineseName') 
+                        span Chinese Name 
+                        br 
+                        span 中文姓名
+                    input(type='text' id='chineseName' name='chineseName')
+                div.question.required
+                    label(for='homeAddress') 
+                        span Home Address 
+                        br
+                        span 居住地址
+                    input(type='text' id='homeAddress' name='homeAddress')
+                div.question.required
+                    label(for='homeAptNum') Apt#
+                    input(type='text' id='homeAptNum' name='homeAptNum')
+                div.question.required
+                    label(for='homeStreet') Street
+                    input(type='text' id='homeStreet' name='homeStreet')
+                div.question.required
+                    label(for='homeCity') City 
+                    input(type='text' id='homeCity' name='homeCity')
+                div.question.required
+                    label(for='homeProvince') Province
+                    input(type='text' id='homeProvince' name='homeProvince')
+                div.question
+                    label(for='homePostalCode') Postal Code
+                    input(type='text' id='homePostalCode' name='homePostalCode')
+                div.question.required
+                    label(for='homeCountry') Country
+                    input(type='text' id='homeCountry' name='homeCountry')                
+                div.question
+                    label(for='homeMailingAddress') 
+                        span Mailing Address (if applicable) 
+                        br 
+                        span 郵寄地址 (如適用)
+                    textarea.short(id='homeMailingAddress' name='homeMailingAddress')
+                div.question.required
+                    label(for='homePhone') 
+                        span Telephone Number (Home) 
+                        br
+                        span 聯絡電話 (住家)
+                    input(type='text' id='homePhone' name='homePhone')
+                div.question
+                    label(for='mobile') 
+                        span Telephone Number (Mobile) 
+                        br
+                        span 聯絡電話 (流動)
+                    input(type='text' id='mobile' name='mobile')
+                div.question
+                    label(for='businessPhone') 
+                        span Telephone Number (Business) 
+                        br
+                        span 聯絡電話 (工作)
+                    input(type='text' id='businessPhone' name='businessPhone')
+                div.question.required
+                    label(for='email') 
+                        span Email 
+                        br
+                        span 電郵
+                    input(type='text' id='email' name='email')
+                div.question.required
+                    label(for='birthday') 
+                        span Birth Date 
+                        br 
+                        span 出生日期
+                    input(type='date' id='birthday' name='birthday')
+                div.question.required
+                    label(for='birthCountry') 
+                        span Country of Birth 
+                        br
+                        span 出生國家
+                    input(type='text' id='birthCountry' name='birthCountry')
+                div.question.required
+                    label(for='gender') 
+                        span Gender 
+                        br
+                        span 性別
+                    select(name='gender' id='gender')
+                        option(value='') Choose
+                        option(value='male') Male 男
+                        option(value='female') Female 女
+                div.question.required
+                    label(for='martialStatus') 
+                        span Martial Status 
+                        br
+                        span 婚姻狀況
+                    select(name='martialStatus' id='martialStatus')
+                        option(value='') Choose
+                        option(value='single') Single 單身
+                        option(value='married') Married 已婚
+                        option(value='separated') Separated 分居
+                        option(value='divorced') Divorced 離婚
+                        option(value='widowed') Widowed 寡居
+                div.question
+                    label(for='spouseName') 
+                        span Name of Spouse (if married) 
+                        br
+                        span 配偶姓名 (如已婚)
+                    input(type='text' id='spouseName' name='spouseName')
+                div.question.required
+                    label(for='immigrationStatus') 
+                        span Immigration Status
+                        br
+                        span 移民狀況
+                    select(name='immigrationStatus')#genders
+                        option(value='') Choose
+                        option(value='canadian citizen') Canadian Citizen 加籍公民
+                        option(value='landed immigrant') Landed Immigrant 移民
+                        option(value='student visa') Student Visa 學生簽證
+                        option(value='others') Others (please specify) 其他 (請註明)
+                div.question
+                    label(for='immigrationStatusOther')
+                        span Other Immigration Status
+                        br
+                        span 其他移民狀況
+                    input(type='text' id='immigrationStatusOther' name='immigrationStatusOther')
+                div.question
+                    label(for='socialInsuranceNum') 
+                        span Social Insurance Number (if applicable) 
+                        br
+                        span 社會工作證號碼 (如適用)
+                    input(type='text' id='socialInsuranceNumber' name='socialInsuranceNumber')
+                div.question
+                    label(for='healthCardNum') 
+                        span Health Card Number (if applicable) 
+                        br
+                        span 醫療卡號碼 (如適用) 
+                    input(type='text' id='healthCardNum' name='healthCardNum')
+                div.question.required
+                    label(for='physicanName') 
+                        span Physican's Name & Phone 
+                        br
+                        span 家庭醫生及電話
+                    input(type='text' id='physicanName' name='physicanName')
+                div.question.required
+                    label(for='medicalCondition') 
+                        span Please specify if you have any medical conditions we should be aware of 
+                        br
+                        span 請説明你是否有需要關注的疾病
+                    input(type='text' id='medicalCondition' name='medicalCondition')
+
+                h3 Church Information 教會資料
+                div.question.required
+                    label(for='homeChurchName') 
+                        span Home Church Name 
+                        br
+                        span 所屬教會
+                    input(type='text' id='homeChurchName' name='homeChurchName')                
+                div.question.required
+                    label(for='denomination') 
+                        span Denomination 
+                        br
+                        span 所屬宗派
+                    input(type='text' id='denomination' name='denomination')
+                div.question.required
+                    label(for='churchAddress') 
+                        span Address 
+                        br
+                        span 教會地址
+                    input(type='text' id='churchAddress' name='churchAddress')
+                div.question.required
+                    label(for='churchPhone') 
+                        span Phone Number 
+                        br
+                        span 聯絡電話
+                    input(type='text' id='churchPhone' name='churchPhone')
+
+            section
+                h3 B. Educational Background 教育背景
+                div.section-desc
+                    div Original Post-Secondary School(s) Transcripts are to be sent to the Admissions Office, directly from each institution attended after high school, even though a full term may not have been completed and no credits earned. All original transcripts received will be retained for record. 
+                    div 高中以上不同學歷謄本（無論是否完成整個課程），均需由學校直接寄至註冊處，成績單將不予退還。
+                div.question
+                    label(for='institutionName') 
+                        span Name of Institution (must include the name in English)
+                        br 
+                        span 學院名稱 
+                    input(type='text' id='institutionName' name='institutionName')                
+                div.question
+                    label(for='institutionCountry') 
+                        span Country 
+                        br
+                        span 國家
+                    input(type='text' id='institutionCountry' name='institutionCountry')
+                div.question
+                    label(for='institutionAttendancePeriod') 
+                        span Period of Attendance 
+                        br
+                        span 入讀時間
+                    input(type='text' id='institutionAttendancePeriod' name='institutionAttendancePeriod')
+                div.question
+                    label(for='institutionEarned') 
+                        span Certificate/Diploma/Degree Earned (Specify <incomplete> if applicable)
+                        br
+                        span 獲取學位/文憑 
+                    input(type='text' id='institutionEarned' name='institutionEarned')
+                div.question.required
+                    label(for='transferCredit') 
+                        span Will you be applying for transfer credit from other institution(s)? 
+                        br
+                        span 你會否申請把其他學院的學分轉至本校？
+                    select(name='transferCredit' id='transferCredit')
+                        option(value='') Choose
+                        option(value='yes') Yes
+                        option(value='no') No
+                h3 Application to other Seminary or University 其他學院之申請
+                div.question.required
+                    label(for='otherApplication') 
+                        span Have you applied or studied a similar program in other Seminary or University in the last 10 years? 
+                        br
+                        span 你曾否於過去十年申請或就讀其他院校之神學/宗教教育或同類課程？
+                    select(name='otherApplication' id='otherApplication')
+                        option(value='') Choose
+                        option(value='yes') Yes
+                        option(value='no') No
+                div.question
+                    label(for='englishRequirement') English Language Requirement (IELTS or TOEFL Academic for students whose first language is not English <original report is required>)
+                    div
+                        input(type='radio' id='ielts' name='englishRequirement' value='IELTS')
+                        label(for='ielts') IELTS 雅思
+                    div
+                        input(type='radio' id='toefl' name='englishRequirement' value='TOEFL')
+                        label(for='toefl') TOEFL Academic 托福 (學術)
+                div.question
+                    label(for='englishRequirementDateTaken') 
+                        span Date Taken 
+                        br
+                        span 考試日期
+                    input(type='date' id='englishRequirementDateTaken' name='englishRequirementDateTaken')
+                div.question
+                    label(for='englishRequirementScore') 
+                        span Score 
+                        br
+                        span 成績
+                    input(type='text' id='englishRequirementScore' name='englishRequirementScore')
+                div.section-desc
+                    div For application to the master programs, a minimum TOEFL score of 450 on the PBT or 45 on the iBT of TOEFL or IELTS score of 4 is required for applicants whose first language is NOT English and who have NOT studied full time for 3 years in an English speaking secondary or postsecondary institution (where English is the language of instruction). Score submitted should be within 2 years from the date of application. Students who do not meet the requirement will have to enrol in an English class approved by the school or take an English test to demonstrate the proficiency in reading upon acceptance. (A fee may apply.)
+                    div 要申請碩士課程，托福或託福或雅思考試的最低托福成績為450分或iBT至少為45分母語不是英語且未全日制學習3年的申請人必須達到4分在說英語的中學或專上教育機構（英語為教學語言）中。 得分提交應在申請之日起2年內。 不符合要求的學生必須參加學校認可的英語班或參加英語考試以證明其閱讀能力驗收。 (可能收費)
+
+            section
+                h3 C. Calling Testimony 蒙召見證
+                div.question.required
+                    label(for='personalSalvation') 
+                        span Please hand in an article regarding your personal salvation and ministry calling. 
+                        br
+                        span 請書寫一篇得救及蒙召見證。(可用中文書寫, 1000字內)
+                    textarea(id='personalSalvation' name='personalSalvation')
+                div.question
+                    label(for='spouseSupportLetter') 
+                        span If married, please attach a letter of support from your spouse. 
+                        br
+                        span 已婚者需請配偶書寫其對你報名的推薦。
+                    textarea(id='spouseSupportLetter' name='spouseSupportLetter')                
+                div.question
+                    label(for='researchPaper') 
+                        span Please submit a biblical or theological research paper that you have written. (Please upload in PDF format.)
+                        br
+                        span 請提交一篇由你所書寫的神學或聖經的研究文章。 (請以PDF格式上載文件。)
+                    textarea(id='researchPaper' name='researchPaper')                
+
+            section
+                h3 D. Planned Date of Entry 計劃入學日期
+                div.question.required
+                    label(for='dateOfEntry') 
+                        span Date of Entry 
+                        br
+                        span 入學日期
+                    div
+                        input(type='radio' id='fall' name='dateOfEntry' value='fall')
+                        label(for='fall') Fall 秋季 (September 九月)
+                    div
+                        input(type='radio' id='spring' name='dateOfEntry' value='spring')
+                        label(for='spring') Spring 春季 (January 一月)
+                    div
+                        input(type='radio' id='summer' name='dateOfEntry' value='summer')
+                        label(for='summer') Summer 夏季 (May 五月)                    
+                div.question.required
+                    label(for='yearOfEntry') 
+                        span Year of Entry 
+                        br
+                        span 入學年份
+                    input(type='text' id='yearOfEntry' name='yearOfEntry')   
+
+            section
+                h3  E. Your Referees 推薦人資料
+                div.question.required
+                    label(for='referenceHomeChurch') 
+                        span Home Church Pastoral Reference 
+                        br
+                        span 所屬教會牧者推薦 
+                    textarea.short(id='referenceHomeChurch' name='referenceHomeChurch')   
+                    div.helper Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+                div.question.required
+                    label(for='referencePastoral') 
+                        span Pastoral/Lay Leader Reference 
+                        br
+                        span 教牧推薦人 
+                    textarea.short(id='referencePastoral' name='referencePastoral')   
+                    div.helper Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+                div.question.required
+                    label(for='referenceProfessional') 
+                        span Professional/Employer Reference 
+                        br
+                        span 專業或雇主推薦人 
+                    textarea.short(id='referenceProfessional' name='referenceProfessional') 
+                    div.helper Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+            
+            section
+                h3 F. Emergency Contact 緊急聯絡人
+                div.question
+                    label(for='emergencyContact') 
+                        span Person to contact in case of emergency 
+                        br
+                        span 如有緊急事故，請聯絡
+                    select(name='emergencyContact' id='emergencyContact')
+                        option(value='') Choose
+                        option(value='parent') Parent 父母
+                        option(value='spouse') Spouse 配偶
+                        option(value='friend') Friend 朋友
+                        option(value='otherRelative') Other Relative 其他親人                 
+                div.question
+                    label(for='emergencyContactName') 
+                        span Name 
+                        br
+                        span 姓名
+                    input(type='text' id='emergencyContactName' name='emergencyContactName')
+                div.question
+                    label(for='emergencyContactAddress') 
+                        span Home Address 
+                        br
+                        span 住址
+                    textarea.short(id='emergencyContactAddress' name='emergencyContactAddress')
+                div.question
+                    label(for='emergencyContactPhone') 
+                        span Phone Number 
+                        br
+                        span 電話
+                    input(type='text' id='emergencyContactPhone' name='emergencyContactPhone')
+                div.question
+                    label(for='emergencyContactEmail') 
+                        span Email 
+                        br
+                        span 電郵
+                    input(type='text' id='emergencyContactEmail' name='emergencyContactEmail')  
+
+            div.submit-container
+                button(type='submit' id="submitBtn") Submit 提交
+
+        script(src='/javascripts/app/register/register.js')
+
+                                

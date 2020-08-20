@@ -14,6 +14,11 @@ var i18n = require('i18n-2');
 
 var app = express();
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -72,7 +77,7 @@ app.get('*', (req, res, next) => {
 app.use('/', indexRouter);
 app.use('/academic', academicRouter);
 app.use('/admissions', admissionsRouter);
-//app.use('/register', registerRouter);
+app.use('/register', registerRouter);
 //app.use('/users', usersRouter);
 
 
