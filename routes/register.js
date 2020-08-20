@@ -93,7 +93,7 @@ router.post('/', function (req, res, next) {
 
     const msg = {
       to: 'application@ccstvan.ca',
-      from: 'register@ccstvan.ca',
+      from: 'tech@ccstvan.ca',
       subject: req.body.engFirstName + ', ' + req.body.engLastName + ' has submitted a registration form',
       contentType: 'text/html',
       html: html,
