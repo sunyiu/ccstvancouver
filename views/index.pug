@@ -30,28 +30,6 @@ block content
                       i.material-icons arrow_right_alt
                       span #{__('applyTo')}
                 
-              
-              //- div.logo
-              //- div.content
-              //-   div.mottos
-              //-     div #{__('motto1')}
-              //-     div #{__('motto2')}
-
-              //-     ul.actions
-              //-       li.action 
-              //-         i.material-icons arrow_right_alt
-              //-         a(href='/admissions/programs') #{__('findAProgram')}
-              //-       li.action  
-              //-         i.material-icons arrow_right_alt
-              //-         a(href='/admissions/apply') #{__('applyTo')}
-              //-       //- li.action  
-              //-       //-   i.material-icons arrow_right_alt
-              //-       //-   span #{__('requestInfo')}
-              //-       //- li.action  
-              //-       //-   i.material-icons arrow_right_alt
-              //-       //-   span #{__('knowMoreAboutUs')}
-
-
       section
         h1 
             span #{__('whatHappening')}
@@ -76,6 +54,108 @@ block content
                   li(style='list-style: disc; margin-left: 25px;') #{__('news3_4')}
               li
                iframe(width="100%", height="315", src="https://www.youtube.com/embed/x3JnH_aGtxM", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
+
+        div.container.section.side-by-side.building(style='background-image:url(../images/churchbible.png)')
+            div.special #{__('news_chineseonly')}             
+            div.header 
+              div.announce
+                div
+                  div(style="padding-bottom:5px") #{__('news5_date_6')}                
+                  div #{__('news5_date_1')} 
+                  div #{__('news5_date_2')} 
+                  div #{__('news5_date_3')}
+                  div #{__('news5_date_4')}
+                  div #{__('news5_date_5')}
+
+            ul.desc-container
+              li(style='font-size:2rem;font-weight:bold;') #{(__('news5_title'))}
+              li(style='font-size:1.25rem;font-weight:bold;') #{__('news5_title_1')}
+              li #{__('news5_speaker')}
+              li  #{__('news5_desc')}
+              li 
+                div(style="font-weight: bold") #{(__('news5_1'))}
+                div #{__('news5_1_1')}
+              li
+                div(style="font-weight:bold") #{__('news5_app')}
+                ul
+                  li(style="list-style: decimal; margin-left: 25px; ")
+                    div #{__('news5_app_1')}
+                    ul 
+                      li(style="list-style: disc; margin-left: 25px; ") #{(__('news5_app_1a'))}
+                      li(style="list-style: disc; margin-left: 25px; ") #{(__('news5_app_1b'))}
+                      li(style="list-style: disc; margin-left: 25px; ") #{(__('news5_app_1c'))}
+                  li #{__('news5_app_2')}
+              li
+                div(style="font-weight: bold") #{__('news5_fee')}
+                ul
+                  li(style="list-style: disc; margin-left: 25px; ") #{__('news5_fee_1')}
+                  li(style="list-style: disc; margin-left: 25px; ") #{__('news5_fee_2')}
+                  li(style="list-style: disc; margin-left: 25px; ") #{__('news5_fee_3')}
+                  li(style="list-style: disc; margin-left: 25px; ") #{__('news5_fee_4')}
+                  li(style="list-style: disc; margin-left: 25px; ") #{__('news5_fee_5')}
+              li #{__('news5_address')}
+              li #{__('news5_cheque')}
+              li #{__('news5_tel')}   
+              li 
+                span #{__('news5_email')}
+                a(class='email' href='mailto:info@ccstvan.ca' target='_blank')  #{(__('news5_email_link'))}
+              li 
+                span #{__('news5_web')}
+                a(class='email' href='https://forms.gle/fyRTLSBymesxf3hi9' target='_blank')  #{(__('news5_web_link'))}
+              li #{__('news5_deadline')}           
+
+        div.container.section.side-by-side.building(style='background-image:url(../images/books2.png)')
+            div.special #{__('news_chineseonly')}
+            div.header 
+              div.announce
+                div
+                  div #{__('news6_date_1')} 
+                  div #{__('news6_date_2')} 
+                  div #{__('news6_date_3')}
+                  div #{__('news6_date_4')}
+                  div #{__('news6_date_5')}
+                  div #{__('news6_date_6')}                                  
+
+            ul.desc-container
+              li(style='font-size:2rem;font-weight:bold;') #{(__('news6_title'))}
+              li #{(__('news6_code'))}
+              li 
+                strong #{(__('news6_name'))}
+              li #{(__('news6_desc'))}
+              li 
+                strong #{(__('news6_1'))}
+                div #{(__('news6_2'))}
+              li #{(__('news6_3'))}                                          
+              li
+                strong #{(__('news6_4'))}
+                ul
+                  li #{(__('news6_5'))}
+                  li #{(__('news6_6'))}                  
+                  li #{(__('news6_7'))}                  
+                  li #{(__('news6_8'))}                                    
+              li 
+                strong #{(__('news6_9'))}
+                div #{(__('news6_11'))}
+                div 
+                  span #{(__('news6_12'))}
+                  a(class='email' href='mailto:info@ccstvan.ca' target='_blank')  #{(__('news6_13'))}
+              li 
+                strong #{(__('news6_14'))}
+                ul
+                  li(style="list-style: disc; margin-left: 25px; ") 
+                    span #{(__('news6_15'))}
+                    a(class='email' href='https://forms.gle/45X9atApgc5kWonU99' target='_blank')  #{(__('news6_16'))}                    
+                  li(style="list-style: disc; margin-left: 25px; ") 
+                    span #{(__('news6_17'))}
+                    a(class='email' href='mailto:info@ccstvan.ca' target='_blank')  info@ccstvan.ca
+                    span #{(__('news6_18'))}
+              li 
+                strong #{(__('news6_19'))}
+                ul
+                  li(style="list-style: disc; margin-left: 25px; ") 
+                    div #{(__('news6_20'))}
+                    div #{(__('news6_21'))}
+                  li(style="list-style: disc; margin-left: 25px; ") #{(__('news6_22'))}
 
         div.container.section.side-by-side.building(style='background-image:url(../images/group_2.png)')
             div.special #{__('news_chineseonly')}             
