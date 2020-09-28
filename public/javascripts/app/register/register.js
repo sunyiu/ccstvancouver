@@ -12,7 +12,6 @@ $(function () {
     const file = e.currentTarget.files[0];
     const fileType = e.currentTarget.files[0].type;
     const fileName = e.currentTarget.files[0].name;
-    const reader = new FileReader();
 
     // imageValidation.empty();
 
@@ -27,6 +26,7 @@ $(function () {
         return;
     }
 
+    const reader = new FileReader();
     reader.addEventListener("load", function () {
         // convert image file to base64 string
         // portraitPreview$.attr('src', reader.result);
@@ -43,7 +43,86 @@ $(function () {
     if (file) {
         reader.readAsDataURL(file);
     }
-});
+  });
+
+  var personalSalvation$ = $('#personalSalvation'),
+      personalSalvationEncoded$ = $('#personalSalvationEncoded'),
+      personalSalvationName$ = $('#personalSalvationName'),
+      personalSalvationType$ = $('#personalSalvationType'),
+      personalSalvationError$ = $('#personalSalvationError');
+    personalSalvation$.change((e) => {
+    // console.log(e);
+
+      const file = e.currentTarget.files[0];
+      const fileType = e.currentTarget.files[0].type;
+      const fileName = e.currentTarget.files[0].name;
+
+      var filesize = ((file.size / 1024) / 1024).toFixed(4); // MB
+      if (filesize > 1) {
+          console.log('personal salvation cannot exceed 1MB');
+          personalSalvationEncoded$.val('');
+          personalSalvationName$.val('');
+          personalSalvationError$.html('Personal Salvation PDF cannot exceed 1MB');
+          personalSalvation$.val('');
+          return;
+      }
+
+      const reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+          // convert image file to base64 string
+          // portraitPreview$.attr('src', reader.result);
+          personalSalvationError$.html('');
+          personalSalvationName$.val(fileName);
+          personalSalvationEncoded$.val(reader.result.split(',')[1]);
+          personalSalvationType$.val(fileType);
+          // profileRemoveBtn$.show();
+    }, false);
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+  });
+
+  var researchPaper$ = $('#researchPaper'),
+      researchPaperEncoded$ = $('#researchPaperEncoded'),
+      researchPaperName$ = $('#researchPaperName'),
+      researchPaperType$ = $('#researchPaperType'),
+      researchPaperError$ = $('#researchPaperError');
+    researchPaper$.change((e) => {
+    // console.log(e);
+
+      const file = e.currentTarget.files[0];
+      const fileType = e.currentTarget.files[0].type;
+      const fileName = e.currentTarget.files[0].name;
+
+      var filesize = ((file.size / 1024) / 1024).toFixed(4); // MB
+      if (filesize > 1) {
+          console.log('research paper cannot exceed 1MB');
+          researchPaperEncoded$.val('');
+          researchPaperName$.val('');
+          researchPaperError$.html('Research Paper PDF cannot exceed 1MB');
+          researchPaper$.val('');
+          return;
+      }
+
+      const reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+          // convert image file to base64 string
+          // portraitPreview$.attr('src', reader.result);
+          researchPaperError$.html('');
+          researchPaperName$.val(fileName);
+          researchPaperEncoded$.val(reader.result.split(',')[1]);
+          researchPaperType$.val(fileType);
+          // profileRemoveBtn$.show();
+    }, false);
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+  });
+
   
   $.validator.addMethod("letters", function (value, element) {
     return this.optional(element) || value == value.match(/^[a-zA-Z\s]*$/);
@@ -89,9 +168,6 @@ $(function () {
       homeCity: {
         required: true
       },
-      homeProvince: {
-        required: true
-      },
       homeCountry: {
         required: true
       },
@@ -128,9 +204,6 @@ $(function () {
       healthCardNum: {
         digits: true
       },
-      physicanName: {
-        required: true
-      },
       medicalCondition: {
         required: true
       },
@@ -146,6 +219,18 @@ $(function () {
       churchPhone: {
         required: true,
         digits: true
+      },
+      institutionName: {
+        required: true
+      },
+      institutionCountry: {
+        required: true
+      },
+      institutionAttendancePeriod: {
+        required: true
+      },
+      institutionEarned: {
+        required: true
       },
       transferCredit: {
         required: true

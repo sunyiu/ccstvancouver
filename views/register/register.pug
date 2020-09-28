@@ -53,7 +53,7 @@ html
                         span Please upload a portrait of you 
                         br
                         span 請上傳一張半身正面肖像
-                    input(type='file' name='portrait' id='portrait' style='padding-bottom:0;')
+                    input(type='file' name='portrait' id='portrait' accept='.jpeg, .jpg, .png' style='padding-bottom:0;')
                     input(type='hidden' name='portraitName' id='portraitName')
                     input(type='hidden' name='portraitEncoded' id='portraitEncoded')
                     input(type='hidden' name='portraitType' id='portraitType')
@@ -79,7 +79,10 @@ html
                         span 英文中間名 (如適用)
                     input(type='text' id='engMiddleName' name='engMiddleName')
                 div.question.required
-                    label(for='preferredName') Preferred Name
+                    label(for='preferredName') 
+                        span Preferred Name
+                        br
+                        span 常用名字
                     input(type='text' id='preferredName' name='preferredName')                
                 div.question.required
                     label(for='chineseName') 
@@ -94,22 +97,40 @@ html
                         span 居住地址
                     input(type='text' id='homeAddress' name='homeAddress')
                 div.question.required
-                    label(for='homeAptNum') Apt#
+                    label(for='homeAptNum') 
+                        span Apt#
+                        br
+                        span 房號
                     input(type='text' id='homeAptNum' name='homeAptNum')
                 div.question.required
-                    label(for='homeStreet') Street
+                    label(for='homeStreet') 
+                        span Street
+                        br
+                        span 街號及街名
                     input(type='text' id='homeStreet' name='homeStreet')
                 div.question.required
-                    label(for='homeCity') City 
+                    label(for='homeCity') 
+                        span City 
+                        br
+                        span 城市
                     input(type='text' id='homeCity' name='homeCity')
-                div.question.required
-                    label(for='homeProvince') Province
+                div.question
+                    label(for='homeProvince') 
+                        span Province
+                        br
+                        span 省份
                     input(type='text' id='homeProvince' name='homeProvince')
                 div.question
-                    label(for='homePostalCode') Postal Code
+                    label(for='homePostalCode') 
+                        span Postal Code
+                        br
+                        span 郵區號碼
                     input(type='text' id='homePostalCode' name='homePostalCode')
                 div.question.required
-                    label(for='homeCountry') Country
+                    label(for='homeCountry') 
+                        span Country
+                        br
+                        span 國家
                     input(type='text' id='homeCountry' name='homeCountry')                
                 div.question
                     label(for='homeMailingAddress') 
@@ -184,7 +205,7 @@ html
                     label(for='immigrationStatus') 
                         span Immigration Status
                         br
-                        span 移民狀況
+                        span 在加拿大的身份
                     select(name='immigrationStatus')#genders
                         option(value='') Choose
                         option(value='canadian citizen') Canadian Citizen 加籍公民
@@ -209,7 +230,7 @@ html
                         br
                         span 醫療卡號碼 (如適用) 
                     input(type='text' id='healthCardNum' name='healthCardNum')
-                div.question.required
+                div.question
                     label(for='physicanName') 
                         span Physican's Name & Phone 
                         br
@@ -245,7 +266,7 @@ html
                     label(for='churchPhone') 
                         span Phone Number 
                         br
-                        span 聯絡電話
+                        span 教會電話
                     input(type='text' id='churchPhone' name='churchPhone')
 
             section
@@ -253,25 +274,25 @@ html
                 div.section-desc
                     div Original Post-Secondary School(s) Transcripts are to be sent to the Admissions Office, directly from each institution attended after high school, even though a full term may not have been completed and no credits earned. All original transcripts received will be retained for record. 
                     div 高中以上不同學歷謄本（無論是否完成整個課程），均需由學校直接寄至註冊處，成績單將不予退還。
-                div.question
+                div.question.required
                     label(for='institutionName') 
                         span Name of Institution (must include the name in English)
                         br 
                         span 學院名稱 
                     input(type='text' id='institutionName' name='institutionName')                
-                div.question
+                div.question.required
                     label(for='institutionCountry') 
                         span Country 
                         br
                         span 國家
                     input(type='text' id='institutionCountry' name='institutionCountry')
-                div.question
+                div.question.required
                     label(for='institutionAttendancePeriod') 
                         span Period of Attendance 
                         br
                         span 入讀時間
                     input(type='text' id='institutionAttendancePeriod' name='institutionAttendancePeriod')
-                div.question
+                div.question.required
                     label(for='institutionEarned') 
                         span Certificate/Diploma/Degree Earned (Specify <incomplete> if applicable)
                         br
@@ -286,6 +307,7 @@ html
                         option(value='') Choose
                         option(value='yes') Yes
                         option(value='no') No
+
                 h3 Application to other Seminary or University 其他學院之申請
                 div.question.required
                     label(for='otherApplication') 
@@ -317,32 +339,46 @@ html
                         span 成績
                     input(type='text' id='englishRequirementScore' name='englishRequirementScore')
                 div.section-desc
-                    div For application to the master programs, a minimum TOEFL score of 450 on the PBT or 45 on the iBT of TOEFL or IELTS score of 4 is required for applicants whose first language is NOT English and who have NOT studied full time for 3 years in an English speaking secondary or postsecondary institution (where English is the language of instruction). Score submitted should be within 2 years from the date of application. Students who do not meet the requirement will have to enrol in an English class approved by the school or take an English test to demonstrate the proficiency in reading upon acceptance. (A fee may apply.)
-                    div 要申請碩士課程，托福或託福或雅思考試的最低托福成績為450分或iBT至少為45分母語不是英語且未全日制學習3年的申請人必須達到4分在說英語的中學或專上教育機構（英語為教學語言）中。 得分提交應在申請之日起2年內。 不符合要求的學生必須參加學校認可的英語班或參加英語考試以證明其閱讀能力驗收。 (可能收費)
+                    div For application to the master programs, a minimum TOEFL score of 450 on the PBT or 45 on the iBT of TOEFL or IELTS (Academic) score of 4 is required for applicants who have NOT studied full time for 3 years in an English speaking secondary or postsecondary institution (where English is the language of instruction). Score submitted should be within 2 years from the date of application.
+                    div 碩士課程申請人，未曾於以英語為教育語言的專上教育機構作全日制學習3年, 必須提交托福或雅思(學術)考試成績。托福IBT成績需最低要求為31分。雅思(學術)最低要求為4。
+                    div 博士課程申請人, 未曾於以英語為教育語言的專上教育機構作全日制學習3年, 托福IBT成績需最低要求為32-34分。雅思(學術)最低要求為4.5。得分提交應在申請之日計2年內。 
 
             section
                 h3 C. Calling Testimony 蒙召見證
                 div.question.required
                     label(for='personalSalvation') 
-                        span Please hand in an article regarding your personal salvation and ministry calling. 
+                        span Please hand in an article regarding your personal salvation and ministry calling. Please upload in PDF format.
                         br
-                        span 請書寫一篇得救及蒙召見證。(可用中文書寫, 1000字內)
-                    textarea(id='personalSalvation' name='personalSalvation')
+                        span 請書寫一篇得救及蒙召見證。(可用中文書寫, 1000字內)。請以PDF格式上載文件。
+                    //- textarea(id='personalSalvation' name='personalSalvation')
+                    input(type='file' name='personalSalvation' id='personalSalvation' accept=".pdf" style='padding-bottom:0;')
+                    div.error(id='personalSalvationError')
+                    input(type='hidden' name='personalSalvationName' id='personalSalvationName')
+                    input(type='hidden' name='personalSalvationEncoded' id='personalSalvationEncoded')
+                    input(type='hidden' name='personalSalvationType' id='personalSalvationType')
                 div.question
                     label(for='spouseSupportLetter') 
                         span If married, please attach a letter of support from your spouse. 
                         br
                         span 已婚者需請配偶書寫其對你報名的推薦。
-                    textarea(id='spouseSupportLetter' name='spouseSupportLetter')                
+                    textarea(id='spouseSupportLetter' name='spouseSupportLetter')       
+            
+            section
+                h3 D. 研究文章 (只適用於博士課程申請人)         
                 div.question
                     label(for='researchPaper') 
                         span Please submit a biblical or theological research paper that you have written. (Please upload in PDF format.)
                         br
                         span 請提交一篇由你所書寫的神學或聖經的研究文章。 (請以PDF格式上載文件。)
-                    textarea(id='researchPaper' name='researchPaper')                
+                    //- textarea(id='researchPaper' name='researchPaper')  
+                    input(type='file' name='researchPaper' id='researchPaper' accept=".pdf" style='padding-bottom:0;')
+                    div.error(id='researchPaperError')
+                    input(type='hidden' name='researchPaperName' id='researchPaperName')
+                    input(type='hidden' name='researchPaperEncoded' id='researchPaperEncoded')
+                    input(type='hidden' name='researchPaperType' id='researchPaperType')              
 
             section
-                h3 D. Planned Date of Entry 計劃入學日期
+                h3 E. Planned Date of Entry 計劃入學日期
                 div.question.required
                     label(for='dateOfEntry') 
                         span Date of Entry 
@@ -365,7 +401,10 @@ html
                     input(type='text' id='yearOfEntry' name='yearOfEntry')   
 
             section
-                h3  E. Your Referees 推薦人資料
+                h3  F. Your Referees 推薦人資料
+                div.section-desc 
+                    div Referees Your Referees (MTS applicant – two reference letters are required; MDiv and DMin applicant – three reference listed below are requireed.)
+                    div 申請人需下載相關推薦信檔案, 邀請推薦人填寫, 並直接郵寄或電郵到本校。神學研究課程的申請人, 需要兩份推薦。道學碩士課程及博士學的申請人, 需要以下三份不同類別的推薦。
                 div.question.required
                     label(for='referenceHomeChurch') 
                         span Home Church Pastoral Reference 
@@ -389,7 +428,7 @@ html
                     div.helper Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
             
             section
-                h3 F. Emergency Contact 緊急聯絡人
+                h3 G. Emergency Contact 緊急聯絡人
                 div.question
                     label(for='emergencyContact') 
                         span Person to contact in case of emergency 
@@ -407,12 +446,6 @@ html
                         br
                         span 姓名
                     input(type='text' id='emergencyContactName' name='emergencyContactName')
-                div.question
-                    label(for='emergencyContactAddress') 
-                        span Home Address 
-                        br
-                        span 住址
-                    textarea.short(id='emergencyContactAddress' name='emergencyContactAddress')
                 div.question
                     label(for='emergencyContactPhone') 
                         span Phone Number 
