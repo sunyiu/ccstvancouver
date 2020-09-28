@@ -105,6 +105,22 @@ router.post('/', function (req, res, next) {
           type: req.body.portraitType,
           disposition: 'attachment',
           contentId: 'portait'
+        },
+        {
+          content: req.body.personalSalvationEncoded,
+          // filename: req.body.portraitName,
+          filename: 'personalSalvation.pdf',
+          type: req.body.personalSalvationType,
+          disposition: 'attachment',
+          contentId: 'personalSalvation'          
+        },
+        {
+          content: req.body.researchPaperEncoded,
+          // filename: req.body.portraitName,
+          filename: 'researchPaper.pdf',
+          type: req.body.researchPaperType,
+          disposition: 'attachment',
+          contentId: 'researchPaper' 
         }
       ]
     } ;
