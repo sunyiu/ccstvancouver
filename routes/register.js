@@ -89,7 +89,12 @@ router.post('/', function (req, res, next) {
     '<div><strong>Emergency Contact Name</strong></div><div>'+ req.body.emergencyContactName +'</div><br/>' +
     '<div><strong>Emergency Contact Address</strong></div><div>'+ req.body.emergencyContactAddress +'</div><br/>' +
     '<div><strong>Emergency Contact Phone</strong></div><div>'+ req.body.emergencyContactPhone +'</div><br/>' +
-    '<div><strong>Emergency Contact Email</strong></div><div>'+ req.body.emergencyContactEmail +'</div>'; 
+    '<div><strong>Emergency Contact Email</strong></div><div>'+ req.body.emergencyContactEmail +'</div>' +
+    
+    '<div><strong>Signature</strong></div><div>'+ req.body.signature +'</div>' +
+    '<div><strong>Signature Date</strong></div><div>'+ req.body.signatureDate +'</div>'
+    ; 
+
 
     const msg = {
       to: 'application@ccstvan.ca',
@@ -113,19 +118,20 @@ router.post('/', function (req, res, next) {
           type: req.body.personalSalvationType,
           disposition: 'attachment',
           contentId: 'personalSalvation'          
-        },
-        {
-          content: req.body.researchPaperEncoded,
-          // filename: req.body.portraitName,
-          filename: 'researchPaper.pdf',
-          type: req.body.researchPaperType,
-          disposition: 'attachment',
-          contentId: 'researchPaper' 
         }
       ]
     } ;
 
-
+    if (req.body.researchPaperEncoded){
+      msg.attachments.add({
+        content: req.body.researchPaperEncoded,
+        // filename: req.body.portraitName,
+        filename: 'researchPaper.pdf',
+        type: req.body.researchPaperType,
+        disposition: 'attachment',
+        contentId: 'researchPaper' 
+      })
+    }
 
     sgMail.send(msg).then((result) => {
       res.send({'isSuccess': true});

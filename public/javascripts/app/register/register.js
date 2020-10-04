@@ -159,9 +159,6 @@ $(function () {
       homeAddress: {
         required: true
       },
-      homeAptNum: {
-        required: true
-      },
       homeStreet: {
         required: true
       },
@@ -210,7 +207,7 @@ $(function () {
       homeChurchName: {
         required: true
       },
-      denominaion: {
+      denomination: {
         required: true
       },
       churchAddress: {
@@ -263,11 +260,45 @@ $(function () {
       },
       emergencyContactEmail: {
         email: true
+      },
+      declaration_a1: {
+        required: true
+      },
+      declaration_a2: {
+        required: true
+      },
+      declaration_a3: {
+        required: true
+      },
+      declaration_b1: {
+        required: true
+      },
+      declaration_b2: {
+        required: true
+      },
+      declaration_b3: {
+        required: true
+      },
+      declaration_c: {
+        required: true
+      },
+      signature: {
+        required: true
+      },
+      signatureDate: {
+        required: true
       }
     },
     messages: {
       engLastName: "Please specify your name (only letters and spaces are allowed)",
-      email: "Please specify a valid email address"
+      email: "Please specify a valid email address",
+      declaration_a1: "Please check the checkbox",
+      declaration_a2: "Please check the checkbox",
+      declaration_a3: "Please check the checkbox",
+      declaration_b1: "Please check the checkbox",
+      declaration_b2: "Please check the checkbox",
+      declaration_b3: "Please check the checkbox",
+      declaration_c: "Please check the checkbox"
     },
     errorPlacement: function(error, element) {
       error.appendTo($(element).parents('.question'));

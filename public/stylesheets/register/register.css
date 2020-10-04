@@ -49,9 +49,9 @@ select{
     margin-bottom: 10px;
 }
 .question > div.helper{
-    margin-top: 5px;
+    margin-top: -10px;
     font-size: 0.85rem;
-    color: #333;
+    color: #555;
 }
 
 .question.required > label:first-child::after{
