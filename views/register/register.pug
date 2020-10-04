@@ -96,7 +96,7 @@ html
                         br
                         span 居住地址
                     input(type='text' id='homeAddress' name='homeAddress')
-                div.question.required
+                div.question
                     label(for='homeAptNum') 
                         span Apt#
                         br
@@ -203,7 +203,7 @@ html
                     input(type='text' id='spouseName' name='spouseName')
                 div.question.required
                     label(for='immigrationStatus') 
-                        span Immigration Status
+                        span Immigration Status in Canada
                         br
                         span 在加拿大的身份
                     select(name='immigrationStatus')#genders
@@ -273,7 +273,7 @@ html
                 h3 B. Educational Background 教育背景
                 div.section-desc
                     div Original Post-Secondary School(s) Transcripts are to be sent to the Admissions Office, directly from each institution attended after high school, even though a full term may not have been completed and no credits earned. All original transcripts received will be retained for record. 
-                    div 高中以上不同學歷謄本（無論是否完成整個課程），均需由學校直接寄至註冊處，成績單將不予退還。
+                    div 高中以上學歷謄本（無論是否完成整個課程），均需由學校直接寄至註冊處，成績單將不予退還。
                 div.question.required
                     label(for='institutionName') 
                         span Name of Institution (must include the name in English)
@@ -319,13 +319,16 @@ html
                         option(value='yes') Yes
                         option(value='no') No
                 div.question
-                    label(for='englishRequirement') English Language Requirement (IELTS or TOEFL Academic for students whose first language is not English <original report is required>)
+                    label(for='englishRequirement') English Language Requirement (IELTS or Academic TOEFL for students whose first language is not English <original report is required>)
                     div
                         input(type='radio' id='ielts' name='englishRequirement' value='IELTS')
-                        label(for='ielts') IELTS 雅思
+                        label(for='ielts') IELTS Academic 雅思 (學術類)
                     div
-                        input(type='radio' id='toefl' name='englishRequirement' value='TOEFL')
-                        label(for='toefl') TOEFL Academic 托福 (學術)
+                        input(type='radio' id='toefl_IBT' name='englishRequirement' value='TOEFL (IBT)')
+                        label(for='toefl_IBT') TOEFL 托福 (IBT)
+                    div
+                        input(type='radio' id='toefl_ITP' name='englishRequirement' value='TOEFL (ITP)')
+                        label(for='toefl_ITP') TOEFL 托福 (ITP)                        
                 div.question
                     label(for='englishRequirementDateTaken') 
                         span Date Taken 
@@ -339,9 +342,10 @@ html
                         span 成績
                     input(type='text' id='englishRequirementScore' name='englishRequirementScore')
                 div.section-desc
-                    div For application to the master programs, a minimum TOEFL score of 450 on the PBT or 45 on the iBT of TOEFL or IELTS (Academic) score of 4 is required for applicants who have NOT studied full time for 3 years in an English speaking secondary or postsecondary institution (where English is the language of instruction). Score submitted should be within 2 years from the date of application.
-                    div 碩士課程申請人，未曾於以英語為教育語言的專上教育機構作全日制學習3年, 必須提交托福或雅思(學術)考試成績。托福IBT成績需最低要求為31分。雅思(學術)最低要求為4。
-                    div 博士課程申請人, 未曾於以英語為教育語言的專上教育機構作全日制學習3年, 托福IBT成績需最低要求為32-34分。雅思(學術)最低要求為4.5。得分提交應在申請之日計2年內。 
+                    div A minimum score of 30 for TOEFL IBT, 399 for TOEFL ITP, or 4.0 for IELTS (Academic) is required for master programs' applicants who have NOT studied full time for 3 years in a postsecondary institution, where English is the language of instruction and examination, in an English speaking country. Only test scores dating no more than two years are valid.
+                    div 若碩士課程申請者沒有在位於以英語為主要語言的國家, 並以英語為教學及考試語言的專上學院全時間地就讀過三年，對其英語考試最低成績要求為托福 IBT 30分, 托福 ITP 399分, 或雅思(學術類) 4.0. 只有兩年內的考試成績才有效。 
+                    div A minimum score of 32 for TOEFL IBT, 430 for TOEFL ITP, or 4.5 for IELTS (Academic) is required for doctoral program's applicants who have NOT studied full time for 3 years in a postsecondary institution, where English is the language of instruction and examination, in an English speaking country. Only test scores dating no more than two years when your application is reviewed are accepted.                    
+                    div 若博士課程申請者沒有在位於以英語為主要語言的國家, 並以英語為教學及考試語言的專上學院全時間地就讀過三年，對其英語考試最低成績要求為托福 IBT 32分, 托福 ITP 433分, 或雅思(學術類) 4.5。 只有兩年內的考試成績才有效。
 
             section
                 h3 C. Calling Testimony 蒙召見證
@@ -409,23 +413,35 @@ html
                     label(for='referenceHomeChurch') 
                         span Home Church Pastoral Reference 
                         br
-                        span 所屬教會牧者推薦 
+                        span 所屬教會牧者推薦
                     textarea.short(id='referenceHomeChurch' name='referenceHomeChurch')   
-                    div.helper Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+                    div.helper 
+                        div Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+                        div Please download the letter for the Home Chruch Pastoral Reference
+                        div 請在此下載所屬教會牧者推薦 
+
                 div.question.required
                     label(for='referencePastoral') 
                         span Pastoral/Lay Leader Reference 
                         br
                         span 教牧推薦人 
                     textarea.short(id='referencePastoral' name='referencePastoral')   
-                    div.helper Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+                    div.helper 
+                        div Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+                        div Please download the letter for the Pastoral/Lay Leader Reference
+                        div 請在此下載教牧推薦
+
                 div.question.required
                     label(for='referenceProfessional') 
                         span Professional/Employer Reference 
                         br
                         span 專業或雇主推薦人 
                     textarea.short(id='referenceProfessional' name='referenceProfessional') 
-                    div.helper Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+                    div.helper 
+                        div Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
+                        div Please download the letter for the Professional/Employer Reference
+                        div 請在此下載專業或雇主推薦推薦                        
+
             
             section
                 h3 G. Emergency Contact 緊急聯絡人
@@ -458,6 +474,111 @@ html
                         br
                         span 電郵
                     input(type='text' id='emergencyContactEmail' name='emergencyContactEmail')  
+
+            section
+                h3 H. FEES &#38; DECLARATION 費用及聲明
+                div.section-desc 
+                    div
+                        span Please check the box beside after you read the following sections. 
+                        br
+                        span 請細閱以下有關費用及聲明的細節。
+                    ul(style='margin:0; padding-left:15px;')
+                        li.section-desc(style='list-style: upper-alpha;')
+                            div.question
+                                div(style='display: flex;')
+                                    input(type='checkbox' id='declaration_a1' name='declaration_a1' style='margin:2px;') 
+                                    div(style='padding-left: 15px;')
+                                        span Your application will be considered complete once an application form, original transcripts, reference letters, testimony and any required application supplements are received in full by the CCST Vancouver Admission Office.  All applicants are required to attend an admission interview.  M.Div. applicants will be required to take a one-hour-Bible test. The submission of an application does not imply acceptance of the applicants by the School.  
+                                        br
+                                        span 當「加神溫哥華」註冊處收到你的申請表、學校成績單、推薦信、見證及其他有關的申請補充資料後，您的申請即被視為完整。所有初步合資格的申請人都將安排參加入學面試。 道學碩士的申請人同時需要參加一小時的聖經測試。完成以上申請程序並不代表學校的錄取。
+                            div.question
+                                div(style='display: flex;')                             
+                                    input(type='checkbox' id='declaration_a2' name='declaration_a2' style='margin:2px;') 
+                                    div(style='padding-left: 15px;')
+                                        span An 
+                                        strong APPLICATION FEE 
+                                        span of $50 ($150 for non-North American applicants) must be submitted with the application.  This fee is non-refundable.                       
+                                        br
+                                        span 申請費為50加元（非北美申請人150加元）。此費用在任何情況下不予退還。
+                            div.question
+                                div(style='display: flex;')
+                                    input(type='checkbox' id='declaration_a3' name='declaration_a3' style='margin:2px;') 
+                                    div(style='padding-left: 15px;')
+                                        span A $300 
+                                        strong TUITION DEPOSIT 
+                                        span must be sent upon notice of your acceptance to reserve a place at CCST Vancouver. It is non-refundable but applicable to tuition. International student should observe the payment schedule as per International Student Policy.
+                                        br
+                                        span 當本地申請人收到錄取通知後，必需繳交300加元的學費按金，以保留在「加神溫哥華」的學籍。 按金不予退還，但適用於學費。 國際學生應遵守國際學生政策的付款時間表。
+                        
+                        li.section-desc(style='list-style: upper-alpha;')
+                            div 
+                                span Please read carefully the 
+                                strong CONDITIONS OF ADMISSION 
+                                span below. 
+                                br
+                                span 請仔細閱讀下面的入學條件。
+                            div
+                                div.question
+                                    div(style='display: flex; padding-bottom:15px;')
+                                        input(type='checkbox' id='declaration_b1' name='declaration_b1' style='margin:2px;') 
+                                        div(style='padding-left: 15px;')
+                                            span Only those who are committed to following the Lord Jesus Christ and who are deemed suitable for Christian leadership are accepted into degree programs.
+                                            br
+                                            span 只有那些承認跟隨主耶穌基督，並被認為適合作基督徒領袖的申請人才能被錄取修讀本校學位課程。
+                                div.question
+                                    div(style='display: flex; padding-bottom:15px;')
+                                        input(type='checkbox' id='declaration_b2' name='declaration_b2' style='margin:2px;') 
+                                        div(style='padding-left: 15px;')
+                                            span Individuals who are accepted to study at CCST Vancouver are expected to enter heartily into the fellowship of the School family, to co-operate with their fellow students in the self-government of the student body, and, while maintaining their loyalty to their denominations, to cultivate a sympathetic understanding of other denominations. 
+                                            br
+                                            span 被本校取錄的申請人必需願意加入本校的群體，與同學一起在學生團體中磨合，願意對學校及自己所屬的教會群體忠誠，並願意培養對其他宗派及教會群體的理解。
+                                div.question
+                                    div(style='display: flex; padding-bottom:15px;')
+                                        input(type='checkbox' id='declaration_b3' name='declaration_b3' style='margin:2px;') 
+                                        div(style='padding-left: 15px;')
+                                            span Should the candidate, for any reason, be deemed by the faculty to be not suited for Christian conduct, he/she will be informed of this decision and be rejected his/her application.
+                                            br
+                                            span 如果候選學生因為任何原因被師長認為行為未能表現出基督徒操守，則將有可能被拒絕申請。
+
+                        li.section-desc(style='list-style: upper-alpha;')
+                            div.question
+                                div(style='display: flex; padding-bottom:15px;')
+                                    input(type='checkbox' id='declaration_c' name='declaration_c' style='margin:2px;') 
+                                    div(style='padding-left: 15px;')
+                                        div 
+                                            span As a Christian and a candidate for admission to Canadian Chinese School of Theology Vancouver, I commit myself to live and work for the honour of Jesus Christ, the good of the School community, the renewal of the body of Christ, and the well-being of my particular congregation and denomination. I am prepared to receive evaluation in the areas of academics and suitability for proposed ministry. I affirm that I understand the 
+                                            a(href='../../pdf/StatementOfFaith.pdf' target='_blank') Statement of Faith 
+                                            span of CCST Vancouver. I understand and will abide by the admission and academic policies and standards.  I understand that if I, for any reason, be deemed by the faculty to be not suited for Christian conduct, I will be informed of this decision and be asked to suspend my student status. 
+                                        div 作為一名基督徒和「加神溫哥華」的候選學生:
+                                        ul  
+                                            li 我立志致力於榮耀耶穌基督、保護學校群體的利益，並積極牟求基督身體的更新和合一。
+                                            li 我亦願意接受學術領域及有助我將來事奉的評估。
+                                            li 
+                                                span 我認同「加神溫哥華」的《
+                                                a(href='../../pdf/StatementOfFaith.pdf' target='_blank') 信仰宣言
+                                                span 》。
+                                            li 我願意了解並將遵守入學及學術政策和標準。
+                                            li 我明白如果我因為任何原因被師長認為行為沒有基督徒操守，則將有可能被終止我的學生身份。
+                
+                div.section-desc
+                    div 
+                        span I certify that the information provided in this application is complete and correct.
+                        br
+                        span 我保證我在申請過程提供的信息是完整和正確的。
+
+                div.question.required
+                    label(for='signature') 
+                        span My signature to confirm my application. 
+                        br
+                        span 我在此打印我的名字以代表我的簽名:
+                    input(type='text' id='signature' name='signature') 
+                div.question.required
+                    label(for='signatureDate') 
+                        span Date:
+                        br
+                        span 簽名日期:
+                    input(type='date' id='signatureDate' name='signatureDate')
+                
 
             div.submit-container
                 div#submitWait.lds-ring
