@@ -89,6 +89,7 @@ router.post('/', function (req, res, next) {
     '<div><strong>Emergency Contact Name</strong></div><div>'+ req.body.emergencyContactName +'</div><br/>' +
     '<div><strong>Emergency Contact Phone</strong></div><div>'+ req.body.emergencyContactPhone +'</div><br/>' +
     '<div><strong>Emergency Contact Email</strong></div><div>'+ req.body.emergencyContactEmail +'</div>' +
+    '<br/>' +
 
     '<h3>Signature</h3>' +    
     '<div><strong>Signature</strong></div><div>'+ req.body.signature +'</div>' +
