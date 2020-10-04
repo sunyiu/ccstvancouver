@@ -68,9 +68,9 @@ router.post('/', function (req, res, next) {
     '<br/>' +
 
     '<h3>Calling Testimony</h3>' +
-    '<div><strong>Personal Salvation</strong></div><div>'+ req.body.personalSalvation +'</div><br/>' +
+    (req.body.personalSalvationEncoded ? '<div><strong>Personal Salvation</strong></div><div>See attachment</div><br/>' : '<div><strong>Personal Salvation</strong></div><div>Not available</div><br/>') +
     '<div><strong>Spouse Support Letter</strong></div><div>'+ req.body.spouseSupportLetter +'</div><br/>' +
-    '<div><strong>Research Paper</strong></div><div>'+ req.body.researchPaper +'</div><br/>' +
+    (req.body.researchPaperEncoded ? '<div><strong>Research Paper</strong></div><div>See attachment</div><br/>' : '<div><strong>Research Paper</strong></div><div>Not available</div><br/>') +
     '<br/>' +
 
     '<h3>Planned Date of Entry</h3>' +
@@ -87,10 +87,10 @@ router.post('/', function (req, res, next) {
     '<h3>Emergency Contact</h3>' +
     '<div><strong>Emergency Contact</strong></div><div>'+ req.body.emergencyContact +'</div><br/>' +
     '<div><strong>Emergency Contact Name</strong></div><div>'+ req.body.emergencyContactName +'</div><br/>' +
-    '<div><strong>Emergency Contact Address</strong></div><div>'+ req.body.emergencyContactAddress +'</div><br/>' +
     '<div><strong>Emergency Contact Phone</strong></div><div>'+ req.body.emergencyContactPhone +'</div><br/>' +
     '<div><strong>Emergency Contact Email</strong></div><div>'+ req.body.emergencyContactEmail +'</div>' +
-    
+
+    '<h3>Signature</h3>' +    
     '<div><strong>Signature</strong></div><div>'+ req.body.signature +'</div>' +
     '<div><strong>Signature Date</strong></div><div>'+ req.body.signatureDate +'</div>'
     ; 
