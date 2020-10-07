@@ -124,7 +124,7 @@ router.post('/', function (req, res, next) {
     } ;
 
     if (req.body.researchPaperEncoded){
-      msg.attachments.add({
+      msg.attachments.push({
         content: req.body.researchPaperEncoded,
         // filename: req.body.portraitName,
         filename: 'researchPaper.pdf',
