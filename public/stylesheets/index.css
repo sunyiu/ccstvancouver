@@ -192,10 +192,6 @@ section > h1{
 } 
 
 
-li div > span.tab1, li div.tab1{
-    margin-left: 25px;
-}
-
 
 @media (min-width: 576px) {
     .home > .container > .top-image-container .school_logo{
