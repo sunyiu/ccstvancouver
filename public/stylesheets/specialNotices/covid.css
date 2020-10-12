@@ -1,0 +1,78 @@
+section{
+    margin: 0 !important;
+}
+
+.covid-container h2{
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+}
+.covid-container h3{
+    background-color: darkblue;
+    margin-top: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.sub-title{
+    display: block;
+    padding: 0;
+    margin: 0 !important;
+    padding-bottom: 25px;
+}
+.sub-title > div{
+    background-color: cadetblue;
+    padding: 5px 10px;
+}
+.sub-title > div a{
+    color: white;
+}
+
+.covid-container ul{
+    padding-left: 20px;
+}
+
+.covid-container ul > li{
+    list-style: upper-alpha;
+}
+
+.covid-container ul li{
+    padding-left: 15px;
+}
+
+.covid-container ul ul > li{
+    list-style: lower-alpha;
+}
+
+.covid-container ul ul ul > li{
+    list-style: lower-roman;
+}
+
+.pb-15{
+    padding-bottom: 15px;;
+}
+
+a{
+    text-decoration: underline;
+}
+
+section > ul > li > div:first-child{
+    font-weight: bold;
+}
+
+
+@media (min-width: 992px) {
+    .sub-title{
+        display: flex;
+        padding: 0;
+        margin: 0 !important;
+        padding-bottom: 25px;
+    }
+    .sub-title > div{
+        background-color: cadetblue;
+        padding: 10px 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
