@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var admissionsRouter = require('./routes/admissions');
 var academicRouter = require('./routes/academic');
 var registerRouter = require('./routes/register');
+var specialNoticesRouter = require('./routes/specialNotices');
 //var usersRouter = require('./routes/users');
 
 var i18n = require('i18n-2');
@@ -78,6 +79,7 @@ app.use('/', indexRouter);
 app.use('/academic', academicRouter);
 app.use('/admissions', admissionsRouter);
 app.use('/register', registerRouter);
+app.use('/special-notices', specialNoticesRouter);
 //app.use('/users', usersRouter);
 
 
