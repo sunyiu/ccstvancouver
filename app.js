@@ -63,7 +63,7 @@ app.get('*', (req, res, next) => {
 
   //console.log('test 0 ' +  req.i18n.__('Title') );
 
-  if (!lang && req.originalUrl != '/register') {
+  if (!lang && req.originalUrl != '/register' && req.originalUrl != "/special-notices/covid") {
     res.redirect('/language');
   } else {
     if (query && query != cookie) {
