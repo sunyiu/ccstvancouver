@@ -69,8 +69,8 @@ router.post('/', function (req, res, next) {
 
     '<h3>Calling Testimony</h3>' +
     (req.body.personalSalvationEncoded ? '<div><strong>Personal Salvation</strong></div><div>See attachment</div><br/>' : '<div><strong>Personal Salvation</strong></div><div>Not available</div><br/>') +
-    '<div><strong>Spouse Support Letter</strong></div><div>'+ req.body.spouseSupportLetter +'</div><br/>' +
     (req.body.researchPaperEncoded ? '<div><strong>Research Paper</strong></div><div>See attachment</div><br/>' : '<div><strong>Research Paper</strong></div><div>Not available</div><br/>') +
+    (req.body.spouseSupportLetterEncoded ? '<div><strong>>Spouse Support Letter</strong></div><div>See attachment</div><br/>' : '<div><strong>Spouse Support Letter/strong></div><div>Not available</div><br/>') +
     '<br/>' +
 
     '<h3>Planned Date of Entry</h3>' +
@@ -114,7 +114,6 @@ router.post('/', function (req, res, next) {
         },
         {
           content: req.body.personalSalvationEncoded,
-          // filename: req.body.portraitName,
           filename: 'personalSalvation.pdf',
           type: req.body.personalSalvationType,
           disposition: 'attachment',
@@ -123,10 +122,19 @@ router.post('/', function (req, res, next) {
       ]
     } ;
 
+    if (req.body.spouseSupportLetterEncoded){
+      msg.attachments.push({
+        content: req.body.spouseSupportLetterEncoded,
+        filename: 'spouseSupportLetter.pdf',
+        type: req.body.spouseSupportLetterType,
+        disposition: 'attachment',
+        contentId: 'spouseSupportLetter' 
+      })
+    }
+
     if (req.body.researchPaperEncoded){
       msg.attachments.push({
         content: req.body.researchPaperEncoded,
-        // filename: req.body.portraitName,
         filename: 'researchPaper.pdf',
         type: req.body.researchPaperType,
         disposition: 'attachment',

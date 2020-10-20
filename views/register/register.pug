@@ -92,9 +92,9 @@ html
                     input(type='text' id='chineseName' name='chineseName')
                 div.question.required
                     label(for='homeAddress') 
-                        span Home Address 
+                        span Home Address (Full Address) 
                         br
-                        span 居住地址
+                        span 居住地址 (全寫)
                     input(type='text' id='homeAddress' name='homeAddress')
                 div.question
                     label(for='homeAptNum') 
@@ -294,10 +294,16 @@ html
                     input(type='text' id='institutionAttendancePeriod' name='institutionAttendancePeriod')
                 div.question.required
                     label(for='institutionEarned') 
-                        span Certificate/Diploma/Degree Earned (Specify <incomplete> if applicable)
+                        span Certificate/Diploma/Degree Earned (Specify if applicable)
                         br
                         span 獲取學位/文憑 
                     input(type='text' id='institutionEarned' name='institutionEarned')
+
+                div
+                    div Please prepare official transcripts sent to CCST Vancouver
+                    div 請向你曾修讀大專或以上課程的學校,將成綪單正本寄到 "加神温哥華"
+
+
                 div.question.required
                     label(for='transferCredit') 
                         span Will you be applying for transfer credit from other institution(s)? 
@@ -319,7 +325,10 @@ html
                         option(value='yes') Yes
                         option(value='no') No
                 div.question
-                    label(for='englishRequirement') English Language Requirement (IELTS or Academic TOEFL for students whose first language is not English <original report is required>)
+                    label(for='englishRequirement') 
+                        span English Language Requirement 
+                        br
+                        span 英語成綪                    
                     div
                         input(type='radio' id='ielts' name='englishRequirement' value='IELTS')
                         label(for='ielts') IELTS Academic 雅思 (學術類)
@@ -346,6 +355,8 @@ html
                     div 若碩士課程申請者沒有在位於以英語為主要語言的國家, 並以英語為教學及考試語言的專上學院全時間地就讀過三年，對其英語考試最低成績要求為托福 IBT 30分, 托福 ITP 399分, 或雅思(學術類) 4.0. 只有兩年內的考試成績才有效。 
                     div A minimum score of 32 for TOEFL IBT, 430 for TOEFL ITP, or 4.5 for IELTS (Academic) is required for doctoral program's applicants who have NOT studied full time for 3 years in a postsecondary institution, where English is the language of instruction and examination, in an English speaking country. Only test scores dating no more than two years when your application is reviewed are accepted.                    
                     div 若博士課程申請者沒有在位於以英語為主要語言的國家, 並以英語為教學及考試語言的專上學院全時間地就讀過三年，對其英語考試最低成績要求為托福 IBT 32分, 托福 ITP 433分, 或雅思(學術類) 4.5。 只有兩年內的考試成績才有效。
+                    div Please prepare an official record from IELTS or TOEFL Center and send to CCST Vancouver
+                    div 請向雅思或托福機關申請將成績直接送往 "加神温哥華"
 
             section
                 h3 C. Calling Testimony 蒙召見證
@@ -365,7 +376,12 @@ html
                         span If married, please attach a letter of support from your spouse. 
                         br
                         span 已婚者需請配偶書寫其對你報名的推薦。
-                    textarea(id='spouseSupportLetter' name='spouseSupportLetter')       
+                    //- textarea(id='spouseSupportLetter' name='spouseSupportLetter') 
+                    input(type='file' name='spouseSupportLetter' id='spouseSupportLetter' accept=".pdf" style='padding-bottom:0;')
+                    div.error(id='spouseSupportLetterError')
+                    input(type='hidden' name='spouseSupportLetterName' id='spouseSupportLetterName')
+                    input(type='hidden' name='spouseSupportLetterEncoded' id='spouseSupportLetterEncoded')
+                    input(type='hidden' name='spouseSupportLetterType' id='spouseSupportLetterType')                          
             
             section
                 h3 D. 研究文章 (只適用於博士課程申請人)         
@@ -419,7 +435,7 @@ html
                         div Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
                         div 
                             span Please download the 
-                            a(href='../../pdf/ReferenceHomeChurch.pdf' target='_blank') letter for the Home Chruch Pastoral Reference
+                            a(href='../../pdf/ReferenceHomeChurchEng.pdf' target='_blank') letter for the Home Chruch Pastoral Reference
                         div 
                             span 請在此下載
                             a(href='../../pdf/ReferenceHomeChurch.pdf' target='_blank') 所屬教會牧者推薦 
@@ -434,7 +450,7 @@ html
                         div Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
                         div 
                             span Please download the 
-                            a(href='../../pdf/ReferencePastoralLayLeader.pdf' target='_blank') letter for the Pastoral/Lay Leader Reference
+                            a(href='../../pdf/ReferencePastoralLayLeaderEng.pdf' target='_blank') letter for the Pastoral/Lay Leader Reference
                         div 
                             span 請在此下載
                             a(href='../../pdf/ReferencePastoralLayLeader.pdf' target='_blank') 教牧推薦
@@ -449,7 +465,7 @@ html
                         div Name (in Chinese & English), Position/Title, Telephone, E-mail, Name of Church, Connection to the Applicant
                         div 
                             span Please download the 
-                            a(href='../../pdf/ReferenceAcademicEmployer.pdf' target='_blank') letter for the Professional/Employer Reference
+                            a(href='../../pdf/ReferenceAcademicEmployerEng.pdf' target='_blank') letter for the Professional/Employer Reference
                         div 
                             span 請在此下載
                             a(href='../../pdf/ReferenceAcademicEmployer.pdf' target='_blank') 專業或雇主推薦推薦                        
@@ -559,7 +575,7 @@ html
                                     div(style='padding-left: 15px;')
                                         div 
                                             span As a Christian and a candidate for admission to Canadian Chinese School of Theology Vancouver, I commit myself to live and work for the honour of Jesus Christ, the good of the School community, the renewal of the body of Christ, and the well-being of my particular congregation and denomination. I am prepared to receive evaluation in the areas of academics and suitability for proposed ministry. I affirm that I understand the 
-                                            a(href='../../pdf/StatementOfFaith.pdf' target='_blank') Statement of Faith 
+                                            a(href='../../pdf/StatementOfFaithEng.pdf' target='_blank') Statement of Faith 
                                             span of CCST Vancouver. I understand and will abide by the admission and academic policies and standards.  I understand that if I, for any reason, be deemed by the faculty to be not suited for Christian conduct, I will be informed of this decision and be asked to suspend my student status. 
                                         div 作為一名基督徒和「加神溫哥華」的候選學生:
                                         ul  
@@ -573,10 +589,13 @@ html
                                             li 我明白如果我因為任何原因被師長認為行為沒有基督徒操守，則將有可能被終止我的學生身份。
                 
                 div.section-desc
-                    div 
-                        span I certify that the information provided in this application is complete and correct.
-                        br
-                        span 我保證我在申請過程提供的信息是完整和正確的。
+                    div.question
+                        div(style="display: flex;") 
+                            input(type='checkbox' id='declaration_correct' name='declaration_correct' style='display: block; margin:0; margin-top:2px; margin-right: 15px;')
+                            div 
+                                span I certify that the information provided in this application is complete and correct.
+                                br
+                                span 我保證我在申請過程提供的信息是完整和正確的。
 
                 div.question.required
                     label(for='signature') 

@@ -84,6 +84,47 @@ $(function () {
     }
   });
 
+
+  var spouseSupportLetter$ = $('#spouseSupportLetter'),
+      spouseSupportLetterEncoded$ = $('#spouseSupportLetterEncoded'),
+      spouseSupportLetterName$ = $('#spouseSupportLetterName'),
+      spouseSupportLetterType$ = $('#spouseSupportLetterType'),
+      spouseSupportLetterError$ = $('#spouseSupportLetterError');
+    spouseSupportLetter$.change((e) => {
+    // console.log(e);
+
+      const file = e.currentTarget.files[0];
+      const fileType = e.currentTarget.files[0].type;
+      const fileName = e.currentTarget.files[0].name;
+
+      var filesize = ((file.size / 1024) / 1024).toFixed(4); // MB
+      if (filesize > 1) {
+          console.log('Spouse support letter cannot exceed 1MB');
+          spouseSupportLetterEncoded$.val('');
+          spouseSupportLetterName$.val('');
+          spouseSupportLetterError$.html('Spouse support letter PDF cannot exceed 1MB');
+          spouseSupportLetter$.val('');
+          return;
+      }
+
+      const reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+          // convert image file to base64 string
+          // portraitPreview$.attr('src', reader.result);
+          spouseSupportLetterError$.html('');
+          spouseSupportLetterName$.val(fileName);
+          spouseSupportLetterEncoded$.val(reader.result.split(',')[1]);
+          spouseSupportLetterType$.val(fileType);
+          // profileRemoveBtn$.show();
+    }, false);
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+  });
+
+
   var researchPaper$ = $('#researchPaper'),
       researchPaperEncoded$ = $('#researchPaperEncoded'),
       researchPaperName$ = $('#researchPaperName'),
@@ -282,6 +323,9 @@ $(function () {
       declaration_c: {
         required: true
       },
+      declaration_correct: {
+        required: true
+      },
       signature: {
         required: true
       },
@@ -298,7 +342,8 @@ $(function () {
       declaration_b1: "Please check the checkbox",
       declaration_b2: "Please check the checkbox",
       declaration_b3: "Please check the checkbox",
-      declaration_c: "Please check the checkbox"
+      declaration_c: "Please check the checkbox",
+      declaration_correct: "Please check the checkbox"
     },
     errorPlacement: function(error, element) {
       error.appendTo($(element).parents('.question'));
