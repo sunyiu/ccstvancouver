@@ -52,13 +52,51 @@ router.post('/', function (req, res, next) {
     '<div><strong>Church Phone</strong></div><div>'+ req.body.churchPhone + '</div><br/>' +
     '<br/>' +
 
-    '<h3>Educational Background</h3>' +
-    '<div><strong>Institution Name</strong></div><div>'+ req.body.institutionName +'</div><br/>' +
-    '<div><strong>Institution Country</strong></div><div>'+ req.body.institutionCountry +'</div><br/>' +
-    '<div><strong>Institution Attendance Period</strong></div><div>'+ req.body.institutionAttendancePeriod +'</div><br/>' +
-    '<div><strong>Institution Earned</strong></div><div>'+ req.body.institutionEarned +'</div><br/>' +
-    '<div><strong>Transfer Cedit</strong></div><div>'+ req.body.transferCredit +'</div><br/>' +
+    '<h3>Educational Background</h3>' +    
+    '<div><strong>Institution 1 Name</strong></div><div>'+ req.body.institutionName1 +'</div><br/>' +
+    '<div><strong>Institution 1 Country</strong></div><div>'+ req.body.institutionCountry1 +'</div><br/>' +
+    '<div><strong>Institution 1 Attendance Period</strong></div><div>'+ req.body.institutionAttendancePeriod1 +'</div><br/>' +
+    '<div><strong>Institution 1 Earned</strong></div><div>'+ req.body.institutionEarned1 +'</div><br/>' +
     '<br/>' +
+
+    ((req.body.institutionName2 || req.body.institutionCountry2 || req.body.institutionAttendancePeriod2 || req.body.institutionEarned2) 
+     ? (
+        '<div><strong>Institution 2 Name</strong></div><div>'+ req.body.institutionName2 +'</div><br/>' +
+        '<div><strong>Institution 2 Country</strong></div><div>'+ req.body.institutionCountry2 +'</div><br/>' +
+        '<div><strong>Institution 2 Attendance Period</strong></div><div>'+ req.body.institutionAttendancePeriod2 +'</div><br/>' +
+        '<div><strong>Institution 2 Earned</strong></div><div>'+ req.body.institutionEarned2 +'</div><br/>' +
+        '<br/>')
+     : '') +
+
+     ((req.body.institutionName3 || req.body.institutionCountry3 || req.body.institutionAttendancePeriod3 || req.body.institutionEarned3) 
+     ? (
+        '<div><strong>Institution 3 Name</strong></div><div>'+ req.body.institutionName3 +'</div><br/>' +
+        '<div><strong>Institution 3 Country</strong></div><div>'+ req.body.institutionCountry3 +'</div><br/>' +
+        '<div><strong>Institution 3 Attendance Period</strong></div><div>'+ req.body.institutionAttendancePeriod3 +'</div><br/>' +
+        '<div><strong>Institution 3 Earned</strong></div><div>'+ req.body.institutionEarned3 +'</div><br/>' +
+        '<br/>')
+     : '') +
+
+     ((req.body.institutionName4 || req.body.institutionCountry4 || req.body.institutionAttendancePeriod4 || req.body.institutionEarned4) 
+     ? (
+        '<div><strong>Institution 4 Name</strong></div><div>'+ req.body.institutionName4 +'</div><br/>' +
+        '<div><strong>Institution 4 Country</strong></div><div>'+ req.body.institutionCountry4 +'</div><br/>' +
+        '<div><strong>Institution 4 Attendance Period</strong></div><div>'+ req.body.institutionAttendancePeriod4 +'</div><br/>' +
+        '<div><strong>Institution 4 Earned</strong></div><div>'+ req.body.institutionEarned4 +'</div><br/>' +
+        '<br/>')
+     : '') +
+
+     ((req.body.institutionName5 || req.body.institutionCountry5 || req.body.institutionAttendancePeriod5 || req.body.institutionEarned5) 
+     ? (
+        '<div><strong>Institution 5 Name</strong></div><div>'+ req.body.institutionName5 +'</div><br/>' +
+        '<div><strong>Institution 5 Country</strong></div><div>'+ req.body.institutionCountry5 +'</div><br/>' +
+        '<div><strong>Institution 5 Attendance Period</strong></div><div>'+ req.body.institutionAttendancePeriod5 +'</div><br/>' +
+        '<div><strong>Institution 5 Earned</strong></div><div>'+ req.body.institutionEarned5 +'</div><br/>' +
+        '<br/>')
+     : '') +
+
+    '<div><strong>Transfer Cedit</strong></div><div>'+ req.body.transferCredit1 +'</div><br/>' +
+
 
     '<h3>Application to other Seminary or University</h3>' +
     '<div><strong>Other Application</strong></div><div>'+ req.body.otherApplication +'</div><br/>' +
