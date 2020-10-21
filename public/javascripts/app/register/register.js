@@ -258,16 +258,16 @@ $(function () {
         required: true,
         digits: true
       },
-      institutionName: {
+      institutionName1: {
         required: true
       },
-      institutionCountry: {
+      institutionCountry1: {
         required: true
       },
-      institutionAttendancePeriod: {
+      institutionAttendancePeriod1: {
         required: true
       },
-      institutionEarned: {
+      institutionEarned1: {
         required: true
       },
       transferCredit: {

@@ -59,6 +59,11 @@ select{
     padding-left: 5px;
     color: red;
 }
+table div.required::after{
+    content: "*";
+    padding-left: 5px;
+    color: red;
+}
 
 .error{
     color: red;
