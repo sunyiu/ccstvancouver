@@ -95,7 +95,7 @@ router.post('/', function (req, res, next) {
         '<br/>')
      : '') +
 
-    '<div><strong>Transfer Cedit</strong></div><div>'+ req.body.transferCredit1 +'</div><br/>' +
+    '<div><strong>Transfer Cedit</strong></div><div>'+ req.body.transferCredit +'</div><br/>' +
 
 
     '<h3>Application to other Seminary or University</h3>' +
