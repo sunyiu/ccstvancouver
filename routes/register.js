@@ -100,7 +100,7 @@ router.post('/', function (req, res, next) {
 
     '<h3>Application to other Seminary or University</h3>' +
     '<div><strong>Other Application</strong></div><div>'+ req.body.otherApplication +'</div><br/>' +
-    '<div><strong>English Requirement</strong></div><div>'+ req.body.englishRequirement +'</div><br/>' +
+    (req.body.englishRequirement ? '<div><strong>English Requirement</strong></div><div>'+ req.body.englishRequirement +'</div><br/>' : '<div><strong>English Requirement</strong></div><div></div><br/>') +
     '<div><strong>English Requirement Date</strong></div><div>'+ req.body.englishRequirementDateTaken +'</div><br/>' +
     '<div><strong>English Requirement Score</strong></div><div>'+ req.body.englishRequirementScore +'</div><br/>' +
     '<br/>' +
@@ -108,7 +108,7 @@ router.post('/', function (req, res, next) {
     '<h3>Calling Testimony</h3>' +
     (req.body.personalSalvationEncoded ? '<div><strong>Personal Salvation</strong></div><div>See attachment</div><br/>' : '<div><strong>Personal Salvation</strong></div><div>Not available</div><br/>') +
     (req.body.researchPaperEncoded ? '<div><strong>Research Paper</strong></div><div>See attachment</div><br/>' : '<div><strong>Research Paper</strong></div><div>Not available</div><br/>') +
-    (req.body.spouseSupportLetterEncoded ? '<div><strong>>Spouse Support Letter</strong></div><div>See attachment</div><br/>' : '<div><strong>Spouse Support Letter/strong></div><div>Not available</div><br/>') +
+    (req.body.spouseSupportLetterEncoded ? '<div><strong>Spouse Support Letter</strong></div><div>See attachment</div><br/>' : '<div><strong>Spouse Support Letter</strong></div><div>Not available</div><br/>') +
     '<br/>' +
 
     '<h3>Planned Date of Entry</h3>' +
