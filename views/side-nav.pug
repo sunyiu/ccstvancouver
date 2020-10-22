@@ -6,7 +6,7 @@ mixin side-nav(title, items)
         ul.nav-links
             each item, index in items
                 li(class= (index==sideNavHLIndex) ? '_selected link' : 'link')
-                    a(href=item.link)!= __(item.name)
+                    a(href=item.link target=item.target)!= __(item.name)
 
     //- script.
     //-     $(function(){
