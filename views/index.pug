@@ -6,35 +6,47 @@ block append styles
 block content
   div.home.module
     div.container
-      div.top-image-container
-          div.table-cell
-            div.school_logo
-            div.motto_container
-              div.motto.title #{__('motto1_title')}
-              div.motto 
-                div #{__('motto1a')}
-                div #{__('motto1b')}
-              div.motto.title #{__('motto2_title')}
-              div.motto #{__('motto2')}
-              div.motto.title #{__('motto3_title')}
-              div.motto #{__('motto3')}
-              ul.actions
-                li.action 
-                  a(href='/admissions/programs')
-                    div 
-                      i.material-icons arrow_right_alt 
-                      span #{__('findAProgram')}
-                li.action  
-                  a(href='/admissions/apply')
-                    div 
-                      i.material-icons arrow_right_alt
-                      span #{__('applyTo')}
 
-      section(style="border: 0;")
-        a(style="display:block; background-color: orangered;text-align: center;font-size: 1.25rem;font-weight: bold;color: white;padding: 10px;", href="./special-notices/covid") COVID-19 Notice
+      div.ccstvan
+        div.image
+        div.text
+          div.title #{__('motto1_title')}
+          div.motto 
+            div #{__('motto1a')}
+            div #{__('motto1b')}
+          div.title #{__('motto2_title')}
+          div.motto #{__('motto2')}
+          div.title #{__('motto3_title')}
+          div.motto #{__('motto3')}
+
+      div.ccstvan(style="padding-bottom: 25px; align-items: center;border-bottom: 1px solid gray;margin-bottom: 25px;flex-direction: inherit")
+        div.logo
+        div(style="flex-grow: 1")
+          ul.actions
+            li.action(style="width:49%") 
+              a(href='/admissions/programs')
+                  i.material-icons arrow_right_alt 
+                  span #{__('findAProgram')}
+            li.action(style="width:49%")   
+              a(href='/admissions/apply')
+                  i.material-icons arrow_right_alt
+                  span #{__('applyTo')}
+          ul.actions
+            li.action(style="background-color: orangered; width:100%;")
+              a(href="./special-notices/covid") COVID-19 Notice
+          ul.actions.link
+            li.action(style="width:24%") 
+              a(href="#news3") #{__('news3_title')}
+            li.action(style="width:24%") 
+              a(href="#news6") #{(__('news6_title'))}
+            li.action(style="width:24%") 
+              a(href="news2") #{__('news2_title')}
+            li.action(style="width:24%") 
+              a(href="#news1") #{__('news1_title')}
+
 
       section
-        div.container.section.side-by-side.building(style='background-image:url(../images/classroom.png)')
+        div.container.section.side-by-side.building(style='background-image:url(../images/classroom.png)')#news3
             div.special #{__('news_chineseonly')}             
             div.header 
               div.announce
@@ -55,7 +67,7 @@ block content
               li
                iframe(width="100%", height="315", src="https://www.youtube.com/embed/x3JnH_aGtxM", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")       
 
-        div.container.section.side-by-side.building(style='background-image:url(../images/books2.png)')
+        div.container.section.side-by-side.building(style='background-image:url(../images/books2.png)')#news6
             div.special #{__('news_chineseonly')}
             div.header 
               div.announce
@@ -108,7 +120,7 @@ block content
                     div #{(__('news6_21'))}
                   li(style="list-style: disc; margin-left: 25px; ") #{(__('news6_22'))}
             
-        div.container.section.principle
+        div.container.section.principle#news2
             div.special #{__('news_chineseonly')}              
             div.header 
               div.announce
@@ -155,7 +167,7 @@ block content
                 div #{__('news2_20')}
                 div #{__('news2_21')}
 
-        div.container.section.side-by-side.building
+        div.container.section.side-by-side.building#news1
             div.special #{__('news_chineseonly')}
               //- div.announce 
               //-   div #{__('news1_announce1')}
