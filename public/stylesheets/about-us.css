@@ -1,3 +1,6 @@
+section h1{
+    background-size: cover;
+}
 section#staff h1{
     background-image: url('../../images/staffs.png');
 }
@@ -117,7 +120,7 @@ section#accreditation h1{
 }
 
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .staffs_container {
         display: flex;
         justify-content: space-between;
