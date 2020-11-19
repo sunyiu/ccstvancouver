@@ -52,6 +52,9 @@ section{
 .pb-15{
     padding-bottom: 15px;;
 }
+.ml-15{
+    margin-left: 15px;
+}
 
 a{
     text-decoration: underline;
