@@ -38,14 +38,11 @@ block content
             li.action(style="width:24%") 
               a(href="#news3") #{__('news3_title')}
             li.action(style="width:24%") 
+              a(href="#news5" style="display: block;") 
+                span #{(__('news5_title'))}                
+            li.action(style="width:24%") 
               a(href="#news6" style="display: block;") 
                 span #{(__('news6_title'))}
-                span &nbsp;                
-                span #{(__('news6_code'))}
-            li.action(style="width:24%") 
-              a(href="#news7" style="display: block;") 
-                span #{(__('news7_title'))}
-                span &nbsp;啟示錄
             li.action(style="width:24%") 
               a(href="#news2") #{__('news2_title')}
             li.action(style="width:24%") 
@@ -54,25 +51,68 @@ block content
 
       section
         div.container.section.side-by-side.building(style='background-image:url(../images/classroom.png)')#news3
-            div.special #{__('news_chineseonly')}             
-            div.header 
-              div.announce
-                div.date 
-                  div #{__('news3_title')}
-                div
-                  div #{__('news3_date1')} 
-                  div #{__('news3_date2')} 
-                  div #{__('news3_date3')}
+          div.special #{__('news_chineseonly')}             
+          div.header 
+            div.announce
+              div.date 
+                div #{__('news3_title')}
+              div
+                div #{__('news3_date1')} 
+                div #{__('news3_date2')} 
+                div #{__('news3_date3')}
 
-            ul.desc-container
-              li(style='font-size:2rem;font-weight:bold;') #{__('news3_1')}
-              li(style='font-size:1.25rem;') #{__('news3_2')}
-              li 
-                ul
-                  li(style='list-style: disc; margin-left: 25px;') #{__('news3_3')}
-                  li(style='list-style: disc; margin-left: 25px;') #{__('news3_4')}
-              li
-               iframe(width="100%", height="315", src="https://www.youtube.com/embed/x3JnH_aGtxM", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")       
+          ul.desc-container
+            li(style='font-size:2rem;font-weight:bold;') #{__('news3_1')}
+            li(style='font-size:1.25rem;') #{__('news3_2')}
+            li 
+              ul
+                li(style='list-style: disc; margin-left: 25px;') #{__('news3_3')}
+                li(style='list-style: disc; margin-left: 25px;') #{__('news3_4')}
+            li
+              iframe(width="100%", height="315", src="https://www.youtube.com/embed/x3JnH_aGtxM", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")       
+
+        div.container.section.side-by-side.building(style='background-image:url(../images/books2.png)')#news5
+          div.special #{__('news_chineseonly')}
+          div.header 
+            div.announce
+              div
+                div #{__('news5_date_1')} 
+                div.date-detail
+                  div #{__('news5_date_2')} 
+                  div #{__('news5_date_3')}
+                  div #{__('news5_date_4')} 
+                div.date-detail
+                  div #{__('news5_date_5')}    
+                  div #{__('news5_date_6')}
+                  div #{__('news5_date_7')}
+                div.date-detail
+                  div #{__('news5_date_8')}
+                  div #{__('news5_date_9')}      
+                div.date-detail
+                  div #{__('news5_date_10')}  
+                  div #{__('news5_date_11')}                                                       
+
+          ul.desc-container
+            li(style='font-size:2rem;font-weight:bold;') #{(__('news5_title'))}
+            li #{(__('news5_desc'))}
+            li 
+              strong(style='background-color: black;color: white;padding: 3px;') #{(__('news5_name'))}
+            li 
+              strong #{(__('news5_1'))}
+              div #{(__('news5_2'))}
+            li
+              strong #{(__('news5_3'))}
+              div #{(__('news5_4'))}
+            li 
+              strong #{(__('news5_5'))}
+              div #{(__('news5_6'))}
+              div #{(__('news5_7'))}
+            li
+              strong #{(__('news5_8'))}
+              div
+                  a(class='email' href='mailto:gracechan@ccstvan.ca' target='_blank') gracechan@ccstvan.ca
+                  span #{__('news5_9')}
+                   
 
         div.container.section.side-by-side.building(style='background-image:url(../images/books2.png)')#news6
             div.special #{__('news_chineseonly')}
@@ -80,114 +120,66 @@ block content
               div.announce
                 div
                   div #{__('news6_date_1')} 
-                  div #{__('news6_date_2')} 
-                  div #{__('news6_date_3')}
-                  div #{__('news6_date_4')}
-                  div #{__('news6_date_5')}
-                  div #{__('news6_date_6')}                                  
+                  div.date-detail
+                    div #{__('news6_date_2')} 
+                    div #{__('news6_date_3')}
+                  div.date-detail
+                    div #{__('news6_date_4')} 
+                    div #{__('news6_date_5')}                               
 
             ul.desc-container
               li(style='font-size:2rem;font-weight:bold;') #{(__('news6_title'))}
-              li #{(__('news6_code'))}
               li 
                 strong #{(__('news6_name'))}
-              li #{(__('news6_desc'))}
               li 
                 strong #{(__('news6_1'))}
                 div #{(__('news6_2'))}
-              li #{(__('news6_3'))}                                          
               li
-                strong #{(__('news6_4'))}
+                strong #{(__('news6_3'))}
                 ul
-                  li #{(__('news6_5'))}
-                  li #{(__('news6_6'))}                  
-                  li #{(__('news6_7'))}                  
-                  li #{(__('news6_8'))}                                    
+                  li #{(__('news6_4'))}
+                  li #{(__('news6_5'))}                  
               li 
-                strong #{(__('news6_9'))}
-                div #{(__('news6_11'))}
-                div 
-                  span #{(__('news6_12'))}
-                  a(class='email' href='mailto:info@ccstvan.ca' target='_blank')  #{(__('news6_13'))}
-              li 
-                strong #{(__('news6_14'))}
-                ul
-                  li(style="list-style: disc; margin-left: 25px; ") 
-                    span #{(__('news6_15'))}
-                    a(class='email' href='https://forms.gle/45X9atApgc5kWonU9' target='_blank')  #{(__('news6_16'))}                    
-                  li(style="list-style: disc; margin-left: 25px; ") 
-                    span #{(__('news6_17'))}
-                    a(class='email' href='mailto:info@ccstvan.ca' target='_blank')  info@ccstvan.ca
-                    span #{(__('news6_18'))}
-              li 
-                strong #{(__('news6_19'))}
-                ul
-                  li(style="list-style: disc; margin-left: 25px; ") 
-                    div #{(__('news6_20'))}
-                    div #{(__('news6_21'))}
-                  li(style="list-style: disc; margin-left: 25px; ") #{(__('news6_22'))}
-
-        div.container.section.side-by-side.building(style='background-image:url(../images/books2.png)')#news7
-            div.special #{__('news_chineseonly')}
-            div.header 
-              div.announce
-                div
-                  div #{__('news7_date_1')} 
-                  div #{__('news7_date_2')} 
-                  div #{__('news7_date_3')}
-                  div #{__('news7_date_4')}
-                  div #{__('news7_date_5')}
-                  div #{__('news7_date_6')}                                  
-
-            ul.desc-container
-              li(style='font-size:2rem;font-weight:bold;') #{(__('news7_title'))}
-              li 
-                strong #{(__('news7_name'))}
-              li #{(__('news7_desc'))}
-              li 
-                strong #{(__('news7_1'))}
-                div #{(__('news7_1a'))}
+                strong #{(__('news6_6'))}
+                div #{(__('news6_7'))}
+              li(style='margin-bottom: 2px')
+                strong(style='background-color: black;color: white;padding: 3px;') #{(__('news6_8'))}
               li
-                string #{(__('news7_2'))}
+                strong #{__('news6_9')}
                 ul
-                  li #{(__('news7_2a'))}                                          
-                  li #{(__('news7_2b'))}                                          
+                  li #{__('news6_10')}
+                  li #{__('news6_11')}
+                  li #{__('news6_12')}
+                  li #{__('news6_13')}
+                  li #{__('news6_14')}
               li
-                strong #{(__('news7_3'))}
+                strong #{__('news6_15')}
                 ul
-                  li #{(__('news7_3a'))}
-                  li #{(__('news7_3b'))}                  
-                  li #{(__('news7_3c'))}                  
-              li 
-                strong #{(__('news7_4'))}
-                div #{(__('news7_4a'))}
-                div 
-                  span #{(__('news7_4b'))}
-                  a(class='email' href='mailto:info@ccstvan.ca' target='_blank')  #{(__('news7_4blink'))}
-              li 
-                strong #{(__('news7_5'))}
-                ul
-                  li(style="list-style: disc; margin-left: 25px; ") 
-                    span #{(__('news7_5a'))}
-                    a(class='email' href='https://forms.gle/br4hWgquBz7hTgF4A' target='_blank')  #{(__('news7_5alink'))}                    
-                  li(style="list-style: disc; margin-left: 25px; ") 
-                    span #{(__('news7_5b'))}
-                    a(class='email' href='mailto:info@ccstvan.ca' target='_blank')  info@ccstvan.ca
-                    span #{(__('news7_5b2'))}
-
+                  li #{__('news6_16')}
+                  li #{__('news6_17')}
+                  li
+                    span #{__('news6_18')}
+                    a(class='email' href='info@ccstvan.ca' target='_blank') #{__('news6_19')}
               li
-                strong #{(__('news7_6'))}
-                div #{(__('news7_6a'))}
-              li 
-                strong #{(__('news7_7'))}
+                strong #{(__('news6_20'))}
                 ul
-                  li(style="list-style: disc; margin-left: 25px; ") 
-                    div #{(__('news7_7a'))}
-                    div #{(__('news7_7a2'))}
-                  li(style="list-style: disc; margin-left: 25px; ") #{(__('news7_7b'))}
-
-
-            
+                  li 
+                    span #{__('news6_21')}
+                    a(class='email' href='https://forms.gle/7BwKhuzur8kJn8PXA' target='_blank') #{__('news6_22')}
+                  li
+                    span #{__('news6_23')}
+                    a.email(href='mailto:info@ccstvan.ca' target='_blank') info@ccstvan.ca
+                    span #{__('news6_25')}
+              li
+                strong #{__('news6_26')}
+                ul(style='padding-left: 20px;')
+                  li(style='list-style:disc')  
+                    div #{__('news6_27')}
+                    div  #{__('news6_28')}
+                  li(style='list-style:disc')  
+                    div  #{__('news6_29')}
+                    div  #{__('news6_30')}
+                   
         div.container.section.principle#news2
             div.special #{__('news_chineseonly')}              
             div.header 
@@ -200,40 +192,13 @@ block content
               li #{__('news2_3')}
               li #{__('news2_4')}
               li #{__('news2_5')}
-
-              li(style="padding-bottom:15px;") 
-                div #{__('news2_6')}
-                ul(style="padding-left:25px; padding-bottom:15px;")
-                  li(style="list-style: disc; margin-left: 25px; ") #{__('news2_6a')}
-                  li(style="list-style: disc; margin-left: 25px; ") #{__('news2_6b')}
-                  li(style="list-style: disc; margin-left: 25px; ") #{__('news2_6c')}
-                  li(style="list-style: disc; margin-left: 25px; ") #{__('news2_6d')}
-
-              li(style="padding-bottom:15px;") 
-                div #{__('news2_7')}
-                ul(style="padding-left:25px; padding-bottom:15px;")
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7a')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7b')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7c')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7d')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7e')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7f')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7g')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7h')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7i')}
-                  li(style="list-style: lower-alpha; margin-left: 25px; padding-bottom: 5px") #{__('news2_7j')}                                                                                                            
-              
-              li
-                span #{__('news2_8')}
-                a.email(href="#") #{__('news2_8link')}
-
-              li 
-                div #{__('news2_9')}
-                div #{__('news2_sign1')}
+              li #{__('news2_6')}
+              li #{__('news2_7')}              
               li
                 div #{__('news2_sign2')}
                 div #{__('news2_sign3')}
                 div #{__('news2_date')}
+                div #{__('news2_date2')}
 
         div.container.section.side-by-side.building#news1
             div.special #{__('news_chineseonly')}
@@ -259,10 +224,11 @@ block content
                     div 
                       strong #{__('news1_2h')}
                     div #{__('news1_2')}
-                    div #{__('news1_2a')}
-                    div #{__('news1_2b')}
-                    div #{__('news1_2c')}
-                    div #{__('news1_2d')}
+                    ul(style='padding-left:25px')
+                      li(style='list-style:disc') #{__('news1_2a')}
+                      li(style='list-style:disc') #{__('news1_2b')}
+                      li(style='list-style:disc') #{__('news1_2c')}
+                      li(style='list-style:disc') #{__('news1_2d')}
                   li(style='padding-bottom: 1rem;') 
                     div 
                       strong #{__('news1_3h')}
@@ -271,8 +237,8 @@ block content
                     div 
                       strong #{__('news1_4h')}
                     div #{__('news1_4a')}
+                    div #{__('news1_4b')}
                     div 
-                      span #{__('news1_4b')}
                       strong #{__('news1_4b2')}
                     div #{__('news1_4c')}
                   li(style='padding-bottom: 1rem;') 

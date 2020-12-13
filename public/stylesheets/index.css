@@ -175,6 +175,13 @@ section > h1{
     list-style: decimal;
 } 
 
+.home .date-detail{
+    display: flex;
+}
+.home .date-detail > div{
+    padding-right: 10px;
+}
+
 
 
 @media (min-width: 576px) {
@@ -208,6 +215,15 @@ section > h1{
     }
     .home .container.section.principle ul.desc-container{
         margin: 0;
+    }
+
+    .home .date-detail{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .home .date-detail > div{
+        padding-right: inherit;
+        margin-bottom: -5px;
     }
 }
 
