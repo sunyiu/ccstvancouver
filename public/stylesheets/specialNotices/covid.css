@@ -58,6 +58,7 @@ section{
 
 a{
     text-decoration: underline;
+    word-break: break-all;
 }
 
 section > ul > li > div:first-child{
