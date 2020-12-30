@@ -409,9 +409,9 @@ html
                     input(type='hidden' name='personalSalvationType' id='personalSalvationType')
                 div.question
                     label(for='spouseSupportLetter') 
-                        span If married, please attach a letter of support from your spouse. 
+                        span If married, please attach a letter of support from your spouse. (M.Div. &amp; D. Min. Applicant ONLY.)
                         br
-                        span 已婚者需請配偶書寫其對你報名的推薦。
+                        span 已婚者需請配偶書寫其對你報名的推薦。 (只適用於道學碩士課程及教牧學博士的申請人)
                     //- textarea(id='spouseSupportLetter' name='spouseSupportLetter') 
                     input(type='file' name='spouseSupportLetter' id='spouseSupportLetter' accept=".pdf" style='padding-bottom:0;')
                     div.error(id='spouseSupportLetterError')
@@ -459,7 +459,7 @@ html
             section
                 h3  F. Your Referees 推薦人資料
                 div.section-desc 
-                    div Referees Your Referees (MTS applicant – two reference letters are required; MDiv and DMin applicant – three reference listed below are requireed.)
+                    div Your Referees (MTS applicant – two reference letters are required; MDiv and DMin applicant – three reference listed below are requireed.)
                     div 申請人需下載相關推薦信檔案, 邀請推薦人填寫, 並直接郵寄或電郵到本校。神學研究課程的申請人, 需要兩份推薦。道學碩士課程及博士學的申請人, 需要以下三份不同類別的推薦。
                 div.question.required
                     label(for='referenceHomeChurch') 
@@ -568,11 +568,18 @@ html
                                 div(style='display: flex;')
                                     input(type='checkbox' id='declaration_a3' name='declaration_a3' style='margin:2px;') 
                                     div(style='padding-left: 15px;')
-                                        span A $300 
+                                        span For local applicants, a $300 
                                         strong TUITION DEPOSIT 
                                         span must be sent upon notice of your acceptance to reserve a place at CCST Vancouver. It is non-refundable but applicable to tuition. International student should observe the payment schedule as per International Student Policy.
                                         br
                                         span 當本地申請人收到錄取通知後，必需繳交300加元的學費按金，以保留在「加神溫哥華」的學籍。 按金不予退還，但適用於學費。 國際學生應遵守國際學生政策的付款時間表。
+                            div.question
+                                div(style='display: flex;')
+                                    input(type='checkbox' id='declaration_a3' name='declaration_a3' style='margin:2px;') 
+                                    div(style='padding-left: 15px;')
+                                        span For international applicants, as soon as you have arrived in Vancouver, you should go to our school with your study permit to register. At the same time, you must pay CAD$3,000 school fee deposit.
+                                        br
+                                        span 當國際學生抵步溫哥華後, 應盡快帶同你的學習許可證到本校註冊, 並同時繳交加幣 $3,000學費按金或全學期學費, 以確定你的學生身份及在「加神溫哥華」的學籍。
                         
                         li.section-desc(style='list-style: upper-alpha;')
                             div 
