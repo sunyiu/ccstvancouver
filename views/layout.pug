@@ -79,6 +79,13 @@ html
                     textarea(id='sendFeedbackText' placeholder=__('contact_msg'))
                     div#message.error_msg #{__('contact_msg_error')}
                     input(type='button' id='sendFeedbackBtn' name='sendBtn' value=__('contact_send'))
+                    div#send_loader(style='display:none')
+                        div #{__('contact_sending')}
+                        div.lds-ellipsis
+                            div
+                            div
+                            div
+                            div
                     div#messageSend.error_msg #{__('msg_send')}
 
             div.color_border

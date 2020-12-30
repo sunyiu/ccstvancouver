@@ -16,7 +16,10 @@ $(() => {
     return re.test(email.toLowerCase());
   };
 
-  $("#sendFeedbackBtn").click(() => {
+  $("#sendFeedbackBtn").click((e) => {
+
+    var btn$ = $(e.currentTarget);
+
     const name = name$.value;
     const from = from$.value;
     const message = message$.value;
@@ -35,6 +38,10 @@ $(() => {
     }
 
     if (!hasError){
+      btn$.hide();
+      var sendingLoader = btn$.siblings('#send_loader');
+      sendingLoader.show();
+
       $.post("/feedback?", {
         from: from,
         name: name,
@@ -47,6 +54,10 @@ $(() => {
         fromError$.classList.remove('show');
         messageError$.classList.remove('show');
         messageSend$.classList.add('show');
+
+        btn$.show();
+        sendingLoader.hide();
+
         setTimeout(() => {
           messageSend$.classList.remove('show');
         }, (3000));
