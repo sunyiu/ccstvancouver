@@ -35,7 +35,7 @@ $(() => {
     }
 
     if (!hasError){
-      $.post("./feedback?", {
+      $.post("/feedback?", {
         from: from,
         name: name,
         message: message
