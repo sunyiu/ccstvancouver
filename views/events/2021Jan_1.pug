@@ -1,0 +1,77 @@
+extends ../layout
+
+block append styles
+  link(rel='stylesheet', href='/stylesheets/events/index.css')
+
+block content
+  div.event.module  
+    div.container(style='background-image:url(../images/books2.png)')
+      div.special #{__('news_chineseonly')}
+      div.content
+        div(style='font-size:1.25rem;font-weight:bold;') #{(__('news6_title'))}
+                                   
+        ul.desc-container
+          li 
+            div
+              div(style='font-weight:bold; font-size:2rem; background-color: black;color: white;padding: 3px;') #{(__('news6_name'))}
+              div(style="margin-top:10px;")
+                span #{__('news6_date_1')} 
+                span #{__('news6_date_2')} 
+                span #{__('news6_date_3')}
+              div
+                span #{__('news6_date_1')} 
+                span #{__('news6_date_4')} 
+                span #{__('news6_date_5')}    
+          li 
+            strong #{(__('news6_1'))}
+            div #{(__('news6_2'))}
+          li
+            strong #{(__('news6_3a'))}
+            div #{(__('news6_3b'))}
+          li
+            strong #{(__('news6_3'))}
+            ul
+              li #{(__('news6_4'))}
+              li #{(__('news6_5'))}                  
+          li 
+            strong #{(__('news6_6'))}
+            div #{(__('news6_7'))}
+          li(style='margin-bottom: 2px')
+            strong(style='background-color: black;color: white;padding: 3px;') #{(__('news6_8'))}
+          li
+            strong #{__('news6_9')}
+            ul
+              li #{__('news6_10')}
+              li #{__('news6_11')}
+              li #{__('news6_12')}
+              li #{__('news6_13')}
+              li #{__('news6_14')}
+          li
+            strong #{__('news6_15')}
+            ul
+              li #{__('news6_16')}
+              li #{__('news6_17')}
+              li
+                span #{__('news6_18')}
+                a(class='email' href='info@ccstvan.ca' target='_blank') #{__('news6_19')}
+          li
+            strong #{(__('news6_20'))}
+            ul
+              li 
+                span #{__('news6_21')}
+                a(class='email' href='https://forms.gle/7BwKhuzur8kJn8PXA' target='_blank') #{__('news6_22')}
+              li
+                span #{__('news6_23')}
+                a.email(href='mailto:info@ccstvan.ca' target='_blank') info@ccstvan.ca
+                span #{__('news6_25')}
+          li
+            strong #{__('news6_26')}
+            ul(style='padding-left: 20px;')
+              li(style='list-style:disc')  
+                div #{__('news6_27')}
+                div  #{__('news6_28')}
+              li(style='list-style:disc')  
+                div  #{__('news6_29')}
+                div  #{__('news6_30')}
+                   
+  script(src='javascripts/app/index.js')

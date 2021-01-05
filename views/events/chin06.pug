@@ -1,0 +1,53 @@
+extends ../layout
+
+block append styles
+  link(rel='stylesheet', href='/stylesheets/events/index.css')
+
+block content
+  div.event.module
+    div.container(style='background-image:url(../images/books2.png)')
+        div.special #{__('news_chineseonly')}
+
+        div.content
+          div(style='font-size:1.25rem;font-weight:bold;') #{(__('news5_title'))}
+          div #{(__('news5_desc'))}
+                                                              
+          ul.desc-container
+            li 
+              div
+                div(style='font-weight:bold; font-size:2rem; background-color: black;color: white;padding: 3px;') #{(__('news5_name'))}
+                div.date-detail(style='padding-top:10px;')
+                  span #{__('news5_date_1')} 
+                  span #{__('news5_date_2')} 
+                  span #{__('news5_date_3')}&nbsp;
+                  span #{__('news5_date_4')} 
+                div.date-detail
+                  span #{__('news5_date_1')} 
+                  span #{__('news5_date_5')}    
+                  span #{__('news5_date_6')}&nbsp;
+                  span #{__('news5_date_7')}
+                div.date-detail
+                  span #{__('news5_date_1')} 
+                  span #{__('news5_date_8')}&nbsp;
+                  span #{__('news5_date_9')}      
+                div.date-detail
+                  span #{__('news5_date_1')} 
+                  span #{__('news5_date_10')}&nbsp;
+                  span #{__('news5_date_11')} 
+            li 
+              strong #{(__('news5_1'))}
+              div #{(__('news5_2'))}
+            li
+              strong #{(__('news5_3'))}
+              div #{(__('news5_4'))}
+            li 
+              strong #{(__('news5_5'))}
+              div #{(__('news5_6'))}
+              div #{(__('news5_7'))}
+            li
+              strong #{(__('news5_8'))}
+              div
+                  a(class='email' href='mailto:gracechan@ccstvan.ca' target='_blank') gracechan@ccstvan.ca
+                  span #{__('news5_9')}
+                         
+  script(src='javascripts/app/index.js')
