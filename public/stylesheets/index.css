@@ -120,7 +120,7 @@
 .event > div.calendar > div.date{
     background-color: white;
     color: black;
-    padding: 5px 0;
+    padding: 5px;
 }
 .event > div.calendar > div.date > div:first-child{
     font-weight: bold;
