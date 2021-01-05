@@ -85,55 +85,64 @@
     margin-bottom:15px; 
     font-weight:bold;
 }
+.events{
+    margin: 1rem 0 2rem 0 !important;
+}
 .event{
     position: relative;
     display: flex;
     padding: 15px;
+    padding-top: 25px;
     background-color: steelblue;
     margin: 0 0 15px 0;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
 }
+.event .container{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
 .event .icon span{
+    margin-right: 15px;
     font-size: 3rem;
     color: darkred;
 }
 .event .special{
-    position: relative;
+    position: absolute;
     padding-bottom: 5px;
     font-size: 0.8rem;
     left: auto;
     right: 0;
     background-color: inherit;
 }
-.event > div.calendar{
+.event .calendar{
     min-width: 65px;
     padding: 5px;
     background-color: darkred ;
-    margin: 0 15px;
+    margin-right: 15px;
     border-radius: 5px;
 }
-.event > div.calendar > div.year{
+.event .calendar > div.year{
     font-size: 0.85rem;
 }
-.event > div.calendar > div.date{
+.event .calendar > div.date{
     background-color: white;
     color: black;
     padding: 5px;
 }
-.event > div.calendar > div.date > div:first-child{
+.event .calendar > div.date > div:first-child{
     font-weight: bold;
 }
-.event > div.calendar > div.date > div:last-child{
+.event .calendar > div.date > div:last-child{
     font-size: 0.85rem;
     font-weight: bold;
 }
-.events > div.content{
-    margin: 0 15px;    
-}
-.event > div.content > div.title{
+
+.event div.content > div.title{
     font-size: 1.5rem;
+    font-weight: bold;
     padding-bottom: 10px;
     line-height: 1.25;
 }
@@ -180,7 +189,8 @@ section > h1{
     background: url(../images/news.png) no-repeat center;
 }
 .home .container.section.building > .header > .announce{
-    background: url(../images/notices.png) no-repeat right;
+    background: url(../images/notices.png) no-repeat left;
+    background-size: cover;
     color: black;
 }
 .home .container.section > .header > .announce div.date{
@@ -264,7 +274,7 @@ section > h1{
     }
     .events a{
         width: 49%;
-        padding: 15px 0 15px 0;
+        padding: 25px 0 15px 0;
     }
 }
 
