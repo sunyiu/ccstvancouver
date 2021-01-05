@@ -1,0 +1,30 @@
+.container{
+    margin-bottom:50px;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.special{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darkred;
+    color: white;
+    padding: 0 5px;
+}
+
+.content{
+    margin: 25px;
+    margin-top: 50px;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    padding: 20px;
+}
+
+ul.desc-container{
+    margin-top: 15px;
+}
+ul.desc-container li{
+    margin-bottom: 15px;
+}

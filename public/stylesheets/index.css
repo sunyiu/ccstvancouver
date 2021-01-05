@@ -1,6 +1,8 @@
 /*override style.css*/
 .container.section > ul.desc-container{
     padding: 1rem;
+    background-color: #eee;
+    font-weight: 500;
 }
 
 
@@ -70,6 +72,71 @@
     background-color: cadetblue !important;
 }
 
+.events_heading{
+    margin-bottom: 15px;
+    font-weight: bold;
+    background: url(/images/classroom2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 125px 10px 25px 8px;
+    color: white;
+    font-size: 1.5rem; 
+    margin-bottom:15px; 
+    font-weight:bold;
+}
+.event{
+    position: relative;
+    display: flex;
+    padding: 15px;
+    background-color: steelblue;
+    margin: 0 0 15px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.event .icon span{
+    font-size: 3rem;
+    color: darkred;
+}
+.event .special{
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 0.8rem;
+    left: auto;
+    right: 0;
+    background-color: inherit;
+}
+.event > div.calendar{
+    min-width: 65px;
+    padding: 5px;
+    background-color: darkred ;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+.event > div.calendar > div.year{
+    font-size: 0.85rem;
+}
+.event > div.calendar > div.date{
+    background-color: white;
+    color: black;
+    padding: 5px 0;
+}
+.event > div.calendar > div.date > div:first-child{
+    font-weight: bold;
+}
+.event > div.calendar > div.date > div:last-child{
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.events > div.content{
+    margin: 0 15px;    
+}
+.event > div.content > div.title{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    line-height: 1.25;
+}
 
 
 section > h1{
@@ -86,52 +153,42 @@ section > h1{
     margin-bottom: 2rem;
     padding-bottom: 1rem;
 }
-.home .container.section.building{
-    background: url(../images/onlineclassannouncement.png) no-repeat center;
-    background-size: cover;
-}
-.home .container.section > .special{
+
+.special{
     position: absolute;
-    padding-left: 10px;
     color: white;
+    top: 0;
+    left: 0;
+    background-color: rgba(150,0,0,0.8);
+    padding: 0 10px;
 }
 .home .container.section > .header{
-    padding-top: 1.25rem;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px;
-    border-radius: 0 5px 5px 0;
-    display: inline-block;
-    padding-right: 25px;
     margin-top: 4rem;
     color: white;
     margin-right: 15px;
     padding-bottom: 0;
-}
-
-.home .container.section > .header > .announce{
-    background-color: darkred;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: -10px -25px 0 -10px;
-    padding: 10px;
-    border-radius: 0 5px 5px 0;
-}
-.home .container.section.principle > .header{
-    display: block;
     margin-right: 0;
     border-radius: 0;
 }
-.home .container.section.principle > .header > .announce{
+
+.home .container.section > .header > .announce{
     padding-top: 125px;
-    background: url(../images/news.png) no-repeat center;
     background-size: cover;
-    height: 50px; 
+    padding-bottom: 20px;
+}
+.home .container.section.principle > .header > .announce{
+    background: url(../images/news.png) no-repeat center;
+}
+.home .container.section.building > .header > .announce{
+    background: url(../images/notices.png) no-repeat right;
+    color: black;
 }
 .home .container.section > .header > .announce div.date{
     font-size: 1.5em;
 }
 .home .container.section > .header > .announce > div{
-    padding-bottom: 10px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 .home .container.section > .header > .title{
     padding-top: 15px;
@@ -142,20 +199,6 @@ section > h1{
     display: flex;
     padding-top: 15px;
     align-items: center;
-}
-.home .container.section .desc-container{
-    font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.85);
-}
-
-.home .container.section ul.desc-container{
-    padding: 1rem;
-    background-color: rgba(255,255,255, 0.9);
-    margin: 1.5rem;
-    margin-bottom: 100px;
-}
-.home .container.section.principle ul.desc-container{
-    background-color: #eee;
 }
 
 .home .container.section ul.desc-container > li{
@@ -196,25 +239,13 @@ section > h1{
         height: auto;
         margin: 0;
     }
-
-
-    .home .container.section ul.desc-container{
-        margin: 2.5rem;
-        margin-top: 4rem;
-    }
     .home .container section{
         margin-left: 0;
     }
-    .home .container.section > .header{
-        /* max-width: 350px; */
-        width: 150px;
-    }
+
     .home .container.section.principle > .header{
         max-width: none;
         width: inherit;
-    }
-    .home .container.section.principle ul.desc-container{
-        margin: 0;
     }
 
     .home .date-detail{
@@ -224,6 +255,16 @@ section > h1{
     .home .date-detail > div{
         padding-right: inherit;
         margin-bottom: -5px;
+    }
+
+    .events > div{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    .events a{
+        width: 49%;
+        padding: 15px 0 15px 0;
     }
 }
 
