@@ -1,0 +1,19 @@
+extends ../layout
+
+block append styles
+  link(rel='stylesheet', href='/stylesheets/events/index.css')
+
+block content
+  div.event.module
+    div.container(style='background-image:url(../images/classroom.png);')
+      div.special #{__('news_chineseonly')}             
+
+      div.content
+        div(style='font-size:2rem;font-weight:bold;') #{__('2020_year_end')}
+        div #{__('2020_year_end_1')}
+        div #{__('2020_year_end_2')}
+
+        div(style="padding: 25px;")
+          iframe(width="100%", height="450px", src="https://www.youtube.com/embed/xkkICAZNTV4", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")       
+
+  script(src='javascripts/app/index.js')

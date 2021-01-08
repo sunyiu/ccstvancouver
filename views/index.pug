@@ -45,7 +45,7 @@ block content
 
         div.events
           div.event_row
-            a.event(href="/events/theology" target="_blank")
+            a.event.youtube(href="/events/theology" target="_blank")
               div.container
                 div.icon
                   span.material-icons video_library
@@ -55,7 +55,18 @@ block content
                   div #{__('news3_1')} 
                   div #{__('news3_2')}
 
-            a.event(href="/events/chin06" target="_blank") 
+            a.event.youtube(href="/events/2020_year_end" target="_blank")
+              div.container
+                div.icon
+                  span.material-icons video_library
+                div.content
+                  div.special #{__('events_chineseonly')}
+                  div.title #{__('2020_year_end')}
+                  div #{__('2020_year_end_1')} 
+                  div #{__('2020_year_end_2')}
+
+          div.event_row
+            a.event.class(href="/events/chin06" target="_blank") 
               div.container
                 div.calendar
                   div.year 2021
@@ -67,8 +78,7 @@ block content
                   div.title #{(__('news5_name'))}              
                   div #{(__('news5_title'))}
 
-          div.event_row          
-            a.event(href="/events/2021Jan_1" target="_blank")
+            a.event.class(href="/events/2021Jan_1" target="_blank")
               div.container
                 div.calendar
                   div.year 2021
@@ -80,7 +90,8 @@ block content
                   div.title #{(__('news6_name'))}
                   div #{(__('news6_title'))}
             
-            a.event(href="/events/inter_student" target="_blank")
+          div.event_row            
+            a.event.class(href="/events/inter_student" target="_blank")
               div.container
                 div.calendar
                   div.year 2021
