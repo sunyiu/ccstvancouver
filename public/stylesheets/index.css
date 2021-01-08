@@ -98,6 +98,15 @@
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+.event.youtube{
+    background-image: url(/images/youtube.png);
+}
+.event.class{
+    background-image: url(/images/books3.png);
 }
 .event .container{
     display: flex;
@@ -129,6 +138,7 @@
 }
 .event .calendar > div.date{
     background-color: white;
+    border-radius: 3px;
     color: black;
     padding: 5px;
 }

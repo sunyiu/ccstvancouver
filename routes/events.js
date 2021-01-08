@@ -5,6 +5,10 @@ router.get('/theology', function (req, res, next) {
   res.render('events/theology');
 });
 
+router.get('/2020_year_end', function (req, res, next) {
+  res.render('events/2020_year_end');
+});
+
 router.get('/chin06', function (req, res, next) {
   res.render('events/chin06');
 });
