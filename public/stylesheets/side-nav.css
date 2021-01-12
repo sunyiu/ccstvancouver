@@ -31,6 +31,13 @@ nav.side-nav li {
     text-transform: uppercase;
 }
 
+nav.side-nav li.pdf:after {
+    content: 'pdf';
+    margin-left: 5px;
+    font-size: smaller;
+    vertical-align: super;
+}
+
 @media (max-width: 575px) {
     nav.side-nav>ul.nav-links{
         flex-wrap: wrap;

@@ -5,20 +5,5 @@ mixin side-nav(title, items)
         //- div.title= title
         ul.nav-links
             each item, index in items
-                li(class= (index==sideNavHLIndex) ? '_selected link' : 'link')
-                    a(href=item.link target=item.target)!= __(item.name)
-
-    //- script.
-    //-     $(function(){
-    //-         var navLinks = $('nav.side-nav'),
-    //-             offsetTop = navLinks.offset().top;  
-            
-    //-         $(window).scroll(function(){
-    //-             var scroll = $(window).scrollTop();
-    //-             if (scroll >= offsetTop){
-    //-                 navLinks.addClass('fixed');
-    //-             }else{
-    //-                 navLinks.removeClass('fixed');
-    //-             } 
-    //-         });
-    //-     })
+                li(class = (index==sideNavHLIndex) ? '_selected link '+ item.class : 'link ' + item.class)
+                    a(href = (item.link ? item.link : __(item.dlink)) target = item.target)!= __(item.name)
