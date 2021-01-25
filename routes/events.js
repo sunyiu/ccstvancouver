@@ -9,16 +9,17 @@ router.get('/2020_year_end', function (req, res, next) {
   res.render('events/2020_year_end');
 });
 
-router.get('/chin06', function (req, res, next) {
-  res.render('events/chin06');
-});
-
-router.get('/2021Jan_1', function (req, res, next) {
-  res.render('events/2021Jan_1');
-});
-
 router.get('/inter_student', function (req, res, next) {
   res.render('events/inter_student');
 });
+
+router.get('/blm', function (req, res, next) {
+  res.render('events/blm');
+});
+
+router.get('/hist31', function (req, res, next) {
+  res.render('events/hist31');
+});
+
 
 module.exports = router;

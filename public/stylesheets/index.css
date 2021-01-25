@@ -127,7 +127,7 @@
     background-color: inherit;
 }
 .event .calendar{
-    min-width: 65px;
+    min-width: 80px;
     padding: 5px;
     background-color: darkred ;
     margin-right: 15px;
@@ -142,12 +142,11 @@
     color: black;
     padding: 5px;
 }
-.event .calendar > div.date > div:first-child{
+.event .calendar > div.date > div{
+    font-size: 0.85rem;    
     font-weight: bold;
 }
 .event .calendar > div.date > div:last-child{
-    font-size: 0.85rem;
-    font-weight: bold;
 }
 
 .event div.content > div.title{
