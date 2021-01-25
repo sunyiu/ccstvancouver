@@ -1,0 +1,36 @@
+extends ../layout
+
+block append styles
+  link(rel='stylesheet', href='/stylesheets/events/index.css')
+
+block content
+  div.event.module
+    div.container(style='background-image:url(../images/classroom.png);')
+      div.special #{__('news_chineseonly')}             
+
+      div.content(style='font-weight: bold;')
+        div(style='font-size: 1.25rem;font-weight: bold;') #{__('hist13_1')}
+        div(style='font-size: 2rem;font-weight: bold;background-color: black;color: white;padding: 15px 5px;') #{__('hist13_2')}
+        div(style='display:flex; padding-bottom:15px; padding-top:25px;')
+          div(style='min-width:100px;padding-right:15px;') #{__('hist13_3')}
+          div
+            div #{__('hist13_4')}
+            div #{__('hist13_4b')}
+            div #{__('hist13_5')}            
+            div #{__('hist13_6')}            
+        div(style='display:flex; padding-bottom:15px;')
+          div(style='min-width:100px;padding-right:15px;') #{__('hist13_7')}
+          div #{__('hist13_8')}
+        div(style='display:flex; padding-bottom:15px;')
+          div(style='min-width:100px;padding-right:15px;') #{__('hist13_9')}
+          div #{__('hist13_10')}
+        div(style='display:flex; padding-bottom:15px;')
+          div(style='min-width:100px;padding-right:15px;') 
+            div #{__('hist13_11')}
+          div(style='display: flex;')
+            div(style='margin-right:25px;') 
+              div(style='background-image: url(/events/hist31.png);min-width: 120px;height: 150px;')
+              div #{__('hist13_12')}          
+            div #{__('hist13_13')} 
+
+  script(src='/javascripts/app/index.js')
