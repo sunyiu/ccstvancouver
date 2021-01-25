@@ -36,16 +36,10 @@ block admission-content
             h1 #{__('internationalStudent_other')}
             ul.international_student 
                 li 
-                    span #{__('internationalStudent_other_1')}
-                    a(href='https://www.cic.gc.ca', target='_blank') #{__('internationalStudent_other_1_url')}
-                li #{__('internationalStudent_other_2')}
-                li #{__('internationalStudent_other_3')}
+                    div #{__('internationalStudent_other_1')}
+                    div
+                        a(href=__('internationalStudent_other_1_url'), target='_blank') #{__('internationalStudent_other_1_url')}
 
         article.title-paragraph
-            div
-                strong 
-                    span #{__('internationalStudent_question')}
-                    a(href='mailto:info@ccstvan.ca') #{__('internationalStudent_question_email')}
-                    span #{__('internationalStudent_question2')}
             div #{__('internationalStudent_link')}
             a(href='https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html', target='_blank', style='display:block; padding-top:5px;') #{__('internationalStudent_link_url')}
