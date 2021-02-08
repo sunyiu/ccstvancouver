@@ -65,18 +65,7 @@ block content
                   div #{__('2020_year_end_1')} 
                   div #{__('2020_year_end_2')}
             
-          div.event_row            
-            a.event.class(href="/events/inter_student" target="_blank")
-              div.container
-                div.calendar
-                  div.year 2021
-                  div.date
-                    div #{(__('news7_date'))}
-                    div Sat
-                div.content
-                  div.special #{__('events_chineseonly')}
-                  div.title #{(__('news7_1'))}
-          
+          div.event_row                      
               a.event.class(href="/events/blm" target="_blank")
                 div.container
                   div.calendar
@@ -87,22 +76,23 @@ block content
                   div.content
                     div.special #{__('events_chineseonly')}
                     div.title #{(__('blm1'))}#{(__('blm2'))}#{(__('blm3'))}
-          div.event_row            
-            a.event.class(href="/events/hist31" target="_blank")
-              div.container
-                div.calendar
-                  div.year 2021
-                  div.date
-                    div #{(__('hist13_14'))}
-                    div #{(__('hist13_15'))}
-                    div #{(__('hist13_16'))} 
-                    div #{(__('hist13_17'))} 
-                    div #{(__('hist13_18'))}                                                                                
-                div.content
-                  div.special #{__('events_chineseonly')}
-                  div.title 
-                    div #{(__('hist13_1'))}
-                    div #{(__('hist13_2'))}
+
+              a.event.class(href="/events/hist31" target="_blank")
+                div.container
+                  div.calendar
+                    div.year 2021
+                    div.date
+                      div #{(__('hist13_14'))}
+                      div #{(__('hist13_15'))}
+                      div #{(__('hist13_16'))} 
+                      div #{(__('hist13_17'))} 
+                      div #{(__('hist13_18'))}                                                                                
+                  div.content
+                    div.special #{__('events_chineseonly')}
+                    div.title 
+                      div #{(__('hist13_1'))}
+                      div #{(__('hist13_2'))}                    
+
 
 
       section       
@@ -113,46 +103,27 @@ block content
                 div.date #{__('news2_title')}
                
             ul.desc-container
-              li #{__('news2_1')}
-              li
-                ul
-                  li(style='list-style:decimal; margin-left:15px;')
-                    div
-                      strong #{__('news2_3')}
-                    div(style='padding-bottom:15px;') #{__('news2_4')}
-                    div(style='padding-bottom:15px;')  #{__('news2_5')}
-                    
-                  li(style='list-style:decimal; margin-left:15px;')
-                    div
-                      strong #{__('news2_6')}
-                      div(style='padding-bottom:15px;') #{__('news2_7')}                  
-                      div(style='padding-bottom:15px;') #{__('news2_8')}          
-
-                  li(style='list-style:decimal; margin-left:15px;')
-                    div
-                      strong #{__('news2_3')}#{__('news2_9')}
-                    div(style='padding-bottom:15px;') #{__('news2_10')}
-                    div(style='padding-bottom:15px;') #{__('news2_11')}
-
-                  li(style='list-style:decimal; margin-left:15px;')
-                    div
-                      strong #{__('news2_12')}
-                    div(style='padding-bottom:15px;') #{__('news2_13')}
-                    div(style='padding-bottom:15px;') #{__('news2_14')}
-                  li(style='list-style:decimal; margin-left:15px;')
-                    div
-                      strong #{__('news2_15')}
-                    div(style='padding-bottom:15px;') #{__('news2_16')}
-                    div(style='padding-bottom:15px;') #{__('news2_17')}
-                    div(style='padding-bottom:15px;') #{__('news2_18')}
-                  li(style='list-style:decimal; margin-left:15px;')
-                    div
-                      strong #{__('news2_19')}
-                    div(style='padding-bottom:15px;') #{__('news2_20')}
-                    div(style='padding-bottom:15px;') #{__('news2_21')}
-              
-              li #{__('news2_22')}
-              li #{__('news2_23')}
+              li #{__('news2_1')}                                       
+              li #{__('news2_3')}
+              li #{__('news2_5')}
+              li #{__('news2_6')}
+              li #{__('news2_7')}
+              li #{__('news2_8')}
+              li(style='padding-left:25px; display:flex;') 
+                span(style='min-width:175px') #{__('news2_9')}
+                span #{__('news2_9b')}
+              li(style='padding-left:25px; display:flex;') 
+                span(style='min-width:175px') #{__('news2_10')}
+                span #{__('news2_10b')}
+              li(style='padding-left:25px; display:flex;') 
+                span(style='min-width:175px') #{__('news2_11')}
+                span #{__('news2_11b')}
+              li #{__('news2_12')}
+              li 
+                span #{__('news2_13')} &nbsp;
+                a.email(href='mailto:ivanleung@ccstvan.ca' target='_blank') ivanleung@ccstvan.ca
+              li #{__('news2_14')}
+              li #{__('news2_15')}
 
               li #{__('news2_sign1')}
               li
@@ -177,35 +148,27 @@ block content
               li
                 ul.pointform
                   li(style='padding-bottom: 1rem;')
-                    div 
-                      strong #{__('news1_1h')}
                     div #{__('news1_1')}
-                  li(style='padding-bottom: 1rem;') 
-                    div 
-                      strong #{__('news1_2h')}
+                  li(style='padding-bottom: 1rem;')
                     div #{__('news1_2')}
-                    ul(style='padding-left:25px')
-                      li(style='list-style:disc') #{__('news1_2a')}
-                      li(style='list-style:disc') #{__('news1_2b')}
-                      li(style='list-style:disc') #{__('news1_2c')}
-                      li(style='list-style:disc') #{__('news1_2d')}
-                  li(style='padding-bottom: 1rem;') 
-                    div 
-                      strong #{__('news1_3h')}
+                  li(style='padding-bottom: 1rem;')
                     div #{__('news1_3')}
-                  li(style='padding-bottom: 1rem;') 
-                    div 
-                      strong #{__('news1_4h')}
-                    div #{__('news1_4a')}
-                    div #{__('news1_4b')}
-                    div 
-                      strong #{__('news1_4b2')}
-                    div #{__('news1_4c')}
-                  li(style='padding-bottom: 1rem;') 
-                    div 
-                      strong #{__('news1_5h')}
-                    div #{__('news1_5')}
 
-                div #{__('news1_6')}
+                  li(style='padding-bottom: 1rem;') 
+                    div #{__('news1_4')}
+                    ul(style='padding-left:25px')
+                      li(style='list-style:disc') 
+                        div #{__('news1_4a')}
+                        div #{__('news1_4a2')}
+                      li(style='list-style:disc') 
+                        div #{__('news1_4b')}
+                        div #{__('news1_4b2')}
+                      li(style='list-style:disc') 
+                        div #{__('news1_4c')}
+                        div
+                          span #{__('news1_4c2')} &nbsp;
+                          a.email(href='mailto:info@ccstvan.ca' target='_blank') info@ccstvan.ca
+                          span &nbsp; #{__('news1_4c3')}
+                div #{__('news1_5')}
 
   script(src='javascripts/app/index.js')
