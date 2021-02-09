@@ -50,8 +50,8 @@ block academic-content
                     div #{__('course_schedule_table_course_lang')}
                     div #{(__('course_schedule_table_6_1_lang'))}
                 div
-                    div #{__('course_schedule_table_course_location')}
-                    div #{__('course_schedule_table_6_1_location')}
+                    div #{__('course_schedule_table_course_req')}
+                    div #{__('course_schedule_table_6_1_req')}
 
             div.schedule_container
                 div 
@@ -64,13 +64,14 @@ block academic-content
                     div #{(__('course_schedule_table_6_2_date'))}
                 div
                     div #{__('course_schedule_table_course_time')}
-                    div #{__('course_schedule_table_6_2_time')}
+                    div 
+                        div #{__('course_schedule_table_6_2_time1')}
+                        div #{__('course_schedule_table_6_2_time2')}
+                        div #{__('course_schedule_table_6_2_time3')}
+                        div #{__('course_schedule_table_6_2_time4')}
                 div
                     div #{__('course_schedule_table_course_lang')}
                     div #{(__('course_schedule_table_6_2_lang'))}
-                div
-                    div #{__('course_schedule_table_course_location')}
-                    div #{__('course_schedule_table_6_2_location')}
 
             div.schedule_container
                 div 
@@ -83,7 +84,9 @@ block academic-content
                     div #{(__('course_schedule_table_6_3_date'))}
                 div 
                     div #{__('course_schedule_table_course_time')}
-                    div #{__('course_schedule_table_6_3_time')}
+                    div 
+                        div #{__('course_schedule_table_6_3_time1')}
+                        div #{__('course_schedule_table_6_3_time2')}
                 div
                     div #{__('course_schedule_table_course_lang')}
                     div #{(__('course_schedule_table_6_3_lang'))}
@@ -106,9 +109,6 @@ block academic-content
                 div
                     div #{__('course_schedule_table_course_lang')}
                     div #{(__('course_schedule_table_6_4_lang'))}
-                div
-                    div #{__('course_schedule_table_course_location')}
-                    div #{__('course_schedule_table_6_4_location')}
             
             div.schedule_container
                 div 
@@ -128,9 +128,6 @@ block academic-content
                 div
                     div #{__('course_schedule_table_course_location')}
                     div #{__('course_schedule_table_6_5_location')}
-                div
-                    div #{__('course_schedule_table_course_note')}
-                    div #{__('course_schedule_table_6_5_note')} 
 
             div.schedule_container
                 div 
@@ -147,12 +144,6 @@ block academic-content
                 div
                     div #{__('course_schedule_table_course_lang')}
                     div #{(__('course_schedule_table_6_6_lang'))}
-                div
-                    div #{__('course_schedule_table_course_location')}
-                    div #{__('course_schedule_table_6_6_location')}
-                div
-                    div #{__('course_schedule_table_course_note')}
-                    div #{__('course_schedule_table_6_6_note')} 
 
             div.schedule_container
                 div 
@@ -165,18 +156,15 @@ block academic-content
                     div #{(__('course_schedule_table_6_7_date'))}
                 div
                     div #{__('course_schedule_table_course_time')}
-                    div 
-                        div #{__('course_schedule_table_6_7_time_1')}
-                        div #{__('course_schedule_table_6_7_time_2')}   
+                    div #{__('course_schedule_table_6_7_time')}
                 div
                     div #{__('course_schedule_table_course_lang')}
                     div #{(__('course_schedule_table_6_7_lang'))}
                 div
-                    div #{__('course_schedule_table_course_location')}
-                    div #{__('course_schedule_table_6_7_location')}
-                div
                     div #{__('course_schedule_table_course_note')}
-                    div #{__('course_schedule_table_6_7_note')}
+                    div 
+                        div #{__('course_schedule_table_6_7_note1')}
+                        div #{__('course_schedule_table_6_7_note2')}                        
             
             div.schedule_container
                 div 
@@ -194,11 +182,10 @@ block academic-content
                     div #{__('course_schedule_table_course_lang')}
                     div #{(__('course_schedule_table_6_8_lang'))}
                 div
-                    div #{__('course_schedule_table_course_location')}
-                    div #{__('course_schedule_table_6_8_location')}
-                div
                     div #{__('course_schedule_table_course_note')}
-                    div #{__('course_schedule_table_6_8_note')}
+                    div 
+                        div #{__('course_schedule_table_6_8_note1')}
+                        div #{__('course_schedule_table_6_8_note2')}                        
 
             div.schedule_container
                 div 
@@ -216,9 +203,27 @@ block academic-content
                     div #{__('course_schedule_table_course_lang')}
                     div #{(__('course_schedule_table_6_9_lang'))}
                 div
-                    div #{__('course_schedule_table_course_location')}
-                    div #{__('course_schedule_table_6_9_location')}
-                   
+                    div #{__('course_schedule_table_course_note')}
+                    div 
+                        div #{__('course_schedule_table_6_9_note1')}
+                        div #{__('course_schedule_table_6_9_note2')}  
+
+            div.schedule_container
+                div 
+                    div #{__('course_schedule_table_course_code')}
+                    div #{__('course_schedule_table_6_10_code')}
+                        |&nbsp;#{__('course_schedule_table_6_10_name')}
+                        |&nbsp;(#{__('course_schedule_table_6_10_teacher')})
+                div
+                    div #{__('course_schedule_table_course_date')}
+                    div #{(__('course_schedule_table_6_10_date'))}
+                div
+                    div #{__('course_schedule_table_course_time')}
+                    div #{__('course_schedule_table_6_10_time')}  
+                div
+                    div #{__('course_schedule_table_course_lang')}
+                    div #{(__('course_schedule_table_6_10_lang'))}                                          
+
         div.title-paragraph#t2021Spring
             h1.schedule_header 
                 div #{__('course_schedule_table_2021_spring')}
