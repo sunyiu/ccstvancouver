@@ -1,7 +1,7 @@
 
 mixin instructor(name, titles, educations, image_name)
     div.instructor(class= name)
-        div.image(style= image_name ? 'background-size: cover; background-image: url("../../images/' + image_name + '.png")' : '') 
+        div.image(style= image_name ? 'background-size: cover; background-image: url("../../images/instructors/' + image_name + '.png")' : '') 
         div.details
             div.name= __(name)
             ul.titles
