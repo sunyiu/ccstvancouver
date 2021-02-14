@@ -1,16 +1,12 @@
- #prog-dmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
+ #prog-dmin .cost-table, #prog-mmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
      background-color: #ccc;
-     padding: 3px;
+     padding: 3px 5px;
  }
 
  .cost-table {
      display: flex;
      justify-content: space-between;
      margin-bottom: 1rem;
- }
-
- #prog-dmin .cost-table, #prog-mdiv .cost-table, #prog-mts .cost-table {
-     background-color: #ccc;
  }
 
  section>h1 {
@@ -21,8 +17,18 @@
     background: url(../../images/dmin.png) no-repeat right;
     background-color: #709dc7;
  }
+ section#prog-mmin .course{
+    display: flex; 
+ }
+ section#prog-mmin .course > div:first-child{
+     min-width: 85px;
+ }
  section#prog-mdiv > h1{
     background: url(../../images/mdiv.png) no-repeat right;
+    background-color: #709dc7;
+ }
+ section#prog-mmin > h1{
+    background: url(../../images/mmin.png) no-repeat right;
     background-color: #709dc7;
  }
  section#prog-mts > h1{

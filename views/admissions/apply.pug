@@ -17,6 +17,9 @@ block admission-content
                             div.title #{__('progDMin')}
                             div.context #{__('apply1_2a')}
                         div.box-container
+                            div.title #{__('progMM')}
+                            div.context #{__('apply1_2mm')}
+                        div.box-container
                             div.title #{__('progMDiv')}
                             div.context #{__('apply1_2b')}
                         div.box-container
@@ -31,7 +34,16 @@ block admission-content
                         div.box-container
                             div.title #{__('progAudit')}
                             div.context #{__('apply1_2f')}
-                    li #{__('apply1_3')}
+                    li 
+                        div(style="padding-bottom:15px") 
+                            span #{__('apply1_3a1')}
+                            span(style="font-weight:bold;") #{__('apply1_3a2')}
+                            span #{__('apply1_3a3')}
+                        div(style="padding-bottom:15px")
+                            span #{__('apply1_3b1')}
+                            span(style="font-weight:bold;") #{__('apply1_3b2')}
+                            span #{__('apply1_3b3')}
+                        div(style="padding-bottom:5px") #{__('apply1_3c')}
                     li
                         div.padding-bottom-half-rem #{__('apply1_4')}
                         ul.numbering-abc
@@ -43,18 +55,25 @@ block admission-content
                                         div.title #{__('progDMin')}
                                         div.context #{__('apply1_4b1')}
                                     div.box-container
+                                        div.title #{__('progMM')}
+                                        div.context 
+                                            div(style="padding-bottom: 15px;") #{__('apply1_4mm1')}
+                                            div #{__('apply1_4mm2')}
+                                    div.box-container
                                         div.title #{__('progMDiv')}
                                         div.context 
-                                            div #{__('apply1_4b2')}
-                                            div #{__('apply1_4c')}
+                                            div(style="padding-bottom: 15px;") #{__('apply1_4md1')}
+                                            div #{__('apply1_4md2')}
                                     div.box-container
                                         div.title #{__('progMts')}
-                                        div.context #{__('apply1_4b3')}
+                                        div.context #{__('apply1_4mts')}
                                     div.box-container
                                         div.title #{__('progDipcs')}
-                                        div.context #{__('apply1_4b4')}
+                                        div.context #{__('apply1_4dip')}
                     li #{__('apply1_5')}
-                    li #{__('apply1_6')}
+                    li 
+                        div(style="padding-bottom:15px") #{__('apply1_6a')}
+                        div #{__('apply1_6b')}
 
 
 
