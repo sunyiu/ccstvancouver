@@ -19,6 +19,10 @@ block admission-content
                 div.context #{__('progDMinDesc')}
                 a(class='detail-btn', href='#prog-dmin') #{__('fulldetail')}
             li.box-container
+                div.title #{__('progMM')}
+                div.context #{__('progMMDesc')}
+                a(class='detail-btn', href='#prog-mmin') #{__('fulldetail')}                
+            li.box-container
                 div.title #{__('progMDiv')}
                 div.context #{__('progMDivDesc')}
                 a(class='detail-btn', href='#prog-mdiv') #{__('fulldetail')}
@@ -98,6 +102,79 @@ block admission-content
                         li #{__('dMin3c_10')}
                         li #{__('dMin3c_11')}
                         li #{__('dMin3c_12')}   
+
+    section(id='prog-mmin' name='prog-mmin')
+        h1
+            span #{__('progMM')}        
+        div.title-paragraph
+            h1 #{__('mMin1')}
+            div #{__('mMin1_1')}
+        div.title-paragraph
+            h1 #{__('mMin2')}
+            div(style="padding-bottom:15px;") #{__('mMin2_1')}
+            div.cost-table            
+                span #{__('mMin3')}
+                span #{__('mMin3_credit')}
+            div.course
+                div #{__('mMin3a_code')} 
+                div #{__('mMin3a')}             
+            div.course
+                div #{__('mMin3b_code')} 
+                div #{__('mMin3b')}             
+            div.course
+                div #{__('mMin3c_code')} 
+                div #{__('mMin3c')}             
+            div.course
+                div #{__('mMin3d_code')} 
+                div #{__('mMin3d')}             
+            div.course
+                div #{__('mMin3e_code')} 
+                div #{__('mMin3e')}     
+            div.course
+                div
+                div #{__('mMin3f')}
+            
+            div.cost-table(style="margin-top:25px;")            
+                span #{__('mMin4')}
+                span #{__('mMin4_credit')}
+            div.course
+                div #{__('mMin4a_code')} 
+                div #{__('mMin4a')}     
+            div.course
+                div #{__('mMin4b_code')} 
+                div #{__('mMin4b')}     
+            div.course
+                div 
+                div #{__('mMin4c')}
+
+            div.cost-table(style="margin-top:25px;")             
+                span #{__('mMin5')}
+                span #{__('mMin5_credit')}
+            div.course
+                div #{__('mMin5a_code')} 
+                div #{__('mMin5a')}     
+            div.course
+                div #{__('mMin5b_code')} 
+                div #{__('mMin5b')}                
+
+            div.cost-table(style="margin-top:25px;")              
+                span #{__('mMin6')}
+                span #{__('mMin6_credit')}
+            div.course
+                div #{__('mMin6a_code')} 
+                div #{__('mMin6a')}     
+            div.course
+                div #{__('mMin6b_code')} 
+                div #{__('mMin6b')} 
+            div.course
+                div #{__('mMin6c_code')} 
+                div #{__('mMin6c')} 
+            div.course
+                div #{__('mMin6d_code')} 
+                div #{__('mMin6d')} 
+            div.course
+                div
+                div #{__('mMin6e')} 
 
     section(id='prog-mdiv')  
         h1 
