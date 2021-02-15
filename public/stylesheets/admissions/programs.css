@@ -17,10 +17,10 @@
     background: url(../../images/dmin.png) no-repeat right;
     background-color: #709dc7;
  }
- section#prog-mmin .course{
+ section .course{
     display: flex; 
  }
- section#prog-mmin .course > div:first-child{
+ section .course > div:first-child{
      min-width: 85px;
  }
  section#prog-mdiv > h1{
