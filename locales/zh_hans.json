@@ -273,7 +273,7 @@
 	"mMin6c": "希伯来文文法 I *",
 	"mMin6d_code": "OLDT23",
 	"mMin6d": "希伯来文文法 II*",
-	"mMin6e": "其他选修科",	
+	"mMin6e": "其他选修科",
 	"mDiv1": "道学硕士课程简介",
 	"mDiv1_1": "本课程以圣经、神学、历史为核心，并配合实际的牧会经验、具体的华人文化应用、灵命塑造操练、教会历史反省、近代领袖培育、教会工场实习、暑期短宣参与等方面，来装备这时代教会合用的工人。本课程特别包括六科圣经原文的课堂和讲道训练，让同学在以正意分解真道上有认真的学习。(教授语言:普通话)",
 	"mDiv2": "道学硕士课程安排",
@@ -946,7 +946,6 @@
 	"course_schedule_table_6_10_date": "01/09, 01/16, 02/06, 02/13, 02/20, 03/27",
 	"course_schedule_table_6_10_time": "星期六 9:00am - 4:00pm",
 	"course_schedule_table_6_10_lang": "普通话",
-
 	"course_schedule_table_7": "2021年夏季文凭及硕士科目",
 	"course_schedule_table_7_date": "Apr 26, 2021 - Jun 21, 2021",
 	"course_schedule_table_7_1_name": "亚洲教会史",
@@ -954,25 +953,21 @@
 	"course_schedule_table_7_1_date": "04/26 - 05/30",
 	"course_schedule_table_7_1_time": "星期一至五 9:00am - 5:00pm",
 	"course_schedule_table_7_1_lang": "普通话",
-
 	"course_schedule_table_7_2_name": "圣经神学:旧约",
 	"course_schedule_table_7_2_teacher": "李日天博士",
 	"course_schedule_table_7_2_date": "05/01, 05/08, 05/15, 05/29, 06/12",
 	"course_schedule_table_7_2_time": "星期六 9:00am - 4:00pm",
 	"course_schedule_table_7_2_lang": "广东话",
-
 	"course_schedule_table_7_3_name": "教会冲突之处理",
 	"course_schedule_table_7_3_teacher": "陈耀鹏博士",
 	"course_schedule_table_7_3_date": "05/03 - 05/07",
 	"course_schedule_table_7_3_time": "星期一至五 9:00am - 5:00pm",
 	"course_schedule_table_7_3_lang": "普通话",
-
 	"course_schedule_table_7_4_name": "罗马书 ：宣教的书信",
 	"course_schedule_table_7_4_teacher": "王建熙博士",
 	"course_schedule_table_7_4_date": "05/10 - 05/21",
 	"course_schedule_table_7_4_time": "星期一至五 9:00am - 12:30pm",
 	"course_schedule_table_7_4_lang": "普通话",
-
 	"course_schedule_2021_table": "2021 教牧学博士课程时间表",
 	"course_schedule_2021_table_date": "日期",
 	"course_schedule_2021_table_date_1": "1月25-29日",
