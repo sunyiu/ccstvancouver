@@ -197,6 +197,9 @@ section > h1{
 .home .container.section.principle > .header > .announce{
     background: url(../images/news.png) no-repeat center;
 }
+.home .container.section.dean-of-student > .header > .announce{
+    background: url(../images/dean-of-student-sharing.png) no-repeat right;
+}
 .home .container.section.building > .header > .announce{
     background: url(../images/notices.png) no-repeat left;
     background-size: cover;
