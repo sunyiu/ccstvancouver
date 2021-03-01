@@ -35,9 +35,11 @@ block content
             li.action(style="background-color: orangered; width:100%;")
               a(href="./special-notices/covid") COVID-19 Notice
           ul.actions.link
-            li.action(style="width:49%") 
+            li.action(style="width:33%") 
               a(href="#news2") #{__('news2_title')}
-            li.action(style="width:49%") 
+            li.action(style="width:33%")
+              a(href="#dean-of-student") #{__('dean_of_students_sharing_link')}
+            li.action(style="width:33%") 
               a(href="#news1") #{__('news1_title')}
 
       section
@@ -54,46 +56,7 @@ block content
                   div.title #{__('news3_title')}
                   div #{__('news3_1')} 
                   div #{__('news3_2')}
-
-            a.event.youtube(href="/events/2020_year_end" target="_blank")
-              div.container
-                div.icon
-                  span.material-icons video_library
-                div.content
-                  div.special #{__('events_chineseonly')}
-                  div.title #{__('2020_year_end')}
-                  div #{__('2020_year_end_1')} 
-                  div #{__('2020_year_end_2')}
-            
-          div.event_row                      
-              a.event.class(href="/events/blm" target="_blank")
-                div.container
-                  div.calendar
-                    div.year 2021
-                    div.date
-                      div #{(__('blm17'))}
-                      div #{(__('blm18'))}                      
-                  div.content
-                    div.special #{__('events_chineseonly')}
-                    div.title #{(__('blm1'))}#{(__('blm2'))}#{(__('blm3'))}
-
-              a.event.class(href="/events/hist31" target="_blank")
-                div.container
-                  div.calendar
-                    div.year 2021
-                    div.date
-                      div #{(__('hist13_14'))}
-                      div #{(__('hist13_15'))}
-                      div #{(__('hist13_16'))} 
-                      div #{(__('hist13_17'))} 
-                      div #{(__('hist13_18'))}                                                                                
-                  div.content
-                    div.special #{__('events_chineseonly')}
-                    div.title 
-                      div #{(__('hist13_1'))}
-                      div #{(__('hist13_2'))}    
-
-          div.event_row                      
+              
               a.event.class(href="/events/mar22" target="_blank")
                 div.container
                   div.calendar
@@ -142,6 +105,44 @@ block content
                 div #{__('news2_sign2')}
                 div #{__('news2_sign3')}
                 div #{__('news2_date')}
+
+        div.container.section.dean-of-student#dean-of-student 
+            div.special #{__('news_chineseonly')}              
+            div.header 
+              div.announce
+                div.date #{__('dean_of_students_sharing')}
+               
+            ul.desc-container
+              li 
+                div #{__('dean_of_students_sharing1')}                                       
+                div #{__('dean_of_students_sharing2')}
+              li(style="font-weight:bold;") #{__('dean_of_students_sharing3')}
+              li 
+              li #{__('dean_of_students_sharing4')}
+              li #{__('dean_of_students_sharing5')}
+              li #{__('dean_of_students_sharing6')}
+              li
+                ul(style="margin-left:20px;") 
+                  li(style="list-style: decimal;padding-bottom: 15px;") 
+                    div(style="font-weight:bold") #{__('dean_of_students_sharing7')}                                       
+                    div #{__('dean_of_students_sharing8')}
+                  li(style="list-style: decimal;padding-bottom: 15px;") 
+                    div(style="font-weight:bold") #{__('dean_of_students_sharing9')}
+                    div #{__('dean_of_students_sharing10')}              
+                  li(style="list-style: decimal;padding-bottom: 15px;") 
+                    div(style="font-weight:bold") #{__('dean_of_students_sharing11')}
+                    div #{__('dean_of_students_sharing12')}
+                  li(style="list-style: decimal;padding-bottom: 15px;") 
+                    div(style="font-weight:bold") #{__('dean_of_students_sharing13')}
+                    div #{__('dean_of_students_sharing14')}
+              li 
+              li #{__('dean_of_students_sharing15')}
+              li #{__('dean_of_students_sharing16')}
+              li #{__('dean_of_students_sharing17')}
+              li #{__('dean_of_students_sharing18')}
+              li #{__('dean_of_students_sharing19')}                                                
+
+
 
         div.container.section.building#news1
             div.special #{__('news_chineseonly')}
