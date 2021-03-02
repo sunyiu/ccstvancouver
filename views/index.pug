@@ -35,11 +35,9 @@ block content
             li.action(style="background-color: orangered; width:100%;")
               a(href="./special-notices/covid") COVID-19 Notice
           ul.actions.link
-            li.action(style="width:33%") 
-              a(href="#news2") #{__('news2_title')}
-            li.action(style="width:33%")
-              a(href="#dean-of-student") #{__('dean_of_students_sharing_link')}
-            li.action(style="width:33%") 
+            li.action(style="width:49%")
+              a(href="#dean-of-student") #{__('dean_of_students_sharing')}
+            li.action(style="width:49%") 
               a(href="#news1") #{__('news1_title')}
 
       section
@@ -68,44 +66,25 @@ block content
                     div.special #{__('events_chineseonly')}
                     div.title #{(__('event_mar22_2'))}
 
+          div.event_row
+            a.event.class(href="/events/etc" target="_blank")
+              div.container
+                div.calendar
+                  div.year 2021
+                  div.date
+                    div #{(__('event_ect_date1'))}
+                    div #{(__('event_ect_date2'))}                      
+                    div(style="padding-bottom:5px") #{(__('event_ect_date3'))}                      
+                    div #{(__('event_ect_date4'))}                      
+                    div #{(__('event_ect_date5'))}                                                                                 
+                div.content
+                  div.special #{__('events_chineseonly')}
+                  div #{(__('event_etc_1'))}
+                  div.title #{(__('event_etc_2'))}
+
 
 
       section       
-        div.container.section.principle#news2
-            div.special #{__('news_chineseonly')}              
-            div.header 
-              div.announce
-                div.date #{__('news2_title')}
-               
-            ul.desc-container
-              li #{__('news2_1')}                                       
-              li #{__('news2_3')}
-              li #{__('news2_5')}
-              li #{__('news2_6')}
-              li #{__('news2_7')}
-              li #{__('news2_8')}
-              li(style='padding-left:25px; display:flex;') 
-                span(style='min-width:175px') #{__('news2_9')}
-                span #{__('news2_9b')}
-              li(style='padding-left:25px; display:flex;') 
-                span(style='min-width:175px') #{__('news2_10')}
-                span #{__('news2_10b')}
-              li(style='padding-left:25px; display:flex;') 
-                span(style='min-width:175px') #{__('news2_11')}
-                span #{__('news2_11b')}
-              li #{__('news2_12')}
-              li 
-                span #{__('news2_13')} &nbsp;
-                a.email(href='mailto:ivanleung@ccstvan.ca' target='_blank') ivanleung@ccstvan.ca
-              li #{__('news2_14')}
-              li #{__('news2_15')}
-
-              li #{__('news2_sign1')}
-              li
-                div #{__('news2_sign2')}
-                div #{__('news2_sign3')}
-                div #{__('news2_date')}
-
         div.container.section.dean-of-student#dean-of-student 
             div.special #{__('news_chineseonly')}              
             div.header 
