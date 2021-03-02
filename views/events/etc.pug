@@ -1,0 +1,100 @@
+extends ../layout
+
+block append styles
+  link(rel='stylesheet', href='/stylesheets/events/index.css')
+
+block content
+  div.event.module
+    div.container(style='background-image:url(../images/classroom.png);')
+      div.special #{__('news_chineseonly')}             
+
+      div.content
+        div(style='font-size: 1.25rem;padding-bottom:15px;')  #{__('event_etc_1')} 
+        div(style="position:relative; height: 175px;background-image: url(/events/etc1.png);background-size: cover;margin: -5px;padding: 10px;")     
+          div(style='position:absolute; bottom: 10px; font-size: 2rem;font-weight: bold; color:antiquewhite') #{__('event_etc_2')}
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('event_etc_3')}      
+          div #{__('event_etc_4')}      
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('event_etc_5')}      
+          div #{__('event_etc_6')}      
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('event_etc_7')}      
+          div 
+            div #{__('event_etc_8')}      
+            div #{__('event_etc_9')}                  
+        
+        div(style="padding-top:15px; font-weight:bold") #{__('event_etc_10')}      
+        div #{__('event_etc_11')}   
+
+        div(style="padding-top:15px; font-weight:bold") #{__('event_etc_12')}         
+        div #{__('event_etc_13')}      
+
+        div(style="padding-top:15px; font-weight:bold")  #{__('event_etc_14')}              
+        div #{__('event_etc_15')}      
+        
+        div(style="padding-top:50px; font-size:1.25rem; font-weight:bold;text-decoration: underline;") #{__('event_etc_16')}
+        
+        div(style="font-weight:bold") #{__('event_etc_17')}
+        div 
+          span #{__('event_etc_18')} - 
+          strong #{__('event_etc_19')}  
+        div 
+          span #{__('event_etc_20')} - 
+          strong #{__('event_etc_21')}  
+        div 
+          span #{__('event_etc_22')} - 
+          strong #{__('event_etc_24')}  
+        div 
+          span #{__('event_etc_23')} - 
+          strong #{__('event_etc_24')} 
+
+        div(style="font-weight:bold; padding-top:15px;") #{__('event_etc_25')}   
+        div #{__('event_etc_26')}      
+        div #{__('event_etc_27')}
+        div #{__('event_etc_28')}
+        
+        div(style="font-weight:bold; padding-top:15px;") #{__('event_etc_29')}
+        div(style="display: flex;")
+          div(style="width:75px") #{__('event_etc_30')}      
+          div #{__('event_etc_31')}  
+        div(style="display: flex;")
+          div(style="width:75px") #{__('event_etc_32')}      
+          div 
+            a(href="mailto:info@ccstvan.ca") #{__('event_etc_33')}      
+
+        div(style="font-weight:bold; padding-top:15px;") #{__('event_etc_34')}         
+        div #{__('event_etc_35')}      
+
+        div(style="padding-top:15px;") 
+          span(style="font-weight:bold;") #{__('event_etc_36')}         
+          span #{__('event_etc_37')}  
+        ul(style="padding-left:25px") 
+          li(style="list-style:decimal")
+            div #{__('event_etc_38')}      
+            div(style="overflow:hidden") 
+              a(href="https://forms.gle/MVtDLNGkqrc9DgGV8" target="_blank") #{__('event_etc_39')}  
+          li(style="list-style:decimal")
+            div #{__('event_etc_40')}      
+            div 
+              span #{__('event_etc_41')}  
+              a(href="mailto:info@ccstvan.ca") info@ccstvan.ca
+              span #{__('event_etc_42')}  
+
+        div(style="padding-top:15px;") 
+          span(style="font-weight:bold;") #{__('event_etc_43')}         
+          span #{__('event_etc_44')}      
+        ul(style="padding-left:25px")
+          li(style="list-style:decimal")
+            div #{__('event_etc_45')}      
+            div #{__('event_etc_46')}  
+          li(style="list-style:decimal")
+            div #{__('event_etc_47')}      
+            div #{__('event_etc_48')}  
+            div #{__('event_etc_49')}          
+
+
+  script(src='/javascripts/app/index.js')
