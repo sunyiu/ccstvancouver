@@ -121,7 +121,7 @@ section > div .wrap-boxes{
 } */
 
 section>*:not(*:first-child) {
-  font-weight: 300;
+  /* font-weight: 300; */
   margin: 1rem 15px 2rem 15px;
 }
 
