@@ -7,7 +7,7 @@ html
     meta(name='description' content=__('meta_description'))
     meta(name='googlebot' content='index, follow')
     
-    title 加拿大華人神學院温哥華
+    title 加拿大華人神學院溫哥華
       
     link(rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon')
     link(rel='icon' href='/images/favicon.ico' type='image/x-icon')
@@ -42,6 +42,9 @@ html
                     div
                         input(type='radio' id='MTS' name='program' value='Master of Theological Studies Program')
                         label(for='MTS') 神學研究碩士課程 Master of Theological Studies Program
+                    div
+                        input(type='radio' id='MMin' name='program' value='Master of Ministry Program')
+                        label(for='MMin') 教牧學碩士課程 Master of Ministry Program                    
                     div
                         input(type='radio' id='DMiv' name='program' value='Doctor of Ministry Program')
                         label(for='DMiv') 教牧學博士課程 Doctor of Ministry Program
@@ -337,7 +340,7 @@ html
 
                 div
                     div Please prepare official transcripts sent to CCST Vancouver
-                    div 請向你曾修讀大專或以上課程的學校,將成綪單正本寄到 "加神温哥華" 
+                    div 請向你曾修讀大專或以上課程的學校,將成績單正本寄到 "加神溫哥華" 
 
 
                 div.question.required
@@ -364,13 +367,13 @@ html
                     label(for='englishRequirement') 
                         span English Language Requirement 
                         br
-                        span 英語成綪                    
+                        span 英語成績                    
                     div
                         input(type='radio' id='ielts' name='englishRequirement' value='IELTS')
                         label(for='ielts') IELTS Academic 雅思 (學術類)
                     div
                         input(type='radio' id='toefl_IBT' name='englishRequirement' value='TOEFL (IBT)')
-                        label(for='toefl_IBT') TOEFL 托福 (IBT) - (加神温哥華 DI Code C781)
+                        label(for='toefl_IBT') TOEFL 托福 (IBT) - (加神溫哥華 DI Code C781)
                     div
                         input(type='radio' id='toefl_ITP' name='englishRequirement' value='TOEFL (ITP)')
                         label(for='toefl_ITP') TOEFL 托福 (ITP)                        
@@ -392,7 +395,7 @@ html
                     div A minimum score of 32 for TOEFL IBT, 430 for TOEFL ITP, or 4.5 for IELTS (Academic) is required for doctoral program's applicants who have NOT studied full time for 3 years in a postsecondary institution, where English is the language of instruction and examination, in an English speaking country. Only test scores dating no more than two years when your application is reviewed are accepted.                    
                     div 若博士課程申請者沒有在位於以英語為主要語言的國家, 並以英語為教學及考試語言的專上學院全時間地就讀過三年，對其英語考試最低成績要求為托福 IBT 32分, 托福 ITP 433分, 或雅思(學術類) 4.5。 只有兩年內的考試成績才有效。
                     div Please prepare an official record from IELTS or TOEFL Center and send to CCST Vancouver
-                    div 請向雅思或托福機關申請將成績直接送往 "加神温哥華"
+                    div 請向雅思或托福機關申請將成績直接送往 "加神溫哥華"
 
             section
                 h3 C. Calling Testimony 蒙召見證
@@ -409,9 +412,9 @@ html
                     input(type='hidden' name='personalSalvationType' id='personalSalvationType')
                 div.question
                     label(for='spouseSupportLetter') 
-                        span If married, please attach a letter of support from your spouse. (M.Div. &amp; D. Min. Applicant ONLY.)
+                        span If married, please attach a letter of support from your spouse. (M.Div. / M.Min &amp; D. Min. Applicant ONLY.)
                         br
-                        span 已婚者需請配偶書寫其對你報名的推薦。 (只適用於道學碩士課程及教牧學博士的申請人)
+                        span 已婚者需請配偶書寫其對你報名的推薦。 (只適用於道學碩士課程, 教牧學碩士及教牧學博士的申請人)
                     //- textarea(id='spouseSupportLetter' name='spouseSupportLetter') 
                     input(type='file' name='spouseSupportLetter' id='spouseSupportLetter' accept=".pdf" style='padding-bottom:0;')
                     div.error(id='spouseSupportLetterError')
@@ -459,12 +462,12 @@ html
             section
                 h3  F. Your Referees 推薦人資料
                 div.section-desc 
-                    div Your Referees (MTS applicant – two reference letters are required; MDiv and DMin applicant – three reference listed below are requireed.)
+                    div Your Referees (MTS applicant – two reference letters are required; MDiv, MMin and DMin applicant – three reference listed below are requireed.)
                     div 申請人需下載相關推薦信檔案, 邀請推薦人填寫, 並直接郵寄或電郵到本校。
                     ul(style="padding:0; padding-left:30px; padding-top:5px; padding-bottom:15px; margin:0")
                         li 神學研究課程的申請人, 需要兩份推薦。
-                        li 道學碩士課程三份不同類別的推薦包括: 所屬教會牧者 + 教牧推薦 + 學術或雇主。
-                        li 教牧學博士課程三份不同類別的推薦包括: 所屬教會牧者 + 教會或機構認可信 / 教牧推薦 + 學術。
+                        li 道學碩士課程及教牧學碩士課程, 三份不同類別的推薦包括: 所屬教會牧者 + 教牧推薦 + 學術或雇主。
+                        li 教牧學博士課程, 三份不同類別的推薦包括: 所屬教會牧者 + 教會或機構認可信 / 教牧推薦 + 學術。
                     div
                         div(style='padding-bottom:5px;')
                             span(style="text-decoration: underline; font-weight:bold") 教牧學博士課程
