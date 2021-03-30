@@ -10,12 +10,12 @@ block content
         div.container
             include side-nav
             +side-nav('studentResources', [
-                {name:'library', link:'#library'}, 
-                {name:'weeklyMeeting', link:'#weekly-meeting'}, 
-                {name:'studentUnion', link:'#student-union'}, 
-                {name:'studentCamp', link:'#student-camp'}, 
-                {name:'retreat', link:'#retreat'}, 
-                {name:'singspiration', link:'#singspiration'}])
+                {name:'library', hlink:'#library'}, 
+                {name:'weeklyMeeting', hlink:'#weekly-meeting'}, 
+                {name:'studentUnion', hlink:'#student-union'}, 
+                {name:'studentCamp', hlink:'#student-camp'}, 
+                {name:'retreat', hlink:'#retreat'}, 
+                {name:'singspiration', hlink:'#singspiration'}])
 
             div.context
                 section(class='library', id='library')
@@ -28,7 +28,7 @@ block content
                             div #{__('libraryDesc')}
                             div.link_container
                                 i.material-icons link
-                                a(href=__('libraryLink')) #{__('libraryLink')} 
+                                a(href=__('libraryLink') target="_blank") #{__('libraryLink')} 
 
                 section(class='weekly-meeting', id='weekly-meeting')
                     h1

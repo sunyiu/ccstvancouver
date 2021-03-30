@@ -23,6 +23,7 @@ html
 
     script(src='/javascripts/jquery.min.js')
     script(src='/javascripts/app/contact.js')
+    script(src='/javascripts/app/index.js')
     
     block scripts
 
@@ -42,13 +43,13 @@ html
                     div.title #{__('title')}
                 ul(class='navbar-items links')
                     li(class='nav-link')
-                        a(href='/admissions/vancouver') #{__('admissions')}
+                        a(href='/admissions/vancouver?lang='+__('locale')) #{__('admissions')}
                     li(class='nav-link')
-                        a(href='/student-resources') #{__('studentResources')}
+                        a(href='/student-resources?lang='+__('locale')) #{__('studentResources')}
                     li(class='nav-link')
-                        a(href='/academic/instructors') #{__('academics')}
+                        a(href='/academic/instructors?lang='+__('locale')) #{__('academics')}
                     li(class='nav-link')
-                        a(href='/aboutus') #{__('about_us')}
+                        a(href='/aboutus?lang='+__('locale')) #{__('about_us')}
 
     block content
 
