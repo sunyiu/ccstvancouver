@@ -24,16 +24,16 @@ block content
         div(style="flex-grow: 1")
           ul.actions
             li.action(style="width:49%") 
-              a(href='/admissions/programs')
+              a(href='/admissions/programs?lang='+__('locale'))
                   i.material-icons arrow_right_alt 
                   span #{__('findAProgram')}
             li.action(style="width:49%")   
-              a(href='/admissions/apply')
+              a(href='/admissions/apply?lang='+__('locale'))
                   i.material-icons arrow_right_alt
                   span #{__('applyTo')}
           ul.actions
             li.action(style="background-color: orangered; width:100%;")
-              a(href="./special-notices/covid") COVID-19 Notice
+              a(href='./special-notices/covid?lang='+__('locale')) COVID-19 Notice
           ul.actions.link
             li.action(style="width:49%")
               a(href="#dean-of-student") #{__('dean_of_students_sharing')}
@@ -45,7 +45,7 @@ block content
 
         div.events
           div.event_row
-            a.event.youtube(href="/events/theology" target="_blank")
+            a.event.youtube(href='/events/theology?lang='+__('locale') target="_blank")
               div.container
                 div.icon
                   span.material-icons video_library
@@ -55,7 +55,7 @@ block content
                   div #{__('news3_1')} 
                   div #{__('news3_2')}
               
-              a.event.class(href="/events/mar22" target="_blank")
+              a.event.class(href='/events/mar22?lang='+__('locale') target="_blank")
                 div.container
                   div.calendar
                     div.year 2021
@@ -67,7 +67,7 @@ block content
                     div.title #{(__('event_mar22_2'))}
 
           div.event_row
-            a.event.class(href="/events/etc" target="_blank")
+            a.event.class(href='/events/etc?lang='+__('locale') target="_blank")
               div.container
                 div.calendar
                   div.year 2021

@@ -6,4 +6,4 @@ mixin side-nav(title, items)
         ul.nav-links
             each item, index in items
                 li(class = (index==sideNavHLIndex) ? '_selected link '+ item.class : 'link ' + item.class)
-                    a(href = (item.link ? item.link : __(item.dlink)) target = item.target)!= __(item.name)
+                    a(href = (item.link ? item.link+'?lang='+__('locale') : (item.hlink ? item.hlink : __(item.dlink)+'?lang='+__('locale') )) target = item.target)!= __(item.name)
