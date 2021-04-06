@@ -1,0 +1,48 @@
+extends ../layout
+
+block append styles
+  link(rel='stylesheet', href='/stylesheets/events/index.css')
+
+block content
+  div.event.module
+    div.container(style='background-image:url(../images/classroom.png);')
+      div.special #{__('news_chineseonly')}             
+
+      div.content
+        div(style='font-size: 1.25rem;font-weight: bold;') #{__('event_dipcs_1')}
+        div(style='margin-bottom:15px;') #{__('event_dipcs_2')}                
+        div(style='background-image:url(/events/dipcs.png);background-color: black;color: white;padding: 30px 15px;background-size: cover;background-position: right center;color: white;') 
+          div(style='font-size: 2rem;font-weight:bold;display: inline-block;background-color: black;padding: 5px;') #{__('event_dipcs_3')}
+          div(style='margin-top:-5px')
+          div(style="display: inline-block;padding: 5px;background-color: black;") #{__('event_dipcs_4')}
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('event_dipcs_5')}      
+          div #{__('event_dipcs_6')}    
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('event_dipcs_7')}      
+          div #{__('event_dipcs_8')}                
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('event_dipcs_9')}
+          div #{__('event_dipcs_10')}
+
+        div(style="padding-bottom:15px") #{__('event_dipcs_11')}
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('event_dipcs_12')}
+          div #{__('event_dipcs_13')}
+
+        div(style="padding-top:15px;")
+          img(style='float:left;width:148px;height:203px;margin-right:15px;' src='/events/reubenlee.png')
+          div #{__('event_dipcs_14')}
+
+        div(style="padding-top:15px;")
+          span(style='padding-right:5px;') #{__('event_dipcs_15')}
+          a(href='mailto:gracechan@ccstvan.ca') gracechan@ccstvan.ca
+          span &comma; #{__('event_dipcs_16')}
+          span(style='padding-left:5px;') #{__('event_dipcs_17')}
+
+
+  script(src='/javascripts/app/index.js')
