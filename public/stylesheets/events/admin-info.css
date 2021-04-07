@@ -1,0 +1,7 @@
+.course-container{
+    display: flex;justify-content: space-between;margin-bottom:15px;margin-top:25px;
+}
+
+.course-container > div{
+    width: 48%;
+}

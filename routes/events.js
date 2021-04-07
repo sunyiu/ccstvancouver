@@ -17,6 +17,9 @@ router.get('/etc2', function (req, res, next) {
   res.render('events/etc2');
 });
 
+router.get('/admin-info', function (req, res, next) {
+  res.render('events/admin-info');
+});
 
 
 module.exports = router;

@@ -1,0 +1,71 @@
+extends ../layout
+
+block append styles
+  link(rel='stylesheet', href='/stylesheets/events/index.css')
+  link(rel='stylesheet', href='/stylesheets/events/admin-info.css')
+
+block content
+  div.event.module
+    div.container(style='background-image:url(../images/classroom.png);')
+      div.special #{__('news_chineseonly')}             
+
+      div.content
+        div(style='font-size: 1.5rem;font-weight: bold;height: 150px;background-image: url(/events/admin-info.png);color: white;background-size: cover;background-position: left center;') #{__('ccst_admin_info_1')}
+        
+        div(style='') #{__('ccst_admin_info_2')}  
+        div(style='') #{__('ccst_admin_info_3')}  
+        div
+          span(style='') #{__('ccst_admin_info_4')}  
+          a(href='mailto:info@ccstvan.ca') info@ccstvan.ca
+          span(style='') &nbsp;#{__('ccst_admin_info_5')}  
+
+
+        div.course-container
+          div
+            div(style='font-size:1.25rem; font-weight:bold') #{__('ccst_admin_info_6')}
+            div #{__('ccst_admin_info_7')}
+
+          div
+            div(style='font-size:1.25rem; font-weight:bold') #{__('ccst_admin_info_8')}
+            div #{__('ccst_admin_info_9')}
+
+        div.course-container
+          div
+            div(style='font-size:1.25rem; font-weight:bold') #{__('ccst_admin_info_10')}    
+            div #{__('ccst_admin_info_11')}
+
+          div
+            div(style='font-size:1.25rem; font-weight:bold') #{__('ccst_admin_info_12')}    
+            div #{__('ccst_admin_info_13')}
+
+        div.course-container
+          div
+            div(style='font-size:1.25rem; font-weight:bold') #{__('ccst_admin_info_14')}    
+            div #{__('ccst_admin_info_15')}
+
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('ccst_admin_info_16')}      
+          div #{__('ccst_admin_info_17')}    
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('ccst_admin_info_18')}      
+          div
+            div #{__('ccst_admin_info_19')}                
+            div #{__('ccst_admin_info_20')}                
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; min-width:125px; font-weight:bold;") #{__('ccst_admin_info_21')}
+          div 
+            div #{__('ccst_admin_info_22')}              
+            a(style='word-break:break-all;' href='https://us02web.zoom.us/meeting/register/tZMvfumppj0sGtwrc3neaLymttc861lrThNQ' target='_blank') https://us02web.zoom.us/meeting/register/tZMvfumppj0sGtwrc3neaLymttc861lrThNQ
+            div #{__('ccst_admin_info_23')}
+            a(style='word-break:break-all;' href='https://us02web.zoom.us/meeting/register/tZAuduCspj8sHNdZ0b6wgBPvQKSR14P2DAEt' target='_blank') https://us02web.zoom.us/meeting/register/tZAuduCspj8sHNdZ0b6wgBPvQKSR14P2DAEt
+
+        div(style="display: flex; padding-top:15px;")
+          div(style="width:125px; font-weight:bold;") #{__('ccst_admin_info_24')}      
+          div #{__('ccst_admin_info_25')}    
+
+        div(style='margin-top:15px;padding-top:5px;border-top:1px solid gray') #{__('ccst_admin_info_26')}    
+
+  script(src='/javascripts/app/index.js')

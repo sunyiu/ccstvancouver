@@ -194,10 +194,10 @@ section > h1{
     background-size: cover;
     padding-bottom: 20px;
 }
-.home .container.section.principle > .header > .announce{
+.home .container.section#principal > .header > .announce{
     background: url(../images/news.png) no-repeat center;
 }
-.home .container.section.dean-of-student > .header > .announce{
+.home .container.section#dean-of-student > .header > .announce{
     background: url(../images/dean-of-student-sharing.png) no-repeat right;
 }
 .home .container.section.building > .header > .announce{
