@@ -36,7 +36,7 @@ block content
               a(href='./special-notices/covid?lang='+__('locale')) COVID-19 Notice
           ul.actions.link
             li.action(style="width:49%")
-              a(href="#dean-of-student") #{__('dean_of_students_sharing')}
+              a(href="#principal") #{__('principal_sharing')}
             li.action(style="width:49%") 
               a(href="#news1") #{__('news1_title')}
 
@@ -97,46 +97,75 @@ block content
                 div.content
                   div.special #{__('events_chineseonly')}
                   div #{(__('event_dipcs_1'))}
-                  div.title #{(__('event_dipcs_3'))}                  
+                  div.title #{(__('event_dipcs_3'))}
+
+          div.event_row
+            a.event.class(href='/events/admin-info?lang='+__('locale') target="_blank")
+              div.container
+                div.calendar
+                  div.year 2021
+                  div.date
+                    div #{(__('ccst_admin_info_date1'))}
+                    div #{(__('ccst_admin_info_date2'))}                      
+                div.content
+                  div.special #{__('events_chineseonly')}
+                  //- div #{(__('event_etc2_1'))}
+                  div.title #{(__('ccst_admin_info_1'))}
 
 
 
       section       
-        div.container.section.dean-of-student#dean-of-student 
+        div.container.section#principal
             div.special #{__('news_chineseonly')}              
             div.header 
               div.announce
-                div.date #{__('dean_of_students_sharing')}
+                div.date #{__('principal_sharing')}
                
             ul.desc-container
+              li #{__('principal_sharing_1')}                                       
+              li #{__('principal_sharing_2')}
+              li #{__('principal_sharing_3')}
+              li #{__('principal_sharing_4')}
+              li #{__('principal_sharing_5')}
+              li #{__('principal_sharing_6')}
               li 
-                div #{__('dean_of_students_sharing1')}                                       
-                div #{__('dean_of_students_sharing2')}
-              li(style="font-weight:bold;") #{__('dean_of_students_sharing3')}
+                span #{__('principal_sharing_7')}
+                strong #{__('principal_sharing_7a')}
+                span #{__('principal_sharing_7b')}
               li 
-              li #{__('dean_of_students_sharing4')}
-              li #{__('dean_of_students_sharing5')}
-              li #{__('dean_of_students_sharing6')}
-              li
-                ul(style="margin-left:20px;") 
-                  li(style="list-style: decimal;padding-bottom: 15px;") 
-                    div(style="font-weight:bold") #{__('dean_of_students_sharing7')}                                       
-                    div #{__('dean_of_students_sharing8')}
-                  li(style="list-style: decimal;padding-bottom: 15px;") 
-                    div(style="font-weight:bold") #{__('dean_of_students_sharing9')}
-                    div #{__('dean_of_students_sharing10')}              
-                  li(style="list-style: decimal;padding-bottom: 15px;") 
-                    div(style="font-weight:bold") #{__('dean_of_students_sharing11')}
-                    div #{__('dean_of_students_sharing12')}
-                  li(style="list-style: decimal;padding-bottom: 15px;") 
-                    div(style="font-weight:bold") #{__('dean_of_students_sharing13')}
-                    div #{__('dean_of_students_sharing14')}
+                span #{__('principal_sharing_8')}
+                strong #{__('principal_sharing_8a')}
+                span #{__('principal_sharing_8b')}
               li 
-              li #{__('dean_of_students_sharing15')}
-              li #{__('dean_of_students_sharing16')}
-              li #{__('dean_of_students_sharing17')}
-              li #{__('dean_of_students_sharing18')}
-              li #{__('dean_of_students_sharing19')}                                                
+                span #{__('principal_sharing_9')}
+                strong #{__('principal_sharing_9a')}
+                span #{__('principal_sharing_9b')}
+              li #{__('principal_sharing_10')}
+              li 
+                span #{__('principal_sharing_11')}
+                strong #{__('principal_sharing_11a')}
+                span #{__('principal_sharing_11b')}
+              li #{__('principal_sharing_12')}
+              li 
+                span #{__('principal_sharing_13')}
+                strong #{__('principal_sharing_13a')}
+                span #{__('principal_sharing_13b')}                
+              li 
+                span #{__('principal_sharing_14')}
+                strong #{__('principal_sharing_14a')}
+                span #{__('principal_sharing_14b')}
+              li 
+                span #{__('principal_sharing_15')}&nbsp;
+                a(href="mailto: info@ccstvan.ca" style="color:black") info@ccstvan.ca                
+                span #{__('principal_sharing_15a')}&nbsp;
+                a(href='www.ccstvan.ca' target="_blank" style="color:black") www.ccstvan.ca
+
+              li #{__('principal_sharing_16')}
+              li 
+                div #{__('principal_sharing_17')}
+                div #{__('principal_sharing_18')}
+                div #{__('principal_sharing_19')}
+                div #{__('principal_sharing_20')}
 
 
 
